@@ -27,9 +27,31 @@
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
                 <a class="navbar-brand" href=".">Math pour le lycée</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Expanded navigation -->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="." class="nav-link active" aria-current="page">Accueil</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">2nde</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="2nde/Ensembles-de-nombres/" class="dropdown-item">Ensembles de nombres</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="divers/" class="nav-link">Divers</a>
+                            </li>
+                        </ul>
 
                     <ul class="nav navbar-nav ms-md-auto">
                         <li class="nav-item">
@@ -37,6 +59,16 @@
                                 <i class="fa fa-search"></i> Rechercher
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Précédent
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="2nde/Ensembles-de-nombres/" class="nav-link">
+                                    Suivant <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                             <li class="nav-item dropdown">
                               <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
                                 <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
@@ -220,5 +252,5 @@
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-08-19 15:07:43.154703+00:00
+Build Date UTC : 2025-08-19 15:12:57.770744+00:00
 -->
