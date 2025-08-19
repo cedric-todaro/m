@@ -6,7 +6,7 @@
 
 **Rem. :** Dans le lycée, il y a un ensemble d'**humains**. Parmi eux, il y a des **élèves** et parmi ces élèves il y a des **secondes**.
 
-![](img/ensembles/01a.png){width=50%}
+![](img/ensembles/01a.png){width="50%"}
 
 !!! Définition
 
@@ -17,7 +17,7 @@
     - Entiers **relatifs** : $\Z$
         - Entiers positifs ou négatifs : $-6$ ; $-77$ ; $98$ ; $114$ $\ldots$
 
-![](img/ensembles/nz.png){width=50%}
+![](img/ensembles/nz.png){width=62%}
 
 **Ex. :**
 
@@ -39,10 +39,9 @@
 
 **Ex. :**
 
-- $27=3\times 9$ donc
+- $27=3\times 9$ donc :
     - $27$ est **multiple** de $3$ (et de $9$)
     - $9$ est un **diviseur** de $27$
-
 - $85$ n'est pas un **multiple** de $10$ car :
     - $85=k\times 10\Leftrightarrow k=8.5$ et $k$ pas entier
 

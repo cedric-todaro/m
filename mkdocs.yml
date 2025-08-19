@@ -18,9 +18,12 @@ theme:
 
 extra_css:
   - extra.css
+  - https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-mermaid.css
 
 extra_javascript:
   - mathjax.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.8/mermaid.min.js
+  - https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-mermaid.js
 
 markdown_extensions:
   - smarty
@@ -34,3 +37,10 @@ markdown_extensions:
   - pymdownx.tasklist
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_alt
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+
+

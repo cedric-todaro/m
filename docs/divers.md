@@ -79,9 +79,9 @@ These elements extend the basic syntax by adding additional features. Not all Ma
 }
 ```
 
-# Extensions
+## Extensions
 
-## Footnotes
+### Footnotes
 
 Footnotes[^1] have a label[^@#$%] and the footnote's content.
 
@@ -97,7 +97,7 @@ Footnotes[^1] have a label[^@#$%] and the footnote's content.
 [^@#$%]: A footnote on the label: "@#$%".
 ```
 
-## Admonition
+### Admonition
 
 !!! type "optional explicit title within double quotes"
 
@@ -127,7 +127,7 @@ Footnotes[^1] have a label[^@#$%] and the footnote's content.
     $$\sum\limits_{n=1}^{100}n^2=\ldots$$
 ```
 
-## Definition List
+### Definition List
 
 Apple
 : Pomaceous fruit of plants of the genus Malus in the family Rosaceae.
@@ -143,7 +143,7 @@ Orange
 : The fruit of an evergreen tree of the genus Citrus.
 ```
 
-## Emoji :thumbsup:
+### Emoji :thumbsup:
 
 I love you :heart: and :joy: and :smile: ...
 
@@ -153,7 +153,7 @@ I love you :heart: and :joy: and :smile: ...
 
 [Emoji list :speech_balloon:](https://raw.githubusercontent.com/facelessuser/pymdown-extensions/refs/heads/main/pymdownx/emoji1_db.py)
 
-## Details
+### Details
 
 [Docs](https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/details/)
 
@@ -173,7 +173,7 @@ I love you :heart: and :joy: and :smile: ...
 ///
 ```
 
-## Caption
+### Caption
 
 [Docs](https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/caption/)
 
@@ -196,12 +196,12 @@ Peach      | 10
 Banana     | 3
 Watermelon | 1
 
-/// caption
+/// figure-caption
 Fruit Count
 ///
 ```
 
-## Task List
+### Task List
 
 - [x] item 1
     - [x] item A
@@ -226,6 +226,45 @@ Fruit Count
 - [ ] item 2
 - [ ] item 3
 ```
+
+### Mermaid
+
+[docs](https://mermaid.live/)
+
+```mermaid
+flowchart TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
+```
+
+````
+```mermaid
+flowchart TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
+```
+````
+
+/// details | Arbre de probabilité
+
+```mermaid
+graph LR
+A0(debut)
+A0 -->|0.5| A1a(S)
+A0 -->|0.5| A1b(E)
+A1a -->|0.5| A2a(S)
+A1a -->|0.5| A2b(E)
+A1b -->|0.5| A2c(S)
+A1b -->|0.5| A2d(E)
+```
+
+///
 
 # Mkdocs
 
@@ -242,3 +281,11 @@ Fruit Count
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+```
+
+```
+
+```
+
+```
