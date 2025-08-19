@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" data-bs-theme="light">
+<html lang="fr" data-bs-theme="auto">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,23 +8,25 @@
         
         <link rel="canonical" href="https://cedric-todaro.github.io/m/divers/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Divers - My Docs</title>
+        <title>Divers - Math pour le lycée</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
         <link href="../css/solid.min.css" rel="stylesheet">
         <link href="../css/v4-font-face.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
-        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../extra.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="..">My Docs</a>
+                <a class="navbar-brand" href="..">Math pour le lycée</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,7 +37,7 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href=".." class="nav-link">Home</a>
+                                <a href=".." class="nav-link">Accueil</a>
                             </li>
                             <li class="nav-item">
                                 <a href="./" class="nav-link active" aria-current="page">Divers</a>
@@ -58,10 +60,40 @@
                                     Suivant <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="true">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
                     </ul>
                 </div>
             </div>
         </div>
+        <script src="../js/darkmode.js"></script>
 
         <div class="container">
             <div class="row">
@@ -76,7 +108,101 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#welcome" class="nav-link">Welcome</a>
+            <li class="nav-item" data-bs-level="1"><a href="#markdown-in-mkdocs" class="nav-link">Markdown in mkdocs</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#basic-syntax" class="nav-link">Basic Syntax</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="3"><a href="#heading" class="nav-link">Heading</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#bold" class="nav-link">Bold</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#italic" class="nav-link">Italic</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#blockquote" class="nav-link">Blockquote</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#ordered-list" class="nav-link">Ordered List</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#unordered-list" class="nav-link">Unordered List</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#code" class="nav-link">Code</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#horizontal-rule" class="nav-link">Horizontal Rule</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#link" class="nav-link">Link</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#image" class="nav-link">Image</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#extended-syntax" class="nav-link">Extended Syntax</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="3"><a href="#table" class="nav-link">Table</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#fenced-code-block" class="nav-link">Fenced Code Block</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#extensions" class="nav-link">Extensions</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#footnotes" class="nav-link">Footnotes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#admonition" class="nav-link">Admonition</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#definition-list" class="nav-link">Definition List</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#emoji" class="nav-link">Emoji 👍</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#details" class="nav-link">Details</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#caption" class="nav-link">Caption</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#task-list" class="nav-link">Task List</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#mkdocs" class="nav-link">Mkdocs</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-bs-level="2"><a href="#commands" class="nav-link">Commands</a>
               <ul class="nav flex-column">
@@ -93,8 +219,211 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="welcome">Welcome</h1>
+<h1 id="markdown-in-mkdocs">Markdown in mkdocs</h1>
 <p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
+<p>Read : <a href="https://www.markdownguide.org/tools/mkdocs/">Markdown guide for Mkdocs</a></p>
+<h2 id="basic-syntax">Basic Syntax</h2>
+<p>These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.</p>
+<h3 id="heading">Heading</h3>
+<div class="highlight"><pre><span></span><code># H1
+
+## H2
+
+### H3
+</code></pre></div>
+<h3 id="bold">Bold</h3>
+<p><strong>bold text</strong></p>
+<h3 id="italic">Italic</h3>
+<p><em>italicized text</em></p>
+<h3 id="blockquote">Blockquote</h3>
+<blockquote>
+<p>blockquote</p>
+</blockquote>
+<h3 id="ordered-list">Ordered List</h3>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ol>
+<h3 id="unordered-list">Unordered List</h3>
+<ul>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ul>
+<h3 id="code">Code</h3>
+<p><code>code</code></p>
+<h3 id="horizontal-rule">Horizontal Rule</h3>
+<hr />
+<h3 id="link">Link</h3>
+<p><a href="https://www.markdownguide.org">Markdown Guide</a></p>
+<h3 id="image">Image</h3>
+<p><img alt="alt text" src="https://www.markdownguide.org/assets/images/tux.png" /></p>
+<h2 id="extended-syntax">Extended Syntax</h2>
+<p>These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.</p>
+<h3 id="table">Table</h3>
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fenced-code-block">Fenced Code Block</h3>
+<div class="highlight"><pre><span></span><code>{
+  &quot;firstName&quot;: &quot;John&quot;,
+  &quot;lastName&quot;: &quot;Smith&quot;,
+  &quot;age&quot;: 25
+}
+</code></pre></div>
+<h1 id="extensions">Extensions</h1>
+<h2 id="footnotes">Footnotes</h2>
+<p>Footnotes<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> have a label<sup id="fnref:@#$%"><a class="footnote-ref" href="#fn:@#$%">2</a></sup> and the footnote&rsquo;s content.</p>
+<div class="highlight"><pre><span></span><code>Footnotes[^1] have a label[^@#$%] and the footnote&#39;s content.
+
+[^1]: This is a footnote content.
+
+[^@#$%]: A footnote on the label: &quot;@#$%&quot;.
+</code></pre></div>
+<h2 id="admonition">Admonition</h2>
+<div class="admonition type">
+<p class="admonition-title">optional explicit title within double quotes</p>
+<p>Any number of other indented markdown elements.</p>
+<p>This is the second paragraph.</p>
+</div>
+<div class="highlight"><pre><span></span><code>!!! type &quot;optional explicit title within double quotes&quot;
+
+    Any number of other indented markdown elements.
+
+    This is the second paragraph.
+</code></pre></div>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>You should $x=1$ note that the title will be automatically capitalized.</p>
+<p>$$\sum\limits_{n=1}<sup>{100}n</sup>2=\ldots$$</p>
+</div>
+<div class="highlight"><pre><span></span><code>!!! Définition
+
+    You should $x=1$ note that the title will be automatically capitalized.
+
+    $$\sum\limits_{n=1}^{100}n^2=\ldots$$
+</code></pre></div>
+<h2 id="definition-list">Definition List</h2>
+<dl>
+<dt>Apple</dt>
+<dd>Pomaceous fruit of plants of the genus Malus in the family Rosaceae.</dd>
+<dt>Orange</dt>
+<dd>The fruit of an evergreen tree of the genus Citrus.</dd>
+</dl>
+<div class="highlight"><pre><span></span><code>Apple
+: Pomaceous fruit of plants of the genus Malus in the family Rosaceae.
+
+Orange
+: The fruit of an evergreen tree of the genus Citrus.
+</code></pre></div>
+<h2 id="emoji">Emoji 👍</h2>
+<p>I love you ❤️ and 😂 and 😄 &hellip;</p>
+<p>♠️ ♦️ ♥️ ♣️ 💠</p>
+<p><code>:spades: :diamonds: :hearts: :clubs: :diamond_shape_with_a_dot_inside:</code></p>
+<p><a href="https://raw.githubusercontent.com/facelessuser/pymdown-extensions/refs/heads/main/pymdownx/emoji1_db.py">Emoji list 💬</a></p>
+<h2 id="details">Details</h2>
+<p><a href="https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/details/">Docs</a></p>
+<details>
+<summary>Un contenu caché</summary>
+<p><img alt="Une image random" src="https://dummyimage.com/600x400/000/fff" /></p>
+<p>Ça marche</p>
+</details>
+<div class="highlight"><pre><span></span><code>/// details | Un contenu caché
+![Une image random](https://dummyimage.com/600x400/000/fff)
+
+Ça marche
+
+///
+</code></pre></div>
+<h2 id="caption">Caption</h2>
+<p><a href="https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/caption/">Docs</a></p>
+<figure id="__figure-caption_1">
+<table>
+<thead>
+<tr>
+<th>Fruit</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Apple</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Peach</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Banana</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Watermelon</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<figcaption>
+<p><span class="caption-prefix">Figure 1.</span> Fruit Count</p>
+</figcaption>
+</figure>
+<div class="highlight"><pre><span></span><code>Fruit      | Amount
+---------- | ------
+Apple      | 20
+Peach      | 10
+Banana     | 3
+Watermelon | 1
+
+/// caption
+Fruit Count
+///
+</code></pre></div>
+<h2 id="task-list">Task List</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled checked/> item 1<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled checked/> item A</li>
+<li class="task-list-item"><input type="checkbox" disabled/> item B
+      more text<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled checked/> item a</li>
+<li class="task-list-item"><input type="checkbox" disabled/> item b</li>
+<li class="task-list-item"><input type="checkbox" disabled checked/> item c</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" disabled checked/> item C</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" disabled/> item 2</li>
+<li class="task-list-item"><input type="checkbox" disabled/> item 3</li>
+</ul>
+<div class="highlight"><pre><span></span><code>- [x] item 1
+    - [x] item A
+    - [ ] item B
+          more text
+        - [x] item a
+        - [ ] item b
+        - [x] item c
+    - [x] item C
+- [ ] item 2
+- [ ] item 3
+</code></pre></div>
+<h1 id="mkdocs">Mkdocs</h1>
 <h2 id="commands">Commands</h2>
 <ul>
 <li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
@@ -107,7 +436,18 @@
 docs/
     index.md  # The documentation homepage.
     ...       # Other markdown pages, images and other files.
-</code></pre></div>
+</code></pre>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>This is a footnote content.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:@#$%">
+<p>A footnote on the label: &ldquo;@#$%&rdquo;.&#160;<a class="footnote-backref" href="#fnref:@#$%" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></div>
             </div>
         </div>
 
@@ -121,6 +461,7 @@ docs/
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../js/base.js"></script>
+        <script src="../mathjax.js"></script>
         <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">

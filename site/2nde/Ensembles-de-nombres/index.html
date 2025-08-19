@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="auto">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://cedric-todaro.github.io/m/2nde/Ensembles-de-nombres/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Ensemble de nombres - Math pour le lycée</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../../extra.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Math pour le lycée</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../divers/" class="nav-link">Divers</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Rechercher
+                            </a>
+                        </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="true">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table des matières">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#ensemble-de-nombres" class="nav-link">Ensemble de nombres</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#les-entiers" class="nav-link">Les entiers</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="3"><a href="#definition-et-representation" class="nav-link">Définition et représentation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#multiples-diviseurs" class="nav-link">Multiples – diviseurs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#pair-impair" class="nav-link">Pair – impair</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#nombres-premiers" class="nav-link">Nombres premiers</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="4"><a href="#decomposition-en-facteurs-premiers" class="nav-link">Décomposition en facteurs premiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#les-ensembles-d-q-et-r" class="nav-link">Les ensembles $\D$, $\Q$ et $\R$</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="3"><a href="#les-decimaux-d" class="nav-link">Les décimaux : $\D$</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#les-rationnels-q" class="nav-link">Les rationnels : $\Q$</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#les-reels-r" class="nav-link">Les réels : $\R$</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#les-ensembles-de-nombres" class="nav-link">Les ensembles de nombres❤️</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#intervalles-de-r-et-valeur-absolue" class="nav-link">Intervalles de $\R$ et valeur absolue</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="3"><a href="#intervalles-de-r" class="nav-link">Intervalles de $\R$</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#union-et-intersection-dintervalles" class="nav-link">Union et intersection d&rsquo;intervalles</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#valeur-absolue" class="nav-link">Valeur absolue</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="ensemble-de-nombres">Ensemble de nombres</h1>
+<h2 id="les-entiers">Les entiers</h2>
+<h3 id="definition-et-representation">Définition et représentation</h3>
+<p><strong>Rem. :</strong> Dans le lycée, il y a un ensemble d&rsquo;<strong>humains</strong>. Parmi eux, il y a des <strong>élèves</strong> et parmi ces élèves il y a des <strong>secondes</strong>.</p>
+<p><img alt="" src="../img/ensembles/01a.png" width="50%" /></p>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>Parmi les nombres <strong>entiers</strong>, il existe :</p>
+<ul>
+<li>Entiers <strong>naturels</strong> : $\N$<ul>
+<li>Entiers (sans partie décimale) positifs : $1$ ; $4$ ; $999\ldots$</li>
+</ul>
+</li>
+<li>Entiers <strong>relatifs</strong> : $\Z$<ul>
+<li>Entiers positifs ou négatifs : $-6$ ; $-77$ ; $98$ ; $114$ $\ldots$</li>
+</ul>
+</li>
+</ul>
+</div>
+<p><img alt="" src="../img/ensembles/nz.png" width="50%" /></p>
+<p><strong>Ex. :</strong></p>
+<ul>
+<li>$17$ appartient à $\N$ et à $\Z\qquad\Rightarrow 17\in\N\quad\text{et}\quad17\in\Z$</li>
+<li>$(-2)$ n&rsquo;appartient pas à $\N\qquad\Rightarrow (-2)\notin\N$</li>
+<li>$157 \ldots\ldots\ldots\ldots\ldots\ldots\ldots$ à $\N\qquad\Rightarrow 157 \ldots\ldots\ldots \N$</li>
+</ul>
+<h3 id="multiples-diviseurs">Multiples – diviseurs</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>Soit $a$ et $b$, deux nombres entiers.</p>
+<p>On dit que $a$ est un <strong>multiple</strong> $b$ s&rsquo;il existe un entier $k$ tel que :</p>
+<p>$$a=k\times b$$</p>
+<p>On dit aussi que $b$ est un <strong>diviseur</strong> de $a$.</p>
+</div>
+<p><strong>Ex. :</strong></p>
+<ul>
+<li>
+<p>$27=3\times 9$ donc</p>
+<ul>
+<li>$27$ est <strong>multiple</strong> de $3$ (et de $9$)</li>
+<li>$9$ est un <strong>diviseur</strong> de $27$</li>
+</ul>
+</li>
+<li>
+<p>$85$ n&rsquo;est pas un <strong>multiple</strong> de $10$ car :</p>
+<ul>
+<li>$85=k\times 10\Leftrightarrow k=8.5$ et $k$ pas entier</li>
+</ul>
+</li>
+</ul>
+<div class="admonition propriété">
+<p class="admonition-title">Propriété</p>
+<p>Soit $a$ un entier. La somme de deux <strong>multiples</strong> de $a$, est un <strong>multiple</strong> de $a$.</p>
+</div>
+<p><strong>Ex. :</strong></p>
+<p>$21$ et $33$ sont des <strong>multiples</strong> de $3$ donc $54=(21+33)$ est un <strong>multiple</strong> de $3$.</p>
+<p>En effet, $54=18\times 3$</p>
+<div class="admonition démonstration">
+<p class="admonition-title">Démonstration</p>
+<p>Soit $n_1$ et $n_2$, deux multiples de $a$ alors :</p>
+<p>$n_1=k_1\times a\quad$ et $\quad n_2=k_2\times a$</p>
+<p>On a donc :</p>
+<p>$n_1+n_2=(k_1\times a)+(k_2\times a)=(k_1+k_2)\times a$</p>
+<p>Donc : $(n_1+n_2)$ est multiple de $a$</p>
+</div>
+<h3 id="pair-impair">Pair – impair</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>Un nombre <strong>pair</strong> est un multiple de $2$.</p>
+<ul>
+<li>Si $~n~$ est <strong>pair</strong> alors $~n=2k~$ avec $~k\in\Z~$</li>
+<li>Si $~n~$ est <strong>impair</strong> alors $~n=2k+1~$ avec $~k\in\Z~$</li>
+</ul>
+</div>
+<p><strong>Ex. :</strong></p>
+<ul>
+<li>$~157~$ est <strong>impair</strong> car $~157=(2\times 78)+1~$</li>
+<li>$~2048~$ est <strong>pair</strong> car $~2048=(2\times 1024)~$</li>
+</ul>
+<div class="admonition propriété">
+<p class="admonition-title">Propriété</p>
+<p>Le <strong>carré</strong> d&rsquo;un nombre <strong>impair</strong> est <strong>impair</strong></p>
+</div>
+<div class="admonition démonstration">
+<p class="admonition-title">Démonstration</p>
+<p>Soit $n$ un nombre <strong>impair</strong>. On a donc $\quad n=2k+1$</p>
+<p>$$
+\begin{aligned}
+        n^2 &amp; =(2k+1)^2=(2k+1)(2k+1)                  \\
+            &amp; =4k^2+4k+1                              \\
+            &amp; =2\color{red}(2k^{2}+2k)\color{black}+1 \\
+            &amp; =2\color{red}K\color{black}+1
+    \end{aligned}
+$$</p>
+<p>Si $n$ est <strong>impair</strong> alors $n^2$ est <strong>impair</strong>.</p>
+</div>
+<h3 id="nombres-premiers">Nombres premiers</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>Un entier naturel est dit <strong>premier</strong>, s&rsquo;il admet <em>exactement</em> <strong>deux diviseurs</strong> entiers positifs.</p>
+</div>
+<p><strong>Ex. :</strong></p>
+<ul>
+<li>$25$ admet comme diviseurs $1$, $5$ et $25$ $\rightarrow$ <strong>pas premier</strong></li>
+<li>$17$ admet comme diviseurs $1$ et $17\rightarrow\quad$ <strong>premier</strong></li>
+<li>$221$ admet comme diviseurs $\ldots\rightarrow\quad\ldots$</li>
+</ul>
+<details>
+<summary>Les $100$ premiers nombres premiers</summary>
+<p><img alt="" src="../img/ensembles/03.png" width="50%" /></p>
+</details>
+<h4 id="decomposition-en-facteurs-premiers">Décomposition en facteurs premiers</h4>
+<p><strong>Ex. :</strong></p>
+<ul>
+<li>$60=30\times 2\quad=15\times 2\times 2\quad=5\times 3\times 2\times 2$</li>
+</ul>
+<p><strong>Méthode pour décomposer $60$ :</strong></p>
+<p>$$\begin{array}{r|l}60 &amp; 2\\30 &amp; 2\\15 &amp; 3\\5 &amp; 5 \\1 &amp; ~\\  \end{array}$$</p>
+<p>La décomposition de $60$ en facteurs <strong>premiers</strong> est : $~60=3^1\times 5^1\times 2^2$</p>
+<p><strong>Ex. :</strong></p>
+<ul>
+<li>$1300=\ldots$</li>
+</ul>
+<p>$$\begin{array}{r|l}1300 &amp; 2\\650 &amp; \ldots\\ \ldots &amp; \ldots\\ \ldots &amp; \ldots\\ \ldots &amp; \ldots\\ \ldots &amp; \ldots\end{array}\qquad\qquad\begin{array}{r|l}\ldots &amp;\ldots\\ \ldots &amp; \ldots\\ \ldots &amp; \ldots\\ \ldots &amp; \ldots\\ \ldots &amp; \ldots\end{array}$$</p>
+<h2 id="les-ensembles-d-q-et-r">Les ensembles $\D$, $\Q$ et $\R$</h2>
+<h3 id="les-decimaux-d">Les décimaux : $\D$</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>Nombres dont <strong>la partie décimale est ﬁnie</strong>. On peut les écrire sous la forme :</p>
+<p>$$\dfrac{a}{10^n}\quad\text{avec}\quad a\in\Z$$</p>
+</div>
+<p><strong>Ex. :</strong></p>
+<p>À vous de compléter : $\qquad 0.009=\ldots\ldots\qquad\text{et}\qquad\dfrac{-1234}{10^2}=\ldots\ldots$</p>
+<p><strong>Ex. :</strong></p>
+<ul>
+<li>$1.77=\frac{177}{100}=\frac{177}{10^2}\iff 1.77 \in \D$</li>
+<li>$-5.001=\frac{-5001}{1000}=\frac{-5001}{10^3}\iff -5.001\in\D$</li>
+</ul>
+<div class="admonition démonstration">
+<p class="admonition-title">Démonstration</p>
+<p>Démontrons que $\frac{1}{3}$ <strong>n&rsquo;</strong> appartient <strong>pas</strong> aux décimaux.</p>
+<p><strong>Supposons</strong> que $\frac{1}{3}$ appartient aux décimaux alors il peut s&rsquo;écrire sous la forme : $\dfrac{a}{10^n}$</p>
+<p>$$
+    \begin{aligned}
+        \dfrac{1}{3}\in\D\qquad &amp; \Leftrightarrow\qquad\dfrac{1}{3}=\dfrac{a}{10^n} \\
+        \qquad                          &amp; \Leftrightarrow\qquad 3\times a=1\times{10^n}     \\
+        \qquad                          &amp; \Leftrightarrow\qquad 3a=10^n                     \\
+    \end{aligned}
+$$</p>
+<p>On a :</p>
+<ul>
+<li>$3a$ est un multiple de $3$ donc la <strong>somme des ses chiffres</strong> doit être un multiple de $3$.</li>
+<li>$10^n$ est un nombre constitué d&rsquo;un seul $1$ et de zéros donc la <strong>somme des ses chiffres</strong> est $1$.</li>
+</ul>
+<p>Donc $10^n$ n&rsquo;est pas un multiple de $3$,$\quad$ donc $10^n\neq 3\times a\quad$ donc $\frac{1}{3}\notin\D$</p>
+</div>
+<h3 id="les-rationnels-q">Les rationnels : $\Q$</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>Ils peuvent s&rsquo;écrire sous la forme : $\quad\dfrac{a}{b}\quad$ avec $~a\in\Z~$ et $~b\in\Z^{*}$</p>
+</div>
+<p><strong>Ex. :</strong></p>
+<p>$\frac{2}{7}\in\Q\qquad\frac{1}{3}=0.3333\ldots\in\Q\qquad\frac{50}{7}=7.142~857~142~857~\ldots\in\Q$</p>
+<p><strong>Rem. :</strong> La partie décimale peut se &ldquo;répéter&rdquo; à l&rsquo;infini.</p>
+<h3 id="les-reels-r">Les réels : $\R$</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>Tous les nombres connus en 2<sup>nde</sup>.</p>
+</div>
+<p><strong>Ex :</strong> $-16$ ; $\sqrt{3}$ ; $\pi$ ; $\ldots$</p>
+<h3 id="les-ensembles-de-nombres">Les ensembles de nombres<sup>❤️</sup></h3>
+<p><img alt="" src="../img/ensembles/00.png" /></p>
+<h2 id="intervalles-de-r-et-valeur-absolue">Intervalles de $\R$ et valeur absolue</h2>
+<h3 id="intervalles-de-r">Intervalles de $\R$</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>L&rsquo;ensemble $I$ de tous les nombres réels $x$ tels que $~2 \le x \le 4~$ peut se représenter sur une droite graduée :</p>
+<p><img alt="" src="../img/ensembles/int2_4.png" /></p>
+<p>Cet ensemble est appelé un <strong>intervalle</strong> et se note :</p>
+<p>$$I=\big[2~;~4\big]$$</p>
+</div>
+<p><strong>Ex. :</strong></p>
+<p>L&rsquo;ensemble $J$ des réels $x$ tels que $~ -2\le x\le 7~$ se note : $~J=\big[-2~;~7\big]$</p>
+<p>On a : $\quad 4\in[-2~;~7]\quad$ et $\quad -5\notin[-2~;~7]$</p>
+<p><strong>Ex. :</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Notation</th>
+<th style="text-align: center;">Inégalité</th>
+<th style="text-align: center;">Représentation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">$\lbrack 0 ; 1\rbrack $</td>
+<td style="text-align: center;">$0\le x \le 1$</td>
+<td style="text-align: center;"><img alt="" src="../img/ensembles/t_01.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">$\rbrack -1 ; 3\rbrack $</td>
+<td style="text-align: center;">$-1\lt x \le 3$</td>
+<td style="text-align: center;"><img alt="" src="../img/ensembles/t_02.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">$\lbrack -0.5 ; 2.3\lbrack $</td>
+<td style="text-align: center;">$-0.5\le x \lt 2.3$</td>
+<td style="text-align: center;"><img alt="" src="../img/ensembles/t_04.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">$\rbrack 2 ; 4\lbrack $</td>
+<td style="text-align: center;">$2\lt x \lt4$</td>
+<td style="text-align: center;"><img alt="" src="../img/ensembles/t_03.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">$\rbrack -\infty ; 1.5\rbrack $</td>
+<td style="text-align: center;">$x \le 1.5$</td>
+<td style="text-align: center;"><img alt="" src="../img/ensembles/t_05.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">$\rbrack -\infty ; -1.7\lbrack $</td>
+<td style="text-align: center;">$x \lt -1.7$</td>
+<td style="text-align: center;"><img alt="" src="../img/ensembles/t_08.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">$\rbrack -2 ; +\infty\lbrack $</td>
+<td style="text-align: center;">$x \gt -2$</td>
+<td style="text-align: center;"><img alt="" src="../img/ensembles/t_06.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">$\lbrack 2.7 ; +\infty\lbrack $</td>
+<td style="text-align: center;">$x \ge 2.7$</td>
+<td style="text-align: center;"><img alt="" src="../img/ensembles/t_07.png" /></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rem :</strong> L&rsquo;ensemble $\R$ est un intervalle qui se note : $\R=\big]-\infty~;~+\infty\big[$</p>
+<h3 id="union-et-intersection-dintervalles">Union et intersection d&rsquo;intervalles</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<ul>
+<li>L&rsquo;<strong>intersection</strong> de deux ensembles $A$ et $B$ est l&rsquo;ensemble des éléments qui appartiennent à $A$ <strong>et</strong> à $B$ et se note : $\boxed{A \cap B}$</li>
+<li>L&rsquo;<strong>union</strong> de deux ensembles $A$ et $B$ est l&rsquo;ensemble des éléments qui appartiennent à $A$ <strong>ou</strong> à $B$ et se note : $\boxed{A \cup B}$</li>
+</ul>
+</div>
+<p><strong>Ex. :</strong> $\quad I=\big[0~;~3\big]\qquad\text{et}\qquad J=\big[1~;~5\big]$</p>
+<p><img alt="" src="../img/ensembles/inter_union.png" width="80%" /></p>
+<h3 id="valeur-absolue">Valeur absolue</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>La distance de deux réels $a$ et $b$ est la distance des points $A$ et $B$ d&rsquo;abscisses $a$ et $b$ sur la droite numérique.</p>
+</div>
+<p><strong>Ex. :</strong></p>
+<p><img alt="" src="../img/ensembles/distance.png" /></p>
+<p><strong>Rem :</strong></p>
+<ul>
+<li>Si $(a\lt b)$ alors la distance est $\left(b-a\right)$</li>
+<li>Si $(a\gt b)$ alors la distance est $\left(a-b\right)$</li>
+</ul>
+<p>On note la distance : $\quad\abs{a-b}\quad$ et on lit $\quad$ <strong>valeur absolue de</strong> $(a-b)$</p>
+<p><strong>Ex. :</strong></p>
+<p>La distance de $5$ à $18$ est $\quad\left|5-18\right|=18-5=13$</p>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>La <strong>valeur absolue</strong> d&rsquo;un réel $x$ est la distance de ce réel à $0$.</p>
+<p>Elle est notée : $\qquad\abs{x}$</p>
+</div>
+<p><strong>Ex. :</strong> La valeur absolue de $-4$ est la distance de $-4$ à $0$. On a : $\abs{-4}=4$</p>
+<p><img alt="" src="../img/ensembles/distance2.png" width="80%" /></p>
+<p><strong>Ex. :</strong></p>
+<ul>
+<li>$\abs{3}=3$</li>
+<li>$\abs{\sqrt{2}}=\sqrt{2}$</li>
+<li>$\abs{-4}=4$</li>
+<li>$\abs{-0.177}=0.177$</li>
+</ul>
+<div class="admonition propriété">
+<p class="admonition-title">Propriété</p>
+<p>On a, pour tout $x\in\R$ :</p>
+<p>$$\boxed{\left|x\right|=\begin{cases}x\quad&amp;\text{si}~x\ge 0\\-x\quad&amp;\text{si}~x\lt 0\end{cases}}$$</p>
+</div>
+<p><strong>Ex. :</strong></p>
+<ul>
+<li>$\abs{3}=3\quad$ car $~3\gt 0$</li>
+<li>$\abs{-7}=-(-7)=7\quad$ car $~(-7)\lt 0$</li>
+</ul>
+<div class="admonition propriété">
+<p class="admonition-title">Propriété</p>
+<p>L&rsquo;intervalle $\big[a-r~;~a+r\big]$ est l&rsquo;ensemble des $x$ tel que : $\qquad\abs{x-a}\le r$</p>
+</div>
+<p><strong>Ex. :</strong></p>
+<p>L&rsquo;ensemble des nombres $x$ tel que $\lvert x-5\rvert \le 3$ est l&rsquo;intervalle $I=\big[5-3~;~5+3\big]=\big[2~;~8\big]$</p>
+<p><img alt="" src="../img/ensembles/img2.png" width="80%" /></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation générée avec <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../mathjax.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Rechercher</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                <p>Ici vous pouvez chercher dans les documents. Entrez votre recherche ci-dessous.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Rechercher..." id="mkdocs-search-query" title="Tapez vos mots clés ici">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="Aucun résultat trouvé"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Raccourcis Clavier</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Touches</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Ouvrir l'aide</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Page suivante</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Page précédente</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Rechercher</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

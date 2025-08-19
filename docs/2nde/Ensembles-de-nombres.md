@@ -151,7 +151,8 @@ $$\begin{array}{r|l}1300 & 2\\\\650 & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \l
 
 **Ex. :**
 
-$$1.77=\frac{177}{100}=\frac{177}{10^2}\iff 1.77 \in \D\qquad\qquad -5.001=\frac{-5001}{1000}=\frac{-5001}{10^3}\iff -5.001\in\D$$
+- $1.77=\frac{177}{100}=\frac{177}{10^2}\iff 1.77 \in \D$
+- $-5.001=\frac{-5001}{1000}=\frac{-5001}{10^3}\iff -5.001\in\D$
 
 !!! Démonstration
 
@@ -182,7 +183,7 @@ $$1.77=\frac{177}{100}=\frac{177}{10^2}\iff 1.77 \in \D\qquad\qquad -5.001=\frac
 
 **Ex. :**
 
-$$\frac{2}{7}\in\Q\qquad\qquad\frac{1}{3}=0.3333\ldots\in\Q\qquad\qquad\frac{50}{7}=7.142~857~142~857~\ldots\in\Q$$
+$\frac{2}{7}\in\Q\qquad\frac{1}{3}=0.3333\ldots\in\Q\qquad\frac{50}{7}=7.142~857~142~857~\ldots\in\Q$
 
 **Rem. :** La partie décimale peut se "répéter" à l'infini.
 
@@ -206,7 +207,7 @@ $$\frac{2}{7}\in\Q\qquad\qquad\frac{1}{3}=0.3333\ldots\in\Q\qquad\qquad\frac{50}
 
     L'ensemble $I$ de tous les nombres réels $x$ tels que $~2 \le x \le 4~$ peut se représenter sur une droite graduée :
 
-    ![](img/ensembles/int2_4.png){width=80%}
+    ![](img/ensembles/int2_4.png)
 
     Cet ensemble est appelé un **intervalle** et se note :
 
@@ -242,7 +243,7 @@ On a : $\quad 4\in[-2~;~7]\quad$ et $\quad -5\notin[-2~;~7]$
 
 **Ex. :** $\quad I=\big[0~;~3\big]\qquad\text{et}\qquad J=\big[1~;~5\big]$
 
-![](img/ensembles/inter_union.png){width=60%}
+![](img/ensembles/inter_union.png){width=80%}
 
 ### Valeur absolue
 
@@ -252,7 +253,7 @@ On a : $\quad 4\in[-2~;~7]\quad$ et $\quad -5\notin[-2~;~7]$
 
 **Ex. :**
 
-![](img/ensembles/distance.png){width=70%}
+![](img/ensembles/distance.png)
 
 **Rem :**
 
@@ -273,7 +274,7 @@ La distance de $5$ à $18$ est $\quad\left|5-18\right|=18-5=13$
 
 **Ex. :** La valeur absolue de $-4$ est la distance de $-4$ à $0$. On a : $\abs{-4}=4$
 
-![](img/ensembles/distance2.png){width=50%}
+![](img/ensembles/distance2.png){width=80%}
 
 **Ex. :**
 

@@ -6,7 +6,8 @@
 
 /// details | 2^nde^
 
-- [Ensembles de nombres](2nde/Ensembles-de-nombres)
+- [Ensembles de nombres](2nde/Ensembles-de-nombres.md)
+- [Probabilité](2nde/Probabilite.md)
   ///
 
 ## 1^ère^

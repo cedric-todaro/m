@@ -3,9 +3,7 @@ site_url: https://cedric-todaro.github.io/m
 
 nav:
   - Accueil: index.md
-  # - 2nde:
-  #     - Ensembles de nombres: 2nde/Ensembles-de-nombres.md
-  # - Divers: divers.md
+  - Divers: divers.md
 
 theme:
   name: mkdocs
