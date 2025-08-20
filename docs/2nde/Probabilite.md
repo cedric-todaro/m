@@ -4,7 +4,7 @@
 
 ### Définition : Expérience aléatoire
 
-!!! Définition
+!!! def
 
     Une expérience est dite **aléatoire** lorsque l'on ne peut pas prévoir l'issue de cette expérience.
 
@@ -14,7 +14,7 @@
 
 ### Vocabulaire
 
-!!! Définition
+!!! def
 
     - **Issue** : Un résultat de l'expérience aléatoire
         - $50$ ; $1000$ ou $\text{Jackpot}$ ...
@@ -57,7 +57,7 @@
 
 ### Définition : Loi de probabilité
 
-!!! Définition
+!!! def
 
     Définir une **loi de probabilité** d'une expérience aléatoire, c'est associer chaque issue à sa probabilité.
 
@@ -91,7 +91,7 @@ e_i&\text{\color{Red}{Rouge}} &\text{\color{green}{Verte}}& \text{\color{Black}{
 \rule[-3mm]{0mm}{9mm}P(e_i)&\frac{3}{10}=0.3&\frac{2}{10}=0.2&\frac{5}{10}=0.5\\\\ \hline\end{array}
 $$
 
-!!! Propriété
+!!! prop
 
     Soit la loi de probabilité suivante :
 
@@ -105,7 +105,7 @@ $$
 
 ### Définition : Équiprobabilité
 
-!!! Définition
+!!! def
 
     On dit qu'il y a **équiprobabilité** (ou que la situation est **équiprobable**) si la probabilité de chaque issue est **égale**.
 
@@ -124,7 +124,7 @@ C'est une situation d'**équiprobabilité**.
 
 ### Définition : Probabilité d'un événement
 
-!!! Définition
+!!! def
 
     La probabilité d'un événement est la **somme** des probabilités des issues qui le composent.
 
@@ -147,7 +147,7 @@ On a :
 
 ### Propriétés
 
-!!! Propriété
+!!! prop
 
     - La probabilité de l'évènement **certain** $\Omega$ est : $\quad \boxed{P(\Omega) = 1}$
     - La probabilité de l'évènement **impossible** est : $\quad \boxed{P(\varnothing) = 0}$
@@ -198,7 +198,7 @@ $$\overline{A}:\lbrace 3;4\rbrace \qquad A\cap C:\lbrace 1\rbrace \qquad A\cup C
 
 ### Propriétés : Probabilité contraire et union
 
-!!! Propriété
+!!! prop
 
     - La probabilité de l'événement **contraire** de $A$ est :
       $$\boxed{P\left(~\overline{A}~\right)=1-P(A)}$$

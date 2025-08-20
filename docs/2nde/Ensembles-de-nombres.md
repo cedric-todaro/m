@@ -8,7 +8,7 @@
 
 ![](img/ensembles/01a.png){width="50%"}
 
-!!! Définition
+!!! def
 
     Parmi les nombres **entiers**, il existe :
 
@@ -27,7 +27,7 @@
 
 ### Multiples – diviseurs
 
-!!! Définition
+!!! def
 
     Soit $a$ et $b$, deux nombres entiers.
 
@@ -45,7 +45,7 @@
 - $85$ n'est pas un **multiple** de $10$ car :
     - $85=k\times 10\Leftrightarrow k=8.5$ et $k$ pas entier
 
-!!! Propriété
+!!! prop
 
     Soit $a$ un entier. La somme de deux **multiples** de $a$, est un **multiple** de $a$.
 
@@ -55,7 +55,7 @@ $21$ et $33$ sont des **multiples** de $3$ donc $54=(21+33)$ est un **multiple**
 
 En effet, $54=18\times 3$
 
-!!! Démonstration
+!!! demo
 
     Soit $n_1$ et $n_2$, deux multiples de $a$ alors :
 
@@ -69,7 +69,7 @@ En effet, $54=18\times 3$
 
 ### Pair – impair
 
-!!! Définition
+!!! def
 
     Un nombre **pair** est un multiple de $2$.
 
@@ -81,11 +81,11 @@ En effet, $54=18\times 3$
 - $~157~$ est **impair** car $~157=(2\times 78)+1~$
 - $~2048~$ est **pair** car $~2048=(2\times 1024)~$
 
-!!! Propriété
+!!! prop
 
     Le **carré** d'un nombre **impair** est **impair**
 
-!!! Démonstration
+!!! demo
 
     Soit $n$ un nombre **impair**. On a donc $\quad n=2k+1$
 
@@ -102,7 +102,7 @@ En effet, $54=18\times 3$
 
 ### Nombres premiers
 
-!!! Définition
+!!! def
 
     Un entier naturel est dit **premier**, s'il admet _exactement_ **deux diviseurs** entiers positifs.
 
@@ -138,7 +138,7 @@ $$\begin{array}{r|l}1300 & 2\\\\650 & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \l
 
 ### Les décimaux : $\D$
 
-!!! Définition
+!!! def
 
     Nombres dont **la partie décimale est ﬁnie**. On peut les écrire sous la forme :
 
@@ -154,7 +154,7 @@ $$\begin{array}{r|l}1300 & 2\\\\650 & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \l
 
 - $-5.001=\dfrac{-5001}{1000}=\dfrac{-5001}{10^3}\iff -5.001\in\D$
 
-!!! Démonstration
+!!! demo
 
     Démontrons que $\frac{1}{3}$ **n'** appartient **pas** aux décimaux.
 
@@ -177,7 +177,7 @@ $$\begin{array}{r|l}1300 & 2\\\\650 & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \l
 
 ### Les rationnels : $\Q$
 
-!!! Définition
+!!! def
 
     Ils peuvent s'écrire sous la forme : $\quad\dfrac{a}{b}\quad$ avec $~a\in\Z~$ et $~b\in\Z^{*}$
 
@@ -193,7 +193,7 @@ $$\begin{array}{r|l}1300 & 2\\\\650 & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \l
 
 ### Les réels : $\R$
 
-!!! Définition
+!!! def
 
     Tous les nombres connus en 2^nde^.
 
@@ -207,7 +207,7 @@ $$\begin{array}{r|l}1300 & 2\\\\650 & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \l
 
 ### Intervalles de $\R$
 
-!!! Définition
+!!! def
 
     L'ensemble $I$ de tous les nombres réels $x$ tels que $~2 \le x \le 4~$ peut se représenter sur une droite graduée :
 
@@ -240,7 +240,7 @@ On a : $\quad 4\in[-2~;~7]\quad$ et $\quad -5\notin[-2~;~7]$
 
 ### Union et intersection d'intervalles
 
-!!! Définition
+!!! def
 
     - L'**intersection** de deux ensembles $A$ et $B$ est l'ensemble des éléments qui appartiennent à $A$ **et** à $B$ et se note : $\boxed{A \cap B}$
     - L'**union** de deux ensembles $A$ et $B$ est l'ensemble des éléments qui appartiennent à $A$ **ou** à $B$ et se note : $\boxed{A \cup B}$
@@ -251,7 +251,7 @@ On a : $\quad 4\in[-2~;~7]\quad$ et $\quad -5\notin[-2~;~7]$
 
 ### Valeur absolue
 
-!!! Définition
+!!! def
 
     La distance de deux réels $a$ et $b$ est la distance des points $A$ et $B$ d'abscisses $a$ et $b$ sur la droite numérique.
 
@@ -270,7 +270,7 @@ On note la distance : $\quad\abs{a-b}\quad$ et on lit $\quad$ **valeur absolue d
 
 La distance de $5$ à $18$ est $\quad\left|5-18\right|=18-5=13$
 
-!!! Définition
+!!! def
 
     La **valeur absolue** d'un réel $x$ est la distance de ce réel à $0$.
 
@@ -287,7 +287,7 @@ La distance de $5$ à $18$ est $\quad\left|5-18\right|=18-5=13$
 - $\abs{-4}=4$
 - $\abs{-0.177}=0.177$
 
-!!! Propriété
+!!! prop
 
     On a, pour tout $x\in\R$ :
 
@@ -298,7 +298,7 @@ La distance de $5$ à $18$ est $\quad\left|5-18\right|=18-5=13$
 - $\abs{3}=3\quad$ car $~3\gt 0$
 - $\abs{-7}=-(-7)=7\quad$ car $~(-7)\lt 0$
 
-!!! Propriété
+!!! prop
 
     L'intervalle $\big[a-r~;~a+r\big]$ est l'ensemble des $x$ tel que : $\qquad\abs{x-a}\le r$
 

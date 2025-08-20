@@ -3,7 +3,12 @@ site_url: https://cedric-todaro.github.io/m
 
 nav:
   - Accueil: index.md
-  - Divers: divers.md
+  # - Divers: divers.md
+  # - 2nde:
+  #     - 2nde/Arithmetique.md
+  #     - 2nde/Probabilite.md
+  #     - 2nde/Probabilite-echantillonnage.md
+  #     - 2nde/Ensembles-de-nombres.md
 
 theme:
   name: mkdocs
@@ -40,5 +45,3 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_div_format
-
-

@@ -4,7 +4,7 @@
 
 ### Définition : Échantillon
 
-!!! Définition
+!!! def
 
     Un échantillon de taille $n$ est constitué des résultats de $n$ **répétitions indépendantes** de la même expérience sur l'ensemble des personnes ou objets sur lesquels porte l'étude statistique (la population).
 
@@ -117,7 +117,7 @@ En effet, la probabilité de gagner (obtenir "3" ou "4") est égale à $\frac{2}
 
 ### Définition : Loi des grands nombres
 
-!!! Définition
+!!! def
 
     Lorsque l'on répète un grand nombre de fois une expérience aléatoire, la fréquence de réalisation d'un événement est proche de sa probabilité.
 
@@ -183,7 +183,7 @@ On a: $$\quad p-\frac{1}{\sqrt{n}}~\lt~f~\lt~p+\frac{1}{\sqrt{n}}$$
 
 ### Propriété : Estimation d'une probabilité
 
-!!! Propriété
+!!! prop
 
     - Pour $n$ assez grand, $f$ donne une estimation de $p$ dans environ 95% des cas.
     - Pour $n$ assez grand, 95% des **fréquences observées** se situent dans l'intervalle :
