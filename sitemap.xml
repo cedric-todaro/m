@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://cedric-todaro.github.io/m/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-20</lastmod>
     </url>
     <url>
          <loc>https://cedric-todaro.github.io/m/divers/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-20</lastmod>
     </url>
     <url>
          <loc>https://cedric-todaro.github.io/m/2nde/Ensembles-de-nombres/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-20</lastmod>
+    </url>
+    <url>
+         <loc>https://cedric-todaro.github.io/m/2nde/Probabilite-echantillonnage/</loc>
+         <lastmod>2025-08-20</lastmod>
     </url>
     <url>
          <loc>https://cedric-todaro.github.io/m/2nde/Probabilite/</loc>
-         <lastmod>2025-08-19</lastmod>
+         <lastmod>2025-08-20</lastmod>
     </url>
 </urlset>
