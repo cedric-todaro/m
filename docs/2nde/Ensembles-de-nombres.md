@@ -150,8 +150,9 @@ $$\begin{array}{r|l}1300 & 2\\\\650 & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \l
 
 **Ex. :**
 
-- $1.77=\frac{177}{100}=\frac{177}{10^2}\iff 1.77 \in \D$
-- $-5.001=\frac{-5001}{1000}=\frac{-5001}{10^3}\iff -5.001\in\D$
+- $1.77=\dfrac{177}{100}=\dfrac{177}{10^2}\iff 1.77 \in \D$
+
+- $-5.001=\dfrac{-5001}{1000}=\dfrac{-5001}{10^3}\iff -5.001\in\D$
 
 !!! Démonstration
 
@@ -182,7 +183,11 @@ $$\begin{array}{r|l}1300 & 2\\\\650 & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \l
 
 **Ex. :**
 
-$\frac{2}{7}\in\Q\qquad\frac{1}{3}=0.3333\ldots\in\Q\qquad\frac{50}{7}=7.142~857~142~857~\ldots\in\Q$
+- $\dfrac{2}{7}\in\Q$
+
+- $\dfrac{1}{3}=0.3333\ldots\in\Q$
+
+- $\dfrac{50}{7}=7.142~857~142~857~\ldots\in\Q$
 
 **Rem. :** La partie décimale peut se "répéter" à l'infini.
 
