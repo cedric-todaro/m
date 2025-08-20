@@ -6,7 +6,39 @@ footer {
     visibility: hidden;
 }
 
-
 .col-md-9 img {
     display: block;
+}
+
+figcaption {
+    margin-top: -4%;
+    text-align: center;
+}
+
+.admonition-title {
+    border-bottom: 1px dotted black;
+}
+
+div.admonition.définition {
+    background-color: #eeffee;
+}
+
+div.admonition.définition .admonition-title::before {
+    content: "\1F4D6\0020";
+}
+
+div.admonition.propriété {
+    background-color: #eeeeff;
+}
+
+div.admonition.propriété .admonition-title::before {
+    content: "\1F4AC\0020";
+}
+
+div.admonition.démonstration {
+    background-color: #ffeeee;
+}
+
+div.admonition.démonstration .admonition-title::before {
+    content: "\1F50E\0020";
 }
