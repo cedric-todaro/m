@@ -1,6 +1,6 @@
 # Math
 
-![](logo.png){: style="width:70%;display:block;margin:auto"}
+![](logo.png){width=50%}
 
 ## 2^nde^
 
@@ -8,6 +8,7 @@
 
 - [Ensembles de nombres](2nde/Ensembles-de-nombres.md)
 - [Probabilité](2nde/Probabilite.md)
+- [Probabilité et échantillonnage](2nde/Probabilite-echantillonnage.md)
   ///
 
 ## 1^ère^

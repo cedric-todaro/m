@@ -301,4 +301,4 @@ La distance de $5$ à $18$ est $\quad\left|5-18\right|=18-5=13$
 
 L'ensemble des nombres $x$ tel que $\lvert x-5\rvert \le 3$ est l'intervalle $I=\big[5-3~;~5+3\big]=\big[2~;~8\big]$
 
-![](img/ensembles/img2.png){width=80%}
+![](img/ensembles/img2.png){width=90%}
