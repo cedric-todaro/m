@@ -1,11 +1,12 @@
 # Math
 
-![](logo.png){width=50%}
+![](logo.png){width=80%}
 
 ## 2^nde^
 
 /// details | 2^nde^
 
+- [Arithmétique](2nde/Arithmetique.md)
 - [Ensembles de nombres](2nde/Ensembles-de-nombres.md)
 - [Probabilité](2nde/Probabilite.md)
 - [Probabilité et échantillonnage](2nde/Probabilite-echantillonnage.md)

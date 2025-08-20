@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" data-bs-theme="auto">
+<html lang="fr" data-bs-theme="light">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
         <link href="../../css/solid.min.css" rel="stylesheet">
         <link href="../../css/v4-font-face.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <link href="../../extra.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-mermaid.css" rel="stylesheet">
@@ -51,40 +51,10 @@
                                 <i class="fa fa-search"></i> Rechercher
                             </a>
                         </li>
-                            <li class="nav-item dropdown">
-                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
-                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
-                                <span class="d-lg-none ms-2">Toggle theme</span>
-                              </button>
-                              <ul class="dropdown-menu dropdown-menu-end">
-                                <li>
-                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-                                    <i class="fa-solid fa-sun fa-fw"></i>
-                                    <span class="ms-2">Light</span>
-                                    <i class="fa-solid fa-check ms-auto d-none"></i>
-                                  </button>
-                                </li>
-                                <li>
-                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                                    <i class="fa-solid fa-moon fa-fw"></i>
-                                    <span class="ms-2">Dark</span>
-                                    <i class="fa-solid fa-check ms-auto d-none"></i>
-                                  </button>
-                                </li>
-                                <li>
-                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="true">
-                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
-                                    <span class="ms-2">Auto</span>
-                                    <i class="fa-solid fa-check ms-auto"></i>
-                                  </button>
-                                </li>
-                              </ul>
-                            </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <script src="../../js/darkmode.js"></script>
 
         <div class="container">
             <div class="row">
@@ -209,8 +179,8 @@
 <li>Expérience aléatoire : &ldquo;Lancer un dé&rdquo;</li>
 <li>Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $</li>
 <li>Événements :<ul>
-<li>A : &ldquo;Obtenir un nombre pair&rdquo; $A :\lbrace 2 ;4 ;6\rbrace $</li>
-<li>B : &ldquo;Obtenir un nombre &gt;4&rdquo; $B :\lbrace 5 ;6\rbrace $</li>
+<li>A : &ldquo;Obtenir un nombre pair&rdquo; $\quad\Rightarrow A :\lbrace 2 ;4 ;6\rbrace $</li>
+<li>B : &ldquo;Obtenir un nombre $&gt;4$&rdquo; $\quad\Rightarrow B :\lbrace 5 ;6\rbrace $</li>
 </ul>
 </li>
 <li>Événement <strong>certain</strong> : &ldquo;Obtenir un nombre entre $1$ et $6$&rdquo;</li>
@@ -235,7 +205,7 @@
 \end{array}
 $$</p>
 <p><strong>Ex. :</strong></p>
-<p><img alt="" src="../img/proba/04.png" width="50%" /></p>
+<p><img alt="" src="../img/proba/04.png" width="30%" /></p>
 <p>Une urne contient $10$ boules ($3$ rouges, $2$ vertes, $5$ noires)</p>
 <ul>
 <li><strong>Exp. aléatoire</strong> : &ldquo;On tire une boule et on note <strong>sa couleur</strong>&ldquo;</li>
@@ -284,7 +254,7 @@ $$</p>
 <li>Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $</li>
 <li>Événements :<ul>
 <li>$A:~$&rdquo;Obtenir un nombre pair&rdquo;$\quad\Rightarrow A:\lbrace 2;4;6\rbrace $</li>
-<li>$B:~$&rdquo;Obtenir un nombre strictement supérieur à 4&rdquo;$\quad\Rightarrow B:\lbrace 5;6\rbrace $</li>
+<li>$B:~$&rdquo;Obtenir un nombre $\gt 4$&rdquo;$\quad\Rightarrow B:\lbrace 5;6\rbrace $</li>
 </ul>
 </li>
 </ul>
@@ -308,7 +278,7 @@ $$</p>
 <li>Exp. aléatoire : &ldquo;Lancer un dé&rdquo; $~\Rightarrow~$ Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $</li>
 <li>Événements :<ul>
 <li>$A:~$&rdquo;Obtenir un nombre pair&rdquo;$\quad\Rightarrow A:\lbrace 2;4;6\rbrace $</li>
-<li>$B:~$&rdquo;Obtenir un nombre strictement supérieur à 4&rdquo;$\quad\Rightarrow B:\lbrace 5;6\rbrace $</li>
+<li>$B:~$&rdquo;Obtenir un nombre $&gt;4$&rdquo;$\quad\Rightarrow B:\lbrace 5;6\rbrace $</li>
 </ul>
 </li>
 </ul>
@@ -319,16 +289,17 @@ $$</p>
 </ul>
 </li>
 <li>L&rsquo;<strong>intersection</strong> de $A$ et de $B$ :<ul>
-<li>$A \cap B:~$ &ldquo;Obtenir un nombre pair $\boxed{\text{et}}$ &gt;4&rdquo; $\quad\Rightarrow A \cap B:\lbrace 6\rbrace $</li>
+<li>$A \cap B:~$ &ldquo;Obtenir un nombre pair $\boxed{\text{et}}$ $&gt;4$&rdquo; $\quad\Rightarrow A \cap B:\lbrace 6\rbrace $</li>
 </ul>
 </li>
 <li>L&rsquo;<strong>union</strong> de $A$ et de $B$ :<ul>
-<li>$A \cup B:~$ &ldquo;Obtenir un nombre pair $\boxed{\text{ou}}$ &gt;4&rdquo; $\quad\Rightarrow A \cup B:\lbrace 2;4;5;6\rbrace $</li>
+<li>$A \cup B:~$ &ldquo;Obtenir un nombre pair $\boxed{\text{ou}}$ $&gt;4$&rdquo; $\quad\Rightarrow A \cup B:\lbrace 2;4;5;6\rbrace $</li>
 </ul>
 </li>
 </ul>
 <hr />
-<p><strong>Ex. :</strong>On tire une boule dans l&rsquo;urne, et on note le nombre inscrit.</p>
+<p><strong>Ex. :</strong></p>
+<p>On tire une boule dans l&rsquo;urne, et on note le nombre inscrit.</p>
 <p><img alt="" src="../img/proba/05.png" width="50%" /></p>
 <ul>
 <li>$\Omega=\lbrace 1;2;3;4\rbrace $</li>
@@ -361,7 +332,8 @@ $$</p>
 </li>
 </ul>
 </div>
-<p><strong>Ex. :</strong>On tire une boule dans l&rsquo;urne, et on note le nombre inscrit.</p>
+<p><strong>Ex. :</strong></p>
+<p>On tire une boule dans l&rsquo;urne, et on note le nombre inscrit.</p>
 <p><img alt="" src="../img/proba/05.png" width="50%" /></p>
 <p>On a :</p>
 <ul>

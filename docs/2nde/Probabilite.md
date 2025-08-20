@@ -48,8 +48,8 @@
 - Expérience aléatoire : "Lancer un dé"
 - Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $
 - Événements :
-    - A : "Obtenir un nombre pair" $A :\lbrace 2 ;4 ;6\rbrace $
-    - B : "Obtenir un nombre >4" $B :\lbrace 5 ;6\rbrace $
+    - A : "Obtenir un nombre pair" $\quad\Rightarrow A :\lbrace 2 ;4 ;6\rbrace $
+    - B : "Obtenir un nombre $>4$" $\quad\Rightarrow B :\lbrace 5 ;6\rbrace $
 - Événement **certain** : "Obtenir un nombre entre $1$ et $6$"
 - Événement **impossible** : "Obtenir $7$"
 
@@ -77,7 +77,7 @@ $$
 
 **Ex. :**
 
-![](img/proba/04.png){width=50%}
+![](img/proba/04.png){width=30%}
 
 Une urne contient $10$ boules ($3$ rouges, $2$ vertes, $5$ noires)
 
@@ -138,7 +138,7 @@ Si $\quad A:\lbrace e_1;e_3;e_7\rbrace \quad$ alors $\quad P(A)=P(e_1 )+P(e_3)+P
 - Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $
 - Événements :
     - $A:~$"Obtenir un nombre pair"$\quad\Rightarrow A:\lbrace 2;4;6\rbrace $
-    - $B:~$"Obtenir un nombre strictement supérieur à 4"$\quad\Rightarrow B:\lbrace 5;6\rbrace $
+    - $B:~$"Obtenir un nombre $\gt 4$"$\quad\Rightarrow B:\lbrace 5;6\rbrace $
 
 On a :
 
@@ -160,20 +160,22 @@ On a :
 - Exp. aléatoire : "Lancer un dé" $~\Rightarrow~$ Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $
 - Événements :
     - $A:~$"Obtenir un nombre pair"$\quad\Rightarrow A:\lbrace 2;4;6\rbrace $
-    - $B:~$"Obtenir un nombre strictement supérieur à 4"$\quad\Rightarrow B:\lbrace 5;6\rbrace $
+    - $B:~$"Obtenir un nombre $>4$"$\quad\Rightarrow B:\lbrace 5;6\rbrace $
 
 On a :
 
 - L'événement **contraire** de $A$ :
     - $\overline{A}:~$ "Obtenir un nombre impair" $\quad\Rightarrow\overline{A}:\lbrace 1;3;5\rbrace $
 - L'**intersection** de $A$ et de $B$ :
-    - $A \cap B:~$ "Obtenir un nombre pair $\boxed{\text{et}}$ >4" $\quad\Rightarrow A \cap B:\lbrace 6\rbrace $
+    - $A \cap B:~$ "Obtenir un nombre pair $\boxed{\text{et}}$ $>4$" $\quad\Rightarrow A \cap B:\lbrace 6\rbrace $
 - L'**union** de $A$ et de $B$ :
-    - $A \cup B:~$ "Obtenir un nombre pair $\boxed{\text{ou}}$ >4" $\quad\Rightarrow A \cup B:\lbrace 2;4;5;6\rbrace $
+    - $A \cup B:~$ "Obtenir un nombre pair $\boxed{\text{ou}}$ $>4$" $\quad\Rightarrow A \cup B:\lbrace 2;4;5;6\rbrace $
 
 ---
 
-**Ex. :**On tire une boule dans l'urne, et on note le nombre inscrit.
+**Ex. :**
+
+On tire une boule dans l'urne, et on note le nombre inscrit.
 
 ![](img/proba/05.png){width=50%}
 
@@ -204,7 +206,9 @@ $$\overline{A}:\lbrace 3;4\rbrace \qquad A\cap C:\lbrace 1\rbrace \qquad A\cup C
     - La probabilité de l'**union** de $A$ et de $B$ est :
       $$\boxed{P(A\cup B)=P(A)+P(B)-P(A\cap B)}$$
 
-**Ex. :**On tire une boule dans l'urne, et on note le nombre inscrit.
+**Ex. :**
+
+On tire une boule dans l'urne, et on note le nombre inscrit.
 
 ![](img/proba/05.png){width=50%}
 

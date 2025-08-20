@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://cedric-todaro.github.io/m/2nde/Arithmetique/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Arithmétique - Math pour le lycée</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../../extra.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-mermaid.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Math pour le lycée</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../divers/" class="nav-link">Divers</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table des matières">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#arithmetique" class="nav-link">Arithmétique</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#nombres-entiers" class="nav-link">Nombres entiers</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="3"><a href="#entier-naturel" class="nav-link">Entier naturel</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#entier-relatif" class="nav-link">Entier relatif</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#multiples-et-diviseurs" class="nav-link">Multiples et diviseurs</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="3"><a href="#multiple-et-diviseur" class="nav-link">Multiple et diviseur</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#somme-de-deux-multiples" class="nav-link">Somme de deux multiples</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#nombres-pairs-impairs" class="nav-link">Nombres pairs, impairs</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="3"><a href="#pair-impair" class="nav-link">Pair / impair</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#proprietes-pair-impair" class="nav-link">Propriétés : pair / impair</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#nombres-premiers" class="nav-link">Nombres premiers</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="3"><a href="#definition-nombre-premier" class="nav-link">Définition : Nombre premier</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#deux-nombres-premiers-entre-eux" class="nav-link">Deux nombres premiers entre-eux</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#decomposition-dun-nombre" class="nav-link">Décomposition d&rsquo;un nombre</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#fraction-irreductible" class="nav-link">Fraction irréductible</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="arithmetique">Arithmétique</h1>
+<h2 id="nombres-entiers">Nombres entiers</h2>
+<h3 id="entier-naturel">Entier naturel</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>Un nombre <strong>entier naturel</strong> est un nombre entier qui est <strong>positif</strong>.</p>
+<p>L&rsquo;ensemble des nombres <strong>entiers naturels</strong> est noté $\N$.</p>
+<p>$$\N=\left\{0 ;1 ;2 ;3 ;4 ;&hellip;\right\}$$</p>
+</div>
+<p><strong>Ex. :</strong> $\qquad 4\in\N\qquad\qquad-2 \notin \N$</p>
+<h3 id="entier-relatif">Entier relatif</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>Un nombre <strong>entier relatif</strong> est un nombre entier qui est <strong>positif</strong> ou <strong>négatif</strong>.</p>
+<p>L&rsquo;ensemble des nombres entiers relatifs est noté $\Z$.</p>
+<p>$$\Z = \left\{&hellip;;-3 ; -2 ; -1 ; 0 ;1 ;2 ;3 ;&hellip;\right\}$$</p>
+</div>
+<p><strong>Ex. :</strong> $\qquad 14\in\Z\qquad\qquad-4 \in \Z\qquad\qquad0.33\notin\Z$</p>
+<p><img alt="" src="../img/arith/n_et_z.png" width="50%" /></p>
+<h2 id="multiples-et-diviseurs">Multiples et diviseurs</h2>
+<h3 id="multiple-et-diviseur">Multiple et diviseur</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>Soit $a$ et $b$ deux entiers. On dit que $a$ est un <strong>multiple</strong> de $b$ s&rsquo;il existe un <strong>entier</strong> $k$ tel que :</p>
+<p>$$a = k\times b$$</p>
+<p>On dit alors que $b$ est un <strong>diviseur</strong> de $a$.</p>
+</div>
+<p><strong>Ex. :</strong></p>
+<ul>
+<li>$15~$ est <strong>multiple</strong> de $~3~$ car $~15=5\times 3\qquad$ &hellip;et $~3$ est un <strong>diviseur</strong> de $15$</li>
+<li>$7~$ est un <strong>diviseur</strong> de $~21~$ car $~21=7\times 3\qquad$ &hellip;et $~21$ est <strong>multiple</strong> de $7$</li>
+<li>$5~$ n&rsquo;est pas un <strong>multiple</strong> de $~17~$ car il n&rsquo;existe pas <strong>d&rsquo;entier</strong> $k$ tel que $17=k\times 5$</li>
+</ul>
+<p><img alt="Tables du $3$ et du $5$" src="../img/arith/tables3et5.png" width="50%" /></p>
+<h3 id="somme-de-deux-multiples">Somme de deux multiples</h3>
+<div class="admonition propriété">
+<p class="admonition-title">Propriété</p>
+<p>La <strong>somme</strong> de deux multiples d&rsquo;un entier $a$ est un multiple de $a$.</p>
+</div>
+<p><strong>Ex. :</strong></p>
+<ul>
+<li>$15$ est multiple de $3\quad(3\times 5=15)$</li>
+<li>$21$ est multiple de $3\quad(3\times 7=21)$</li>
+</ul>
+<p>Donc $(15+21)=36$ est multiple de $3\quad(3\times 12=36)$</p>
+<div class="admonition démonstration">
+<p class="admonition-title">Démonstration</p>
+<p>Soit $b$ et $c$ deux multiples de $a$.</p>
+<ul>
+<li>$b$ est un multiple de $a$ donc il existe un <strong>entier</strong> $k_1$ tel que $b = a\times k_1$</li>
+<li>$c$ est un multiple de $a$ donc il existe un <strong>entier</strong> $k_2$ tel que $c = a\times k_2$</li>
+</ul>
+<p>On a :</p>
+<p>$$\begin{aligned}(b + c)&amp;= a\times k_1 +a\times k_2\\&amp;=a\times (k_1 + k_2)\\&amp;=a\times k\qquad\quad\text{où }~k=k_1+k_2\end{aligned}$$</p>
+<p>Or, $k = k_1+k_2$ est un entier car somme de deux entiers</p>
+<p>Donc $(b+c)=a\times k\quad$ avec $k$ entier $\Rightarrow (b + c)$ est donc un multiple de $a$.</p>
+</div>
+<p><ins><strong>Méthode :</strong> Résoudre un problème avec des multiples ou des diviseurs</ins></p>
+<p>Montrons que la somme de <strong>trois entiers consécutifs</strong> est un <strong>multiple de 3</strong>.</p>
+<p>Soit <strong>trois entiers consécutifs</strong> : $\textcolor{blue}{(n)}$, $\textcolor{red}{(n+1)}$ et $\textcolor{green!30!black!50}{(n+2)}$, où $n$ est un entier quelconque.</p>
+<p>Leur somme est :</p>
+<p>$$
+    \begin{aligned}
+        S &amp; =\textcolor{blue}{n}+(\textcolor{red}{n+1})+(\textcolor{green!30!black!50}{n+2}) \\
+          &amp; =n+n+1+n+2                                                                       \\
+          &amp; = 3n+3\qquad=3(n + 1)
+    \end{aligned}
+$$</p>
+<p>Soit $k$ l&rsquo;entier tel que $k=n+1$.</p>
+<p>Donc $S = 3k$, avec $k$ entier $\quad\Rightarrow S$ est un multiple 3.</p>
+<h2 id="nombres-pairs-impairs">Nombres pairs, impairs</h2>
+<h3 id="pair-impair">Pair / impair</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<ul>
+<li>Un nombre <strong>pair</strong> est un multiple de $2$.</li>
+<li>Un nombre <strong>impair</strong> est un nombre qui n&rsquo;est pas pair.</li>
+</ul>
+</div>
+<p><strong>Ex. :</strong></p>
+<ul>
+<li>$34$, $68$, $9756786$ et $0$ sont des nombres <strong>pairs</strong>.</li>
+<li>$567$, $871$ et $1$ sont des nombres <strong>impairs</strong>.</li>
+</ul>
+<h3 id="proprietes-pair-impair">Propriétés : pair / impair</h3>
+<div class="admonition propriété">
+<p class="admonition-title">Propriété</p>
+<ul>
+<li>Un nombre <strong>pair</strong> s&rsquo;écrit sous la forme $~(2k)~$, avec $k$ entier.</li>
+<li>Un nombre <strong>impair</strong> s&rsquo;écrit sous la forme $~(2k+1)~$, avec $k$ entier.</li>
+</ul>
+</div>
+<div class="admonition propriété">
+<p class="admonition-title">Propriété</p>
+<p>Le <strong>carré</strong> d&rsquo;un nombre <strong>impair</strong> est <strong>impair</strong>.</p>
+</div>
+<p><strong>Ex. :</strong> $\quad 13^2=169\qquad 5^2=25\qquad &hellip;$</p>
+<div class="admonition démonstration">
+<p class="admonition-title">Démonstration</p>
+<p>Soit $a$ est un nombre <strong>impair</strong>.</p>
+<p>On peut l&rsquo;écrire sous la forme $a=2k+1$, avec $k$ entier.</p>
+<p>On a :</p>
+<p>$$
+\begin{aligned}
+a^2&amp;= (2k + 1)^2\\
+   &amp;= 4k^2 +4k + 1\\
+   &amp;= 2\underbrace{\left(\textcolor{blue}{2k^2 + 2k}\right)}_{k&rsquo;} + 1\\
+   &amp;= 2\textcolor{blue}{k&rsquo;} + 1\qquad\text{avec}~\textcolor{blue}{k&rsquo;=2k^2+2k}
+\end{aligned}
+$$</p>
+<p>$k&rsquo;$ est <strong>entier</strong> car <strong>somme</strong> de <strong>deux entiers</strong></p>
+<p>$a^2$ s&rsquo;écrit sous la forme $~a^2=2k&rsquo;+1\qquad\Rightarrow a^2$ est <strong>impair</strong>.</p>
+</div>
+<p><ins><strong>Méthode :</strong> Résoudre un problème avec des nombres pairs ou impairs</ins></p>
+<p>Montrons que le produit de deux entiers consécutifs est un nombre pair.</p>
+<p>Soit deux entiers consécutifs $~\textcolor{red}{n}~$ et $~\textcolor{blue}{n+1}~$.</p>
+<p><ins>1<sup>er</sup> cas : $n$ pair</ins></p>
+<p>Si $n$ est <strong>pair</strong>, alors il s&rsquo;écrit sous la forme $~n=2k~$, avec $k$ entier.</p>
+<p>Alors le produit des deux entiers consécutifs s&rsquo;écrit :</p>
+<p>$$\begin{aligned}\textcolor{red}{n}(\textcolor{blue}{n+1})&amp;=2\underbrace{k(2k+1)}_{k_1}\\&amp;=2k_1\qquad\text{avec }~k_1 =k(2k+1)~\text{ entier}\end{aligned}$$</p>
+<p>Donc $n(n+1)$ est pair.</p>
+<p><ins>2<sup>ème</sup> cas : $n$ impair</ins></p>
+<p>Si $n$ est <strong>impair</strong>, alors il s&rsquo;écrit sous la forme $~n = 2k+1~$, avec $k$ entier.</p>
+<p>Alors le produit des deux entiers consécutifs s&rsquo;écrit :</p>
+<p>$$\begin{aligned}\textcolor{red}{n}(\textcolor{blue}{n+1})&amp;=(2k+1)(2k+2)\\&amp;=2\underbrace{(2k+1)(k+1)}_{k_2}\\&amp;=2k_2\qquad\text{avec }~k_2 =(2k+1)(k+1)~\text{ entier}\end{aligned}$$</p>
+<p>Donc $n(n+1)$ est pair.</p>
+<p>Dans tous les cas, le <strong>produit</strong> de <strong>deux entiers consécutifs</strong> est un <strong>nombre pair</strong>.</p>
+<h2 id="nombres-premiers">Nombres premiers</h2>
+<h3 id="definition-nombre-premier">Définition : Nombre premier</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>Un nombre est <strong>premier</strong> s&rsquo;il possède exactement deux diviseurs qui sont $1$ et <strong>lui-même</strong>.</p>
+</div>
+<p><strong>Ex. :</strong> $\quad 2$, $3$, $5$, $7$, $11$, $13$, $17$, $19$, $23$, &hellip;</p>
+<figure>
+<p><img alt="Les nombres premiers de 1 à 100 :" src="../img/arith/03.png" width="50%" /></p>
+<figcaption>
+<p>Les nombres premiers de $1$ à $100$</p>
+</figcaption>
+</figure>
+<p>Un très grand nombre premier : 22 989 432 637 682 048 935 578 359 759 258 512 929 075 458 593 285 426 151 563 351 225 878 608 019 921 960 174 786 937 174 324 066 918 557 552 262 283 220 478 419 095 917 521 791 323 874 771 300 201 334 066 843 810 139 337 069 250 339 905 576 793 882 539 603 587 327 037 857 904 876 391 811 440 492 908 489 972 485 276 368 673 701 887</p>
+<p><strong>Rem. :</strong> Le nombre $1$ n&rsquo;est pas premier car il n&rsquo;a qu&rsquo;<strong>un seul diviseur</strong>.</p>
+<h3 id="deux-nombres-premiers-entre-eux">Deux nombres premiers entre-eux</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>On dit que deux nombres sont <strong>premiers entre eux</strong> lorsque leur seul <strong>diviseur</strong> commun est $1$.</p>
+</div>
+<p><strong>Ex. :</strong> $20$ et $21$ sont <strong>premier</strong> entre-eux car :</p>
+<ul>
+<li>$20=5\times 2\times 2\times \textcolor{red}{1}$</li>
+<li>$21=7\times 3\times \textcolor{red}{1}$</li>
+</ul>
+<h3 id="decomposition-dun-nombre">Décomposition d&rsquo;un nombre</h3>
+<div class="admonition propriété">
+<p class="admonition-title">Propriété</p>
+<p>Tout nombre <strong>non premier</strong> peut se décomposer en <strong>produits</strong> de facteurs premiers.</p>
+<p>Cette décomposition est unique (à l&rsquo;ordre des facteurs près).</p>
+</div>
+<p><strong>Ex. :</strong> Décomposons $420$ en facteurs premiers</p>
+<p>$$\begin{array}{l|r}420 &amp; 2\\210 &amp; 2\\105 &amp; 3\\35 &amp; 5\\7 &amp; 7\\1 &amp;~\end{array}$$</p>
+<p>Donc $\quad 420\quad=2\times 2\times 3\times 5\times 7\quad=2^2\times 3^1\times 5^1\times 7^1$</p>
+<p><strong>Ex. :</strong> Décomposons $150$, $729$, $1485$, $378$ et $1260$ en facteurs premiers</p>
+<p><img alt="Méthode de décomposition en facteurs premiers" src="../img/arith/04.png" /></p>
+<h3 id="fraction-irreductible">Fraction irréductible</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>On dit qu&rsquo;une fraction est <strong>irréductible</strong>, lorsque son <strong>numérateur</strong> et son <strong>dénominateur</strong> sont <strong>premiers entre eux</strong>.</p>
+</div>
+<p><strong>Ex. :</strong></p>
+<ul>
+<li>
+<p>$\dfrac{7}{5}$ est irréductible</p>
+</li>
+<li>
+<p>$\dfrac{21}{144}$ n&rsquo;est pas irréductible car $\dfrac{21}{144}=\dfrac{7\times 3}{48\times 3}=\dfrac{7}{48}\qquad\Rightarrow\dfrac{7}{48}$ est irréductible.</p>
+</li>
+</ul>
+<p><ins><strong>Méthode :</strong> Rendre une fraction irréductible</ins></p>
+<p>Rendons irréductible la fraction $\dfrac{60}{126}$.</p>
+<p>Pour rendre une fraction irréductible, il faut décomposer son <strong>numérateur</strong> et son <strong>dénominateur</strong> en produits de <strong>facteurs premiers</strong>.</p>
+<p>$$
+    \begin{array}{l|r}60 &amp; 2\\30 &amp; 2\\15 &amp; 3\\5 &amp; 5\\1 &amp;~\end{array}
+    \qquad\begin{array}{l|r}126 &amp; 2\\63 &amp; 3\\21 &amp; 3\\7 &amp; 7\\1 &amp;~\end{array}
+$$</p>
+<p>On ainsi les décompositions de $60$ et $126$ :</p>
+<p>$$60 = 2\times 2\times 3\times 5\qquad 126 = 2\times 3\times 3\times 7$$</p>
+<p>On a :</p>
+<p>$$\frac{60}{126}\quad= \frac{\textcolor{red}{2} \times 2 \times \textcolor{red}{3} \times 5}{\textcolor{red}{2} \times 3 \times \textcolor{red}{3} \times 7}\quad= \frac{2 \times 5}{3 \times 7}\quad=\frac{10}{21}$$</p>
+<p>$10$ et $21$ sont <strong>premiers entre eux</strong>, donc:</p>
+<p>$\dfrac{10}{21}$ est la fraction irréductible égale à $\dfrac{60}{126}$</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation générée avec <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../mathjax.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.8/mermaid.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-mermaid.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Rechercher</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                <p>Ici vous pouvez chercher dans les documents. Entrez votre recherche ci-dessous.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Rechercher..." id="mkdocs-search-query" title="Tapez vos mots clés ici">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="Aucun résultat trouvé"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Raccourcis Clavier</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Touches</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Ouvrir l'aide</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Page suivante</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Page précédente</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Rechercher</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
