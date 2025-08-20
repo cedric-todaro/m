@@ -101,6 +101,46 @@
             
             <li class="nav-item" data-bs-level="1"><a href="#probabilite" class="nav-link">Probabilité</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#vocabulaire-experience-aleatoire-issue-univers" class="nav-link">Vocabulaire : Expérience aléatoire, issue, univers, &hellip;</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="3"><a href="#definition-experience-aleatoire" class="nav-link">Définition : Expérience aléatoire</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#vocabulaire" class="nav-link">Vocabulaire</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#calcul-de-probabilites" class="nav-link">Calcul de probabilités</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="3"><a href="#definition-loi-de-probabilite" class="nav-link">Définition : Loi de probabilité</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#definition-equiprobabilite" class="nav-link">Définition : Équiprobabilité</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#definition-probabilite-dun-evenement" class="nav-link">Définition : Probabilité d&rsquo;un événement</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="3"><a href="#proprietes" class="nav-link">Propriétés</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#intersection-reunion-evenement-contraire" class="nav-link">Intersection, réunion, évènement contraire</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="3"><a href="#proprietes-probabilite-contraire-et-union" class="nav-link">Propriétés : Probabilité contraire et union</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -108,7 +148,282 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="probabilite">Probabilité</h1></div>
+<h1 id="probabilite">Probabilité</h1>
+<h2 id="vocabulaire-experience-aleatoire-issue-univers">Vocabulaire : Expérience aléatoire, issue, univers, &hellip;</h2>
+<h3 id="definition-experience-aleatoire">Définition : Expérience aléatoire</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>Une expérience est dite <strong>aléatoire</strong> lorsque l&rsquo;on ne peut pas prévoir l&rsquo;issue de cette expérience.</p>
+</div>
+<p><strong>Ex. :</strong> &ldquo;Lancer cette roue et noter le gain obetnu&rdquo;</p>
+<p><img alt="" src="../img/proba/01.png" width="50%" /></p>
+<h3 id="vocabulaire">Vocabulaire</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<ul>
+<li><strong>Issue</strong> : Un résultat de l&rsquo;expérience aléatoire<ul>
+<li>$50$ ; $1000$ ou $\text{Jackpot}$ &hellip;</li>
+</ul>
+</li>
+<li><strong>Univers</strong> : L&rsquo;ensemble de toutes les issues possibles<ul>
+<li>$\Omega=\lbrace \text{LOSE} ; 50 ; 100 ;&hellip; ;1000 ;\text{JACKPOT}\rbrace $</li>
+</ul>
+</li>
+<li><strong>Événement</strong> : Un ensemble d&rsquo;issues<ul>
+<li>$A$ : &ldquo;Obtenir - de 450€&rdquo;
+  $\Rightarrow A=\lbrace \text{LOSE} ;50 ;100 ;200 ;300\rbrace $</li>
+</ul>
+</li>
+</ul>
+</div>
+<p><strong>Ex. :</strong></p>
+<p><img alt="" src="../img/proba/02.png" width="50%" /></p>
+<ul>
+<li><strong>Expérience aléatoire</strong> : &ldquo;Choisir, au hasard, une lettre dans l&rsquo;alphabet&rdquo;<ul>
+<li>$\Omega =\lbrace A;B;C;D;E;F;G;H;&hellip;;X;Y;Z\rbrace$</li>
+</ul>
+</li>
+<li>$E_1=\lbrace A;E;I;O;U\rbrace $ est un <strong>événement</strong>.<ul>
+<li>En français, cet événement se traduit par : $E_1:$ &ldquo;La lettre choisie est une voyelle&rdquo;</li>
+</ul>
+</li>
+<li>$E_2=\lbrace K;W;X;Y;Z\rbrace $ est un autre <strong>événement</strong>.<ul>
+<li>Ce second événement se traduit par : $E_2:$ &ldquo;La lettre choisie vaut 10 pts&rdquo;</li>
+</ul>
+</li>
+</ul>
+<p><strong>Rem. :</strong></p>
+<ul>
+<li>Évènement <strong>impossible</strong> :<ul>
+<li>L&rsquo;évènement impossible est l&rsquo;ensemble vide noté $\varnothing$.</li>
+</ul>
+</li>
+<li>Évènement <strong>certain</strong> :<ul>
+<li>L&rsquo;évènement certain est l&rsquo;univers $\Omega$.</li>
+<li>Toutes les issues le réalisent.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ex. :</strong></p>
+<ul>
+<li>Expérience aléatoire : &ldquo;Lancer un dé&rdquo;</li>
+<li>Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $</li>
+<li>Événements :<ul>
+<li>A : &ldquo;Obtenir un nombre pair&rdquo; $A :\lbrace 2 ;4 ;6\rbrace $</li>
+<li>B : &ldquo;Obtenir un nombre &gt;4&rdquo; $B :\lbrace 5 ;6\rbrace $</li>
+</ul>
+</li>
+<li>Événement <strong>certain</strong> : &ldquo;Obtenir un nombre entre $1$ et $6$&rdquo;</li>
+<li>Événement <strong>impossible</strong> : &ldquo;Obtenir $7$&rdquo;</li>
+</ul>
+<h2 id="calcul-de-probabilites">Calcul de probabilités</h2>
+<h3 id="definition-loi-de-probabilite">Définition : Loi de probabilité</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>Définir une <strong>loi de probabilité</strong> d&rsquo;une expérience aléatoire, c&rsquo;est associer chaque issue à sa probabilité.</p>
+</div>
+<p><strong>Ex. :</strong></p>
+<ul>
+<li>Exp. aléatoire : &ldquo;Lancer un dé&rdquo;</li>
+<li>Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $</li>
+</ul>
+<p>On a :</p>
+<p>$$
+\begin{array}{|c|c|c|c|c|c|c|}\hline
+\rule[-3mm]{0mm}{9mm}e_i &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6\\ \hline
+\rule[-3mm]{0mm}{9mm}P(e_i)&amp;\frac{1}{6}&amp;\frac{1}{6}&amp;\frac{1}{6}&amp;\frac{1}{6}&amp;\frac{1}{6}&amp;\frac{1}{6}\\ \hline
+\end{array}
+$$</p>
+<p><strong>Ex. :</strong></p>
+<p><img alt="" src="../img/proba/04.png" width="50%" /></p>
+<p>Une urne contient $10$ boules ($3$ rouges, $2$ vertes, $5$ noires)</p>
+<ul>
+<li><strong>Exp. aléatoire</strong> : &ldquo;On tire une boule et on note <strong>sa couleur</strong>&ldquo;</li>
+<li><strong>Univers</strong> : $\Omega :\lbrace\text{\color{Red}{Rouge}} ; \text{\color{green}{Verte}} ; \text{\color{Black}{Noire}} \rbrace$</li>
+<li><strong>Loi de probabilité</strong> :</li>
+</ul>
+<p>$$
+\begin{array}{|c|c|c|c|}\hline
+e_i&amp;\text{\color{Red}{Rouge}} &amp;\text{\color{green}{Verte}}&amp; \text{\color{Black}{Noire}}\\ \hline
+\rule[-3mm]{0mm}{9mm}P(e_i)&amp;\frac{3}{10}=0.3&amp;\frac{2}{10}=0.2&amp;\frac{5}{10}=0.5\\ \hline\end{array}
+$$</p>
+<div class="admonition propriété">
+<p class="admonition-title">Propriété</p>
+<p>Soit la loi de probabilité suivante :</p>
+<p>$$
+\begin{array}{|c|c|c|c|c|}\hline
+e_i&amp; e_1 &amp;e_2&amp;\ldots&amp;e_n \\ \hline
+\rule[-3mm]{0mm}{9mm}P(e_i)&amp;p_1 &amp;p_2&amp;\ldots&amp;p_n\\ \hline\end{array}
+$$</p>
+<p>On a $\qquad\boxed{P(e_1)+P(e_2)+&hellip;+P(e_n)=1}$</p>
+</div>
+<h3 id="definition-equiprobabilite">Définition : Équiprobabilité</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>On dit qu&rsquo;il y a <strong>équiprobabilité</strong> (ou que la situation est <strong>équiprobable</strong>) si la probabilité de chaque issue est <strong>égale</strong>.</p>
+<p>$$\boxed{P(e_1)=P(e_2)=&hellip;=P(e_n)}$$</p>
+</div>
+<p><strong>Ex. :</strong></p>
+<ul>
+<li>Exp. aléatoire : &ldquo;Lancer un dé <strong>non truqué</strong>&ldquo;</li>
+<li>Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $</li>
+</ul>
+<p>On a : $\quad P(&ldquo;1&rdquo;)=P(&ldquo;2&rdquo;)=&hellip;=P(&ldquo;6&rdquo;)=\frac{1}{6}$</p>
+<p>C&rsquo;est une situation d&rsquo;<strong>équiprobabilité</strong>.</p>
+<p><strong>Ex. :</strong> &ldquo;Lancer une piece non truquée&rdquo;, &ldquo;Choisir une carte au hasard&rdquo;, &hellip;</p>
+<h3 id="definition-probabilite-dun-evenement">Définition : Probabilité d&rsquo;un événement</h3>
+<div class="admonition définition">
+<p class="admonition-title">Définition</p>
+<p>La probabilité d&rsquo;un événement est la <strong>somme</strong> des probabilités des issues qui le composent.</p>
+</div>
+<p><strong>Ex. :</strong></p>
+<p>Si $\quad A:\lbrace e_1;e_3;e_7\rbrace \quad$ alors $\quad P(A)=P(e_1 )+P(e_3)+P(e_7)$</p>
+<p><strong>Ex. :</strong></p>
+<ul>
+<li>Exp. aléatoire : &ldquo;Lancer un dé&rdquo;</li>
+<li>Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $</li>
+<li>Événements :<ul>
+<li>$A:~$&rdquo;Obtenir un nombre pair&rdquo;$\quad\Rightarrow A:\lbrace 2;4;6\rbrace $</li>
+<li>$B:~$&rdquo;Obtenir un nombre strictement supérieur à 4&rdquo;$\quad\Rightarrow B:\lbrace 5;6\rbrace $</li>
+</ul>
+</li>
+</ul>
+<p>On a :</p>
+<ul>
+<li>$P(A)=P(&ldquo;2&rdquo;)+P(&ldquo;4&rdquo;)+P(&ldquo;6&rdquo;)=\frac{1}{6}+\frac{1}{6}+\frac{1}{6}=\quad\frac{3}{6}$</li>
+<li>$P(B)=P(&ldquo;5&rdquo;)+P(&ldquo;6&rdquo;)=\frac{1}{6}+\frac{1}{6}=\quad\frac{2}{6}$</li>
+</ul>
+<h3 id="proprietes">Propriétés</h3>
+<div class="admonition propriété">
+<p class="admonition-title">Propriété</p>
+<ul>
+<li>La probabilité de l&rsquo;évènement <strong>certain</strong> $\Omega$ est : $\quad \boxed{P(\Omega) = 1}$</li>
+<li>La probabilité de l&rsquo;évènement <strong>impossible</strong> est : $\quad \boxed{P(\varnothing) = 0}$</li>
+<li>Pour tout évènement A on a : $\quad\boxed{ 0 \le p(A) \le 1 }$</li>
+</ul>
+</div>
+<h2 id="intersection-reunion-evenement-contraire">Intersection, réunion, évènement contraire</h2>
+<p><strong>Ex. :</strong></p>
+<ul>
+<li>Exp. aléatoire : &ldquo;Lancer un dé&rdquo; $~\Rightarrow~$ Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $</li>
+<li>Événements :<ul>
+<li>$A:~$&rdquo;Obtenir un nombre pair&rdquo;$\quad\Rightarrow A:\lbrace 2;4;6\rbrace $</li>
+<li>$B:~$&rdquo;Obtenir un nombre strictement supérieur à 4&rdquo;$\quad\Rightarrow B:\lbrace 5;6\rbrace $</li>
+</ul>
+</li>
+</ul>
+<p>On a :</p>
+<ul>
+<li>L&rsquo;événement <strong>contraire</strong> de $A$ :<ul>
+<li>$\overline{A}:~$ &ldquo;Obtenir un nombre impair&rdquo; $\quad\Rightarrow\overline{A}:\lbrace 1;3;5\rbrace $</li>
+</ul>
+</li>
+<li>L&rsquo;<strong>intersection</strong> de $A$ et de $B$ :<ul>
+<li>$A \cap B:~$ &ldquo;Obtenir un nombre pair $\boxed{\text{et}}$ &gt;4&rdquo; $\quad\Rightarrow A \cap B:\lbrace 6\rbrace $</li>
+</ul>
+</li>
+<li>L&rsquo;<strong>union</strong> de $A$ et de $B$ :<ul>
+<li>$A \cup B:~$ &ldquo;Obtenir un nombre pair $\boxed{\text{ou}}$ &gt;4&rdquo; $\quad\Rightarrow A \cup B:\lbrace 2;4;5;6\rbrace $</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p><strong>Ex. :</strong>On tire une boule dans l&rsquo;urne, et on note le nombre inscrit.</p>
+<p><img alt="" src="../img/proba/05.png" width="50%" /></p>
+<ul>
+<li>$\Omega=\lbrace 1;2;3;4\rbrace $</li>
+<li>Événement<ul>
+<li>$A:~$&rdquo;Tirer une boule n°1 ou n°2&rdquo;$\quad\Rightarrow A:\lbrace 1;2\rbrace $</li>
+<li>$C:~$&rdquo;Tirer une boule n°1 ou n°3&rdquo;$\quad\Rightarrow C:\lbrace 1;3\rbrace $</li>
+</ul>
+</li>
+</ul>
+<p>On a :</p>
+<ul>
+<li>$\overline{A}:\lbrace 3;4\rbrace \quad\Rightarrow~$Les issues de $\Omega$ qui <strong>ne</strong> sont <strong>pas</strong> dans $A$.</li>
+<li>$A\cap C:\lbrace 1\rbrace \quad\Rightarrow~$Les issues &ldquo;en commun&rdquo; de $A$ et $C$.</li>
+<li>$A\cup C:\lbrace 1;2;3\rbrace \quad\Rightarrow~$La réunion de $A$ et $C$.</li>
+</ul>
+<p>On peut représenter la situation à l&rsquo;aide d&rsquo;un diagramme de <strong>Venn</strong> :</p>
+<p><img alt="" src="../img/proba/06.png" /></p>
+<p>$$\overline{A}:\lbrace 3;4\rbrace \qquad A\cap C:\lbrace 1\rbrace \qquad A\cup C:\lbrace 1;2;3\rbrace $$</p>
+<h3 id="proprietes-probabilite-contraire-et-union">Propriétés : Probabilité contraire et union</h3>
+<div class="admonition propriété">
+<p class="admonition-title">Propriété</p>
+<ul>
+<li>
+<p>La probabilité de l&rsquo;événement <strong>contraire</strong> de $A$ est :
+  $$\boxed{P\left(~\overline{A}~\right)=1-P(A)}$$</p>
+</li>
+<li>
+<p>La probabilité de l&rsquo;<strong>union</strong> de $A$ et de $B$ est :
+  $$\boxed{P(A\cup B)=P(A)+P(B)-P(A\cap B)}$$</p>
+</li>
+</ul>
+</div>
+<p><strong>Ex. :</strong>On tire une boule dans l&rsquo;urne, et on note le nombre inscrit.</p>
+<p><img alt="" src="../img/proba/05.png" width="50%" /></p>
+<p>On a :</p>
+<ul>
+<li>
+<p>$\Omega=\lbrace \text{1};\text{2};\text{3};\text{4}\rbrace $</p>
+</li>
+<li>
+<p>Loi de probabilité :</p>
+</li>
+</ul>
+<p>$$
+\begin{array}{|c|c|c|c|c|}\hline
+e_i&amp;\text{1}&amp;\text{2}&amp;\text{3}&amp;\text{4}\\ \hline
+\rule[-3mm]{0mm}{9mm}P(e_i)&amp;\frac{2}{8}=0.25&amp;\frac{2}{8}=0.25&amp;\frac{3}{8}=0.375&amp;\frac{1}{8}=0.125\\ \hline
+\end{array}
+$$</p>
+<hr />
+<p>Soit $~B:~$&rdquo;Obternir $\text{2}$ ou $\text{4}$&rdquo;$\quad\Rightarrow B:\lbrace \text{2};\text{4}\rbrace $</p>
+<p>On a :</p>
+<p>$$
+    \begin{array}{rccccc}
+        P(B) &amp; = &amp; P(\text{2}) &amp; + &amp; P(\text{4})                      \\
+             &amp; = &amp; \frac{2}{8} &amp; + &amp; \frac{1}{8} &amp; =\frac{3}{8}=0.375
+    \end{array}
+$$</p>
+<p>Donc : $~P\left(\overline{B}\right)=1-P(B)=1-0.375=0.625$</p>
+<p><strong>Vérification :</strong></p>
+<ul>
+<li>$B:~$&rdquo;Obternir $\text{2}$ ou $\text{4}$&rdquo;$\quad\Rightarrow B:\lbrace \text{2};\text{4}\rbrace $</li>
+<li>$\overline{B}:~$&rdquo;Obternir $\text{1}$ ou $\text{3}$&rdquo;$\quad\Rightarrow \overline{B}:\lbrace \text{1};\text{3}\rbrace $</li>
+</ul>
+<p>$$
+    \begin{array}{rccccc}
+        P\left(\overline{B}\right) &amp; =&amp; P(\text{1}) &amp; + &amp; P(\text{3})                         \\
+                                   &amp; =&amp; \frac{2}{8} &amp; + &amp; \frac{3}{8}&amp;=\frac{5}{8}=0.625
+    \end{array}
+$$</p>
+<hr />
+<p><strong>Ex. :</strong></p>
+<p>Soit $\quad A:\lbrace \text{1};\text{2}\rbrace \quad$ et $\quad C:\lbrace \text{1};\text{3}\rbrace\quad$ Donc $\quad A\cap C:\lbrace 1 \rbrace$</p>
+<p>On a :</p>
+<ul>
+<li>$P(A)=P(\text{1})+P(\text{2})=\frac{2}{8}+\frac{2}{8}=\frac{4}{8}$</li>
+<li>$P(C)=P(\text{1})+P(\text{3})=\frac{2}{8}+\frac{3}{8}=\frac{5}{8}$</li>
+<li>$P(A\cap C)=P(\text{1})=\frac{2}{8}$</li>
+</ul>
+<p>Donc, on a :</p>
+<p>$$
+    \begin{array}{rccccc}
+        P(A\cup C) &amp; = &amp; P(A)        &amp; + &amp; P(C)        &amp; - &amp; P(A\cap C)                 \\
+        ~          &amp; = &amp; \frac{4}{8} &amp; + &amp; \frac{5}{8} &amp; - &amp; \frac{2}{8} &amp; =\frac{7}{8}
+    \end{array}
+$$</p>
+<p><strong>Vérification :</strong></p>
+<p>$A:\lbrace \text{1};\text{2}\rbrace \quad$ et $\quad C:\lbrace \text{1};\text{3}\rbrace \quad$ Donc $\quad A\cup C:\lbrace \text{1};\text{2};\text{3}\rbrace $</p>
+<p>Donc, on a :</p>
+<p>$$
+    \begin{array}{rccccc}
+        P(A\cup C) &amp; = &amp; P(\text{1}) &amp; + &amp; P(\text{2}) &amp; + &amp; P(\text{3})                \\
+                   &amp; = &amp; \frac{2}{8} &amp; + &amp; \frac{2}{8} &amp; + &amp; \frac{3}{8} &amp; =\frac{7}{8}
+    \end{array}
+$$</p></div>
             </div>
         </div>
 
