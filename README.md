@@ -1,3 +1,3 @@
-# ![Math](https://cedric-todaro.github.io/m)
+# [Math](https://cedric-todaro.github.io/m)
 
 ...
