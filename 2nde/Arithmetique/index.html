@@ -28,22 +28,9 @@
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
                 <a class="navbar-brand" href="../..">Math pour le lycée</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
                 <!-- Expanded navigation -->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item">
-                                <a href="../.." class="nav-link">Accueil</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../../divers/" class="nav-link">Divers</a>
-                            </li>
-                        </ul>
 
                     <ul class="nav navbar-nav ms-md-auto">
                         <li class="nav-item">
@@ -137,50 +124,67 @@
 <h1 id="arithmetique">Arithmétique</h1>
 <h2 id="nombres-entiers">Nombres entiers</h2>
 <h3 id="entier-naturel">Entier naturel</h3>
-<div class="admonition définition">
-<p class="admonition-title">Définition</p>
+<div class="admonition def">
+<p class="admonition-title">Def</p>
 <p>Un nombre <strong>entier naturel</strong> est un nombre entier qui est <strong>positif</strong>.</p>
 <p>L&rsquo;ensemble des nombres <strong>entiers naturels</strong> est noté $\N$.</p>
 <p>$$\N=\left\{0 ;1 ;2 ;3 ;4 ;&hellip;\right\}$$</p>
 </div>
-<p><strong>Ex. :</strong> $\qquad 4\in\N\qquad\qquad-2 \notin \N$</p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
+<ul>
+<li>$4\in\N$</li>
+<li>$-2 \notin \N$</li>
+</ul>
+</div>
 <h3 id="entier-relatif">Entier relatif</h3>
-<div class="admonition définition">
-<p class="admonition-title">Définition</p>
+<div class="admonition def">
+<p class="admonition-title">Def</p>
 <p>Un nombre <strong>entier relatif</strong> est un nombre entier qui est <strong>positif</strong> ou <strong>négatif</strong>.</p>
 <p>L&rsquo;ensemble des nombres entiers relatifs est noté $\Z$.</p>
 <p>$$\Z = \left\{&hellip;;-3 ; -2 ; -1 ; 0 ;1 ;2 ;3 ;&hellip;\right\}$$</p>
-</div>
-<p><strong>Ex. :</strong> $\qquad 14\in\Z\qquad\qquad-4 \in \Z\qquad\qquad0.33\notin\Z$</p>
 <p><img alt="" src="../img/arith/n_et_z.png" width="50%" /></p>
+</div>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
+<ul>
+<li>$14\in\Z$</li>
+<li>$-4 \in \Z$</li>
+<li>$0.33\notin\Z$</li>
+</ul>
+</div>
 <h2 id="multiples-et-diviseurs">Multiples et diviseurs</h2>
 <h3 id="multiple-et-diviseur">Multiple et diviseur</h3>
-<div class="admonition définition">
-<p class="admonition-title">Définition</p>
+<div class="admonition def">
+<p class="admonition-title">Def</p>
 <p>Soit $a$ et $b$ deux entiers. On dit que $a$ est un <strong>multiple</strong> de $b$ s&rsquo;il existe un <strong>entier</strong> $k$ tel que :</p>
 <p>$$a = k\times b$$</p>
 <p>On dit alors que $b$ est un <strong>diviseur</strong> de $a$.</p>
 </div>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <ul>
 <li>$15~$ est <strong>multiple</strong> de $~3~$ car $~15=5\times 3\qquad$ &hellip;et $~3$ est un <strong>diviseur</strong> de $15$</li>
 <li>$7~$ est un <strong>diviseur</strong> de $~21~$ car $~21=7\times 3\qquad$ &hellip;et $~21$ est <strong>multiple</strong> de $7$</li>
 <li>$5~$ n&rsquo;est pas un <strong>multiple</strong> de $~17~$ car il n&rsquo;existe pas <strong>d&rsquo;entier</strong> $k$ tel que $17=k\times 5$</li>
 </ul>
 <p><img alt="Tables du $3$ et du $5$" src="../img/arith/tables3et5.png" width="50%" /></p>
+</div>
 <h3 id="somme-de-deux-multiples">Somme de deux multiples</h3>
-<div class="admonition propriété">
-<p class="admonition-title">Propriété</p>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
 <p>La <strong>somme</strong> de deux multiples d&rsquo;un entier $a$ est un multiple de $a$.</p>
 </div>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <ul>
 <li>$15$ est multiple de $3\quad(3\times 5=15)$</li>
 <li>$21$ est multiple de $3\quad(3\times 7=21)$</li>
 </ul>
 <p>Donc $(15+21)=36$ est multiple de $3\quad(3\times 12=36)$</p>
-<div class="admonition démonstration">
-<p class="admonition-title">Démonstration</p>
+</div>
+<div class="admonition demo">
+<p class="admonition-title">Demo</p>
 <p>Soit $b$ et $c$ deux multiples de $a$.</p>
 <ul>
 <li>$b$ est un multiple de $a$ donc il existe un <strong>entier</strong> $k_1$ tel que $b = a\times k_1$</li>
@@ -191,7 +195,9 @@
 <p>Or, $k = k_1+k_2$ est un entier car somme de deux entiers</p>
 <p>Donc $(b+c)=a\times k\quad$ avec $k$ entier $\Rightarrow (b + c)$ est donc un multiple de $a$.</p>
 </div>
-<p><ins><strong>Méthode :</strong> Résoudre un problème avec des multiples ou des diviseurs</ins></p>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Résoudre un problème avec des multiples ou des diviseurs</strong></p>
 <p>Montrons que la somme de <strong>trois entiers consécutifs</strong> est un <strong>multiple de 3</strong>.</p>
 <p>Soit <strong>trois entiers consécutifs</strong> : $\textcolor{blue}{(n)}$, $\textcolor{red}{(n+1)}$ et $\textcolor{green!30!black!50}{(n+2)}$, où $n$ est un entier quelconque.</p>
 <p>Leur somme est :</p>
@@ -204,35 +210,45 @@
 $$</p>
 <p>Soit $k$ l&rsquo;entier tel que $k=n+1$.</p>
 <p>Donc $S = 3k$, avec $k$ entier $\quad\Rightarrow S$ est un multiple 3.</p>
+</div>
 <h2 id="nombres-pairs-impairs">Nombres pairs, impairs</h2>
 <h3 id="pair-impair">Pair / impair</h3>
-<div class="admonition définition">
-<p class="admonition-title">Définition</p>
+<div class="admonition def">
+<p class="admonition-title">Def</p>
 <ul>
 <li>Un nombre <strong>pair</strong> est un multiple de $2$.</li>
 <li>Un nombre <strong>impair</strong> est un nombre qui n&rsquo;est pas pair.</li>
 </ul>
 </div>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <ul>
 <li>$34$, $68$, $9756786$ et $0$ sont des nombres <strong>pairs</strong>.</li>
 <li>$567$, $871$ et $1$ sont des nombres <strong>impairs</strong>.</li>
 </ul>
+</div>
 <h3 id="proprietes-pair-impair">Propriétés : pair / impair</h3>
-<div class="admonition propriété">
-<p class="admonition-title">Propriété</p>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
 <ul>
 <li>Un nombre <strong>pair</strong> s&rsquo;écrit sous la forme $~(2k)~$, avec $k$ entier.</li>
 <li>Un nombre <strong>impair</strong> s&rsquo;écrit sous la forme $~(2k+1)~$, avec $k$ entier.</li>
 </ul>
 </div>
-<div class="admonition propriété">
-<p class="admonition-title">Propriété</p>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
 <p>Le <strong>carré</strong> d&rsquo;un nombre <strong>impair</strong> est <strong>impair</strong>.</p>
 </div>
-<p><strong>Ex. :</strong> $\quad 13^2=169\qquad 5^2=25\qquad &hellip;$</p>
-<div class="admonition démonstration">
-<p class="admonition-title">Démonstration</p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
+<ul>
+<li>$13^2=169$</li>
+<li>$5^2=25$</li>
+<li>$\ldots$</li>
+</ul>
+</div>
+<div class="admonition demo">
+<p class="admonition-title">Demo</p>
 <p>Soit $a$ est un nombre <strong>impair</strong>.</p>
 <p>On peut l&rsquo;écrire sous la forme $a=2k+1$, avec $k$ entier.</p>
 <p>On a :</p>
@@ -247,7 +263,9 @@ $$</p>
 <p>$k&rsquo;$ est <strong>entier</strong> car <strong>somme</strong> de <strong>deux entiers</strong></p>
 <p>$a^2$ s&rsquo;écrit sous la forme $~a^2=2k&rsquo;+1\qquad\Rightarrow a^2$ est <strong>impair</strong>.</p>
 </div>
-<p><ins><strong>Méthode :</strong> Résoudre un problème avec des nombres pairs ou impairs</ins></p>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Résoudre un problème avec des nombres pairs ou impairs</strong></p>
 <p>Montrons que le produit de deux entiers consécutifs est un nombre pair.</p>
 <p>Soit deux entiers consécutifs $~\textcolor{red}{n}~$ et $~\textcolor{blue}{n+1}~$.</p>
 <p><ins>1<sup>er</sup> cas : $n$ pair</ins></p>
@@ -261,13 +279,16 @@ $$</p>
 <p>$$\begin{aligned}\textcolor{red}{n}(\textcolor{blue}{n+1})&amp;=(2k+1)(2k+2)\\&amp;=2\underbrace{(2k+1)(k+1)}_{k_2}\\&amp;=2k_2\qquad\text{avec }~k_2 =(2k+1)(k+1)~\text{ entier}\end{aligned}$$</p>
 <p>Donc $n(n+1)$ est pair.</p>
 <p>Dans tous les cas, le <strong>produit</strong> de <strong>deux entiers consécutifs</strong> est un <strong>nombre pair</strong>.</p>
+</div>
 <h2 id="nombres-premiers">Nombres premiers</h2>
 <h3 id="definition-nombre-premier">Définition : Nombre premier</h3>
-<div class="admonition définition">
-<p class="admonition-title">Définition</p>
+<div class="admonition def">
+<p class="admonition-title">Def</p>
 <p>Un nombre est <strong>premier</strong> s&rsquo;il possède exactement deux diviseurs qui sont $1$ et <strong>lui-même</strong>.</p>
 </div>
-<p><strong>Ex. :</strong> $\quad 2$, $3$, $5$, $7$, $11$, $13$, $17$, $19$, $23$, &hellip;</p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
+<p>$\quad 2$, $3$, $5$, $7$, $11$, $13$, $17$, $19$, $23$, &hellip;</p>
 <figure>
 <p><img alt="Les nombres premiers de 1 à 100 :" src="../img/arith/03.png" width="50%" /></p>
 <figcaption>
@@ -275,34 +296,45 @@ $$</p>
 </figcaption>
 </figure>
 <p>Un très grand nombre premier : 22 989 432 637 682 048 935 578 359 759 258 512 929 075 458 593 285 426 151 563 351 225 878 608 019 921 960 174 786 937 174 324 066 918 557 552 262 283 220 478 419 095 917 521 791 323 874 771 300 201 334 066 843 810 139 337 069 250 339 905 576 793 882 539 603 587 327 037 857 904 876 391 811 440 492 908 489 972 485 276 368 673 701 887</p>
+</div>
 <p><strong>Rem. :</strong> Le nombre $1$ n&rsquo;est pas premier car il n&rsquo;a qu&rsquo;<strong>un seul diviseur</strong>.</p>
 <h3 id="deux-nombres-premiers-entre-eux">Deux nombres premiers entre-eux</h3>
-<div class="admonition définition">
-<p class="admonition-title">Définition</p>
+<div class="admonition def">
+<p class="admonition-title">Def</p>
 <p>On dit que deux nombres sont <strong>premiers entre eux</strong> lorsque leur seul <strong>diviseur</strong> commun est $1$.</p>
 </div>
-<p><strong>Ex. :</strong> $20$ et $21$ sont <strong>premier</strong> entre-eux car :</p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
+<p>$20$ et $21$ sont <strong>premier</strong> entre-eux car :</p>
 <ul>
 <li>$20=5\times 2\times 2\times \textcolor{red}{1}$</li>
 <li>$21=7\times 3\times \textcolor{red}{1}$</li>
 </ul>
+</div>
 <h3 id="decomposition-dun-nombre">Décomposition d&rsquo;un nombre</h3>
-<div class="admonition propriété">
-<p class="admonition-title">Propriété</p>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
 <p>Tout nombre <strong>non premier</strong> peut se décomposer en <strong>produits</strong> de facteurs premiers.</p>
 <p>Cette décomposition est unique (à l&rsquo;ordre des facteurs près).</p>
 </div>
-<p><strong>Ex. :</strong> Décomposons $420$ en facteurs premiers</p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
+<p>Décomposons $420$ en facteurs premiers</p>
 <p>$$\begin{array}{l|r}420 &amp; 2\\210 &amp; 2\\105 &amp; 3\\35 &amp; 5\\7 &amp; 7\\1 &amp;~\end{array}$$</p>
 <p>Donc $\quad 420\quad=2\times 2\times 3\times 5\times 7\quad=2^2\times 3^1\times 5^1\times 7^1$</p>
-<p><strong>Ex. :</strong> Décomposons $150$, $729$, $1485$, $378$ et $1260$ en facteurs premiers</p>
+</div>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
+<p>Décomposons $150$, $729$, $1485$, $378$ et $1260$ en facteurs premiers</p>
 <p><img alt="Méthode de décomposition en facteurs premiers" src="../img/arith/04.png" /></p>
+</div>
 <h3 id="fraction-irreductible">Fraction irréductible</h3>
-<div class="admonition définition">
-<p class="admonition-title">Définition</p>
+<div class="admonition def">
+<p class="admonition-title">Def</p>
 <p>On dit qu&rsquo;une fraction est <strong>irréductible</strong>, lorsque son <strong>numérateur</strong> et son <strong>dénominateur</strong> sont <strong>premiers entre eux</strong>.</p>
 </div>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <ul>
 <li>
 <p>$\dfrac{7}{5}$ est irréductible</p>
@@ -311,7 +343,10 @@ $$</p>
 <p>$\dfrac{21}{144}$ n&rsquo;est pas irréductible car $\dfrac{21}{144}=\dfrac{7\times 3}{48\times 3}=\dfrac{7}{48}\qquad\Rightarrow\dfrac{7}{48}$ est irréductible.</p>
 </li>
 </ul>
-<p><ins><strong>Méthode :</strong> Rendre une fraction irréductible</ins></p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Rendre une fraction irréductible</strong></p>
 <p>Rendons irréductible la fraction $\dfrac{60}{126}$.</p>
 <p>Pour rendre une fraction irréductible, il faut décomposer son <strong>numérateur</strong> et son <strong>dénominateur</strong> en produits de <strong>facteurs premiers</strong>.</p>
 <p>$$
@@ -323,7 +358,8 @@ $$</p>
 <p>On a :</p>
 <p>$$\frac{60}{126}\quad= \frac{\textcolor{red}{2} \times 2 \times \textcolor{red}{3} \times 5}{\textcolor{red}{2} \times 3 \times \textcolor{red}{3} \times 7}\quad= \frac{2 \times 5}{3 \times 7}\quad=\frac{10}{21}$$</p>
 <p>$10$ et $21$ sont <strong>premiers entre eux</strong>, donc:</p>
-<p>$\dfrac{10}{21}$ est la fraction irréductible égale à $\dfrac{60}{126}$</p></div>
+<p>$\dfrac{10}{21}$ est la fraction irréductible égale à $\dfrac{60}{126}$</p>
+</div></div>
             </div>
         </div>
 

@@ -19,26 +19,56 @@ figcaption {
     border-bottom: 1px dotted black;
 }
 
-div.admonition.définition {
-    background-color: #eeffee;
-}
 
-div.admonition.définition .admonition-title::before {
-    content: "\1F4D6\0020";
-}
+/* Définition */
+.admonition.definition,
+.admonition.def { background-color: #eeffee; }
 
-div.admonition.propriété {
-    background-color: #eeeeff;
-}
+.admonition.definition .admonition-title,
+.admonition.def .admonition-title { text-indent: -9999px; line-height: 0; }
 
-div.admonition.propriété .admonition-title::before {
-    content: "\1F4AC\0020";
-}
+.admonition.definition .admonition-title::after,
+.admonition.def .admonition-title::after { display: block; text-indent: 0; line-height: initial; content: "\1F4D6\0020 Définition"; }
 
-div.admonition.démonstration {
-    background-color: #ffeeee;
-}
+/* Propriété */
+.admonition.propriete,
+.admonition.prop { background-color: #eeeeff; }
 
-div.admonition.démonstration .admonition-title::before {
-    content: "\1F50E\0020";
-}
+.admonition.propriete .admonition-title,
+.admonition.prop .admonition-title { text-indent: -9999px; line-height: 0; }
+
+.admonition.propriete .admonition-title::after,
+.admonition.prop .admonition-title::after { display: block; text-indent: 0; line-height: initial; content: "\1F4AC\0020 Propriété"; }
+
+
+/* Démonstration */
+.admonition.demonstration,
+.admonition.demo { background-color: #ffeeee; }
+
+.admonition.demonstration .admonition-title,
+.admonition.demo .admonition-title { text-indent: -9999px; line-height: 0; }
+
+.admonition.demonstration .admonition-title::after,
+.admonition.demo .admonition-title::after { display: block; text-indent: 0; line-height: initial; content: "\1F50E\0020 Démonstration"; }
+
+/* Exemple */
+.admonition.exemple,
+.admonition.ex { background-color: #f9f9f9; }
+
+.admonition.exemple .admonition-title,
+.admonition.ex .admonition-title { text-indent: -9999px; line-height: 0; }
+
+.admonition.exemple .admonition-title::after,
+.admonition.ex .admonition-title::after { display: block; text-indent: 0; line-height: initial; content: "\1F449\0020 Exemple"; }
+
+/* Méthode */
+.admonition.methode,
+.admonition.meth { background-color: #ffffff; }
+
+.admonition.methode .admonition-title,
+.admonition.meth .admonition-title { text-indent: -9999px; line-height: 0; }
+
+.admonition.methode .admonition-title::after,
+.admonition.meth .admonition-title::after { display: block; text-indent: 0; line-height: initial; content: "\2699\0020 Méthode"; }
+
+
