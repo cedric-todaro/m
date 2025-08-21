@@ -82,7 +82,7 @@ span.rst-current-version {
 .admonition.meth .admonition-title { color: #000; background: #fcfcfc;  text-indent: -9999px; line-height: 0; }
 
 .admonition.methode .admonition-title::after,
-.admonition.meth .admonition-title::after { display: block; margin-bottom: -8px; margin-top: -12px; text-indent: 0; line-height: initial; content: "\2699\0020 Méthode"; }
+.admonition.meth .admonition-title::after { display: block; margin-bottom: -8px; margin-top: -12px; text-indent: 0; line-height: initial; content: "\1F4CE\0020 Méthode"; }
 
 /* Remarque */
 .admonition.remarque,
@@ -92,5 +92,5 @@ span.rst-current-version {
 .admonition.rem .admonition-title { color: #000; background: #fcfcfc;  text-indent: -9999px; line-height: 0; }
 
 .admonition.remarque .admonition-title::after,
-.admonition.rem .admonition-title::after { display: block; margin-bottom: -8px; margin-top: -12px; text-indent: 0; line-height: initial; content: "\2699\0020 Remarque"; }
+.admonition.rem .admonition-title::after { display: block; margin-bottom: -8px; margin-top: -12px; text-indent: 0; line-height: initial; content: "\1F453\0020 Remarque"; }
 
