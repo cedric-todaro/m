@@ -251,9 +251,8 @@
 
 !!! ex
 
-    - $\dfrac{7}{5}$ est irréductible
-
-    - $\dfrac{21}{144}$ n'est pas irréductible car $\dfrac{21}{144}=\dfrac{7\times 3}{48\times 3}=\dfrac{7}{48}\qquad\Rightarrow\dfrac{7}{48}$ est irréductible.
+    - $\frac{7}{5}$ est irréductible
+    - $\frac{21}{144}$ n'est pas irréductible car $\frac{21}{144}=\frac{7\times 3}{48\times 3}=\frac{7}{48}\qquad\Rightarrow\frac{7}{48}$ est irréductible.
 
 !!! methode
 

@@ -3,18 +3,16 @@ site_url: https://cedric-todaro.github.io/m
 
 nav:
   - Accueil: index.md
-  # - Divers: divers.md
-  # - 2nde:
-  #     - 2nde/Arithmetique.md
-  #     - 2nde/Probabilite.md
-  #     - 2nde/Probabilite-echantillonnage.md
-  #     - 2nde/Ensembles-de-nombres.md
+  - Divers: divers.md
+  - 2nde:
+      - 2nde/Arithmetique.md
+      - 2nde/Probabilite.md
+      - 2nde/Probabilite-echantillonnage.md
+      - 2nde/Ensembles-de-nombres.md
 
 theme:
-  name: mkdocs
-  color_mode: light
+  name: readthedocs
   locale: fr
-  navigation_depth: 4
   highlightjs: true
   hljs_languages:
     - python

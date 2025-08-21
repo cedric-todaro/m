@@ -117,14 +117,14 @@ Footnotes[^1] have a label[^@#$%] and the footnote's content.
 
     You should $x=1$ note that the title will be automatically capitalized.
 
-    $$\sum\limits_{n=1}^{100}n^2=\ldots$$
+    $$\sum\limits_{n=1}^{100} n^2=\ldots$$
 
 ```
 !!! Définition
 
     You should $x=1$ note that the title will be automatically capitalized.
 
-    $$\sum\limits_{n=1}^{100}n^2=\ldots$$
+    $$\sum\limits_{n=1}^{100} n^2=\ldots$$
 ```
 
 ### Definition List
