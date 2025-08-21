@@ -177,27 +177,15 @@ I love you :heart: and :joy: and :smile: ...
 
 [Docs](https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/caption/)
 
-| Fruit      | Amount |
-| ---------- | ------ |
-| Apple      | 20     |
-| Peach      | 10     |
-| Banana     | 3      |
-| Watermelon | 1      |
-
+![alt text](https://www.markdownguide.org/assets/images/tux.png)
 /// figure-caption
-Fruit Count
+It is TUX !!!!
 ///
 
 ```
-Fruit      | Amount
----------- | ------
-Apple      | 20
-Peach      | 10
-Banana     | 3
-Watermelon | 1
-
+![alt text](https://www.markdownguide.org/assets/images/tux.png)
 /// figure-caption
-Fruit Count
+It is TUX !!!!
 ///
 ```
 
@@ -277,15 +265,9 @@ A1b -->|0.5| A2d(E)
 
 ## Project layout
 
+```
     mkdocs.yml    # The configuration file.
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
-
-```
-
-```
-
-```
-
 ```
