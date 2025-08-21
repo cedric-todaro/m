@@ -206,7 +206,9 @@
 
     Un très grand nombre premier : 22 989 432 637 682 048 935 578 359 759 258 512 929 075 458 593 285 426 151 563 351 225 878 608 019 921 960 174 786 937 174 324 066 918 557 552 262 283 220 478 419 095 917 521 791 323 874 771 300 201 334 066 843 810 139 337 069 250 339 905 576 793 882 539 603 587 327 037 857 904 876 391 811 440 492 908 489 972 485 276 368 673 701 887
 
-**Rem. :** Le nombre $1$ n'est pas premier car il n'a qu'**un seul diviseur**.
+!!! rem
+
+    Le nombre $1$ n'est pas premier car il n'a qu'**un seul diviseur**.
 
 ### Deux nombres premiers entre-eux
 

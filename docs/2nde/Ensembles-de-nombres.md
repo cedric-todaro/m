@@ -4,9 +4,11 @@
 
 ### Définition et représentation
 
-**Rem. :** Dans le lycée, il y a un ensemble d'**humains**. Parmi eux, il y a des **élèves** et parmi ces élèves il y a des **secondes**.
+!!! rem
 
-![](img/ensembles/01a.png){width="50%"}
+    Dans le lycée, il y a un ensemble d'**humains**. Parmi eux, il y a des **élèves** et parmi ces élèves il y a des **secondes**.
+
+    ![](img/ensembles/01a.png){width="50%"}
 
 !!! def
 
@@ -17,13 +19,13 @@
     - Entiers **relatifs** : $\Z$
         - Entiers positifs ou négatifs : $-6$ ; $-77$ ; $98$ ; $114$ $\ldots$
 
-![](img/ensembles/nz.png){width=62%}
+    ![](img/ensembles/nz.png){width=62%}
 
-**Ex. :**
+!!! ex
 
-- $17$ appartient à $\N$ et à $\Z\qquad\Rightarrow 17\in\N\quad\text{et}\quad17\in\Z$
-- $(-2)$ n'appartient pas à $\N\qquad\Rightarrow (-2)\notin\N$
-- $157 \ldots\ldots\ldots\ldots\ldots\ldots\ldots$ à $\N\qquad\Rightarrow 157 \ldots\ldots\ldots \N$
+    - $17$ appartient à $\N$ et à $\Z\qquad\Rightarrow 17\in\N\quad\text{et}\quad17\in\Z$
+    - $(-2)$ n'appartient pas à $\N\qquad\Rightarrow (-2)\notin\N$
+    - $157 \ldots\ldots\ldots\ldots\ldots\ldots\ldots$ à $\N\qquad\Rightarrow 157 \ldots\ldots\ldots \N$
 
 ### Multiples – diviseurs
 
@@ -37,23 +39,24 @@
 
     On dit aussi que $b$ est un **diviseur** de $a$.
 
-**Ex. :**
+!!! ex
 
-- $27=3\times 9$ donc :
-    - $27$ est **multiple** de $3$ (et de $9$)
-    - $9$ est un **diviseur** de $27$
-- $85$ n'est pas un **multiple** de $10$ car :
-    - $85=k\times 10\Leftrightarrow k=8.5$ et $k$ pas entier
+    - $27=3\times 9$ donc :
+        - $27$ est **multiple** de $3$ (et de $9$)
+        - $9$ est un **diviseur** de $27$
+
+    - $85$ n'est pas un **multiple** de $10$ car :
+        - $85=k\times 10\Leftrightarrow k=8.5$ et $k$ pas entier
 
 !!! prop
 
     Soit $a$ un entier. La somme de deux **multiples** de $a$, est un **multiple** de $a$.
 
-**Ex. :**
+!!! ex
 
-$21$ et $33$ sont des **multiples** de $3$ donc $54=(21+33)$ est un **multiple** de $3$.
+    $21$ et $33$ sont des **multiples** de $3$ donc $54=(21+33)$ est un **multiple** de $3$.
 
-En effet, $54=18\times 3$
+    En effet, $54=18\times 3$
 
 !!! demo
 
@@ -76,10 +79,10 @@ En effet, $54=18\times 3$
     - Si $~n~$ est **pair** alors $~n=2k~$ avec $~k\in\Z~$
     - Si $~n~$ est **impair** alors $~n=2k+1~$ avec $~k\in\Z~$
 
-**Ex. :**
+!!! ex
 
-- $~157~$ est **impair** car $~157=(2\times 78)+1~$
-- $~2048~$ est **pair** car $~2048=(2\times 1024)~$
+    - $~157~$ est **impair** car $~157=(2\times 78)+1~$
+    - $~2048~$ est **pair** car $~2048=(2\times 1024)~$
 
 !!! prop
 
@@ -106,33 +109,35 @@ En effet, $54=18\times 3$
 
     Un entier naturel est dit **premier**, s'il admet _exactement_ **deux diviseurs** entiers positifs.
 
-**Ex. :**
+!!! ex
 
-- $25$ admet comme diviseurs $1$, $5$ et $25$ $\rightarrow$ **pas premier**
-- $17$ admet comme diviseurs $1$ et $17\rightarrow\quad$ **premier**
-- $221$ admet comme diviseurs $\ldots\rightarrow\quad\ldots$
+    - $25$ admet comme diviseurs $1$, $5$ et $25$ $\rightarrow$ **pas premier**
+    - $17$ admet comme diviseurs $1$ et $17\rightarrow\quad$ **premier**
+    - $221$ admet comme diviseurs $\ldots\rightarrow\quad\ldots$
 
-/// details | Les $100$ premiers nombres premiers
-![](img/ensembles/03.png){width=50%}
-///
+    /// details | Les $100$ premiers nombres premiers
+    ![](img/ensembles/03.png){width=50%}
+    ///
 
 #### Décomposition en facteurs premiers
 
-**Ex. :**
+!!! ex
 
-- $60=30\times 2\quad=15\times 2\times 2\quad=5\times 3\times 2\times 2$
+    - $60=30\times 2\quad=15\times 2\times 2\quad=5\times 3\times 2\times 2$
 
-**Méthode pour décomposer $60$ :**
+!!! methode
 
-$$\begin{array}{r|l}60 & 2\\\\30 & 2\\\\15 & 3\\\\5 & 5 \\\\1 & ~\\\\  \end{array}$$
+    **Méthode pour décomposer $60$ :**
 
-La décomposition de $60$ en facteurs **premiers** est : $~60=3^1\times 5^1\times 2^2$
+    $$\begin{array}{r|l}60 & 2\\\\30 & 2\\\\15 & 3\\\\5 & 5 \\\\1 & ~\\\\  \end{array}$$
 
-**Ex. :**
+    La décomposition de $60$ en facteurs **premiers** est : $~60=3^1\times 5^1\times 2^2$
 
-- $1300=\ldots$
+!!! ex
 
-$$\begin{array}{r|l}1300 & 2\\\\650 & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \ldots\end{array}\qquad\qquad\begin{array}{r|l}\ldots &\ldots\\\\ \ldots & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \ldots\end{array}$$
+    - $1300=\ldots$
+
+    $$\begin{array}{r|l}1300 & 2\\\\650 & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \ldots\end{array}\qquad\qquad\begin{array}{r|l}\ldots &\ldots\\\\ \ldots & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \ldots\end{array}$$
 
 ## Les ensembles $\D$, $\Q$ et $\R$
 
@@ -144,15 +149,15 @@ $$\begin{array}{r|l}1300 & 2\\\\650 & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \l
 
     $$\dfrac{a}{10^n}\quad\text{avec}\quad a\in\Z$$
 
-**Ex. :**
+!!! ex
 
-À vous de compléter : $\qquad 0.009=\ldots\ldots\qquad\text{et}\qquad\dfrac{-1234}{10^2}=\ldots\ldots$
+    À vous de compléter : $\qquad 0.009=\ldots\ldots\qquad\text{et}\qquad\dfrac{-1234}{10^2}=\ldots\ldots$
 
-**Ex. :**
+!!! ex
 
-- $1.77=\dfrac{177}{100}=\dfrac{177}{10^2}\iff 1.77 \in \D$
+    - $1.77=\frac{177}{100}=\frac{177}{10^2}\iff 1.77 \in \D$
 
-- $-5.001=\dfrac{-5001}{1000}=\dfrac{-5001}{10^3}\iff -5.001\in\D$
+    - $-5.001=\frac{-5001}{1000}=\frac{-5001}{10^3}\iff -5.001\in\D$
 
 !!! demo
 
@@ -181,15 +186,17 @@ $$\begin{array}{r|l}1300 & 2\\\\650 & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \l
 
     Ils peuvent s'écrire sous la forme : $\quad\dfrac{a}{b}\quad$ avec $~a\in\Z~$ et $~b\in\Z^{*}$
 
-**Ex. :**
+!!! ex
 
-- $\dfrac{2}{7}\in\Q$
+    - $\dfrac{2}{7}\in\Q$
 
-- $\dfrac{1}{3}=0.3333\ldots\in\Q$
+    - $\dfrac{1}{3}=0.3333\ldots\in\Q$
 
-- $\dfrac{50}{7}=7.142~857~142~857~\ldots\in\Q$
+    - $\dfrac{50}{7}=7.142~857~142~857~\ldots\in\Q$
 
-**Rem. :** La partie décimale peut se "répéter" à l'infini.
+!!! rem
+
+    La partie décimale peut se "répéter" à l'infini.
 
 ### Les réels : $\R$
 
@@ -197,7 +204,9 @@ $$\begin{array}{r|l}1300 & 2\\\\650 & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \l
 
     Tous les nombres connus en 2^nde^.
 
-**Ex :** $-16$ ; $\sqrt{3}$ ; $\pi$ ; $\ldots$
+!!! ex
+
+$-16$ ; $\sqrt{3}$ ; $\pi$ ; $\ldots$
 
 ### Les ensembles de nombres^:heart:^
 
@@ -217,26 +226,28 @@ $$\begin{array}{r|l}1300 & 2\\\\650 & \ldots\\\\ \ldots & \ldots\\\\ \ldots & \l
 
     $$I=\big[2~;~4\big]$$
 
-**Ex. :**
+!!! ex
 
-L'ensemble $J$ des réels $x$ tels que $~ -2\le x\le 7~$ se note : $~J=\big[-2~;~7\big]$
+    L'ensemble $J$ des réels $x$ tels que $~ -2\le x\le 7~$ se note : $~J=\big[-2~;~7\big]$
 
-On a : $\quad 4\in[-2~;~7]\quad$ et $\quad -5\notin[-2~;~7]$
+    On a : $\quad 4\in[-2~;~7]\quad$ et $\quad -5\notin[-2~;~7]$
 
-**Ex. :**
+!!! ex
 
-|             Notation             |      Inégalité      |       Représentation        |
-| :------------------------------: | :-----------------: | :-------------------------: |
-|     $\lbrack 0 ; 1\rbrack $      |   $0\le x \le 1$    | ![](img/ensembles/t_01.png) |
-|     $\rbrack -1 ; 3\rbrack $     |   $-1\lt x \le 3$   | ![](img/ensembles/t_02.png) |
-|   $\lbrack -0.5 ; 2.3\lbrack $   | $-0.5\le x \lt 2.3$ | ![](img/ensembles/t_04.png) |
-|     $\rbrack 2 ; 4\lbrack $      |    $2\lt x \lt4$    | ![](img/ensembles/t_03.png) |
-| $\rbrack -\infty ; 1.5\rbrack $  |     $x \le 1.5$     | ![](img/ensembles/t_05.png) |
-| $\rbrack -\infty ; -1.7\lbrack $ |    $x \lt -1.7$     | ![](img/ensembles/t_08.png) |
-|  $\rbrack -2 ; +\infty\lbrack $  |     $x \gt -2$      | ![](img/ensembles/t_06.png) |
-| $\lbrack 2.7 ; +\infty\lbrack $  |     $x \ge 2.7$     | ![](img/ensembles/t_07.png) |
+    |             Notation             |      Inégalité      |       Représentation        |
+    | :------------------------------: | :-----------------: | :-------------------------: |
+    |     $\lbrack 0 ; 1\rbrack $      |   $0\le x \le 1$    | ![](img/ensembles/t_01.png) |
+    |     $\rbrack -1 ; 3\rbrack $     |   $-1\lt x \le 3$   | ![](img/ensembles/t_02.png) |
+    |   $\lbrack -0.5 ; 2.3\lbrack $   | $-0.5\le x \lt 2.3$ | ![](img/ensembles/t_04.png) |
+    |     $\rbrack 2 ; 4\lbrack $      |    $2\lt x \lt4$    | ![](img/ensembles/t_03.png) |
+    | $\rbrack -\infty ; 1.5\rbrack $  |     $x \le 1.5$     | ![](img/ensembles/t_05.png) |
+    | $\rbrack -\infty ; -1.7\lbrack $ |    $x \lt -1.7$     | ![](img/ensembles/t_08.png) |
+    |  $\rbrack -2 ; +\infty\lbrack $  |     $x \gt -2$      | ![](img/ensembles/t_06.png) |
+    | $\lbrack 2.7 ; +\infty\lbrack $  |     $x \ge 2.7$     | ![](img/ensembles/t_07.png) |
 
-**Rem :** L'ensemble $\R$ est un intervalle qui se note : $\R=\big]-\infty~;~+\infty\big[$
+!!! rem
+
+    L'ensemble $\R$ est un intervalle qui se note : $\R=\big]-\infty~;~+\infty\big[$
 
 ### Union et intersection d'intervalles
 
@@ -245,9 +256,11 @@ On a : $\quad 4\in[-2~;~7]\quad$ et $\quad -5\notin[-2~;~7]$
     - L'**intersection** de deux ensembles $A$ et $B$ est l'ensemble des éléments qui appartiennent à $A$ **et** à $B$ et se note : $\boxed{A \cap B}$
     - L'**union** de deux ensembles $A$ et $B$ est l'ensemble des éléments qui appartiennent à $A$ **ou** à $B$ et se note : $\boxed{A \cup B}$
 
-**Ex. :** $\quad I=\big[0~;~3\big]\qquad\text{et}\qquad J=\big[1~;~5\big]$
+!!! ex
 
-![](img/ensembles/inter_union.png){width=80%}
+    $\quad I=\big[0~;~3\big]\qquad\text{et}\qquad J=\big[1~;~5\big]$
+
+    ![](img/ensembles/inter_union.png){width=80%}
 
 ### Valeur absolue
 
@@ -255,20 +268,20 @@ On a : $\quad 4\in[-2~;~7]\quad$ et $\quad -5\notin[-2~;~7]$
 
     La distance de deux réels $a$ et $b$ est la distance des points $A$ et $B$ d'abscisses $a$ et $b$ sur la droite numérique.
 
-**Ex. :**
+!!! ex
 
-![](img/ensembles/distance.png)
+    ![](img/ensembles/distance.png)
 
-**Rem :**
+!!! rem
 
-- Si $(a\lt b)$ alors la distance est $\left(b-a\right)$
-- Si $(a\gt b)$ alors la distance est $\left(a-b\right)$
+    - Si $(a\lt b)$ alors la distance est $\left(b-a\right)$
+    - Si $(a\gt b)$ alors la distance est $\left(a-b\right)$
 
-On note la distance : $\quad\abs{a-b}\quad$ et on lit $\quad$ **valeur absolue de** $(a-b)$
+    On note la distance : $\quad\abs{a-b}\quad$ et on lit $\quad$ **valeur absolue de** $(a-b)$
 
-**Ex. :**
+!!! ex
 
-La distance de $5$ à $18$ est $\quad\left|5-18\right|=18-5=13$
+    La distance de $5$ à $18$ est $\quad\left|5-18\right|=18-5=13$
 
 !!! def
 
@@ -276,16 +289,18 @@ La distance de $5$ à $18$ est $\quad\left|5-18\right|=18-5=13$
 
     Elle est notée : $\qquad\abs{x}$
 
-**Ex. :** La valeur absolue de $-4$ est la distance de $-4$ à $0$. On a : $\abs{-4}=4$
+!!! ex
 
-![](img/ensembles/distance2.png){width=80%}
+    La valeur absolue de $-4$ est la distance de $-4$ à $0$. On a : $\abs{-4}=4$
 
-**Ex. :**
+    ![](img/ensembles/distance2.png){width=80%}
 
-- $\abs{3}=3$
-- $\abs{\sqrt{2}}=\sqrt{2}$
-- $\abs{-4}=4$
-- $\abs{-0.177}=0.177$
+!!! ex
+
+    - $\abs{3}=3$
+    - $\abs{\sqrt{2}}=\sqrt{2}$
+    - $\abs{-4}=4$
+    - $\abs{-0.177}=0.177$
 
 !!! prop
 
@@ -293,17 +308,17 @@ La distance de $5$ à $18$ est $\quad\left|5-18\right|=18-5=13$
 
     $$\boxed{\left|x\right|=\begin{cases}x\quad&\text{si}~x\ge 0\\\\-x\quad&\text{si}~x\lt 0\end{cases}}$$
 
-**Ex. :**
+!!! ex
 
-- $\abs{3}=3\quad$ car $~3\gt 0$
-- $\abs{-7}=-(-7)=7\quad$ car $~(-7)\lt 0$
+    - $\abs{3}=3\quad$ car $~3\gt 0$
+    - $\abs{-7}=-(-7)=7\quad$ car $~(-7)\lt 0$
 
 !!! prop
 
     L'intervalle $\big[a-r~;~a+r\big]$ est l'ensemble des $x$ tel que : $\qquad\abs{x-a}\le r$
 
-**Ex. :**
+!!! ex
 
-L'ensemble des nombres $x$ tel que $\lvert x-5\rvert \le 3$ est l'intervalle $I=\big[5-3~;~5+3\big]=\big[2~;~8\big]$
+    L'ensemble des nombres $x$ tel que $\lvert x-5\rvert \le 3$ est l'intervalle $I=\big[5-3~;~5+3\big]=\big[2~;~8\big]$
 
-![](img/ensembles/img2.png){width=90%}
+    ![](img/ensembles/img2.png){width=90%}

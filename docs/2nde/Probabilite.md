@@ -8,9 +8,11 @@
 
     Une expérience est dite **aléatoire** lorsque l'on ne peut pas prévoir l'issue de cette expérience.
 
-**Ex. :** "Lancer cette roue et noter le gain obetnu"
+!!! ex
 
-![](img/proba/01.png){width=50%}
+    "Lancer cette roue et noter le gain obetnu"
+
+    ![](img/proba/01.png){width=50%}
 
 ### Vocabulaire
 
@@ -18,40 +20,49 @@
 
     - **Issue** : Un résultat de l'expérience aléatoire
         - $50$ ; $1000$ ou $\text{Jackpot}$ ...
+
     - **Univers** : L'ensemble de toutes les issues possibles
         - $\Omega=\lbrace \text{LOSE} ; 50 ; 100 ;... ;1000 ;\text{JACKPOT}\rbrace $
+
     - **Événement** : Un ensemble d'issues
         - $A$ : "Obtenir - de 450€"
           $\Rightarrow A=\lbrace \text{LOSE} ;50 ;100 ;200 ;300\rbrace $
 
-**Ex. :**
+!!! ex
 
-![](img/proba/02.png){width=50%}
+    ![](img/proba/02.png){width=50%}
 
-- **Expérience aléatoire** : "Choisir, au hasard, une lettre dans l'alphabet"
-    - $\Omega =\lbrace A;B;C;D;E;F;G;H;...;X;Y;Z\rbrace$
-- $E_1=\lbrace A;E;I;O;U\rbrace $ est un **événement**.
-    - En français, cet événement se traduit par : $E_1:$ "La lettre choisie est une voyelle"
-- $E_2=\lbrace K;W;X;Y;Z\rbrace $ est un autre **événement**.
-    - Ce second événement se traduit par : $E_2:$ "La lettre choisie vaut 10 pts"
+    - **Expérience aléatoire** : "Choisir, au hasard, une lettre dans l'alphabet"
+        - $\Omega =\lbrace A;B;C;D;E;F;G;H;...;X;Y;Z\rbrace$
 
-**Rem. :**
+    - $E_1=\lbrace A;E;I;O;U\rbrace $ est un **événement**.
+        - En français, cet événement se traduit par : $E_1:$ "La lettre choisie est une voyelle"
 
-- Évènement **impossible** :
-    - L'évènement impossible est l'ensemble vide noté $\varnothing$.
-- Évènement **certain** :
-    - L'évènement certain est l'univers $\Omega$.
-    - Toutes les issues le réalisent.
+    - $E_2=\lbrace K;W;X;Y;Z\rbrace $ est un autre **événement**.
+        - Ce second événement se traduit par : $E_2:$ "La lettre choisie vaut 10 pts"
 
-**Ex. :**
+!!! rem
 
-- Expérience aléatoire : "Lancer un dé"
-- Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $
-- Événements :
-    - A : "Obtenir un nombre pair" $\quad\Rightarrow A :\lbrace 2 ;4 ;6\rbrace $
-    - B : "Obtenir un nombre $>4$" $\quad\Rightarrow B :\lbrace 5 ;6\rbrace $
-- Événement **certain** : "Obtenir un nombre entre $1$ et $6$"
-- Événement **impossible** : "Obtenir $7$"
+    - Évènement **impossible** :
+        - L'évènement impossible est l'ensemble vide noté $\varnothing$.
+
+    - Évènement **certain** :
+        - L'évènement certain est l'univers $\Omega$.
+        - Toutes les issues le réalisent.
+
+!!! ex
+
+    - Expérience aléatoire : "Lancer un dé"
+
+    - Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $
+
+    - Événements :
+        - A : "Obtenir un nombre pair" $\quad\Rightarrow A :\lbrace 2 ;4 ;6\rbrace $
+        - B : "Obtenir un nombre $>4$" $\quad\Rightarrow B :\lbrace 5 ;6\rbrace $
+
+    - Événement **certain** : "Obtenir un nombre entre $1$ et $6$"
+
+    - Événement **impossible** : "Obtenir $7$"
 
 ## Calcul de probabilités
 
@@ -61,35 +72,38 @@
 
     Définir une **loi de probabilité** d'une expérience aléatoire, c'est associer chaque issue à sa probabilité.
 
-**Ex. :**
+!!! ex
 
-- Exp. aléatoire : "Lancer un dé"
-- Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $
+    - Exp. aléatoire : "Lancer un dé"
 
-On a :
+    - Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $
 
-$$
-\begin{array}{|c|c|c|c|c|c|c|}\hline
-\rule[-3mm]{0mm}{9mm}e_i & 1 & 2 & 3 & 4 & 5 & 6\\\\ \hline
-\rule[-3mm]{0mm}{9mm}P(e_i)&\frac{1}{6}&\frac{1}{6}&\frac{1}{6}&\frac{1}{6}&\frac{1}{6}&\frac{1}{6}\\\\ \hline
-\end{array}
-$$
+    On a :
 
-**Ex. :**
+    $$
+    \begin{array}{|c|c|c|c|c|c|c|}\hline
+    \rule[-3mm]{0mm}{9mm}e_i & 1 & 2 & 3 & 4 & 5 & 6\\\\ \hline
+    \rule[-3mm]{0mm}{9mm}P(e_i)&\frac{1}{6}&\frac{1}{6}&\frac{1}{6}&\frac{1}{6}&\frac{1}{6}&\frac{1}{6}\\\\ \hline
+    \end{array}
+    $$
 
-![](img/proba/04.png){width=30%}
+!!! ex
 
-Une urne contient $10$ boules ($3$ rouges, $2$ vertes, $5$ noires)
+    ![](img/proba/04.png){width=30%}
 
-- **Exp. aléatoire** : "On tire une boule et on note **sa couleur**"
-- **Univers** : $\Omega :\lbrace\text{\color{Red}{Rouge}} ; \text{\color{green}{Verte}} ; \text{\color{Black}{Noire}} \rbrace$
-- **Loi de probabilité** :
+    Une urne contient $10$ boules ($3$ rouges, $2$ vertes, $5$ noires)
 
-$$
-\begin{array}{|c|c|c|c|}\hline
-e_i&\text{\color{Red}{Rouge}} &\text{\color{green}{Verte}}& \text{\color{Black}{Noire}}\\\\ \hline
-\rule[-3mm]{0mm}{9mm}P(e_i)&\frac{3}{10}=0.3&\frac{2}{10}=0.2&\frac{5}{10}=0.5\\\\ \hline\end{array}
-$$
+    - **Exp. aléatoire** : "On tire une boule et on note **sa couleur**"
+
+    - **Univers** : $\Omega :\lbrace\text{\color{Red}{Rouge}} ; \text{\color{green}{Verte}} ; \text{\color{Black}{Noire}} \rbrace$
+
+    - **Loi de probabilité** :
+
+    $$
+    \begin{array}{|c|c|c|c|}\hline
+    e_i&\text{\color{Red}{Rouge}} &\text{\color{green}{Verte}}& \text{\color{Black}{Noire}}\\\\ \hline
+    \rule[-3mm]{0mm}{9mm}P(e_i)&\frac{3}{10}=0.3&\frac{2}{10}=0.2&\frac{5}{10}=0.5\\\\ \hline\end{array}
+    $$
 
 !!! prop
 
@@ -111,16 +125,19 @@ $$
 
     $$\boxed{P(e_1)=P(e_2)=...=P(e_n)}$$
 
-**Ex. :**
+!!! ex
 
-- Exp. aléatoire : "Lancer un dé **non truqué**"
-- Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $
+    - Exp. aléatoire : "Lancer un dé **non truqué**"
 
-On a : $\quad P("1")=P("2")=...=P("6")=\frac{1}{6}$
+    - Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $
 
-C'est une situation d'**équiprobabilité**.
+    On a : $\quad P("1")=P("2")=...=P("6")=\frac{1}{6}$
 
-**Ex. :** "Lancer une piece non truquée", "Choisir une carte au hasard", ...
+    C'est une situation d'**équiprobabilité**.
+
+!!! ex
+
+    "Lancer une piece non truquée", "Choisir une carte au hasard", ...
 
 ### Définition : Probabilité d'un événement
 
@@ -128,22 +145,22 @@ C'est une situation d'**équiprobabilité**.
 
     La probabilité d'un événement est la **somme** des probabilités des issues qui le composent.
 
-**Ex. :**
+!!! ex
 
-Si $\quad A:\lbrace e_1;e_3;e_7\rbrace \quad$ alors $\quad P(A)=P(e_1 )+P(e_3)+P(e_7)$
+    Si $\quad A:\lbrace e_1;e_3;e_7\rbrace \quad$ alors $\quad P(A)=P(e_1 )+P(e_3)+P(e_7)$
 
-**Ex. :**
+!!! ex
 
-- Exp. aléatoire : "Lancer un dé"
-- Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $
-- Événements :
-    - $A:~$"Obtenir un nombre pair"$\quad\Rightarrow A:\lbrace 2;4;6\rbrace $
-    - $B:~$"Obtenir un nombre $\gt 4$"$\quad\Rightarrow B:\lbrace 5;6\rbrace $
+    - Exp. aléatoire : "Lancer un dé"
+    - Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $
+    - Événements :
+        - $A:~$"Obtenir un nombre pair"$\quad\Rightarrow A:\lbrace 2;4;6\rbrace $
+        - $B:~$"Obtenir un nombre $\gt 4$"$\quad\Rightarrow B:\lbrace 5;6\rbrace $
 
-On a :
+    On a :
 
-- $P(A)=P("2")+P("4")+P("6")=\frac{1}{6}+\frac{1}{6}+\frac{1}{6}=\quad\frac{3}{6}$
-- $P(B)=P("5")+P("6")=\frac{1}{6}+\frac{1}{6}=\quad\frac{2}{6}$
+    - $P(A)=P("2")+P("4")+P("6")=\frac{1}{6}+\frac{1}{6}+\frac{1}{6}=\quad\frac{3}{6}$
+    - $P(B)=P("5")+P("6")=\frac{1}{6}+\frac{1}{6}=\quad\frac{2}{6}$
 
 ### Propriétés
 
@@ -155,46 +172,44 @@ On a :
 
 ## Intersection, réunion, évènement contraire
 
-**Ex. :**
+!!! ex
 
-- Exp. aléatoire : "Lancer un dé" $~\Rightarrow~$ Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $
-- Événements :
-    - $A:~$"Obtenir un nombre pair"$\quad\Rightarrow A:\lbrace 2;4;6\rbrace $
-    - $B:~$"Obtenir un nombre $>4$"$\quad\Rightarrow B:\lbrace 5;6\rbrace $
+    - Exp. aléatoire : "Lancer un dé" $~\Rightarrow~$ Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $
+    - Événements :
+        - $A:~$"Obtenir un nombre pair"$\quad\Rightarrow A:\lbrace 2;4;6\rbrace $
+        - $B:~$"Obtenir un nombre $>4$"$\quad\Rightarrow B:\lbrace 5;6\rbrace $
 
-On a :
+    On a :
 
-- L'événement **contraire** de $A$ :
-    - $\overline{A}:~$ "Obtenir un nombre impair" $\quad\Rightarrow\overline{A}:\lbrace 1;3;5\rbrace $
-- L'**intersection** de $A$ et de $B$ :
-    - $A \cap B:~$ "Obtenir un nombre pair $\boxed{\text{et}}$ $>4$" $\quad\Rightarrow A \cap B:\lbrace 6\rbrace $
-- L'**union** de $A$ et de $B$ :
-    - $A \cup B:~$ "Obtenir un nombre pair $\boxed{\text{ou}}$ $>4$" $\quad\Rightarrow A \cup B:\lbrace 2;4;5;6\rbrace $
+    - L'événement **contraire** de $A$ :
+        - $\overline{A}:~$ "Obtenir un nombre impair" $\quad\Rightarrow\overline{A}:\lbrace 1;3;5\rbrace $
+    - L'**intersection** de $A$ et de $B$ :
+        - $A \cap B:~$ "Obtenir un nombre pair $\boxed{\text{et}}$ $>4$" $\quad\Rightarrow A \cap B:\lbrace 6\rbrace $
+    - L'**union** de $A$ et de $B$ :
+        - $A \cup B:~$ "Obtenir un nombre pair $\boxed{\text{ou}}$ $>4$" $\quad\Rightarrow A \cup B:\lbrace 2;4;5;6\rbrace $
 
----
+!!! ex
 
-**Ex. :**
+    On tire une boule dans l'urne, et on note le nombre inscrit.
 
-On tire une boule dans l'urne, et on note le nombre inscrit.
+    ![](img/proba/05.png){width=50%}
 
-![](img/proba/05.png){width=50%}
+    - $\Omega=\lbrace 1;2;3;4\rbrace $
+    - Événement
+        - $A:~$"Tirer une boule n°1 ou n°2"$\quad\Rightarrow A:\lbrace 1;2\rbrace $
+        - $C:~$"Tirer une boule n°1 ou n°3"$\quad\Rightarrow C:\lbrace 1;3\rbrace $
 
-- $\Omega=\lbrace 1;2;3;4\rbrace $
-- Événement
-    - $A:~$"Tirer une boule n°1 ou n°2"$\quad\Rightarrow A:\lbrace 1;2\rbrace $
-    - $C:~$"Tirer une boule n°1 ou n°3"$\quad\Rightarrow C:\lbrace 1;3\rbrace $
+    On a :
 
-On a :
+    - $\overline{A}:\lbrace 3;4\rbrace \quad\Rightarrow~$Les issues de $\Omega$ qui **ne** sont **pas** dans $A$.
+    - $A\cap C:\lbrace 1\rbrace \quad\Rightarrow~$Les issues "en commun" de $A$ et $C$.
+    - $A\cup C:\lbrace 1;2;3\rbrace \quad\Rightarrow~$La réunion de $A$ et $C$.
 
-- $\overline{A}:\lbrace 3;4\rbrace \quad\Rightarrow~$Les issues de $\Omega$ qui **ne** sont **pas** dans $A$.
-- $A\cap C:\lbrace 1\rbrace \quad\Rightarrow~$Les issues "en commun" de $A$ et $C$.
-- $A\cup C:\lbrace 1;2;3\rbrace \quad\Rightarrow~$La réunion de $A$ et $C$.
+    On peut représenter la situation à l'aide d'un diagramme de **Venn** :
 
-On peut représenter la situation à l'aide d'un diagramme de **Venn** :
+    ![](img/proba/06.png)
 
-![](img/proba/06.png)
-
-$$\overline{A}:\lbrace 3;4\rbrace \qquad A\cap C:\lbrace 1\rbrace \qquad A\cup C:\lbrace 1;2;3\rbrace $$
+    $$\overline{A}:\lbrace 3;4\rbrace \qquad A\cap C:\lbrace 1\rbrace \qquad A\cup C:\lbrace 1;2;3\rbrace $$
 
 ### Propriétés : Probabilité contraire et union
 
@@ -206,82 +221,82 @@ $$\overline{A}:\lbrace 3;4\rbrace \qquad A\cap C:\lbrace 1\rbrace \qquad A\cup C
     - La probabilité de l'**union** de $A$ et de $B$ est :
       $$\boxed{P(A\cup B)=P(A)+P(B)-P(A\cap B)}$$
 
-**Ex. :**
+!!! ex
 
-On tire une boule dans l'urne, et on note le nombre inscrit.
+    On tire une boule dans l'urne, et on note le nombre inscrit.
 
-![](img/proba/05.png){width=50%}
+    ![](img/proba/05.png){width=50%}
 
-On a :
+    On a :
 
-- $\Omega=\lbrace \text{1};\text{2};\text{3};\text{4}\rbrace $
+    - $\Omega=\lbrace \text{1};\text{2};\text{3};\text{4}\rbrace $
 
-- Loi de probabilité :
+    - Loi de probabilité :
 
-$$
-\begin{array}{|c|c|c|c|c|}\hline
-e_i&\text{1}&\text{2}&\text{3}&\text{4}\\\\ \hline
-\rule[-3mm]{0mm}{9mm}P(e_i)&\frac{2}{8}=0.25&\frac{2}{8}=0.25&\frac{3}{8}=0.375&\frac{1}{8}=0.125\\\\ \hline
-\end{array}
-$$
+    $$
+    \begin{array}{|c|c|c|c|c|}\hline
+    e_i&\text{1}&\text{2}&\text{3}&\text{4}\\\\ \hline
+    \rule[-3mm]{0mm}{9mm}P(e_i)&\frac{2}{8}=0.25&\frac{2}{8}=0.25&\frac{3}{8}=0.375&\frac{1}{8}=0.125\\\\ \hline
+    \end{array}
+    $$
 
----
+    ---
 
-Soit $~B:~$"Obternir $\text{2}$ ou $\text{4}$"$\quad\Rightarrow B:\lbrace \text{2};\text{4}\rbrace $
+    Soit $~B:~$"Obternir $\text{2}$ ou $\text{4}$"$\quad\Rightarrow B:\lbrace \text{2};\text{4}\rbrace $
 
-On a :
+    On a :
 
-$$
-	\begin{array}{rccccc}
-		P(B) & = & P(\text{2}) & + & P(\text{4})                      \\\\
-		     & = & \frac{2}{8} & + & \frac{1}{8} & =\frac{3}{8}=0.375
-	\end{array}
-$$
+    $$
+    	\begin{array}{rccccc}
+    		P(B) & = & P(\text{2}) & + & P(\text{4})                      \\\\
+    		     & = & \frac{2}{8} & + & \frac{1}{8} & =\frac{3}{8}=0.375
+    	\end{array}
+    $$
 
-Donc : $~P\left(\overline{B}\right)=1-P(B)=1-0.375=0.625$
+    Donc : $~P\left(\overline{B}\right)=1-P(B)=1-0.375=0.625$
 
-**Vérification :**
+    **Vérification :**
 
-- $B:~$"Obternir $\text{2}$ ou $\text{4}$"$\quad\Rightarrow B:\lbrace \text{2};\text{4}\rbrace $
-- $\overline{B}:~$"Obternir $\text{1}$ ou $\text{3}$"$\quad\Rightarrow \overline{B}:\lbrace \text{1};\text{3}\rbrace $
+    - $B:~$"Obternir $\text{2}$ ou $\text{4}$"$\quad\Rightarrow B:\lbrace \text{2};\text{4}\rbrace $
+    - $\overline{B}:~$"Obternir $\text{1}$ ou $\text{3}$"$\quad\Rightarrow \overline{B}:\lbrace \text{1};\text{3}\rbrace $
 
-$$
-	\begin{array}{rccccc}
-		P\left(\overline{B}\right) & =& P(\text{1}) & + & P(\text{3})                         \\\\
-		                           & =& \frac{2}{8} & + & \frac{3}{8}&=\frac{5}{8}=0.625
-	\end{array}
-$$
+    $$
+    	\begin{array}{rccccc}
+    		P\left(\overline{B}\right) & =& P(\text{1}) & + & P(\text{3})                         \\\\
+    		                           & =& \frac{2}{8} & + & \frac{3}{8}&=\frac{5}{8}=0.625
+    	\end{array}
+    $$
 
----
+    ---
 
-**Ex. :**
+!!! ex
 
-Soit $\quad A:\lbrace \text{1};\text{2}\rbrace \quad$ et $\quad C:\lbrace \text{1};\text{3}\rbrace\quad$ Donc $\quad A\cap C:\lbrace 1 \rbrace$
+    Soit $\quad A:\lbrace \text{1};\text{2}\rbrace \quad$ et $\quad C:\lbrace \text{1};\text{3}\rbrace\quad$ Donc $\quad A\cap C:\lbrace 1 \rbrace$
 
-On a :
+    On a :
 
-- $P(A)=P(\text{1})+P(\text{2})=\frac{2}{8}+\frac{2}{8}=\frac{4}{8}$
-- $P(C)=P(\text{1})+P(\text{3})=\frac{2}{8}+\frac{3}{8}=\frac{5}{8}$
-- $P(A\cap C)=P(\text{1})=\frac{2}{8}$
+    - $P(A)=P(\text{1})+P(\text{2})=\frac{2}{8}+\frac{2}{8}=\frac{4}{8}$
+    - $P(C)=P(\text{1})+P(\text{3})=\frac{2}{8}+\frac{3}{8}=\frac{5}{8}$
+    - $P(A\cap C)=P(\text{1})=\frac{2}{8}$
 
-Donc, on a :
+    Donc, on a :
 
-$$
-	\begin{array}{rccccc}
-		P(A\cup C) & = & P(A)        & + & P(C)        & - & P(A\cap C)                 \\\\
-		~          & = & \frac{4}{8} & + & \frac{5}{8} & - & \frac{2}{8} & =\frac{7}{8}
-	\end{array}
-$$
+    $$
+    	\begin{array}{rccccc}
+    		P(A\cup C) & = & P(A)        & + & P(C)        & - & P(A\cap C)                 \\\\
+    		~          & = & \frac{4}{8} & + & \frac{5}{8} & - & \frac{2}{8} & =\frac{7}{8}
+    	\end{array}
+    $$
 
-**Vérification :**
+    **Vérification :**
 
-$A:\lbrace \text{1};\text{2}\rbrace \quad$ et $\quad C:\lbrace \text{1};\text{3}\rbrace \quad$ Donc $\quad A\cup C:\lbrace \text{1};\text{2};\text{3}\rbrace $
+    $A:\lbrace \text{1};\text{2}\rbrace \quad$ et $\quad C:\lbrace \text{1};\text{3}\rbrace \quad$ Donc $\quad A\cup C:\lbrace \text{1};\text{2};\text{3}\rbrace $
 
-Donc, on a :
+    Donc, on a :
 
-$$
-	\begin{array}{rccccc}
-		P(A\cup C) & = & P(\text{1}) & + & P(\text{2}) & + & P(\text{3})                \\\\
-		           & = & \frac{2}{8} & + & \frac{2}{8} & + & \frac{3}{8} & =\frac{7}{8}
-	\end{array}
-$$
+    $$
+    	\begin{array}{rccccc}
+    		P(A\cup C) & = & P(\text{1}) & + & P(\text{2}) & + & P(\text{3})                \\\\
+    		           & = & \frac{2}{8} & + & \frac{2}{8} & + & \frac{3}{8} & =\frac{7}{8}
+    	\end{array}
+    $$

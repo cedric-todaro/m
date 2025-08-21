@@ -46,10 +46,6 @@
                 <li class="toctree-l1"><a class="reference internal" href="../..">Accueil</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../divers/">Divers</a>
-                </li>
-              </ul>
               <p class="caption"><span class="caption-text">2nde</span></p>
               <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../Arithmetique/">Arithmétique</a>
@@ -101,6 +97,11 @@
     </ul>
                   </li>
               </ul>
+              <p class="caption"><span class="caption-text">Divers</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../divers/">Help</a>
+                  </li>
+              </ul>
       </div>
     </div>
     </nav>
@@ -128,8 +129,11 @@
                 <h1 id="ensemble-de-nombres">Ensemble de nombres</h1>
 <h2 id="les-entiers">Les entiers</h2>
 <h3 id="definition-et-representation">Définition et représentation</h3>
-<p><strong>Rem. :</strong> Dans le lycée, il y a un ensemble d&rsquo;<strong>humains</strong>. Parmi eux, il y a des <strong>élèves</strong> et parmi ces élèves il y a des <strong>secondes</strong>.</p>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>Dans le lycée, il y a un ensemble d&rsquo;<strong>humains</strong>. Parmi eux, il y a des <strong>élèves</strong> et parmi ces élèves il y a des <strong>secondes</strong>.</p>
 <p><img alt="" src="../img/ensembles/01a.png" width="50%" /></p>
+</div>
 <div class="admonition def">
 <p class="admonition-title">Def</p>
 <p>Parmi les nombres <strong>entiers</strong>, il existe :</p>
@@ -143,14 +147,16 @@
 </ul>
 </li>
 </ul>
-</div>
 <p><img alt="" src="../img/ensembles/nz.png" width="62%" /></p>
-<p><strong>Ex. :</strong></p>
+</div>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <ul>
 <li>$17$ appartient à $\N$ et à $\Z\qquad\Rightarrow 17\in\N\quad\text{et}\quad17\in\Z$</li>
 <li>$(-2)$ n&rsquo;appartient pas à $\N\qquad\Rightarrow (-2)\notin\N$</li>
 <li>$157 \ldots\ldots\ldots\ldots\ldots\ldots\ldots$ à $\N\qquad\Rightarrow 157 \ldots\ldots\ldots \N$</li>
 </ul>
+</div>
 <h3 id="multiples-diviseurs">Multiples – diviseurs</h3>
 <div class="admonition def">
 <p class="admonition-title">Def</p>
@@ -159,25 +165,33 @@
 <p>$$a=k\times b$$</p>
 <p>On dit aussi que $b$ est un <strong>diviseur</strong> de $a$.</p>
 </div>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <ul>
-<li>$27=3\times 9$ donc :<ul>
+<li>
+<p>$27=3\times 9$ donc :</p>
+<ul>
 <li>$27$ est <strong>multiple</strong> de $3$ (et de $9$)</li>
 <li>$9$ est un <strong>diviseur</strong> de $27$</li>
 </ul>
 </li>
-<li>$85$ n&rsquo;est pas un <strong>multiple</strong> de $10$ car :<ul>
+<li>
+<p>$85$ n&rsquo;est pas un <strong>multiple</strong> de $10$ car :</p>
+<ul>
 <li>$85=k\times 10\Leftrightarrow k=8.5$ et $k$ pas entier</li>
 </ul>
 </li>
 </ul>
+</div>
 <div class="admonition prop">
 <p class="admonition-title">Prop</p>
 <p>Soit $a$ un entier. La somme de deux <strong>multiples</strong> de $a$, est un <strong>multiple</strong> de $a$.</p>
 </div>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <p>$21$ et $33$ sont des <strong>multiples</strong> de $3$ donc $54=(21+33)$ est un <strong>multiple</strong> de $3$.</p>
 <p>En effet, $54=18\times 3$</p>
+</div>
 <div class="admonition demo">
 <p class="admonition-title">Demo</p>
 <p>Soit $n_1$ et $n_2$, deux multiples de $a$ alors :</p>
@@ -195,11 +209,13 @@
 <li>Si $~n~$ est <strong>impair</strong> alors $~n=2k+1~$ avec $~k\in\Z~$</li>
 </ul>
 </div>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <ul>
 <li>$~157~$ est <strong>impair</strong> car $~157=(2\times 78)+1~$</li>
 <li>$~2048~$ est <strong>pair</strong> car $~2048=(2\times 1024)~$</li>
 </ul>
+</div>
 <div class="admonition prop">
 <p class="admonition-title">Prop</p>
 <p>Le <strong>carré</strong> d&rsquo;un nombre <strong>impair</strong> est <strong>impair</strong></p>
@@ -222,7 +238,8 @@ $$</p>
 <p class="admonition-title">Def</p>
 <p>Un entier naturel est dit <strong>premier</strong>, s&rsquo;il admet <em>exactement</em> <strong>deux diviseurs</strong> entiers positifs.</p>
 </div>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <ul>
 <li>$25$ admet comme diviseurs $1$, $5$ et $25$ $\rightarrow$ <strong>pas premier</strong></li>
 <li>$17$ admet comme diviseurs $1$ et $17\rightarrow\quad$ <strong>premier</strong></li>
@@ -232,19 +249,27 @@ $$</p>
 <summary>Les $100$ premiers nombres premiers</summary>
 <p><img alt="" src="../img/ensembles/03.png" width="50%" /></p>
 </details>
+</div>
 <h4 id="decomposition-en-facteurs-premiers">Décomposition en facteurs premiers</h4>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <ul>
 <li>$60=30\times 2\quad=15\times 2\times 2\quad=5\times 3\times 2\times 2$</li>
 </ul>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
 <p><strong>Méthode pour décomposer $60$ :</strong></p>
 <p>$$\begin{array}{r|l}60 &amp; 2\\30 &amp; 2\\15 &amp; 3\\5 &amp; 5 \\1 &amp; ~\\  \end{array}$$</p>
 <p>La décomposition de $60$ en facteurs <strong>premiers</strong> est : $~60=3^1\times 5^1\times 2^2$</p>
-<p><strong>Ex. :</strong></p>
+</div>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <ul>
 <li>$1300=\ldots$</li>
 </ul>
 <p>$$\begin{array}{r|l}1300 &amp; 2\\650 &amp; \ldots\\ \ldots &amp; \ldots\\ \ldots &amp; \ldots\\ \ldots &amp; \ldots\\ \ldots &amp; \ldots\end{array}\qquad\qquad\begin{array}{r|l}\ldots &amp;\ldots\\ \ldots &amp; \ldots\\ \ldots &amp; \ldots\\ \ldots &amp; \ldots\\ \ldots &amp; \ldots\end{array}$$</p>
+</div>
 <h2 id="les-ensembles-d-q-et-r">Les ensembles $\D$, $\Q$ et $\R$</h2>
 <h3 id="les-decimaux-d">Les décimaux : $\D$</h3>
 <div class="admonition def">
@@ -252,17 +277,21 @@ $$</p>
 <p>Nombres dont <strong>la partie décimale est ﬁnie</strong>. On peut les écrire sous la forme :</p>
 <p>$$\dfrac{a}{10^n}\quad\text{avec}\quad a\in\Z$$</p>
 </div>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <p>À vous de compléter : $\qquad 0.009=\ldots\ldots\qquad\text{et}\qquad\dfrac{-1234}{10^2}=\ldots\ldots$</p>
-<p><strong>Ex. :</strong></p>
+</div>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <ul>
 <li>
-<p>$1.77=\dfrac{177}{100}=\dfrac{177}{10^2}\iff 1.77 \in \D$</p>
+<p>$1.77=\frac{177}{100}=\frac{177}{10^2}\iff 1.77 \in \D$</p>
 </li>
 <li>
-<p>$-5.001=\dfrac{-5001}{1000}=\dfrac{-5001}{10^3}\iff -5.001\in\D$</p>
+<p>$-5.001=\frac{-5001}{1000}=\frac{-5001}{10^3}\iff -5.001\in\D$</p>
 </li>
 </ul>
+</div>
 <div class="admonition demo">
 <p class="admonition-title">Demo</p>
 <p>Démontrons que $\frac{1}{3}$ <strong>n&rsquo;</strong> appartient <strong>pas</strong> aux décimaux.</p>
@@ -286,7 +315,8 @@ $$</p>
 <p class="admonition-title">Def</p>
 <p>Ils peuvent s&rsquo;écrire sous la forme : $\quad\dfrac{a}{b}\quad$ avec $~a\in\Z~$ et $~b\in\Z^{*}$</p>
 </div>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <ul>
 <li>
 <p>$\dfrac{2}{7}\in\Q$</p>
@@ -298,13 +328,20 @@ $$</p>
 <p>$\dfrac{50}{7}=7.142~857~142~857~\ldots\in\Q$</p>
 </li>
 </ul>
-<p><strong>Rem. :</strong> La partie décimale peut se &ldquo;répéter&rdquo; à l&rsquo;infini.</p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>La partie décimale peut se &ldquo;répéter&rdquo; à l&rsquo;infini.</p>
+</div>
 <h3 id="les-reels-r">Les réels : $\R$</h3>
 <div class="admonition def">
 <p class="admonition-title">Def</p>
 <p>Tous les nombres connus en 2<sup>nde</sup>.</p>
 </div>
-<p><strong>Ex :</strong> $-16$ ; $\sqrt{3}$ ; $\pi$ ; $\ldots$</p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
+</div>
+<p>$-16$ ; $\sqrt{3}$ ; $\pi$ ; $\ldots$</p>
 <h3 id="les-ensembles-de-nombres">Les ensembles de nombres<sup>❤️</sup></h3>
 <p><img alt="" src="../img/ensembles/00.png" /></p>
 <h2 id="intervalles-de-r-et-valeur-absolue">Intervalles de $\R$ et valeur absolue</h2>
@@ -316,10 +353,13 @@ $$</p>
 <p>Cet ensemble est appelé un <strong>intervalle</strong> et se note :</p>
 <p>$$I=\big[2~;~4\big]$$</p>
 </div>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <p>L&rsquo;ensemble $J$ des réels $x$ tels que $~ -2\le x\le 7~$ se note : $~J=\big[-2~;~7\big]$</p>
 <p>On a : $\quad 4\in[-2~;~7]\quad$ et $\quad -5\notin[-2~;~7]$</p>
-<p><strong>Ex. :</strong></p>
+</div>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <table>
 <thead>
 <tr>
@@ -371,7 +411,11 @@ $$</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Rem :</strong> L&rsquo;ensemble $\R$ est un intervalle qui se note : $\R=\big]-\infty~;~+\infty\big[$</p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>L&rsquo;ensemble $\R$ est un intervalle qui se note : $\R=\big]-\infty~;~+\infty\big[$</p>
+</div>
 <h3 id="union-et-intersection-dintervalles">Union et intersection d&rsquo;intervalles</h3>
 <div class="admonition def">
 <p class="admonition-title">Def</p>
@@ -380,59 +424,78 @@ $$</p>
 <li>L&rsquo;<strong>union</strong> de deux ensembles $A$ et $B$ est l&rsquo;ensemble des éléments qui appartiennent à $A$ <strong>ou</strong> à $B$ et se note : $\boxed{A \cup B}$</li>
 </ul>
 </div>
-<p><strong>Ex. :</strong> $\quad I=\big[0~;~3\big]\qquad\text{et}\qquad J=\big[1~;~5\big]$</p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
+<p>$\quad I=\big[0~;~3\big]\qquad\text{et}\qquad J=\big[1~;~5\big]$</p>
 <p><img alt="" src="../img/ensembles/inter_union.png" width="80%" /></p>
+</div>
 <h3 id="valeur-absolue">Valeur absolue</h3>
 <div class="admonition def">
 <p class="admonition-title">Def</p>
 <p>La distance de deux réels $a$ et $b$ est la distance des points $A$ et $B$ d&rsquo;abscisses $a$ et $b$ sur la droite numérique.</p>
 </div>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <p><img alt="" src="../img/ensembles/distance.png" /></p>
-<p><strong>Rem :</strong></p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
 <ul>
 <li>Si $(a\lt b)$ alors la distance est $\left(b-a\right)$</li>
 <li>Si $(a\gt b)$ alors la distance est $\left(a-b\right)$</li>
 </ul>
 <p>On note la distance : $\quad\abs{a-b}\quad$ et on lit $\quad$ <strong>valeur absolue de</strong> $(a-b)$</p>
-<p><strong>Ex. :</strong></p>
+</div>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <p>La distance de $5$ à $18$ est $\quad\left|5-18\right|=18-5=13$</p>
+</div>
 <div class="admonition def">
 <p class="admonition-title">Def</p>
 <p>La <strong>valeur absolue</strong> d&rsquo;un réel $x$ est la distance de ce réel à $0$.</p>
 <p>Elle est notée : $\qquad\abs{x}$</p>
 </div>
-<p><strong>Ex. :</strong> La valeur absolue de $-4$ est la distance de $-4$ à $0$. On a : $\abs{-4}=4$</p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
+<p>La valeur absolue de $-4$ est la distance de $-4$ à $0$. On a : $\abs{-4}=4$</p>
 <p><img alt="" src="../img/ensembles/distance2.png" width="80%" /></p>
-<p><strong>Ex. :</strong></p>
+</div>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <ul>
 <li>$\abs{3}=3$</li>
 <li>$\abs{\sqrt{2}}=\sqrt{2}$</li>
 <li>$\abs{-4}=4$</li>
 <li>$\abs{-0.177}=0.177$</li>
 </ul>
+</div>
 <div class="admonition prop">
 <p class="admonition-title">Prop</p>
 <p>On a, pour tout $x\in\R$ :</p>
 <p>$$\boxed{\left|x\right|=\begin{cases}x\quad&amp;\text{si}~x\ge 0\\-x\quad&amp;\text{si}~x\lt 0\end{cases}}$$</p>
 </div>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <ul>
 <li>$\abs{3}=3\quad$ car $~3\gt 0$</li>
 <li>$\abs{-7}=-(-7)=7\quad$ car $~(-7)\lt 0$</li>
 </ul>
+</div>
 <div class="admonition prop">
 <p class="admonition-title">Prop</p>
 <p>L&rsquo;intervalle $\big[a-r~;~a+r\big]$ est l&rsquo;ensemble des $x$ tel que : $\qquad\abs{x-a}\le r$</p>
 </div>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <p>L&rsquo;ensemble des nombres $x$ tel que $\lvert x-5\rvert \le 3$ est l&rsquo;intervalle $I=\big[5-3~;~5+3\big]=\big[2~;~8\big]$</p>
 <p><img alt="" src="../img/ensembles/img2.png" width="90%" /></p>
+</div>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
         <a href="../Probabilite-echantillonnage/" class="btn btn-neutral float-left" title="Probabilité et échantillonnage"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../../divers/" class="btn btn-neutral float-right" title="Help">Suivant <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -457,6 +520,8 @@ $$</p>
     
       <span><a href="../Probabilite-echantillonnage/" style="color: #fcfcfc">&laquo; Précédent</a></span>
     
+    
+      <span><a href="../../divers/" style="color: #fcfcfc">Suivant &raquo;</a></span>
     
   </span>
 </div>

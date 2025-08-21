@@ -46,10 +46,6 @@
                 <li class="toctree-l1"><a class="reference internal" href="../..">Accueil</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../divers/">Divers</a>
-                </li>
-              </ul>
               <p class="caption"><span class="caption-text">2nde</span></p>
               <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../Arithmetique/">Arithmétique</a>
@@ -81,6 +77,11 @@
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../Ensembles-de-nombres/">Ensemble de nombres</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Divers</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../divers/">Help</a>
                   </li>
               </ul>
       </div>
@@ -116,23 +117,32 @@
 <p>Un <strong>échantillon</strong> issu d&rsquo;une population est donc <strong>l&rsquo;ensemble de quelques éléments</strong> de cette population.</p>
 </div>
 <p><img alt="" src="../img/proba/e00.png" width="70%" /></p>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <ul>
-<li>Sur l&rsquo;ensemble des cartes à puce produites par une entreprise en une semaine, on en prélève $200$.<ul>
+<li>
+<p>Sur l&rsquo;ensemble des cartes à puce produites par une entreprise en une semaine, on en prélève $200$.</p>
+<ul>
 <li>On dit que cet ensemble de $200$ cartes à puce constitue un <strong>échantillon</strong> de <strong>taille 200</strong> de la population de toutes les cartes à puce produites en une semaine.</li>
 </ul>
 </li>
-<li>On s&rsquo;intéresse aux intentions de vote lors d&rsquo;une élection. On sonde $1000$ personnes en leur demandant leur intention de vote.<ul>
+<li>
+<p>On s&rsquo;intéresse aux intentions de vote lors d&rsquo;une élection. On sonde $1000$ personnes en leur demandant leur intention de vote.</p>
+<ul>
 <li>L&rsquo;ensemble de ces $1000$ personnes constitue un <strong>échantillon</strong> de <strong>taille 1000</strong> de la population totale des électeurs.</li>
 </ul>
 </li>
-<li>On lance une pièce de monnaie $50$ fois de suite et on note les résultats obtenus.<ul>
+<li>
+<p>On lance une pièce de monnaie $50$ fois de suite et on note les résultats obtenus.</p>
+<ul>
 <li>L&rsquo;ensemble de ces $50$ lancers constitue un <strong>échantillon de taille 50</strong>.</li>
 </ul>
 </li>
 </ul>
+</div>
 <h3 id="simulation-dune-experience-aleatoire">Simulation d&rsquo;une expérience aléatoire</h3>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <p>On considère l&rsquo;expérience aléatoire qui consiste à lancer un dé à 6 faces.</p>
 <p>Le programme Python suivant permet de simuler cette expérience.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="o">*</span>
@@ -166,8 +176,10 @@ La variable <strong>s</strong> permet de compter le nombre de fois que l&rsquo;o
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">de</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="mi">35</span>
 </code></pre></div>
+</div>
 <h2 id="loi-des-grands-nombres">Loi des grands nombres</h2>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <p>Modifions le programme afin d&rsquo;afficher en sortie <strong>la fréquence</strong> de jeux gagnés sur un échantillon de $n$ lancers de dé.</p>
 <p>Il suffit de remplacer dans la dernière ligne <code>return(s)</code> (l&rsquo;effectif) par <code>return(s/n)</code> (la fréquence).</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="o">*</span>
@@ -194,15 +206,19 @@ La variable <strong>s</strong> permet de compter le nombre de fois que l&rsquo;o
 </code></pre></div>
 <p>Plus $n$ devient grand, plus <strong>les fréquences observées</strong> semblent se rapprocher d&rsquo;une valeur théorique égale à $~\frac{1}{3}$ .</p>
 <p>En effet, la probabilité de gagner (obtenir &ldquo;3&rdquo; ou &ldquo;4&rdquo;) est égale à $\frac{2}{6}=\frac{1}{3}$</p>
+</div>
 <h3 id="definition-loi-des-grands-nombres">Définition : Loi des grands nombres</h3>
 <div class="admonition def">
 <p class="admonition-title">Def</p>
 <p>Lorsque l&rsquo;on répète un grand nombre de fois une expérience aléatoire, la fréquence de réalisation d&rsquo;un événement est proche de sa probabilité.</p>
 </div>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <p>Si l&rsquo;on choisit, au hasard une lettre dans l&rsquo;alphabet, <strong>la fréquence</strong> d&rsquo;apparition du $A$ sera proche de $\frac{1}{26}$</p>
+</div>
 <h2 id="estimation-dune-probabilite">Estimation d&rsquo;une probabilité</h2>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <p>On se propose maintenant de répéter $N$ fois la simulation de l&rsquo;expérience aléatoire précédente.</p>
 <p>Dans chaque cas, pour $n$ suffisamment grand, la fréquence observée $f$ devrait être proche de la probabilité théorique $p = \frac{1}{3}$.</p>
 <p>On veut calculer la proportion des cas pour lesquels l&rsquo;écart entre $f$ et $p$ est inférieur ou égale à $\frac{1}{\sqrt{n}}$</p>
@@ -244,6 +260,7 @@ La variable <strong>s</strong> permet de compter le nombre de fois que l&rsquo;o
 <p>On trouve des valeurs proches de $0.95$. Cela signifie que dans $95\%$ des cas, l&rsquo;écart entre la <strong>fréquence observée</strong> $f$ et <strong>la probabilité</strong> $p$ est inférieur à $0.01$.</p>
 <p>En effet, on a $~\frac{1}{\sqrt{n}}=\frac{1}{\sqrt{10~000}}=0.01$</p>
 <p>On a: $$\quad p-\frac{1}{\sqrt{n}}~\lt~f~\lt~p+\frac{1}{\sqrt{n}}$$</p>
+</div>
 <h3 id="propriete-estimation-dune-probabilite">Propriété : Estimation d&rsquo;une probabilité</h3>
 <div class="admonition prop">
 <p class="admonition-title">Prop</p>
@@ -253,7 +270,8 @@ La variable <strong>s</strong> permet de compter le nombre de fois que l&rsquo;o
 </ul>
 <p>$$\left[p-\frac{1}{\sqrt{n}}~;~p+\frac{1}{\sqrt{n}}\right]$$</p>
 </div>
-<p><strong>Ex. :</strong></p>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
 <p>Le graphique ci-dessous représente les fréquences d&rsquo;apparition d&rsquo;un caractère, au sein d&rsquo;une population, dans des échantillons de taille $n$.</p>
 <p><img alt="" src="../img/proba/e04.png" /></p>
 <p>Les fréquences observées semble situées entre $~0.5~$ et $~0.6$</p>
@@ -268,6 +286,7 @@ La variable <strong>s</strong> permet de compter le nombre de fois que l&rsquo;o
         ~                         &amp; \iff &amp; n=20^2\quad                  &amp; =400
     \end{array}
 $$</p>
+</div>
 <p>Les échantillons sont de tailles $400$.</p>
               
             </div>
