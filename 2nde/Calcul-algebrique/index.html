@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cedric-todaro.github.io/m/2nde/Calcul-algebrique/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Calcul algébrique - Math pour le lycée</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../extra.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-mermaid.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Calcul alg\u00e9brique";
+        var mkdocs_page_input_path = "2nde/Calcul-algebrique.md";
+        var mkdocs_page_url = "/m/2nde/Calcul-algebrique/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Math pour le lycée
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" aria-label="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Accueil</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2nde</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Arithmetique/">Arithmétique</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Probabilite/">Probabilité</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Probabilite-echantillonnage/">Probabilité et échantillonnage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ensembles-de-nombres/">Ensemble de nombres</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Calcul algébrique</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#somme-de-termes-et-produit-de-facteurs">Somme de termes et produit de facteurs</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#valeurs-interdites">Valeurs interdites</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#developper-factoriser">Développer / Factoriser</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#identites-remarquables">Identités remarquables</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#propriete-identites-remarquables">Propriété : Identités remarquables❤️</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#reduire-au-meme-denominateur">Réduire au même dénominateur</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#def-reduire-au-meme-denominateur">Déf : Réduire au même dénominateur</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Divers</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../divers/">Help</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Math pour le lycée</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Documents"></a></li>
+          <li class="breadcrumb-item">2nde</li>
+      <li class="breadcrumb-item active">Calcul algébrique</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="calcul-algebrique">Calcul algébrique</h1>
+<h2 id="somme-de-termes-et-produit-de-facteurs">Somme de termes et produit de facteurs</h2>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p><strong>Somme de terme :</strong> La dernière opération est une somme (ou une différence)</p>
+<ul>
+<li>$x-3$</li>
+<li>$(x+4)-(6-x)$</li>
+<li>$1+(x+1)(x-1)$</li>
+<li>$x^2+2x+10$</li>
+</ul>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p><strong>Produit de facteur :</strong> La dernière opération est un produit (ou un quotient)</p>
+<ul>
+<li>$3x(5-x)$</li>
+<li>$(x+4)(6-x)$</li>
+<li>$(x-1)^2$</li>
+<li>$9\times\dfrac{4x-1}{1-x}$</li>
+</ul>
+</div>
+<h3 id="valeurs-interdites">Valeurs interdites</h3>
+<p>Ce sont les valeurs de $x$ pour lesquelles il n&rsquo;est pas possible de calculer l&rsquo;expression algébrique.</p>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>Soit $f(x)=\dfrac{1-x}{x-4}$</p>
+<p>Si $x=4$ alors $(x-4)=0$ et il n&rsquo;est pas possible de calculer $f(4)$ (division par zéro).</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>Soit $f(x)=\sqrt{x}$</p>
+<p>Si $x\le 0$ alors $\sqrt{x}$ n&rsquo;est pas défini et il n&rsquo;est pas possible de calculer $f(x)$</p>
+<p>Pour $f(x)$, $x$ est un nombre réel positif.</p>
+</div>
+<h2 id="developper-factoriser">Développer / Factoriser</h2>
+<p><img alt="" src="../img/calcul/04.png" width="50%" /></p>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<ul>
+<li><strong>Développer</strong> : c&rsquo;est transformer un <strong>produit</strong> en <strong>somme</strong></li>
+<li><strong>Factoriser</strong> : c&rsquo;est transformer une <strong>somme</strong> en <strong>produit</strong></li>
+</ul>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<ul>
+<li><strong>Développer</strong> : $\qquad 3($😄$+$📖$)\quad=\quad 3$😄$+3$📖</li>
+<li><strong>Factoriser</strong> : $\qquad 3$😄$+3$📖$\quad=\quad 3($😄$+$📖$)$</li>
+</ul>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Développer une expression algébrique</strong></p>
+<ul>
+<li>$\cbox{lightblue}2(3-x)=\cbox{lightblue}2\times 3 + \cbox{lightblue}2\times (-x)=6-2x$</li>
+<li>$\cbox{lightgreen}{4x}(3x-y)=\cbox{lightgreen}{4x}\times 3x + \cbox{lightgreen}{4x}\times (-y)=12x^2-4xy$</li>
+<li>$\cbox{pink}{-}(x-y)=\cbox{pink}{(-1)}\times x + \cbox{pink}{(-1)}\times (-y)=-x+y=y-x$</li>
+<li>$\cbox{yellow}{x}(3-a+3b)=\cbox{yellow}{x}\times 3 + \cbox{yellow}{x}\times (-a)+\cbox{yellow}{x}\times 3b=3x-ax+3xb$</li>
+</ul>
+</div>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p><strong>Double distributivité</strong></p>
+<p>$$(\cbox{lightblue}{a}+\cbox{lightgreen}{b})(\cbox{pink}{c}+\cbox{yellow}{d})=\cbox{lightblue}{a}\cbox{pink}{c}+\cbox{lightblue}{a}\cbox{yellow}{d}+\cbox{lightgreen}{b}\cbox{pink}{c}+\cbox{lightgreen}{b}\cbox{yellow}{d}$$</p>
+<p><img alt="" src="../img/calcul/03.png" width="50%" /></p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Utiliser la double distributivité</strong></p>
+<p>$$
+    \begin{aligned}
+        (x+3)(y-1) &amp; =(x\times y)+(-1\times x)+(3\times y)+\Big(3\times (-1)\Big) \\
+        ~          &amp; =xy-x+3y-3
+    \end{aligned}
+$$</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>$$
+\begin{aligned}
+    A=(x+5)(x-2)&amp;=(x\times x)+(-2\times x)+(5\times x)+\Big(5\times (-2)\Big)\\
+    ~&amp;=x^2-2x+5x-10\\
+    ~&amp;=x^2+3x-10\
+    \end{aligned}
+$$</p>
+<p>$$
+\begin{aligned}
+        B=(3-x)(3+x) &amp; =(3\times 3)+(3\times x)+(-x\times 3)+(-x\times x) \\
+        ~            &amp; =9+3x-3x+x^2                                       \\
+        ~            &amp; =x^2+9                                             \
+    \end{aligned}
+$$</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>$$
+    \begin{aligned}
+        (4x+5)(x-1)-2(x+1) &amp; =(4x\times x)+(4x\times -1)+(5\times x)+(5\times -1)+\ldots \\
+        ~                  &amp; \qquad\ldots(-2\times x)+(-2\times 1)                             \\
+        ~                  &amp; =4x^2-4x+5x-5-2x-2                                          \\
+        ~                  &amp; =4x^2-x-7
+    \end{aligned}
+$$</p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Factoriser une expression</strong></p>
+<p>Pour factoriser une expression, il faut faire apparaître un <strong>facteur commun</strong>.</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>$$
+    \begin{array}{cc}
+        \begin{aligned}
+            4x-2y &amp; =\boxed{2}\times 2x-\boxed{2}\times y \\
+            ~     &amp; =\boxed{2}\times(2x-y)                \\
+            ~     &amp; =2(2x-y)                              \\
+        \end{aligned}
+        \qquad &amp; \qquad
+        \begin{aligned}
+            6x^2-5x &amp; =\boxed{x}\times 6x-\boxed{x}\times 5 \\
+            ~       &amp; =\boxed{x}\times(6x-5)                \\
+            ~       &amp; =x(6x-5)                              \\
+        \end{aligned}
+         &amp;
+    \end{array}
+$$</p>
+<p>$$
+    \begin{aligned}
+        110a+11 &amp; =\boxed{11}\times 10a+\boxed{11}\times 1 \\
+        ~       &amp; =\boxed{11}\times(10a+1)                 \\
+        ~       &amp; =11(10a+1)                               \\
+    \end{aligned}
+$$</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>$$
+    \begin{aligned}
+        3(2+3x)-(5+2x)(2+3x) &amp; =\boxed{(2+3x)}\times 3-\boxed{(2+3x)}\times (5+2x) \\
+        ~                    &amp; =\boxed{(2+3x)}\times\Big(3-(5+2x)\Big)             \\
+        ~                    &amp; =(2+3x)\times\Big(3-5-2x)\Big)                      \\
+        ~                    &amp; =(2+3x)(-2-2x)                                      \\
+        ~                    &amp; =-(2+3x)(2+2x)                                      \\
+    \end{aligned}
+$$</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>$$
+\begin{aligned}
+        (2-5x)^2-(2-5x)(1+x) &amp; =\boxed{(2-5x)}\times (2-5x)-\boxed{(2-5x)}\times (1+x) \\
+        ~                    &amp; =\boxed{(2-5x)}\times\Big((2-5x)-(1+x)\Big)             \\
+        ~                    &amp; =(2-5x)(2-5x-1-x)                                       \\
+        ~                    &amp; =(2-5x)(1-6x)                                           \\
+\end{aligned}
+$$</p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>Lorsque le facteur commun n&rsquo;est pas immédiatement apparent, il est parfois possible de modifier l&rsquo;écriture d&rsquo;un des termes de l&rsquo;expression pour faire apparaître un facteur commun.</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>$$
+    \begin{array}{rl}
+        4(1-x)^2-3x(x-1) &amp; =4(1-x)(1-x)\cbox{lightgray}{{+}}3x(\cbox{lightgray}{1-x}) \\
+        ~                &amp; =\boxed{(1-x)}\times 4(1-x)+\boxed{(1-x)}\times (3x)       \\
+        ~                &amp; =\boxed{(1-x)}\Big( 4(1-x)+ (3x)\Big)                      \\
+        ~                &amp; =(1-x)(4-4x+ 3x)                                           \\
+        ~                &amp; =(1-x)(4-x)                                                \\
+    \end{array}
+$$</p>
+</div>
+<h2 id="identites-remarquables">Identités remarquables</h2>
+<h3 id="propriete-identites-remarquables">Propriété : Identités remarquables<sup>❤️</sup></h3>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p>Pour tout $a$ et $b\in\R$, on a :</p>
+<ul>
+<li>$\boxed{(a+b)^{2} = a^{2} + 2ab +b^{2}}$</li>
+<li>$\boxed{(a-b)^{2} = a^{2} - 2ab +b^{2}}$</li>
+<li>$\boxed{(a+b)(a-b) = a^{2} - b^{2}}$</li>
+</ul>
+<p><img alt="" src="../img/calcul/02.png" width="50%" /></p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>$$
+    \begin{aligned}
+        23^2 = (20+3)^2 &amp; = 20^2 + 2\times 20\times 3+3^2 \\
+        ~               &amp; =400+120+9                      \\
+        ~               &amp; =529
+    \end{aligned}
+$$</p>
+<p>Graphiquement, $23^2 = 529$</p>
+<p><img alt="" src="../img/calcul/01.png" width="50%" /></p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Utiliser les identités remarquables pour <ins>développer</ins></strong></p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>$\begin{aligned}A=(x-5)^2 &amp;=x^2 -2\times x\times 5+5^2 \\&amp;=x^2 -10x+25\end{aligned}$</p>
+<hr />
+<p>$\begin{aligned}B=\left(6+\frac{1}{2}x\right)^2 &amp;=6^2 +2\times 6\times \frac{1}{2}x+\left(\frac{1}{2}x\right)^2 \\&amp;=36+6x+\frac{1}{4}x^2 \end{aligned}$</p>
+<hr />
+<p>$\begin{aligned}C=(2x-1)(2x+1)&amp;=(2x)^2 -1^2 \\&amp;=4x^2 -1\end{aligned}$</p>
+<hr />
+<p>$\begin{aligned}D=-2(1-x)^2 &amp;=-2(1^2 -2x+x^2 )\\&amp;=-2+4x-2x^2 \end{aligned}$</p>
+<hr />
+<p>$\begin{aligned}E=2(x+3)-(2x+3)(2x-3)&amp;=2x+6-\left((2x)^2 -3^2 \right)\\&amp;=2x+6-4x^2 +9\\&amp;=-4x^2 +2x+15\end{aligned}$</p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Utiliser les identités remarquables pour <ins>factoriser</ins></strong></p>
+<p>Il faut faire apparaître les termes $a^2$, $b^2$ et $2ab$.</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>$$
+\begin{aligned}
+        x^2-4x+4 &amp; =\cbox{pink}x^2-2\times \cbox{pink}x\times \cbox{lightblue}2+\cbox{lightblue}2^2 \\
+        ~        &amp; =\cbox{pink}a^2-2\times \cbox{pink}a\times \cbox{lightblue}b+\cbox{lightblue}b^2 \\
+        ~        &amp; =(\cbox{pink}a-\cbox{lightblue}b)^2                                            \\
+        ~        &amp; =(x-2)^2                                                                     \\
+    \end{aligned}
+$$</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>$$
+    \begin{aligned}
+        A = 25+x^2+10x &amp; =\textcolor{red}{x}^2+2\times \textcolor{red}{x}\times \textcolor{blue!70}{5}+\textcolor{blue!70}{5}^2 \\
+        ~              &amp; =\textcolor{red}{a}^2+2\times \textcolor{red}{a}\times \textcolor{blue!70}{b}+\textcolor{blue!70}{b}^2 \\
+        ~              &amp; =(a+b)^2                                                                                               \\
+        ~              &amp; =(x+5)^2                                                                                               \\
+    \end{aligned}
+$$</p>
+<p>$$
+    \begin{aligned}
+        B = 1-36x^2 &amp; =1^2 -(6x)^2  \\
+        ~           &amp; =a^2 -b^2     \\
+        ~           &amp; =(a+b)(a-b))  \\
+        ~           &amp; =(1-6x)(1+6x) \\
+    \end{aligned}
+$$</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>$$
+    \begin{aligned}
+        C = (2-x)^2 -64 &amp; =(2-x)^2 -8^2       \\
+        ~               &amp; =a^2 -b^2           \\
+        ~               &amp; =(a+b)(a-b)         \\
+        ~               &amp; =((2-x)+8)((2-x)-8) \\
+        ~               &amp; =(10-x)(-6-x)       \\
+        ~               &amp; =-(10-x)(6+x)       \\
+        ~               &amp; =(x+10)(x+6)        \\
+    \end{aligned}
+$$</p>
+</div>
+<h2 id="reduire-au-meme-denominateur">Réduire au même dénominateur</h2>
+<h3 id="def-reduire-au-meme-denominateur">Déf : Réduire au même dénominateur</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>Réduire au même dénominateur c&rsquo;est transformer une <strong>somme</strong> (ou une différence) de deux fractions en une seule fraction.</p>
+</div>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p>Pour tout nombre $a$, $b$, $c$ et $d$, réels on a :</p>
+<p>$$\frac{a}{b}+\frac{c}{d}=\frac{ad+bc}{bd}$$</p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>Un dénominateur commun = Produit des dénominateurs</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+</div>
+<p>$$
+    \begin{aligned}
+        \frac{2}{5}+\frac{1}{3} &amp; =\left(\frac{2}{5}\times\boxed{\frac{3}{3}}\right) &amp; + &amp; \left(\frac{1}{3}\times\boxed{\frac{5}{5}}\right)                  \\
+        ~                       &amp; =\left(\frac{6}{15}\right)                         &amp; + &amp; \left(\frac{5}{15}\right)                         &amp; =\frac{11}{15}
+    \end{aligned}
+$$</p>
+<div class="admonition demo">
+<p class="admonition-title">Demo</p>
+<p>$$
+    \begin{alignedat}{5}\frac{a}{b}+\frac{c}{d} &amp; =\pa{\frac{a}{b}\times\boxed{\frac{d}{d}}} &amp; + &amp; \pa{\frac{c}{d}\times\boxed{\frac{b}{b}}}                     \
+                 ~                          &amp; =\pa{\frac{ad}{bd}}                        &amp; + &amp; \pa{\frac{bc}{bd}}                        &amp; =\frac{ad+bc}{bd}
+    \end{alignedat}
+$$</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>$\begin{alignedat}{5}
+A=\left(\frac{2}{x}\right)-\left(\frac{x+1}{2}\right)&amp;=\left(\frac{2}{x}\times\boxed{\frac{2}{2}}\right)&amp;-&amp;\left(\frac{x+1}{2}\times\boxed{\frac{x}{x}}\right)\\
+~&amp;=\left(\frac{4}{2x}\right)&amp;-&amp;\left(\frac{(x+1)x}{2x}\right)\\
+~&amp;=\left(\frac{4}{2x}\right)&amp;-&amp;\left(\frac{x<sup>2+x}{2x}\right)&amp;=\frac{-x</sup>2-x+4}{2x}
+\end{alignedat}$</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>$\begin{alignedat}{5}
+B=2-\left(\frac{5x}{x-2}\right)&amp;=\left(\frac{2}{1}\times\boxed{\frac{x-2}{x-2}}\right)&amp;-&amp;\left(\frac{5x}{x-2}\times\boxed{\frac{1}{1}}\right)\\
+~&amp;=\left(\frac{2(x-2)}{x-2}\right)&amp;-&amp;\left(\frac{5x}{x-2}\right)\\
+~&amp;=\frac{2x-4-5x}{x-2}&amp;~&amp;=\frac{-3x-4}{x-2}&amp;=\frac{3x+4}{2-x}
+\end{alignedat}$</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>$\begin{alignedat}{5}
+C=\left(\frac{3x}{1-x}\right)+\left(\frac{5}{2x-3}\right)&amp;=\left(\frac{3x\color{blue}(2x-3)}{(1-x)\color{blue}(2x-3)}\right)&amp;+&amp;\left(\frac{5\color{red}(1-x)}{(2x-3)\color{red}(1-x)}\right)\\
+~&amp;=\frac{6x^2-9x}{(1-x)(2x-3)}&amp;+&amp;\frac{5-5x}{(1-x)(2x-3)}\\
+~&amp;=\frac{6x^2-14x+5}{(1-x)(2x-3)}
+\end{alignedat}$</p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../Ensembles-de-nombres/" class="btn btn-neutral float-left" title="Ensemble de nombres"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../../divers/" class="btn btn-neutral float-right" title="Help">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Ensembles-de-nombres/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../../divers/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.8/mermaid.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-mermaid.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
