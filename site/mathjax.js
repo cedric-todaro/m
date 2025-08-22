@@ -41,6 +41,7 @@ MathJax = {
         \let\le\leqslant
         \let\ge\geqslant
         \let\cbox\colorbox
+        \let\vec\overrightarrow
         \nc{\N}{\mathbb{N}}
         \nc{\Z}{\mathbb{Z}}
         \nc{\D}{\mathbb{D}}
@@ -48,7 +49,11 @@ MathJax = {
         \nc{\R}{\mathbb{R}}
         \nc{\C}{\mathbb{C}}
         \nc{\pa}[1]{\left(#1\right)}
+        \nc{\coord}[2]{\begin{pmatrix}#1\\#2\end{pmatrix}}
+        \nc{\coordl}[2]{\left(#1~;~#2\right)}
         \rnc{\iff}{\Leftrightarrow}
+        \nc{\Lrarr}{\Leftrightarrow}
+        \nc{\Rarr}{\Rightarrow}
       `);
     },
   },

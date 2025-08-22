@@ -5,10 +5,11 @@ nav:
   - Accueil: index.md
   - 2nde:
       - 2nde/Arithmetique.md
-      - 2nde/Probabilite.md
-      - 2nde/Probabilite-echantillonnage.md
-      - 2nde/Ensembles-de-nombres.md
       - 2nde/Calcul-algebrique.md
+      - 2nde/Droites-du-plan.md
+      - 2nde/Ensembles-de-nombres.md
+      - 2nde/Probabilite-echantillonnage.md
+      - 2nde/Probabilite.md
   - Divers: 
       - Help: divers.md
 
