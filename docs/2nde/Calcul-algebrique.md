@@ -314,7 +314,7 @@ $$
 !!! demo
 
     $$
-    	\begin{alignedat}{5}\frac{a}{b}+\frac{c}{d} & =\pa{\frac{a}{b}\times\boxed{\frac{d}{d}}} & + & \pa{\frac{c}{d}\times\boxed{\frac{b}{b}}}                     \\
+    	\begin{alignedat}{5}\frac{a}{b}+\frac{c}{d} & =\pa{\frac{a}{b}\times\boxed{\frac{d}{d}}} & + & \pa{\frac{c}{d}\times\boxed{\frac{b}{b}}}                     \\\\
                      ~                          & =\pa{\frac{ad}{bd}}                        & + & \pa{\frac{bc}{bd}}                        & =\frac{ad+bc}{bd}
     	\end{alignedat}
     $$
