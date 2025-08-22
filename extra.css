@@ -13,6 +13,11 @@
 .section img {
     display: block;
     margin: auto;
+    margin-top: 12px;
+}
+
+.section p {
+    margin-bottom: 0px;
 }
 
 figcaption {
@@ -93,4 +98,14 @@ span.rst-current-version {
 
 .admonition.remarque .admonition-title::after,
 .admonition.rem .admonition-title::after { display: block; margin-bottom: -8px; margin-top: -12px; text-indent: 0; line-height: initial; content: "\1F453\0020 Remarque"; }
+
+/* Théorème*/
+.admonition.theoreme,
+.admonition.theo { padding: 0; background-color: #fcfcfc; }
+
+.admonition.theoreme .admonition-title,
+.admonition.theo .admonition-title { color: #000; background: #fcfcfc;  text-indent: -9999px; line-height: 0; }
+
+.admonition.theoreme .admonition-title::after,
+.admonition.theo .admonition-title::after { display: block; margin-bottom: -8px; margin-top: -12px; text-indent: 0; line-height: initial; content: "\1F4D0\0020 Théorème"; }
 

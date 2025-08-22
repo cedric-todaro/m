@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cedric-todaro.github.io/m/2nde/Droites-du-plan/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Droites du plan - Math pour le lycée</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../extra.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-mermaid.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Droites du plan";
+        var mkdocs_page_input_path = "2nde/Droites-du-plan.md";
+        var mkdocs_page_url = "/m/2nde/Droites-du-plan/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Math pour le lycée
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" aria-label="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Accueil</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2nde</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Arithmetique/">Arithmétique</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Calcul-algebrique/">Calcul algébrique</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Droites du plan</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#vecteur-directeur-dune-droite">Vecteur directeur d&rsquo;une droite</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#definition-vecteur-directeur">Définition : Vecteur directeur</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#equation-cartesienne-dune-droite">Équation cartésienne d&rsquo;une droite</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#definition-et-proprietes-equation-cartesienne">Définition et propriétés : Équation cartésienne</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#equation-reduite-dune-droite">Équation réduite d&rsquo;une droite</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#de-lequation-cartesienne-a-lequation-reduite">De l&rsquo;équation cartésienne à l&rsquo;équation réduite</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#propriete-equation-reduite">Propriété : Équation réduite</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#propriete-reciproque">Propriété réciproque</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#position-relative-de-deux-droites">Position relative de deux droites</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#projete-orthogonal-dun-point-sur-une-droite">Projeté orthogonal d&rsquo;un point sur une droite</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ensembles-de-nombres/">Ensemble de nombres</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Probabilite-echantillonnage/">Probabilité et échantillonnage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Probabilite/">Probabilité</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Divers</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../divers/">Help</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Math pour le lycée</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Documents"></a></li>
+          <li class="breadcrumb-item">2nde</li>
+      <li class="breadcrumb-item active">Droites du plan</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="droites-du-plan">Droites du plan</h1>
+<h2 id="vecteur-directeur-dune-droite">Vecteur directeur d&rsquo;une droite</h2>
+<h3 id="definition-vecteur-directeur">Définition : Vecteur directeur</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>Soit $\mathscr{D}$ est une droite du plan.</p>
+<p>On appelle <strong>vecteur directeur</strong> de $\mathscr{D}$ tout vecteur non nul $\vec{u}$ qui possède la même direction que la droite $\mathscr{D}$.</p>
+<p><img alt="" src="../img/droite/01tt.png" width="50%" /></p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Déterminer graphiquement un vecteur directeur d&rsquo;une droite</strong></p>
+<p>❓ Donner des vecteurs directeurs des droites $d_1$, $d_2$, $d_3$ et $d_4$.</p>
+<p><img alt="" src="../img/droite/02.png" width="50%" /></p>
+<details>
+<summary>Réponse</summary>
+<ul>
+<li>Pour $\textcolor{red}{d_1}$ : $\textcolor{red}{\vec{a}}\begin{pmatrix} 1 \\ 2\end{pmatrix}$ ou $\textcolor{red}{\vec{b}}\begin{pmatrix} 2 \\ 4 \end{pmatrix}$ ou encore $\textcolor{red}{\vec{c}}\begin{pmatrix} -1 \\ -2\end{pmatrix}$.</li>
+<li>Pour $d_2$ : $\textcolor{green}{\vec{d}\begin{pmatrix} 6 \\ 0 \end{pmatrix}}$</li>
+<li>Pour $d_3$ : $\textcolor{blue}{\vec{u}\begin{pmatrix} 1 \\ -1\end{pmatrix}}$</li>
+<li>Pour $d_4$ : $\textcolor{violet}{\vec{v}\begin{pmatrix} 0 \\ 2\end{pmatrix}}$</li>
+</ul>
+<p><img alt="" src="../img/droite/04.png" width="50%" /></p>
+</details>
+</div>
+<p>$~$</p>
+<h2 id="equation-cartesienne-dune-droite">Équation cartésienne d&rsquo;une droite</h2>
+<h3 id="definition-et-proprietes-equation-cartesienne">Définition et propriétés : Équation cartésienne</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>Toute droite $\mathscr{D}$ admet une équation de la forme :</p>
+<p>$$\boxed{ax + by + c = 0}\qquad\text{avec }a\neq 0\text{ et }b\neq 0$$</p>
+<p>Cette équation est appelée <strong>équation cartésienne</strong> de la droite $\mathscr{D}$.</p>
+</div>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p>Un vecteur directeur de $\mathscr{D}$ est $\boxed{\vec{u}\coord{-b}{a}}$.</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>Soit une droite $(d)$ d&rsquo;équation cartésienne $~\textcolor{blue}{4x-5y-1=0}$</p>
+<p>On a $~a=4~,~b=-5~,~c=-1~$ donc le vecteur $\textcolor{green}{\vec{u}\coord{5}{4}}$ est un <strong>vecteur directeur</strong> de $(d)$.</p>
+<p><img alt="" src="../img/droite/06tt.png" width="75%" /></p>
+</div>
+<div class="admonition theoreme">
+<p class="admonition-title">Theoreme</p>
+<p>L&rsquo;ensemble des points $~M\left(x ; y\right)~$ tels que $~ax + by + c = 0~$ avec $~\left( a ;b \right) \neq \left( 0 ;0 \right)~$ est une droite $\mathscr{D}$ de vecteur directeur $~\vec{u}\begin{pmatrix}-b\\a\end{pmatrix}~$.</p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Déterminer une équation cartésienne à partir d&rsquo;un point et d&rsquo;un vecteur directeur</strong></p>
+<p><img alt="" src="../img/droite/08.1.png" width="50%" /></p>
+<p>❓ Déterminer une équation cartésienne de la droite $(d)$ passant par le point $A\left(3 ; 1\right)$ et de vecteur directeur $~\vec{u}\begin{pmatrix}-1\\5\end{pmatrix}$.</p>
+<hr />
+<p><strong>Méthode 1️⃣ :</strong></p>
+<p>Soit un point $M(x ; y)$ de la droite $(d)$.</p>
+<p>Les vecteurs $~\textcolor{green}{\vec{AM}}~$ et $~\textcolor{blue}{\vec{u}}~$ sont colinéaires.</p>
+<p>On a $\quad\vec{AM}\begin{pmatrix}x - 3 \\y - 1 \end{pmatrix}$ et $\vec{u}\begin{pmatrix} - 1 \\5 \end{pmatrix}$</p>
+<p>$$
+    \begin{aligned}
+        \textcolor{green}{\vec{AM}}\text{ et }\textcolor{blue}{\vec{u}}\text{ colinéaires } &amp; \Lrarr \det\left( \vec{\text{AM}} ;\vec{u} \right) = 0                         \\
+        \quad                                                                               &amp; \Lrarr \left| \begin{matrix}x - 3 &amp; - 1 \\ y - 1 &amp; 5 \end{matrix} \right| = 0 \\
+        \quad                                                                               &amp; \Lrarr 5(x-3)-(y-1)(-1)=0                                                       \\
+        \quad                                                                               &amp; \Lrarr 5x+y-16=0
+    \end{aligned}
+$$</p>
+<p>Une équation cartésienne de $(d)$ est : $~5x+y-16=0~$</p>
+<hr />
+<p><strong>Méthode 2️⃣ :</strong></p>
+<p>Le vecteur $\vec{u}\begin{pmatrix} \textcolor{blue}{-1}\\\textcolor{green}{5}\end{pmatrix}$ est un vecteur directeur de $(d)$ donc l&rsquo;équation de la droite est de la forme :</p>
+<p>$$\textcolor{green}{5}x+\textcolor{blue}{1}y+c=0$$
+Le point $A\left(3 ; 1\right)$ appartient à la droite $(d)$ donc ses coordonnées vérifient l&rsquo;équation :</p>
+<p>$$
+    \begin{aligned}
+        5x_A+y_A+c=0 &amp; \Lrarr 5\times 3+ 1 +c=0 \\
+                     &amp; \Lrarr 16 + c=0          \\
+                     &amp; \Lrarr c=-16
+    \end{aligned}
+$$</p>
+<p>Une équation cartésienne de $(d)$ est : $~5x+y-16=0$</p>
+</div>
+<h2 id="equation-reduite-dune-droite">Équation réduite d&rsquo;une droite</h2>
+<h3 id="de-lequation-cartesienne-a-lequation-reduite">De l&rsquo;équation cartésienne à l&rsquo;équation réduite</h3>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>Si $b \neq 0$, alors l&rsquo;équation cartésienne $ax + by + c = 0$ de la droite $(d)$ peut être ramenée à une équation réduite :</p>
+<p>$$y = \textcolor{red}{-\frac{a}{b}}x \textcolor{blue}{-\frac{c}{b}}\qquad\text{ou}\qquad y = \textcolor{red}{m}x +\textcolor{blue}{p}$$</p>
+<p>On note $\quad\textcolor{red}{m = -\dfrac{a}{b}}\quad$ et $\quad\textcolor{blue}{p = -\dfrac{c}{b}}$</p>
+<p><strong>Vocabulaire</strong></p>
+<ul>
+<li>$\textcolor{red}{m}$ est <strong>la pente</strong> ou <strong>le coefficient directeur</strong> de $(d)$.</li>
+<li>$\textcolor{blue}{p}$ est appelé <strong>l&rsquo;ordonnée à l&rsquo;origine</strong> de $(d)$.</li>
+</ul>
+<p><img alt="" src="../img/droite/09.1tt.png" width="50%" /></p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>Soit $(d)$ une droite d&rsquo;équation cartésienne $\quad 4x + y - 6 = 0$</p>
+<p>$$
+    \begin{array}{rrl}
+        ~      &amp; 4x+y-6 &amp; =0     \\
+        \Lrarr &amp; y-6    &amp; =-4x   \\
+        \Lrarr &amp; y      &amp; =-4x+6
+    \end{array}
+$$</p>
+<p>Son équation réduite est : $y = \textcolor{red}{-4}x + \textcolor{blue}{6}$</p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>Si $b=0$, alors l&rsquo;équation cartésienne $ax+by+c=0$ de la droite $(d)$ peut être ramenée à l&rsquo;équation réduite : $$x=\textcolor{green}{\dfrac{-c}{a}}$$</p>
+<p>Dans ce cas, la droite $(d)$ est parallèle à l&rsquo;axe des ordonnées.</p>
+<p><img alt="" src="../img/droite/10tt.png" width="50%" /></p>
+</div>
+<h3 id="propriete-equation-reduite">Propriété : Équation réduite</h3>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p>Soit $\left(O;\vec{i},\vec{j}\right)$ un repère du plan. Soit $\mathscr{D}$ une droite du plan.</p>
+<ul>
+<li>
+<p>Si $\mathscr{D}$ est parallèle à l&rsquo;axe des ordonnées :</p>
+<ul>
+<li>L&rsquo;équation de $\mathscr{D}$ est de la forme $\quad x = \textcolor{green}{n}\qquad$ où $~\textcolor{green}{n}\in\R$.</li>
+</ul>
+</li>
+<li>
+<p>Si $\mathscr{D}$ n&rsquo;est pas parallèle à l&rsquo;axe des ordonnées :</p>
+<ul>
+<li>L&rsquo;équation de $\mathscr{D}$ est de la forme $\quad y = \textcolor{red}{m}x + \textcolor{blue}{p}\qquad$ où $~\textcolor{red}{m}\in\R~$ et $~\textcolor{blue}{p}\in\R$.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../img/droite/12.1.png" width="75%" /></p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p><img alt="" src="../img/droite/13.png" width="50%" /></p>
+<ul>
+<li>
+<p>$D$ a pour équation $x = \textcolor{green}{3}$</p>
+</li>
+<li>
+<p>$D^\prime$ a pour équation $y = \textcolor{red}{3}x + \textcolor{blue}{2}$</p>
+<ul>
+<li>Son <strong>ordonnée à l&rsquo;origine</strong> est $\textcolor{blue}{2}$</li>
+<li>Son <strong>coefficient directeur</strong> est $\textcolor{red}{+3}$.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Représenter graphiquement une droite d&rsquo;équation réduite</strong></p>
+<p>❓ Tracer les droites $d_1$, $d_2$ et $d_3$ d&rsquo;équations réduites respectives :</p>
+<ul>
+<li>$y = 2x + 3$</li>
+<li>$y = 4$</li>
+<li>$x = 3$</li>
+</ul>
+<hr />
+<p>La droite $~d_1~$ d&rsquo;équation $~y =2x +3~$ a pour ordonnée à l&rsquo;origine $3$.</p>
+<p>Donc le point $~A\left(0;3\right)~$ appartient à la droite $~d_1~$.</p>
+<p>Soit $~B~$ le point d&rsquo;abscisse $1$ appartenant à la $~d_1~$.</p>
+<p>Les coordonnées de $~B~$ vérifient l&rsquo;équation de $~d_1~$, donc :</p>
+<p>$$
+    \begin{aligned}
+        y_B &amp; = 2\times x_B + 3     \\
+            &amp; = 2\times (1) + 3 = 5
+    \end{aligned}
+$$</p>
+<p>Le point $~B\left(1;5\right)~$ appartient à la droite $~d_1~$.</p>
+<p>On peut ainsi tracer la droite $~d_1~$ passant par $~A\left(0;3\right)~$ et $~B\left(1;5\right)~$.</p>
+<hr />
+<p>La droite $~d_2~$ d&rsquo;équation $~y = 4~$ est l&rsquo;ensemble des points dont l&rsquo;ordonnée est égale à $4$.</p>
+<p>$~d_2~$ est donc la droite parallèle à l&rsquo;axe des abscisses coupant l&rsquo;axe des ordonnées au point de coordonnées $~\left(0;4\right)~$</p>
+<hr />
+<p>La droite $~d_3~$ d&rsquo;équation $~x=3~$ est l&rsquo;ensemble des points dont l&rsquo;abscisse est égale à $3$.</p>
+<p>$~d_3~$ est donc la droite parallèle à l&rsquo;axe des ordonnées coupant l&rsquo;axe des abscisses au point de coordonnées $~\left(3;0\right)~$</p>
+<hr />
+<p><img alt="" src="../img/droite/18tt.png" width="75%" /></p>
+</div>
+<h3 id="propriete-reciproque">Propriété réciproque</h3>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p>Soit $~\left(O;\vec{i},\vec{j}\right)~$ un repère du plan et $~m~$, $~p~$, $~n~$ trois nombres réels, $~m~$ étant non nul.</p>
+<p>L&rsquo;ensemble des points $~M~$ du plan dont les coordonnées $~\left(x;y\right)~$ tels que $~y = mx + p~$ ou $~x = n~$ ,est une droite.</p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Vérifier si un point appartient à une droite d&rsquo;équation donnée</strong></p>
+<p>❓ Les points $~A\left(6.4~;~42\right)~$ et $~B\left(346~; 2419\right)~$ appartiennent-ils à $~(d)~$ d&rsquo;équation $~y=7x-3~$ ?</p>
+<hr />
+<p>Dire que le point $~A\left(6.4~; 42\right)~$ appartient à la droite $~(d)~$ d&rsquo;équation $~y=7x-3~$ revient à dire que les coordonnées de $~A~$ vérifient l&rsquo;équation de $~(d)~$.</p>
+<p>$$
+    \begin{aligned}
+        7\times x_A-3 &amp; = 7\times 6.4-3 \\
+                      &amp; =41.8\neq 42    \\
+    \end{aligned}
+$$</p>
+<p>Donc $~y_A \neq 7\times x_A-3\Rarr~$ Le point $~A~$ n&rsquo;appartient pas à $~(d)~$.</p>
+<hr />
+<p>Dire que le point $~B\left(346~; 2419\right)~$ appartient à la droite $~(d)~$ d&rsquo;équation $~y=7x-3~$ revient à dire que les coordonnées de $~B~$ vérifient l&rsquo;équation de $~(d)~$.</p>
+<p>$$
+    \begin{aligned}
+        7\times x_B-3 &amp; = 7\times 346-3 \\
+                      &amp; =2419=y_B
+    \end{aligned}
+$$</p>
+<p>Donc $~y_B =7\times x_B-3\quad\Rightarrow~$ Le point $~B~$ appartient à $~(d)~$.</p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>Pour démontrer que $~A~$, $~B~$ et $~C~$ sont alignés, il suffit de montrer que le point $~A~$ vérifie l&rsquo;équation de la droite $~(BC)~$.</p>
+</div>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p><strong>Coefficient directeur</strong></p>
+<p>Si $~A\left(x_{A} ; y_{A}\right)~$ et $~B\left(x_{B} ; y_{B}\right)~$ sont deux points distincts d&rsquo;une droite $~\mathscr{D}~$ tel que $~x_{A} \neq x_{B}~$ alors la droite $~\mathscr{D}~$ a pour <strong>pente</strong> (ou <strong>coefficient directeur</strong>) :</p>
+<p>$$\boxed{m = \dfrac{y_{B} - y_{A}}{x_{B} - x_{A}}=\dfrac{\Delta y}{\Delta x}}$$</p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Déterminer une équation réduite de droite dont on connaît deux points</strong></p>
+<p>Soit $~A\left(4 ; -1\right)~$ et $~B\left(3 ; 5\right)~$ deux points d&rsquo;une droite $~(d)~$.</p>
+<p>❓ Déterminer une équation de la droite $(d)$.</p>
+<hr />
+<p>On a $~A\left(4 ; -1\right)~$ et $~B\left(3 ; 5\right)~$</p>
+<p>On a $~x_A\neq x_B~$ donc la droite $~(d)~$ n&rsquo;est pas parallèle à l&rsquo;axe des ordonnées. L&rsquo;équation de $~(d)~$ est de la forme : $~y = mx + p~$</p>
+<p>où $~m~$ et $~p~$ sont deux nombres réels.</p>
+<p>Le coefficient directeur de $(d)$ est :</p>
+<p>$$m=\dfrac{y_{B} - y_{A}}{x_{B} - x_{A}}=\dfrac{5-(-1)}{3-4}=-6$$</p>
+<p>L&rsquo;équation de $~(d)~$ est donc de la forme : $~y=-6x+p~$</p>
+<p>Comme $~A\left(4 ; -1\right)~$ appartient à $~(d)~$, ses coordonnées vérifient l&rsquo;équation de $~(d)~$ soit :</p>
+<p>$$
+    \begin{aligned}
+               &amp; y_A &amp; = &amp; -6\times x_A+p  \\
+        \Lrarr &amp; -1  &amp; = &amp; -6\times 4+p    \\
+        \Lrarr &amp; p   &amp; = &amp; -1+6\times 4=23 \\
+    \end{aligned}
+$$</p>
+<p>Une équation de $(d)$ est donc : $~y = -6x + 23~$</p>
+<p><img alt="" src="../img/droite/19.png" width="50%" /></p>
+</div>
+<h2 id="position-relative-de-deux-droites">Position relative de deux droites</h2>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+</div>
+<p><strong>À partir l&rsquo;équation cartésienne</strong></p>
+<p>Dire que $(D)$ et $(D&rsquo;)$ sont parallèles entre-elles équivaut à dire qu&rsquo;elles ont des <strong>vecteurs directeurs colinéaires</strong>.</p>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+</div>
+<p>❓ Démontrer que deux droites sont parallèles</p>
+<p>Démontrons que les droites $(d_1): 6x-10y-5=0$ et $(d_2):-9x+15y=0$ sont parallèles.</p>
+<ul>
+<li>Le vecteur $\vec{u}\left(10;6\right)$ est un vecteur directeur de la droite $(d_1)$.</li>
+<li>Le vecteur $\vec{v}\left(-15;-9\right)$ est un vecteur directeur de la droite $(d_2)$.</li>
+</ul>
+<p>Calculons $\det\left(\vec{u} ;\vec{v} \right)$ :</p>
+<p>$$\det\left(\vec{u};\vec{v}\right)=\left|\begin{matrix}10&amp;-15\6&amp;-9\\end{matrix}\right|\quad=10\times\left(-9\right)-6\times\left(-15\right)\quad=0$$</p>
+<p>Donc $\vec{u}$ et $\vec{v}$ sont colinéaires et $(d_1)\parallel(d_2)$.</p>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+</div>
+<p><strong>À partir de l&rsquo;équation réduite</strong></p>
+<p>Soit $(D)$ et $(D&rsquo;)$ deux droites non parallèles à l&rsquo;axe des ordonnées.</p>
+<p>Dire que $(D)$ et $(D&rsquo;)$ sont parallèles entre-elles équivaut à dire qu&rsquo;elles ont le <strong>même coefficient directeur</strong>.</p>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+</div>
+<p>$(d_1):y=0.5x+2$ est parallèle à $(d_2):y=0.5x-1$ car leurs coefficients directeurs sont égaux à $0.5$</p>
+<p>!!! exemple Dans un repère du plan, on a :</p>
+<ul>
+<li>$d_1 : y=3x+4$</li>
+<li>$d_2 : y=3x+9$</li>
+<li>$d_3 : x=8$</li>
+</ul>
+<p>On a :</p>
+<ul>
+<li>$(d_1)\parallel(d_2)$ car elles ont un <strong>coefficient directeur</strong> égal à $3$.</li>
+<li>Les droites $(d_1)$ et $(d_3)$ sont <strong>sécantes</strong>.</li>
+</ul>
+<h2 id="projete-orthogonal-dun-point-sur-une-droite">Projeté orthogonal d&rsquo;un point sur une droite</h2>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+</div>
+<p><strong>Projeté orthogonal</strong></p>
+<p>Soit une droite $(d)$ et un point $M$ du plan.</p>
+<p>Le <strong>projeté orthogonal</strong> du point $M$ sur $(d)$ est le point d&rsquo;intersection $H$ de $(d)$ avec <strong>la perpendiculaire</strong> à $(d)$ passant par $M$.</p>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+</div>
+<p><strong>Distance minimale</strong></p>
+<figure>
+<p><img alt="" src="../img/droite/21.png" width="50%" /></p>
+<figcaption>
+<p>Projeté orthogonal de $M$ sur $(d)$</p>
+</figcaption>
+</figure>
+<p>Le projeté orthogonal de $M$ sur $(d)$ est le point de la droite $(d)$ le plus proche du point $M$.</p>
+<p><img alt="" src="../img/droite/22.png" width="50%" />
+///
+Distance minimale entre $M$ et $(d)$
+///</p>
+<div class="admonition demo">
+<p class="admonition-title">Demo</p>
+</div>
+<p>Soit $H$ le projeté orthogonal du point $M$ sur $(d)$.</p>
+<p><strong>Supposons</strong> qu&rsquo;il existe un point $K$ de $(d)$ plus proche de $M$ que l&rsquo;est $H$.</p>
+<p>On a :</p>
+<p>$KM\leq HM\quad$ (car $K$ est le point de $(d)$ le plus proche de $M$) donc $KM^2\leq HM^2$</p>
+<p>Or, d&rsquo;après l&rsquo;égalité de Pythagore, on a :</p>
+<p>$HM^2 + HK^2 = KM^2\quad\leq HM^2$</p>
+<p>Donc</p>
+<p>$HM^2 + HK^2 \leq HM^2\qquad$ Donc $HK^2 \leq 0$.</p>
+<p>Ce qui est impossible sauf dans le cas où le point $K$ est le point $H$. ($HK=0$ dans ce cas).</p>
+<p>On en déduit que $H$ est le point de $(d)$ le plus proche de $M$.</p>
+<hr />
+<div class="admonition demo">
+<p class="admonition-title">Demo</p>
+</div>
+<p>Démontrons que $\left(\cos\alpha\right)^2 + \left(\sin\alpha\right)^2 = 1$</p>
+<p>Soit une droite $(d)$ et un point $P\in (d)$.</p>
+<p>Soit un point $M$ n&rsquo;appartenant pas à $d$.</p>
+<p>On appelle $H$ le projeté orthogonal de $M$ sur $(d)$.</p>
+<p>On note $\alpha$ l&rsquo;angle $\widehat{\text{MPH}}$.</p>
+<p><img alt="" src="../img/droite/23.png" width="50%" /></p>
+<p>Le triangle $PHM$ est rectangle en $H$, on a donc :</p>
+<ul>
+<li>$\cos\alpha =\frac{PH}{PM}\quad$ soit $\quad PH = PM \times \cos\alpha$.</li>
+<li>$\sin\alpha =\frac{HM}{PM}\quad$ soit $\quad HM = PM \times \sin\alpha$.</li>
+</ul>
+<p>D&rsquo;après le théorème de Pythagore, on a :
+$$PH^2 + HM^2 = PM^2$$</p>
+<p>Soit en remplaçant les valeurs de $PH$ et $HM$ :</p>
+<p>$$
+    \begin{aligned}
+        ~        &amp; PH^2                                    &amp; + &amp; HM^2                                      &amp; =~ &amp; PM^2 \
+        ~\Lrarr~ &amp; \left( PM \times \cos\alpha \right)^2   &amp; + &amp; \left( PM \times \sin\alpha \right)^2     &amp; =~ &amp; PM^2 \
+        ~\Lrarr~ &amp; PM^2 \times \left( \cos\alpha \right)^2 &amp; + &amp; {PM^2 \times \left( \sin\alpha \right)}^2 &amp; =~ &amp; PM^2 \
+        ~\Lrarr~ &amp; \left( \cos\alpha \right)^2             &amp; + &amp; \left( \sin\alpha \right)^2               &amp; =~ &amp; 1\end{aligned}
+$$</p>
+<p>Donc, pour tout $\alpha\in\left[0<sup>\circ;90</sup>\circ\right[$, on a :</p>
+<p>$$\left(\cos\alpha\right)<sup>2+\left(\sin\alpha\right)</sup>2 = 1$$</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../Calcul-algebrique/" class="btn btn-neutral float-left" title="Calcul algébrique"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../Ensembles-de-nombres/" class="btn btn-neutral float-right" title="Ensemble de nombres">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Calcul-algebrique/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../Ensembles-de-nombres/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.8/mermaid.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-mermaid.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
