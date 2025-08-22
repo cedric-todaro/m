@@ -40,12 +40,14 @@ MathJax = {
         \let\rnc\newcommand
         \let\le\leqslant
         \let\ge\geqslant
+        \let\cbox\colorbox
         \nc{\N}{\mathbb{N}}
         \nc{\Z}{\mathbb{Z}}
         \nc{\D}{\mathbb{D}}
         \nc{\Q}{\mathbb{Q}}
         \nc{\R}{\mathbb{R}}
         \nc{\C}{\mathbb{C}}
+        \nc{\pa}[1]{\left(#1\right)}
         \rnc{\iff}{\Leftrightarrow}
       `);
     },
