@@ -56,6 +56,7 @@ MathJax = {
         \rnc{\iff}{\Leftrightarrow}
         \nc{\Lrarr}{\Leftrightarrow}
         \nc{\Rarr}{\Rightarrow}
+        \nc{\rarr}{\rightarrow}
       `);
         },
     },
