@@ -83,7 +83,7 @@
     $$
     \begin{array}{|c|c|c|c|c|c|c|}\hline
     \rule[-3mm]{0mm}{9mm}e_i & 1 & 2 & 3 & 4 & 5 & 6\\\\ \hline
-    \rule[-3mm]{0mm}{9mm}P(e_i)&\frac{1}{6}&\frac{1}{6}&\frac{1}{6}&\frac{1}{6}&\frac{1}{6}&\frac{1}{6}\\\\ \hline
+    \rule[-3mm]{0mm}{9mm}P(e_i)&\cfrac{1}{6}&\cfrac{1}{6}&\cfrac{1}{6}&\cfrac{1}{6}&\cfrac{1}{6}&\cfrac{1}{6}\\\\ \hline
     \end{array}
     $$
 
@@ -102,7 +102,7 @@
     $$
     \begin{array}{|c|c|c|c|}\hline
     e_i&\text{\color{Red}{Rouge}} &\text{\color{green}{Verte}}& \text{\color{Black}{Noire}}\\\\ \hline
-    \rule[-3mm]{0mm}{9mm}P(e_i)&\frac{3}{10}=0.3&\frac{2}{10}=0.2&\frac{5}{10}=0.5\\\\ \hline\end{array}
+    \rule[-3mm]{0mm}{9mm}P(e_i)&\cfrac{3}{10}=0.3&\cfrac{2}{10}=0.2&\cfrac{5}{10}=0.5\\\\ \hline\end{array}
     $$
 
 !!! prop
@@ -131,7 +131,7 @@
 
     - Univers : $\Omega=\lbrace 1;2;3;4;5;6\rbrace $
 
-    On a : $\quad P("1")=P("2")=...=P("6")=\frac{1}{6}$
+    On a : $\quad P("1")=P("2")=...=P("6")=\cfrac{1}{6}$
 
     C'est une situation d'**équiprobabilité**.
 
@@ -159,8 +159,8 @@
 
     On a :
 
-    - $P(A)=P("2")+P("4")+P("6")=\frac{1}{6}+\frac{1}{6}+\frac{1}{6}=\quad\frac{3}{6}$
-    - $P(B)=P("5")+P("6")=\frac{1}{6}+\frac{1}{6}=\quad\frac{2}{6}$
+    - $P(A)=P("2")+P("4")+P("6")=\cfrac{1}{6}+\cfrac{1}{6}+\cfrac{1}{6}=\quad\cfrac{3}{6}$
+    - $P(B)=P("5")+P("6")=\cfrac{1}{6}+\cfrac{1}{6}=\quad\cfrac{2}{6}$
 
 ### Propriétés
 
@@ -236,7 +236,7 @@
     $$
     \begin{array}{|c|c|c|c|c|}\hline
     e_i&\text{1}&\text{2}&\text{3}&\text{4}\\\\ \hline
-    \rule[-3mm]{0mm}{9mm}P(e_i)&\frac{2}{8}=0.25&\frac{2}{8}=0.25&\frac{3}{8}=0.375&\frac{1}{8}=0.125\\\\ \hline
+    \rule[-3mm]{0mm}{9mm}P(e_i)&\cfrac{2}{8}=0.25&\cfrac{2}{8}=0.25&\cfrac{3}{8}=0.375&\cfrac{1}{8}=0.125\\\\ \hline
     \end{array}
     $$
 
@@ -249,7 +249,7 @@
     $$
     	\begin{array}{rccccc}
     		P(B) & = & P(\text{2}) & + & P(\text{4})                      \\\\
-    		     & = & \frac{2}{8} & + & \frac{1}{8} & =\frac{3}{8}=0.375
+    		     & = & \cfrac{2}{8} & + & \cfrac{1}{8} & =\cfrac{3}{8}=0.375
     	\end{array}
     $$
 
@@ -263,7 +263,7 @@
     $$
     	\begin{array}{rccccc}
     		P\left(\overline{B}\right) & =& P(\text{1}) & + & P(\text{3})                         \\\\
-    		                           & =& \frac{2}{8} & + & \frac{3}{8}&=\frac{5}{8}=0.625
+    		                           & =& \cfrac{2}{8} & + & \cfrac{3}{8}&=\cfrac{5}{8}=0.625
     	\end{array}
     $$
 
@@ -275,16 +275,16 @@
 
     On a :
 
-    - $P(A)=P(\text{1})+P(\text{2})=\frac{2}{8}+\frac{2}{8}=\frac{4}{8}$
-    - $P(C)=P(\text{1})+P(\text{3})=\frac{2}{8}+\frac{3}{8}=\frac{5}{8}$
-    - $P(A\cap C)=P(\text{1})=\frac{2}{8}$
+    - $P(A)=P(\text{1})+P(\text{2})=\cfrac{2}{8}+\cfrac{2}{8}=\cfrac{4}{8}$
+    - $P(C)=P(\text{1})+P(\text{3})=\cfrac{2}{8}+\cfrac{3}{8}=\cfrac{5}{8}$
+    - $P(A\cap C)=P(\text{1})=\cfrac{2}{8}$
 
     Donc, on a :
 
     $$
     	\begin{array}{rccccc}
     		P(A\cup C) & = & P(A)        & + & P(C)        & - & P(A\cap C)                 \\\\
-    		~          & = & \frac{4}{8} & + & \frac{5}{8} & - & \frac{2}{8} & =\frac{7}{8}
+    		~          & = & \cfrac{4}{8} & + & \cfrac{5}{8} & - & \cfrac{2}{8} & =\cfrac{7}{8}
     	\end{array}
     $$
 
@@ -297,6 +297,6 @@
     $$
     	\begin{array}{rccccc}
     		P(A\cup C) & = & P(\text{1}) & + & P(\text{2}) & + & P(\text{3})                \\\\
-    		           & = & \frac{2}{8} & + & \frac{2}{8} & + & \frac{3}{8} & =\frac{7}{8}
+    		           & = & \cfrac{2}{8} & + & \cfrac{2}{8} & + & \cfrac{3}{8} & =\cfrac{7}{8}
     	\end{array}
     $$
