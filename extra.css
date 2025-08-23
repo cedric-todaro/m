@@ -1,21 +1,16 @@
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap');
-
-
-/* @import url('https://fonts.googleapis.com/css?family=Roboto'); */
-/* @import url('https://fonts.googleapis.com/css?family=Lato'); */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap");
 
 :is(h1, h2, h3, h4, h5, h6) {
     border-bottom: 1px solid black;
 }
 
-mjx-container{
+mjx-container {
     font-size: 100% !important;
     margin-left: 1px;
     margin-right: 1px;
 }
-
 
 .section img {
     display: block;
@@ -32,7 +27,7 @@ figcaption {
 }
 
 .wy-nav-content {
-    max-width:1000px;
+    max-width: 1000px;
 }
 
 footer {
@@ -44,74 +39,117 @@ span.rst-current-version {
     text-indent: -9999px;
 }
 
-/* Définition */
 .admonition.definition,
-.admonition.def { padding: 0; background-color: #fcfcfc; }
+.admonition.propriete,
+.admonition.remarque,
+.admonition.demonstration,
+.admonition.exemple,
+.admonition.methode,
+.admonition.theoreme,
+.admonition.def,
+.admonition.prop,
+.admonition.rem,
+.admonition.demo,
+.admonition.ex,
+.admonition.meth,
+.admonition.theo {
+    padding: 0;
+    background-color: #fcfcfc;
+}
 
 .admonition.definition .admonition-title,
-.admonition.def .admonition-title { color: #000; background: #fcfcfc;  text-indent: -9999px; line-height: 0; }
+.admonition.propriete .admonition-title,
+.admonition.remarque .admonition-title,
+.admonition.demonstration .admonition-title,
+.admonition.exemple .admonition-title,
+.admonition.methode .admonition-title,
+.admonition.theoreme .admonition-title,
+.admonition.def .admonition-title,
+.admonition.prop .admonition-title,
+.admonition.rem .admonition-title,
+.admonition.demo .admonition-title,
+.admonition.ex .admonition-title,
+.admonition.meth .admonition-title,
+.admonition.theo .admonition-title {
+    color: #000;
+    background: #fcfcfc;
+    text-indent: -9999px;
+    line-height: 0;
+}
 
+/* Définition */
 .admonition.definition .admonition-title::after,
-.admonition.def .admonition-title::after { display: block; margin-bottom: -8px; margin-top: -12px; text-indent: 0; line-height: initial; content: "\1F4D6\0020 Définition"; }
+.admonition.def .admonition-title::after {
+    display: block;
+    margin-bottom: -8px;
+    margin-top: -12px;
+    text-indent: 0;
+    line-height: initial;
+    content: "\1F4D6\0020 Définition";
+}
 
 /* Propriété */
-.admonition.propriete,
-.admonition.prop { padding: 0; background-color: #fcfcfc; }
-
-.admonition.propriete .admonition-title,
-.admonition.prop .admonition-title { color: #000; background: #fcfcfc;  text-indent: -9999px; line-height: 0; }
-
 .admonition.propriete .admonition-title::after,
-.admonition.prop .admonition-title::after { display: block; margin-bottom: -8px; margin-top: -12px; text-indent: 0; line-height: initial; content: "\1F4AC\0020 Propriété"; }
-
+.admonition.prop .admonition-title::after {
+    display: block;
+    margin-bottom: -8px;
+    margin-top: -12px;
+    text-indent: 0;
+    line-height: initial;
+    content: "\1F4AC\0020 Propriété";
+}
 
 /* Démonstration */
-.admonition.demonstration,
-.admonition.demo { padding: 0; background-color: #fcfcfc; }
-
-.admonition.demonstration .admonition-title,
-.admonition.demo .admonition-title { color: #000; background: #fcfcfc;  text-indent: -9999px; line-height: 0; }
-
 .admonition.demonstration .admonition-title::after,
-.admonition.demo .admonition-title::after { display: block; margin-bottom: -8px; margin-top: -12px; text-indent: 0; line-height: initial; content: "\1F50E\0020 Démonstration"; }
+.admonition.demo .admonition-title::after {
+    display: block;
+    margin-bottom: -8px;
+    margin-top: -12px;
+    text-indent: 0;
+    line-height: initial;
+    content: "\1F50E\0020 Démonstration";
+}
 
 /* Exemple */
-.admonition.exemple,
-.admonition.ex { padding: 0; background-color: #fcfcfc; }
-
-.admonition.exemple .admonition-title,
-.admonition.ex .admonition-title { color: #000; background: #fcfcfc;  text-indent: -9999px; line-height: 0; }
-
 .admonition.exemple .admonition-title::after,
-.admonition.ex .admonition-title::after { display: block; margin-bottom: -8px; margin-top: -12px; text-indent: 0; line-height: initial; content: "\1F449\0020 Exemple"; }
+.admonition.ex .admonition-title::after {
+    display: block;
+    margin-bottom: -8px;
+    margin-top: -12px;
+    text-indent: 0;
+    line-height: initial;
+    content: "\1F449\0020 Exemple";
+}
 
 /* Méthode */
-.admonition.methode,
-.admonition.meth { padding: 0; background-color: #fcfcfc; }
-
-.admonition.methode .admonition-title,
-.admonition.meth .admonition-title { color: #000; background: #fcfcfc;  text-indent: -9999px; line-height: 0; }
-
 .admonition.methode .admonition-title::after,
-.admonition.meth .admonition-title::after { display: block; margin-bottom: -8px; margin-top: -12px; text-indent: 0; line-height: initial; content: "\1F4CE\0020 Méthode"; }
+.admonition.meth .admonition-title::after {
+    display: block;
+    margin-bottom: -8px;
+    margin-top: -12px;
+    text-indent: 0;
+    line-height: initial;
+    content: "\1F4CE\0020 Méthode";
+}
 
 /* Remarque */
-.admonition.remarque,
-.admonition.rem { padding: 0; background-color: #fcfcfc; }
-
-.admonition.remarque .admonition-title,
-.admonition.rem .admonition-title { color: #000; background: #fcfcfc;  text-indent: -9999px; line-height: 0; }
-
 .admonition.remarque .admonition-title::after,
-.admonition.rem .admonition-title::after { display: block; margin-bottom: -8px; margin-top: -12px; text-indent: 0; line-height: initial; content: "\1F453\0020 Remarque"; }
+.admonition.rem .admonition-title::after {
+    display: block;
+    margin-bottom: -8px;
+    margin-top: -12px;
+    text-indent: 0;
+    line-height: initial;
+    content: "\1F453\0020 Remarque";
+}
 
 /* Théorème*/
-.admonition.theoreme,
-.admonition.theo { padding: 0; background-color: #fcfcfc; }
-
-.admonition.theoreme .admonition-title,
-.admonition.theo .admonition-title { color: #000; background: #fcfcfc;  text-indent: -9999px; line-height: 0; }
-
 .admonition.theoreme .admonition-title::after,
-.admonition.theo .admonition-title::after { display: block; margin-bottom: -8px; margin-top: -12px; text-indent: 0; line-height: initial; content: "\1F4D0\0020 Théorème"; }
-
+.admonition.theo .admonition-title::after {
+    display: block;
+    margin-bottom: -8px;
+    margin-top: -12px;
+    text-indent: 0;
+    line-height: initial;
+    content: "\1F4D0\0020 Théorème";
+}
