@@ -1,6 +1,6 @@
 # Droites du plan
 
-## Vecteur directeur d'une droite
+Vecteur directeur d'une droite
 
 ### Définition : Vecteur directeur
 
@@ -118,7 +118,7 @@ $~$
 
     $$y = \textcolor{red}{-\frac{a}{b}}x \textcolor{blue}{-\frac{c}{b}}\qquad\text{ou}\qquad y = \textcolor{red}{m}x +\textcolor{blue}{p}$$
 
-    On note $\quad\textcolor{red}{m = -\dfrac{a}{b}}\quad$ et $\quad\textcolor{blue}{p = -\dfrac{c}{b}}$
+    On note $\quad\textcolor{red}{m = -\cfrac{a}{b}}\quad$ et $\quad\textcolor{blue}{p = -\cfrac{c}{b}}$
 
     **Vocabulaire**
 
@@ -143,7 +143,7 @@ $~$
 
 !!! rem
 
-    Si $b=0$, alors l'équation cartésienne $ax+by+c=0$ de la droite $(d)$ peut être ramenée à l'équation réduite : $$x=\textcolor{green}{\dfrac{-c}{a}}$$
+    Si $b=0$, alors l'équation cartésienne $ax+by+c=0$ de la droite $(d)$ peut être ramenée à l'équation réduite : $$x=\textcolor{green}{\cfrac{-c}{a}}$$
 
     Dans ce cas, la droite $(d)$ est parallèle à l'axe des ordonnées.
 
@@ -270,7 +270,7 @@ $~$
 
     Si $~A\left(x_{A} ; y_{A}\right)~$ et $~B\left(x_{B} ; y_{B}\right)~$ sont deux points distincts d'une droite $~\mathscr{D}~$ tel que $~x_{A} \neq x_{B}~$ alors la droite $~\mathscr{D}~$ a pour **pente** (ou **coefficient directeur**) :
 
-    $$\boxed{m = \dfrac{y_{B} - y_{A}}{x_{B} - x_{A}}=\dfrac{\Delta y}{\Delta x}}$$
+    $$\boxed{m = \cfrac{y_{B} - y_{A}}{x_{B} - x_{A}}=\cfrac{\Delta y}{\Delta x}}$$
 
 !!! methode
 
@@ -290,7 +290,7 @@ $~$
 
     Le coefficient directeur de $(d)$ est :
 
-    $$m=\dfrac{y_{B} - y_{A}}{x_{B} - x_{A}}=\dfrac{5-(-1)}{3-4}=-6$$
+    $$m=\cfrac{y_{B} - y_{A}}{x_{B} - x_{A}}=\cfrac{5-(-1)}{3-4}=-6$$
 
     L'équation de $~(d)~$ est donc de la forme : $~y=-6x+p~$
 
@@ -312,130 +312,131 @@ $~$
 
 !!! prop
 
-**À partir l'équation cartésienne**
+    **À partir l'équation cartésienne**
 
-Dire que $(D)$ et $(D')$ sont parallèles entre-elles équivaut à dire qu'elles ont des **vecteurs directeurs colinéaires**.
+    Dire que $(D)$ et $(D')$ sont parallèles entre-elles équivaut à dire qu'elles ont des **vecteurs directeurs colinéaires**.
 
 !!! methode
 
-:question: Démontrer que deux droites sont parallèles
+    **Démontrer que deux droites sont parallèles**
 
-Démontrons que les droites $(d_1): 6x-10y-5=0$ et $(d_2):-9x+15y=0$ sont parallèles.
+    :question: Démontrons que les droites $(d_1): 6x-10y-5=0$ et $(d_2):-9x+15y=0$ sont parallèles.
 
-- Le vecteur $\vec{u}\left(10;6\right)$ est un vecteur directeur de la droite $(d_1)$.
-- Le vecteur $\vec{v}\left(-15;-9\right)$ est un vecteur directeur de la droite $(d_2)$.
+    ---
 
-Calculons $\det\left(\vec{u}\ ;\vec{v} \right)$ :
+    - Le vecteur $\vec{u}\left(10;6\right)$ est un vecteur directeur de la droite $(d_1)$.
+    - Le vecteur $\vec{v}\left(-15;-9\right)$ est un vecteur directeur de la droite $(d_2)$.
 
-$$\det\left(\vec{u};\vec{v}\right)=\left|\begin{matrix}10&-15\\6&-9\\\end{matrix}\right|\quad=10\times\left(-9\right)-6\times\left(-15\right)\quad=0$$
+    Calculons $\det\left(\vec{u}\ ;\vec{v} \right)$ :
 
-Donc $\vec{u}$ et $\vec{v}$ sont colinéaires et $(d_1)\parallel(d_2)$.
+    $$\det\left(\vec{u};\vec{v}\right)=\left| \begin{matrix}10&-15\\\\6&-9\end{matrix} \right| \quad=10\times\left(-9\right)-6\times\left(-15\right)\quad=0$$
+
+    Donc $\vec{u}$ et $\vec{v}$ sont colinéaires et $(d_1)\parallel(d_2)$.
 
 !!! prop
 
-**À partir de l'équation réduite**
+    **À partir de l'équation réduite**
 
-Soit $(D)$ et $(D')$ deux droites non parallèles à l'axe des ordonnées.
+    Soit $(D)$ et $(D')$ deux droites non parallèles à l'axe des ordonnées.
 
-Dire que $(D)$ et $(D')$ sont parallèles entre-elles équivaut à dire qu'elles ont le **même coefficient directeur**.
+    Dire que $(D)$ et $(D')$ sont parallèles entre-elles équivaut à dire qu'elles ont le **même coefficient directeur**.
 
 !!! exemple
 
-$(d_1):y=0.5x+2$ est parallèle à $(d_2):y=0.5x-1$ car leurs coefficients directeurs sont égaux à $0.5$
+    $(d_1):y=0.5x+2$ est parallèle à $(d_2):y=0.5x-1$ car leurs coefficients directeurs sont égaux à $0.5$
 
-!!! exemple Dans un repère du plan, on a :
+!!! exemple
 
-- $d_1 : y=3x+4$
-- $d_2 : y=3x+9$
-- $d_3 : x=8$
+    Dans un repère du plan, on a :
 
-On a :
+    - $d_1 : y=3x+4$
+    - $d_2 : y=3x+9$
+    - $d_3 : x=8$
 
-- $(d_1)\parallel(d_2)$ car elles ont un **coefficient directeur** égal à $3$.
-- Les droites $(d_1)$ et $(d_3)$ sont **sécantes**.
+    On a :
+
+    - $(d_1)\parallel(d_2)$ car elles ont un **coefficient directeur** égal à $3$.
+    - Les droites $(d_1)$ et $(d_3)$ sont **sécantes**.
 
 ## Projeté orthogonal d'un point sur une droite
 
 !!! definition
 
-**Projeté orthogonal**
+    **Projeté orthogonal**
 
-Soit une droite $(d)$ et un point $M$ du plan.
+    Soit une droite $(d)$ et un point $M$ du plan.
 
-Le **projeté orthogonal** du point $M$ sur $(d)$ est le point d'intersection $H$ de $(d)$ avec **la perpendiculaire** à $(d)$ passant par $M$.
+    Le **projeté orthogonal** du point $M$ sur $(d)$ est le point d'intersection $H$ de $(d)$ avec **la perpendiculaire** à $(d)$ passant par $M$.
+
+    ![](img/droite/21.png){width=50%}
+    /// caption
+    Projeté orthogonal de $M$ sur $(d)$
+    ///
 
 !!! prop
 
-**Distance minimale**
+    **Distance minimale**
 
-![](img/droite/21.png){width=50%}
-/// caption
-Projeté orthogonal de $M$ sur $(d)$
-///
+    Le projeté orthogonal de $M$ sur $(d)$ est le point de la droite $(d)$ le plus proche du point $M$.
 
-Le projeté orthogonal de $M$ sur $(d)$ est le point de la droite $(d)$ le plus proche du point $M$.
-
-![](img/droite/22.png){width=50%}
-///
-Distance minimale entre $M$ et $(d)$
-///
+    ![](img/droite/22.png){width=50%}
+    /// caption
+    Distance minimale entre $M$ et $(d)$
+    ///
 
 !!! demo
 
-Soit $H$ le projeté orthogonal du point $M$ sur $(d)$.
+    Soit $H$ le projeté orthogonal du point $M$ sur $(d)$.
 
-**Supposons** qu'il existe un point $K$ de $(d)$ plus proche de $M$ que l'est $H$.
+    **Supposons** qu'il existe un point $K$ de $(d)$ plus proche de $M$ que l'est $H$.
 
-On a :
+    On a $KM\leq HM$ (car $K$ est le point de $(d)$ le plus proche de $M$) donc $KM^2\leq HM^2$.
 
-$KM\leq HM\quad$ (car $K$ est le point de $(d)$ le plus proche de $M$) donc $KM^2\leq HM^2$
+    Or, d'après l'égalité de Pythagore, on a :
 
-Or, d'après l'égalité de Pythagore, on a :
+    $$
+    	\begin{array}{rcl}
+    		HM^2 + HK^2 = KM^2 \leq HM^2 & \iff & HM^2 + HK^2 \leq HM^2 \\\\
+    		~                            & \iff & HK^2 \leq 0
+    	\end{array}
+    $$
 
-$HM^2 + HK^2 = KM^2\quad\leq HM^2$
+    Ce qui est impossible sauf dans le cas où le point $K$ est le point $H$. ($HK=0$ dans ce cas).
 
-Donc
-
-$HM^2 + HK^2 \leq HM^2\qquad$ Donc $HK^2 \leq 0$.
-
-Ce qui est impossible sauf dans le cas où le point $K$ est le point $H$. ($HK=0$ dans ce cas).
-
-On en déduit que $H$ est le point de $(d)$ le plus proche de $M$.
-
----
+    On en déduit que $H$ est le point de $(d)$ le plus proche de $M$.
 
 !!! demo
 
-Démontrons que $\left(\cos\alpha\right)^2 + \left(\sin\alpha\right)^2 = 1$
+    **Démontrons que $\left(\cos\alpha\right)^2 + \left(\sin\alpha\right)^2 = 1$**
 
-Soit une droite $(d)$ et un point $P\in (d)$.
+    Soit une droite $(d)$, un point $P\in (d)$ et point $M\notin (d)$.
 
-Soit un point $M$ n'appartenant pas à $d$.
+    On appelle $H$ le projeté orthogonal de $M$ sur $(d)$.
 
-On appelle $H$ le projeté orthogonal de $M$ sur $(d)$.
+    On note $\alpha$ l'angle $\widehat{\text{MPH}}$.
 
-On note $\alpha$ l'angle $\widehat{\text{MPH}}$.
+    ![](img/droite/23.png){width=50%}
 
-![](img/droite/23.png){width=50%}
+    Le triangle $PHM$ est rectangle en $H$, on a donc :
 
-Le triangle $PHM$ est rectangle en $H$, on a donc :
+    - $\cos\alpha =\cfrac{PH}{PM}\quad$ soit $\quad PH = PM \times \cos\alpha$.
+    - $\sin\alpha =\cfrac{HM}{PM}\quad$ soit $\quad HM = PM \times \sin\alpha$.
 
-- $\cos\alpha =\frac{PH}{PM}\quad$ soit $\quad PH = PM \times \cos\alpha$.
-- $\sin\alpha =\frac{HM}{PM}\quad$ soit $\quad HM = PM \times \sin\alpha$.
+    D'après le théorème de Pythagore, on a :
 
-D'après le théorème de Pythagore, on a :
-$$PH^2 + HM^2 = PM^2$$
+    $$PH^2 + HM^2 = PM^2$$
 
-Soit en remplaçant les valeurs de $PH$ et $HM$ :
+    Soit en remplaçant les valeurs de $PH$ et $HM$ :
 
-$$
-	\begin{aligned}
-		~        & PH^2                                    & + & HM^2                                      & =~ & PM^2 \\
-		~\Lrarr~ & \left( PM \times \cos\alpha \right)^2   & + & \left( PM \times \sin\alpha \right)^2     & =~ & PM^2 \\
-		~\Lrarr~ & PM^2 \times \left( \cos\alpha \right)^2 & + & {PM^2 \times \left( \sin\alpha \right)}^2 & =~ & PM^2 \\
-		~\Lrarr~ & \left( \cos\alpha \right)^2             & + & \left( \sin\alpha \right)^2               & =~ & 1\end{aligned}
-$$
+    $$
+    	\begin{array}{rccccl}
+    		~        & PH^2                                    & + & HM^2                                      & = & PM^2 \\\\
+    		~\Lrarr~ & \left( PM \times \cos\alpha \right)^2   & + & \left( PM \times \sin\alpha \right)^2     & = & PM^2 \\\\
+    		~\Lrarr~ & PM^2 \times \left( \cos\alpha \right)^2 & + & {PM^2 \times \left( \sin\alpha \right)}^2 & = & PM^2 \\\\
+    		~\Lrarr~ & \left( \cos\alpha \right)^2             & + & \left( \sin\alpha \right)^2               & = & 1
+        \end{array}
+    $$
 
-Donc, pour tout $\alpha\in\left[0^\circ;90^\circ\right[$, on a :
+    Donc, pour tout $\alpha\in\left\[0^{\circ} ; 90^{\circ} \right\[$, on a :
 
-$$\left(\cos\alpha\right)^2+\left(\sin\alpha\right)^2 = 1$$
+    $$\left(\cos\alpha\right)^2 + \left(\sin\alpha\right)^2 = 1$$

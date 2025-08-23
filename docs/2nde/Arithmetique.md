@@ -253,14 +253,14 @@
 
 !!! ex
 
-    - $\frac{7}{5}$ est irréductible
-    - $\frac{21}{144}$ n'est pas irréductible car $\frac{21}{144}=\frac{7\times 3}{48\times 3}=\frac{7}{48}\qquad\Rightarrow\frac{7}{48}$ est irréductible.
+    - $\cfrac{7}{5}$ est irréductible
+    - $\cfrac{21}{144}$ n'est pas irréductible car $\cfrac{21}{144}=\cfrac{7\times 3}{48\times 3}=\cfrac{7}{48}\qquad\Rightarrow\cfrac{7}{48}$ est irréductible.
 
 !!! methode
 
     **Rendre une fraction irréductible**
 
-    Rendons irréductible la fraction $\dfrac{60}{126}$.
+    Rendons irréductible la fraction $\cfrac{60}{126}$.
 
     Pour rendre une fraction irréductible, il faut décomposer son **numérateur** et son **dénominateur** en produits de **facteurs premiers**.
 
@@ -279,4 +279,4 @@
 
     $10$ et $21$ sont **premiers entre eux**, donc:
 
-    $\dfrac{10}{21}$ est la fraction irréductible égale à $\dfrac{60}{126}$
+    $\cfrac{10}{21}$ est la fraction irréductible égale à $\cfrac{60}{126}$

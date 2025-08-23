@@ -10,6 +10,13 @@
     border-bottom: 1px solid black;
 }
 
+mjx-container{
+    font-size: 100% !important;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+
 .section img {
     display: block;
     margin: auto;
@@ -21,7 +28,6 @@
 }
 
 figcaption {
-    margin-top: -4%;
     text-align: center;
 }
 
