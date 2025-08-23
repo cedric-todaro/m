@@ -9,10 +9,12 @@ nav:
       - 2nde/Droites-du-plan.md
       - 2nde/Droites-et-systemes.md
       - 2nde/Ensembles-de-nombres.md
+      - 2nde/Fonctions-affines.md
       - 2nde/Probabilite-echantillonnage.md
       - 2nde/Probabilite.md
-  - Divers: 
+  - Divers:
       - Help: divers.md
+      - Testouille: test.md
 
 theme:
   name: readthedocs

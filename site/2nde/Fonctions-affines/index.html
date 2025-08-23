@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cedric-todaro.github.io/m/2nde/Fonctions-affines/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Fonctions affines - Math pour le lycée</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../extra.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-mermaid.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Fonctions affines";
+        var mkdocs_page_input_path = "2nde/Fonctions-affines.md";
+        var mkdocs_page_url = "/m/2nde/Fonctions-affines/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Math pour le lycée
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" aria-label="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Accueil</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2nde</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Arithmetique/">Arithmétique</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Calcul-algebrique/">Calcul algébrique</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Droites-du-plan/">Droites du plan</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Droites-et-systemes/">Droites et systèmes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ensembles-de-nombres/">Ensemble de nombres</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Fonctions affines</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#fonction-affine-ou-1texter-degre">Fonction affine (ou 1$^\text{er}$ degré)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#representation-graphique">Représentation graphique</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#coefficient-directeur-ou-pente-et-ordonnee-a-lorigine">Coefficient directeur (ou pente) et ordonnée à l&rsquo;origine</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Probabilite-echantillonnage/">Probabilité et échantillonnage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Probabilite/">Probabilité</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Divers</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../divers/">Help</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../test/">Testouille</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Math pour le lycée</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Documents"></a></li>
+          <li class="breadcrumb-item">2nde</li>
+      <li class="breadcrumb-item active">Fonctions affines</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="definitions-et-proprietes">Définitions et propriétés</h1>
+<h2 id="fonction-affine-ou-1texter-degre">Fonction affine (ou 1$^\text{er}$ degré)</h2>
+<p>\definition Soit $f$, une fonction définie sur $\R$ tel que :</p>
+<p>$$\boxed{f(x)=\textcolor{red}{m}x+\textcolor{blue}{p}}\qquad\text{avec}\qquad\textcolor{red}{m}\in\R~\text{ et }~\textcolor{blue}{p}\in\R$$</p>
+<p>$f$ est appelée <strong>fonction affine</strong> ou <strong>fonction du 1$^\text{er}$ degré</strong>.</p>
+<p>\exemple</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Fonctions</th>
+<th>$\textcolor{red}{m}$</th>
+<th>$\textcolor{blue}{p}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">$f(x)=\textcolor{red}{3}x+\textcolor{blue}{1}$</td>
+<td>$\textcolor{red}{3}$</td>
+<td>$\textcolor{blue}{1}$</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;">$\begin{aligned}f(x)&amp;=5-2x&amp;=\textcolor{red}{-2}x+\textcolor{blue}{5}\end{aligned}$</td>
+<td>$\textcolor{red}{-2}$</td>
+<td>$\textcolor{blue}{5}$</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;">$\begin{aligned}f(x)&amp;=\frac{-2x+4}{5} &amp;=\textcolor{red}{\frac{-2}{5}}x+\textcolor{blue}{\frac{4}{5}}\end{aligned}\qquad$</td>
+<td>$\textcolor{red}{\dfrac{-2}{5}}$</td>
+<td>$\textcolor{blue}{\dfrac{4}{5}}$</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;">$f(x)=\textcolor{red}{\sqrt{3}}x\textcolor{blue}{-10}$</td>
+<td>$\textcolor{red}{\sqrt{3}}$</td>
+<td>$\textcolor{blue}{-10}$</td>
+</tr>
+</tbody>
+</table>
+<p>\rem Quelques contre-exemples</p>
+<ul>
+<li>$f(x)=\sqrt{3x}\quad$ n&rsquo;est pas une fonction affine.</li>
+<li>$f(x)=\dfrac{3x+1}{x}\quad$ n&rsquo;est pas une fonction affine.</li>
+<li>$f(x)=x^2+1\quad$ n&rsquo;est pas une fonction affine.</li>
+</ul>
+<p>\medskip</p>
+<p>\medskip</p>
+<p><strong>\ul{Calcul d&rsquo;images}</strong></p>
+<p>$f(x)=\dfrac{1}{2}x+1\qquad m=\frac{1}{2}\quad$et$\quad p=1$</p>
+<p>$$
+\def\arraystretch{1.4}\begin{array}{|c|c|c|c|c|c|c|c|c|c|}\hline
+x &amp; -4  &amp; -2 &amp; -1 &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 6\ \hline
+f(x) &amp; -1  &amp; &hellip; &amp; &hellip; &amp; 1 &amp; 1.5 &amp; 2 &amp; &hellip; &amp; &hellip; &amp; 4\ \hline
+\end{array}
+$$</p>
+<ul>
+<li>$f(\cbox{pink}{-4})=\frac{1}{2}\times (\cbox{pink}{-4})+1\quad=-2+1\quad=-1$</li>
+<li>$f(\cbox{pink}{0})=\frac{1}{2}\times (\cbox{pink}{0})+1\quad=0+1\quad=1$</li>
+<li>$f(\cbox{pink}{6})=\frac{1}{2}\times (\cbox{pink}{6})+1\quad=3+1\quad=4$</li>
+</ul>
+<p>\newpage</p>
+<h2 id="representation-graphique">Représentation graphique</h2>
+<p>\propriete La représentation graphique d&rsquo;une fonction affine est <strong>une droite</strong></p>
+<p>\bw{r}{9.5cm}\cimg{9cm}{img/02.png}\ew</p>
+<p>\exemple Soit $f(x)=\frac{1}{2}x+1$ définie sur $\R$</p>
+<p>$$
+\def\arraystretch{1.4}\begin{array}{|c|c|c|c|}\hline
+x &amp; -4  &amp; &hellip; &amp; 6\ \hline
+f(x) &amp; -1  &amp; &hellip; &amp; 4\ \hline
+\end{array}
+$$</p>
+<hr />
+<p>\rem</p>
+<p>Soit $f$ définie sur $\R$ tel que : $\quad f(x)=\textcolor{red}{m}x+\textcolor{blue}{p}$</p>
+<ul>
+<li>$\textcolor{red}{m}$ est appelé <strong>coefficient directeur</strong> ou <strong>pente</strong></li>
+<li>$\textcolor{blue}{p}$ est appelé <strong>ordonnée à l&rsquo;origine</strong></li>
+</ul>
+<p>\exemple</p>
+<p>Soit $f(x)=\textcolor{blue}{3}\textcolor{red}{-2}x$ définie sur $\R$</p>
+<ul>
+<li><strong>Coefficient directeur</strong> : $\textcolor{red}{-2}$</li>
+<li><strong>Ordonnée à l&rsquo;origine</strong> : $\textcolor{blue}{3}$</li>
+</ul>
+<p>\rem L&rsquo;ordonnée à l&rsquo;origine, c&rsquo;est la valeur de $f(0)$.</p>
+<p>C&rsquo;est l&rsquo;ordonnée du point d&rsquo;intersection de la droite représentative de $f$ avec l&rsquo;axe des ordonnées.</p>
+<p>\exemple $\quad f(x)=\frac{1}{2}x+1\quad\Rightarrow p=1$</p>
+<p>Le point d&rsquo;intersection de la droite et de l&rsquo;axe des ordonnées à pour coordonnées $\pa{0;1}$.</p>
+<h2 id="coefficient-directeur-ou-pente-et-ordonnee-a-lorigine">Coefficient directeur (ou pente) et ordonnée à l&rsquo;origine</h2>
+<p>Soient $f$ définie sur $\R$ par $f(x)=\textcolor{red}{m}x+\textcolor{blue}{p}~$ et $~ a$ et $b$ deux réels distincts.</p>
+<p>On a :</p>
+<p>$$\boxed{\textcolor{red}{m}=\dfrac{f(b)-f(a)}{b-a}}\quad\text{et}\quad \textcolor{blue}{p}=f(a)-\textcolor{red}{m}a$$</p>
+<p>\medskip</p>
+<p>\bw{r}{4cm}
+\begin{tikzpicture}[line cap=round,line join=round,=triangle 45]
+\begin{axis}[x=0.75cm,y=0.75cm,axis lines=middle,ymajorgrids=true,xmajorgrids=true,xmin=-1.5,xmax=2.75,ymin=-6.5,ymax=1.5,xtick={-1.0,&hellip;,3.0},ytick={-6.0,-5.0,&hellip;,2.0},xticklabels={$-1$,,$1$,$2$},yticklabels={,$5$,,,,,$0$,$1$}]
+\draw [color=gray, line width=1.3pt,domain=-4:5] (-1,-8) &ndash; (3,4);
+\draw [fill=blue] (0.,-5.) circle (2.5pt);
+\draw[color=blue] (0.4,-5) node {$A$};
+\draw [fill=blue] (1.,-2.) circle (2.5pt);
+\draw[color=blue] (1.4,-2) node {$B$};
+\end{axis}
+\end{tikzpicture}
+\ew</p>
+<p>\exemple $f$ est une fonction affine telle que $f(0)=-5$ et $f(1)=-2$</p>
+<p>On a :</p>
+<ul>
+<li>$\textcolor{red}{m}=\dfrac{f(b)-f(a)}{b-a}=\dfrac{f(1)-f(0)}{1-0}=\dfrac{-2-(-5)}{1}=3$</li>
+<li>$\textcolor{blue}{p}=f(a)-\textcolor{red}{m}a=f(0)-3\times 0=-5-3\times 0=-5$</li>
+</ul>
+<p>\medskip</p>
+<p>Donc $\quad f(x)=3x-5$</p>
+<p>\methode Lire graphiquement $m$ et $p$</p>
+<p>Pour lire la valeur de $p$, on lit l&rsquo;ordonnée du point d&rsquo;intersection de la droite avec l&rsquo;axe des ordonnées.</p>
+<p>\cimg{10cm}{img/02.png}</p>
+<p>Dans ce cas, on peut lire $\textcolor{blue}{p}=1$ car le point d&rsquo;intersection de la droite avec l&rsquo;axe des ordonnées a pour coordonnées $\pa{0;1}$</p>
+<p>\newpage</p>
+<p>Pour lire la valeur de $\textcolor{red}{m}$, on trace un escalier et : $$\textcolor{red}{m}=\dfrac{\text{Montée}}{\text{Avance}}=\dfrac{\Delta y}{\Delta x}=\dfrac{f(b)-f(a)}{b-a}$$</p>
+<p>Dans ce cas, $\quad \textcolor{red}{m}=\dfrac{\text{Montée}}{\text{Avance}}=\dfrac{\Delta y}{\Delta x}=\dfrac{2}{4}=\dfrac{1}{2}$</p>
+<p>\cimg{9cm}{img/03.png}</p>
+<p>\rem On peut le faire pour d&rsquo;autres &ldquo;escaliers&rdquo; &hellip;</p>
+<p>$$\textcolor{red}{m}=\dfrac{\text{Montée}}{\text{Avance}}=\dfrac{\Delta y}{\Delta x}=\dfrac{1}{2}\quad\text{ ou }\quad\textcolor{red}{m}=\dfrac{\text{Montée}}{\text{Avance}}=\dfrac{\Delta y}{\Delta x}=\dfrac{5}{10}=\dfrac{1}{2}$$</p>
+<p>\medskip</p>
+<p>Au final : $\quad f(x)=\textcolor{red}{\dfrac{1}{2}}x+\textcolor{blue}{1}$</p>
+<p>\cimg{18cm}{img/04tt.png}</p>
+<p>\methode Déterminer une fonction affine</p>
+<p>\bw{r}{7cm}\cimg{7cm}{img/05.png}\vspace{-3cm}\ew</p>
+<p>Soit $A(-1;3)$ et $B(5;1)$, deux points du plan.</p>
+<p>La droite $(AB)$ est la représentation de $f(x)=mx+p$.</p>
+<p>On a :</p>
+<ul>
+<li>$A\in(AB)\Rightarrow f(x_A)=y_A \Rightarrow f(-1)=3$</li>
+<li>$B\in(AB)\Rightarrow f(x_B)=y_B \Rightarrow f(5)=1$</li>
+</ul>
+<p>Donc :</p>
+<p>$$\begin{aligned}
+\textcolor{red}{m}&amp;=\frac{f(x_A)-f(x_B)}{x_A-x_B}&amp;=&amp;\frac{y_A-y_B}{x_A-x_B}=\frac{\Delta y}{\Delta x}\
+&amp;=\frac{3-1}{-1-5}&amp;=&amp;\textcolor{red}{\frac{-1}{3}}
+\end{aligned}$$</p>
+<p>et</p>
+<p>$$\begin{aligned}
+f(x_A)=\textcolor{red}{m}x_A + \textcolor{blue}{p}\Lrarr\quad\textcolor{blue}{p}&amp;=f(x_A)-m\times x_A\
+&amp;=y_A-\frac{-1}{3}\times x_A\
+&amp;=3-\frac{-1}{3}\times (-1)&amp;=&amp;\textcolor{blue}{\dfrac{5}{3}}
+\end{aligned}$$</p>
+<p>Au final : $\qquad f(x)=\textcolor{red}{\frac{-1}{3}}x+\textcolor{blue}{\frac{5}{3}}$</p>
+<p>\newpage</p>
+<h1 id="etude-dune-fonction-affine">Étude d&rsquo;une fonction affine</h1>
+<h2 id="sens-de-variations">Sens de variations</h2>
+<p>Soit $\quad f(x)=\textcolor{red}{m}x+\textcolor{blue}{p}\quad$ définie sur $\R$.</p>
+<ul>
+<li>Si $~m &gt; 0~$ alors $~f$ est <strong>croissante</strong></li>
+<li>Si $~m &lt; 0~$ alors $~f$ est <strong>décroissante</strong></li>
+</ul>
+<p>\exemple\hfill</p>
+<p>\bw{r}{5cm}\vspace{-5mm}\cimg{5cm}{img/07.png}\vspace{-2cm}\ew</p>
+<p>Soit $\quad f(x)=\dfrac{-1}{3}x+\frac{5}{3}\quad$ définie sur $\R$.</p>
+<p>On a $~\textcolor{red}{m}=\frac{-1}{3}&lt;0$ donc $f$ est <strong>décroissante</strong>.</p>
+<h2 id="signe-de-fxtextcolorredmxtextcolorbluep">Signe de $f(x)=\textcolor{red}{m}x+\textcolor{blue}{p}$</h2>
+<p>\bw{r}{4cm}\vspace{-5mm}\cimg{3cm}{img/08.png}\vspace{-2cm}\ew</p>
+<p>Pour établir le signe de $f(x)$, il faut résoudre $f(x)&gt;0$.</p>
+<p>$$
+\begin{aligned}
+  f(x)&gt;0 &amp; \Lrarr mx+p&gt;0\
+         &amp; \Lrarr mx&gt;(-p)\qquad \Lrarr
+         \begin{cases}
+             x&gt;\frac{-p}{m}&amp;\text{si}\quad m&gt;0\
+             x&lt;\frac{-p}{m}&amp;\text{si}\quad m&lt;0
+         \end{cases}
+\end{aligned}
+$$</p>
+<p>Donc :</p>
+<p>$$\begin{array}{ll}
+\text{Si }   m&gt;0 &amp;\qquad\text{Si }  m&lt;0 \
+ \begin{array}{|c|ccccc|}\hline
+\rule[-0.4cm]{0cm}{1cm}x &amp; -\infty &amp; \quad &amp; \frac{-p}{m} &amp; \quad &amp; +\infty \ \hline
+\rule[-0.4cm]{0cm}{1cm}f(x) &amp; ~ &amp; - &amp; 0 &amp; + &amp; ~ \\hline
+\end{array}&amp;\qquad\begin{array}{|c|ccccc|}\hline
+\rule[-0.4cm]{0cm}{1cm}x &amp; -\infty &amp; \quad &amp; \frac{-p}{m} &amp; \quad &amp; +\infty \ \hline
+\rule[-0.4cm]{0cm}{1cm}f(x) &amp; ~ &amp; + &amp; 0 &amp; - &amp; ~ \\hline
+\end{array}
+\end{array}$$</p>
+<p>\exemple Signe de $~f(x)=3x+1$</p>
+<p>$$\begin{aligned}
+f(x)&gt;0 &amp; ~\Leftrightarrow~ 3x+1&gt;0\
+&amp; ~\Leftrightarrow~ 3x&gt;-1\
+&amp; ~\Leftrightarrow~ x&gt;\frac{-1}{3}\
+\end{aligned}\qquad\Lrarr\qquad\def\arraystretch{1.5}\begin{array}{|c|ccccc|}\hline
+x &amp; -\infty &amp; \quad &amp; \frac{-1}{3} &amp; \quad &amp; +\infty \ \hline
+f(x) &amp; ~ &amp; - &amp; 0 &amp; + &amp; ~ \\hline
+\end{array}$$</p>
+<p>\exemple Signe de $~f(x)=2-\frac{1}{3}x$</p>
+<p>$$\begin{aligned}
+f(x)&gt;0 &amp; ~\Leftrightarrow~ 2-\frac{1}{3}x&gt;0\
+&amp; ~\Leftrightarrow~ \frac{-1}{3}x&gt;-2\
+&amp; ~\Leftrightarrow~ x&lt;(-2)\div \frac{-1}{3}
+&amp; ~\Leftrightarrow~ x&lt;6\
+\end{aligned}\qquad\Lrarr\qquad\def\arraystretch{1.5}\begin{array}{|c|ccccc|}\hline
+x &amp; -\infty &amp; \quad &amp; 6 &amp; \quad &amp; +\infty \ \hline
+f(x) &amp; ~ &amp; + &amp; 0 &amp; - &amp; ~ \\hline
+\end{array}$$</p>
+<p>\medskip</p>
+<p><strong>\ul{Cas général :}</strong></p>
+<p>$$
+\def\arraystretch{1.5}\begin{array}{|c|ccccc|}\hline
+x &amp; -\infty &amp; \quad &amp; \frac{-p}{m} &amp; \quad &amp; +\infty \ \hline
+\rule[-4mm]{0cm}{1cm}f(x) &amp; ~ &amp; \text{signe de }(-m) &amp; 0 &amp; \text{signe de }(m) &amp; ~ \\hline
+\end{array}
+$$</p>
+<p>\newpage</p>
+<h1 id="equations-inequations">Équations / Inéquations</h1>
+<h2 id="equations-inequations-du-1texter-degre">Équations / Inéquations du 1$^\text{er}$ degré</h2>
+<p>\exemple</p>
+<p>$\begin{aligned}
+3x+2=2(7-x)&amp;~\Leftrightarrow~3x+2\quad\textcolor{red}{\scriptstyle +2x}&amp;~=~&amp;14-2x\quad\textcolor{red}{\scriptstyle +2x}\
+~&amp;~\Leftrightarrow~3x+2+2x\quad\textcolor{red}{\scriptstyle -2}&amp;~=~&amp;14\quad\textcolor{red}{\scriptstyle -2}\
+~&amp;~\Leftrightarrow~5x\quad\textcolor{red}{\scriptstyle\div 5}&amp;~=~&amp;12\quad\textcolor{red}{\scriptstyle\div 5}\
+~&amp;~\Leftrightarrow~x&amp;~=~&amp;\frac{12}{5}\
+~&amp;~\Leftrightarrow~S=\left{\frac{12}{5}\right}
+\end{aligned}$</p>
+<p>\exemple</p>
+<p>$\begin{aligned}
+x-2&gt;5+3x  ~&amp;~\Leftrightarrow~x-2\quad\textcolor{red}{\scriptstyle -3x}&amp;~&gt;~&amp;5+3x\quad\textcolor{red}{\scriptstyle -3x}\
+~&amp;~\Leftrightarrow~-2x-2\quad\textcolor{red}{\scriptstyle +2}&amp;~&gt;~&amp;5\quad\textcolor{red}{\scriptstyle +2}\
+~&amp;~\Leftrightarrow~-2x\quad\textcolor{red}{\scriptstyle\div (-2)}&amp;~&gt;~&amp;7\quad\textcolor{red}{\scriptstyle\div (-2)}\
+~&amp;~\Leftrightarrow~x&amp;~&lt;~&amp;\frac{-7}{2}\
+~&amp;~\Leftrightarrow~S=\left]-\infty;\frac{-7}{2}\right[
+\end{aligned}$</p>
+<h2 id="equations-inequations-produit">Équations / Inéquations produit</h2>
+<p>\propriete Équation produit</p>
+<p>Si $\quad \textcolor{red}{a}\times \textcolor{blue}{b}=0\quad$ alors $\quad\begin{cases}\textcolor{red}{a}=0\ \text{ ou}\\textcolor{blue}{b}=0\end{cases}$</p>
+<p>\exemple</p>
+<p>$\begin{aligned}
+\textcolor{red}{(3x-1)}\textcolor{blue}{(2x+5)}=0 ~&amp;~\Leftrightarrow~\begin{cases}\textcolor{red}{3x-1}=0\\textcolor{blue}{2x+5}=0\end{cases}\
+~&amp;~\Leftrightarrow~\begin{cases}3x=1\2x=-5\end{cases}
+~&amp;~\Leftrightarrow~\begin{cases}x=\frac{1}{3}\x=\frac{-5}{2}\end{cases}
+~&amp;~\Leftrightarrow~\boxed{S=\left{\frac{1}{3};\frac{-5}{2}\right}}
+\end{aligned}$</p>
+<p>\methode Résoudre une inéquation produit</p>
+<p>On cherche à résoudre $\textcolor{red}{(3x-1)}\textcolor{blue}{(2x+5)}&lt;0$</p>
+<p>Il faut établir le tableau de signe de $\textcolor{red}{(3x-1)}$ et de $\textcolor{blue}{(2x+5)}$ puis appliquer la règle des signes.</p>
+<p>$$
+\begin{array}{ccc}
+\boxed{
+\begin{aligned}
+\textcolor{red}{3x-1}&gt;0&amp;~\Leftrightarrow~ 3x&gt;1\
+      &amp;~\Leftrightarrow~ x&gt;\frac{1}{3}
+\end{aligned}}
+&amp;\quad&amp;
+\boxed{
+\begin{aligned}
+\textcolor{blue}{2x+5}&gt;0&amp;~\Leftrightarrow~ 2x&gt;-5\
+      &amp;~\Leftrightarrow~ x&gt;\frac{-5}{2}
+\end{aligned}}
+\end{array}
+$$</p>
+<p>On a $\quad\textcolor{red}{(3x-1)}&gt;0~\Leftrightarrow~ x&gt;\frac{1}{3}\qquad\text{et}\qquad\textcolor{blue}{(2x+5)}&gt;0~\Leftrightarrow~ x&gt;\frac{-5}{2}$</p>
+<p>Donc :</p>
+<p>$$
+\def\arraystretch{1.5}
+\begin{array}{|c|ccccccc|}\hline
+x &amp; -\infty &amp; \quad &amp; \frac{-5}{2} &amp; \quad &amp; \frac{1}{3} &amp; \quad &amp; +\infty \ \hline
+\textcolor{red}{(3x-1)} &amp; - &amp; - &amp; - &amp; - &amp; 0 &amp; + &amp; + \ \hline
+\textcolor{blue}{(2x+5)} &amp; - &amp; - &amp; 0 &amp; + &amp; + &amp; + &amp; + \ \hline
+\textcolor{red}{(3x-1)}\times\textcolor{blue}{(2x+5)} &amp; + &amp; + &amp; 0 &amp; - &amp; 0 &amp; + &amp; + \ \hline
+\end{array}
+$$</p>
+<p>Au final : $\quad\textcolor{red}{(3x-1)}\textcolor{blue}{(2x+5)}&lt;0\quad\Leftrightarrow\quad\boxed{S=\left]\frac{-5}{2};\frac{1}{3}\right[}$</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../Ensembles-de-nombres/" class="btn btn-neutral float-left" title="Ensemble de nombres"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../Probabilite-echantillonnage/" class="btn btn-neutral float-right" title="Probabilité et échantillonnage">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Ensembles-de-nombres/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../Probabilite-echantillonnage/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.8/mermaid.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-mermaid.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
