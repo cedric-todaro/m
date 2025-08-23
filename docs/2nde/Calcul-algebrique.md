@@ -304,12 +304,12 @@ Ce sont les valeurs de $x$ pour lesquelles il n'est pas possible de calculer l'e
 
 !!! exemple
 
-$$
-	\begin{aligned}
-		\frac{2}{5}+\frac{1}{3} & =\left(\frac{2}{5}\times\boxed{\frac{3}{3}}\right) & + & \left(\frac{1}{3}\times\boxed{\frac{5}{5}}\right)                  \\\\
-		~                       & =\left(\frac{6}{15}\right)                         & + & \left(\frac{5}{15}\right)                         & =\frac{11}{15}
-	\end{aligned}
-$$
+    $$
+    	\begin{aligned}
+    		\frac{2}{5}+\frac{1}{3} & =\left(\frac{2}{5}\times\boxed{\frac{3}{3}}\right) & + & \left(\frac{1}{3}\times\boxed{\frac{5}{5}}\right)                  \\\\
+    		~                       & =\left(\frac{6}{15}\right)                         & + & \left(\frac{5}{15}\right)                         & =\frac{11}{15}
+    	\end{aligned}
+    $$
 
 !!! demo
 
@@ -321,24 +321,30 @@ $$
 
 !!! exemple
 
-    $\begin{alignedat}{5}
-    A=\left(\frac{2}{x}\right)-\left(\frac{x+1}{2}\right)&=\left(\frac{2}{x}\times\boxed{\frac{2}{2}}\right)&-&\left(\frac{x+1}{2}\times\boxed{\frac{x}{x}}\right)\\\\
-    ~&=\left(\frac{4}{2x}\right)&-&\left(\frac{(x+1)x}{2x}\right)\\\\
-    ~&=\left(\frac{4}{2x}\right)&-&\left(\frac{x^2+x}{2x}\right)&=\frac{-x^2-x+4}{2x}
-    \end{alignedat}$
+    $$
+    	\begin{alignedat}{5}
+    		A=\left(\frac{2}{x}\right)-\left(\frac{x+1}{2}\right) & =\left(\frac{2}{x}\times\boxed{\frac{2}{2}}\right) & - & \left(\frac{x+1}{2}\times\boxed{\frac{x}{x}}\right)                         \\\\
+    		~                                                     & =\left(\frac{4}{2x}\right)                         & - & \left(\frac{(x+1)x}{2x}\right)                                              \\\\
+    		~                                                     & =\left(\frac{4}{2x}\right)                         & - & \left(\frac{x^2 +x}{2x}\right)                      & =\frac{-x^2 -x+4}{2x}
+    	\end{alignedat}
+    $$
 
 !!! exemple
 
-    $\begin{alignedat}{5}
-    B=2-\left(\frac{5x}{x-2}\right)&=\left(\frac{2}{1}\times\boxed{\frac{x-2}{x-2}}\right)&-&\left(\frac{5x}{x-2}\times\boxed{\frac{1}{1}}\right)\\\\
-    ~&=\left(\frac{2(x-2)}{x-2}\right)&-&\left(\frac{5x}{x-2}\right)\\\\
-    ~&=\frac{2x-4-5x}{x-2}&~&=\frac{-3x-4}{x-2}&=\frac{3x+4}{2-x}
-    \end{alignedat}$
+    $$
+    	\begin{alignedat}{5}
+    		B=2-\left(\frac{5x}{x-2}\right) & =\left(\frac{2}{1}\times\boxed{\frac{x-2}{x-2}}\right) & - & \left(\frac{5x}{x-2}\times\boxed{\frac{1}{1}}\right)                     \\\\
+    		~                               & =\left(\frac{2(x-2)}{x-2}\right)                       & - & \left(\frac{5x}{x-2}\right)                                              \\\\
+    		~                               & =\frac{2x-4-5x}{x-2}                                   & ~ & =\frac{-3x-4}{x-2}                                   & =\frac{3x+4}{2-x}
+    	\end{alignedat}
+    $$
 
 !!! exemple
 
-    $\begin{alignedat}{5}
-    C=\left(\frac{3x}{1-x}\right)+\left(\frac{5}{2x-3}\right)&=\left(\frac{3x\color{blue}(2x-3)}{(1-x)\color{blue}(2x-3)}\right)&+&\left(\frac{5\color{red}(1-x)}{(2x-3)\color{red}(1-x)}\right)\\\\
-    ~&=\frac{6x^2-9x}{(1-x)(2x-3)}&+&\frac{5-5x}{(1-x)(2x-3)}\\\\
-    ~&=\frac{6x^2-14x+5}{(1-x)(2x-3)}
-    \end{alignedat}$
+    $$
+        \begin{alignedat}{5}
+    		C=\left(\frac{3x}{1-x}\right)+\left(\frac{5}{2x-3}\right) & =\left(\frac{3x\color{blue}(2x-3)}{(1-x)\color{blue}(2x-3)}\right) & + & \left(\frac{5\color{red}(1-x)}{(2x-3)\color{red}(1-x)}\right) \\\\
+    		~                                                         & =\frac{6x^2-9x}{(1-x)(2x-3)}                                       & + & \frac{5-5x}{(1-x)(2x-3)}                                      \\\\
+    		~                                                         & =\frac{6x^2-14x+5}{(1-x)(2x-3)}
+    	\end{alignedat}
+    $$
