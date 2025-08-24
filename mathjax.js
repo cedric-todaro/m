@@ -51,12 +51,14 @@ MathJax = {
         \nc{\R}{\mathbb{R}}
         \nc{\C}{\mathbb{C}}
         \nc{\pa}[1]{\left(#1\right)}
+        \nc{\brace}[1]{\left\{#1\right\}}
         \nc{\coord}[2]{\begin{pmatrix}#1\\#2\end{pmatrix}}
         \nc{\coordl}[2]{\left(#1~;~#2\right)}
         \rnc{\iff}{\Leftrightarrow}
         \nc{\Lrarr}{\Leftrightarrow}
         \nc{\Rarr}{\Rightarrow}
         \nc{\rarr}{\rightarrow}
+        \nc{\tc}{\textcolor}
       `);
         },
     },
