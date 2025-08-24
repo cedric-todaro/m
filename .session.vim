@@ -14,12 +14,15 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +0 ~/Documents/Boulot/m/mkdocs.yml
+badd +12 ~/Documents/Boulot/m/mkdocs.yml
+badd +1 ~/Documents/Boulot/m/docs/extra.css
+badd +1 ~/Documents/Boulot/m/docs/mathjax.js
 argglobal
 %argdel
 $argadd mkdocs.yml
 edit ~/Documents/Boulot/m/mkdocs.yml
 argglobal
+balt ~/Documents/Boulot/m/docs/mathjax.js
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -30,12 +33,13 @@ setlocal fdn=20
 setlocal nofen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 1 - ((0 * winheight(0) + 31) / 63)
+let s:l = 12 - ((11 * winheight(0) + 15) / 30)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
-normal! 0
+keepjumps 12
+normal! 033|
+lcd ~/Documents/Boulot/m
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
