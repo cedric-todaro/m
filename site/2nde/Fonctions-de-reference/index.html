@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cedric-todaro.github.io/m/2nde/Fonctions-de-reference/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Fonctions de références - Math pour le lycée</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../extra.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-mermaid.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Fonctions de r\u00e9f\u00e9rences";
+        var mkdocs_page_input_path = "2nde/Fonctions-de-reference.md";
+        var mkdocs_page_url = "/m/2nde/Fonctions-de-reference/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Math pour le lycée
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" aria-label="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Accueil</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2nde</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Arithmetique/">Arithmétique</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Calcul-algebrique/">Calcul algébrique</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Droites-du-plan/">Droites du plan</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Droites-et-systemes/">Droites et systèmes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ensembles-de-nombres/">Ensemble de nombres</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Fonctions-affines/">Fonctions affines</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Fonctions de références</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#rappel-fonction-du-1er-degre-valeur-absolue">Rappel : Fonction du 1er degré / Valeur absolue</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#definition-fonction-du-1er-degre">Définition : Fonction du 1er degré</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#proprietes-fonction-du-1er-degre">Propriétés : Fonction du 1er degré</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#valeur-absolue">Valeur absolue</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fonction-carre">Fonction carré</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#definition-fonction-carre">Définition : Fonction carré</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#proprietes-fonction-carre">Propriétés : Fonction carré</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fonction-cube">Fonction cube</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#definition-fonction-cube">Définition : Fonction cube</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#proprietes-fonction-cube">Propriétés : Fonction cube</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#position-relatives-de-yx-yx2-et-yx3">Position relatives de $y=x~$ , $~y=x^2~$ et $~y=x^3$</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fonction-inverse">Fonction inverse</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#definition-fonction-inverse">Définition : Fonction inverse</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#proprietes-fonction-inverse">Propriétés : Fonction inverse</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fonction-racine-carree">Fonction racine carrée</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#definition-fonction-racine-carree">Définition : Fonction racine carrée</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#proprietes-fonction-racine-carree">Propriétés : Fonction racine carrée</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fonction-paireimpaire">Fonction paire/impaire</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#definition-parite-dune-fonction">Définition : parité d&rsquo;une fonction</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#representation-des-fonctions-de-references">Représentation des fonctions de références</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Probabilite-echantillonnage/">Probabilité et échantillonnage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Probabilite/">Probabilité</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Divers</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../divers/">Help</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../test/">Testouille</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Math pour le lycée</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Documents"></a></li>
+          <li class="breadcrumb-item">2nde</li>
+      <li class="breadcrumb-item active">Fonctions de références</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="fonctions-de-references">Fonctions de références</h1>
+<h2 id="rappel-fonction-du-1er-degre-valeur-absolue">Rappel : Fonction du 1<sup>er</sup> degré / Valeur absolue</h2>
+<h3 id="definition-fonction-du-1er-degre">Définition : Fonction du 1<sup>er</sup> degré</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>Une fonction de la forme $\boxed{f(x)=\cbox{pink}{a}x+\cbox{lightgreen}{b}}$ est appelée <strong>fonction du 1<sup>er</sup> degré</strong>.</p>
+<ul>
+<li>$\cbox{pink}{a}$ : <strong>Pente</strong> ou <strong>coefficient directeur</strong> $\quad\rarr a=\cfrac{\Delta y}{\Delta x}$</li>
+<li>$\cbox{lightgreen}{b}$ : <strong>Ordonnée à l&rsquo;origine</strong> $\quad\rarr b=f(0)$</li>
+</ul>
+<p><img alt="" src="../img/ref/01.png" width="90%" /></p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>Soit $f(x)=\cfrac{-1}{2}x+1$ définie sur $\R$.</p>
+<p>$f$ est une fonction du 1<sup>er</sup> degré avec $~\cbox{pink}{a}=\cfrac{-1}{2}~$ et $~\cbox{lightgreen}{b}=1$.</p>
+<ul>
+<li><strong>Calcul d&rsquo;image</strong></li>
+</ul>
+<p>$$f(\cbox{lightblue}{4})\quad=\cfrac{-1}{2}\times \cbox{lightblue}{4}+1\quad=-2+1=-1$$</p>
+<ul>
+<li><strong>Tableau de valeurs et représentation</strong></li>
+</ul>
+<p>$$
+    \begin{array}{|c|c|c|c|c|}\hline
+        \rule[-3mm]{0mm}{8mm}x    &amp; -2 &amp; ~0~ &amp; 1   &amp; 4  \\ \hline
+        \rule[-3mm]{0mm}{8mm}f(x) &amp; 2  &amp; 1   &amp; 0.5 &amp; -1 \\ \hline
+    \end{array}
+$$</p>
+</div>
+<h3 id="proprietes-fonction-du-1er-degre">Propriétés : Fonction du 1<sup>er</sup> degré</h3>
+<div class="admonition propriete">
+<p class="admonition-title">Propriete</p>
+<p><strong>Sens de varitions</strong></p>
+<p>Soit $f(x)=ax+b$ définie sur $\R$.</p>
+<ul>
+<li>Si $~a\gt 0~$ alors $~f~$ est <strong>croissante</strong> sur $\R$</li>
+<li>Si $~a\lt 0~$ alors $~f~$ est <strong>décroissante</strong> sur $\R$</li>
+<li>Si $~a=0~$ alors $~f~$ est <strong>constante</strong> sur $\R$</li>
+</ul>
+<p><img alt="" src="../img/ref/02.png" /></p>
+</div>
+<div class="admonition propriete">
+<p class="admonition-title">Propriete</p>
+<p><strong>Signe de $f$</strong></p>
+<ul>
+<li>Pour $x=\cfrac{-b}{a}$, on a $f(x)=0$.</li>
+<li>Si $~a\gt 0~$ alors $~f~$ est <strong>négative</strong> sur $\left]-\infty ; \cfrac{-b}{a}\right[$ et <strong>positive</strong> sur $\left]\cfrac{-b}{a} ; +\infty\right[$</li>
+</ul>
+<p><img alt="" src="../img/ref/03.1.png" width="50%" /></p>
+<p>$~$</p>
+<ul>
+<li>Si $~a\lt 0~$ alors $~f~$ est <strong>positive</strong> sur $\left]-\infty ; \cfrac{-b}{a}\right[$ et <strong>négative</strong> sur $\left]\cfrac{-b}{a} ; +\infty\right[$</li>
+</ul>
+<p><img alt="" src="../img/ref/03.2.png" width="50%" /></p>
+</div>
+<h3 id="valeur-absolue">Valeur absolue</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>Soit $x\in\R$. On a :</p>
+<p>$$\boxed{\abs{x}=\begin{cases}x&amp;\text{si }~x\gt 0\\-x&amp;\text{si }~x\lt 0 \end{cases}}$$</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>C&rsquo;est la valeur &ldquo;positive&rdquo; du nombre donné :</p>
+<p>$$\abs{3}=3\qquad\abs{-1}=1\qquad\abs{-2.51}=2.51\qquad\abs{-\pi}=\pi$$</p>
+</div>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p><strong>Représentation de $f(x)=\abs{ x}$</strong></p>
+<p>$$
+    \begin{array}{|c|c|c|c|c|c|c|c|}\hline
+        \rule[-3mm]{0mm}{9mm}x             &amp; -3 &amp; -2 &amp; -1 &amp; 0 &amp; 1 &amp; 2 &amp; 3 \\ \hline
+        \rule[-3mm]{0mm}{9mm}f(x)=\abs{x} &amp; 3  &amp; 2  &amp; 1  &amp; 0 &amp; 1 &amp; 2 &amp; 3 \\ \hline
+    \end{array}
+$$</p>
+<p><img alt="" src="../img/ref/04.png" width="80%" /></p>
+</div>
+<h2 id="fonction-carre">Fonction carré</h2>
+<h3 id="definition-fonction-carre">Définition : Fonction carré</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>La fonction <strong>carré</strong> est définie sur $\R$ par $\qquad \boxed{f(x)=x^2}$</p>
+</div>
+<h3 id="proprietes-fonction-carre">Propriétés : Fonction carré</h3>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p><strong>Tableau de valeurs et représentation</strong></p>
+<p>$$
+    \begin{array}{|c|c|c|c|c|c|c|c|c|c|}\hline
+        \rule[-3mm]{0mm}{9mm}   x &amp; -3 &amp; -2 &amp; -1 &amp; -0.5 &amp; 0 &amp; 0.5  &amp; 1 &amp; 2 &amp; 3 \\ \hline
+        \rule[-3mm]{0mm}{9mm}f(x) &amp; 9  &amp; 4  &amp; 1  &amp; 0.25 &amp; 0 &amp; 0.25 &amp; 1 &amp; 4 &amp; 9 \\ \hline
+    \end{array}
+$$</p>
+<p><img alt="" src="../img/ref/05.png" width="50%" /></p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<ul>
+<li>La fonction carré <strong>n&rsquo;est pas</strong> une fonction <strong>linéaire</strong>.</li>
+<li>La représentation graphique de la fonction carré est une <strong>parabole</strong> de sommet $O$.</li>
+<li>La représentation graphique de la fonction carré est <strong>symétrique par rapport à l&rsquo;axe des ordonnées</strong>.</li>
+</ul>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Comparer des images</strong></p>
+<p>Comparons, graphiquement $f(0.5)$ et $f(2)$</p>
+<p>On constate que : $f(0.5)\lt f(2)$</p>
+<p>En effet, on a</p>
+<ul>
+<li>$f(2)=2^2=4$</li>
+<li>$f(0.5)=0.5^2=0.25$</li>
+</ul>
+<p>Donc $~f(2)\gt f(0.5)$</p>
+<p><img alt="" src="../img/ref/06.png" width="50%" /></p>
+<hr />
+<p>Comparons, graphiquement $f(-1.5)$ et $f(-1)$</p>
+<p>On constate que : $f(-1.5)\gt f(-1)$</p>
+<p>En effet, on a</p>
+<ul>
+<li>$f(-1.5)=(-1.5)^2=2.25$</li>
+<li>$f(-1)=(-1)^2=1$</li>
+</ul>
+<p>Donc $~f(-1.5)\gt f(-1)$</p>
+<p><img alt="" src="../img/ref/07.png" width="50%" /></p>
+<hr />
+<p><strong>Méthode sans graphique</strong></p>
+<p>Soit $f(x)=x^2$.$\quad$ Comparons $f(-0.5)$ et $f(-3)$</p>
+<p>On a</p>
+<ul>
+<li>$f$ <strong>décroissante</strong> sur $\left]-\infty;0\right[$</li>
+<li>$(-0.5)\in\left]-\infty;0\right[~$ et $~(-3)\in\left]-\infty;0\right[$</li>
+<li>$(-3)\lt (-0.5)$</li>
+</ul>
+<p>Donc $\boxed{f(-3)\gt f(-0.5)}$</p>
+<p>En effet, $(-3)^2=9\quad\gt \quad(-0.5)^2=0.25$</p>
+</div>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p><strong>Signe</strong></p>
+<p>La fonctions carré est <strong>positive</strong> sur $\R$</p>
+</div>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p><strong>Sens de variations</strong></p>
+<p><img alt="" src="../img/ref/08.png" width="75%" /></p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Résoudre des équations du type $x^2=k$</strong></p>
+<p>Résoudre $x^2=5$ revient à trouver tous les $x$ dont le carré est égal à $5$</p>
+<p>On a : $\qquad x^2=5\Lrarr\begin{cases}x=\sqrt{5}\\x=-\sqrt{5}\end{cases}$</p>
+<p>De manière générale, $x^2=k$ (avec $k\ge 0$) possède 2 solutions :</p>
+<p>$$\boxed{x^2=k\Lrarr\begin{cases}x=\sqrt{k}\\x=-\sqrt{k}\end{cases}}$$</p>
+<p><img alt="" src="../img/ref/09.png" width="50%" /></p>
+</div>
+<h2 id="fonction-cube">Fonction cube</h2>
+<h3 id="definition-fonction-cube">Définition : Fonction cube</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>La fonction <strong>cube</strong> est définie sur $\R$ par $f(x)=x^3$</p>
+</div>
+<h3 id="proprietes-fonction-cube">Propriétés : Fonction cube</h3>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<ul>
+<li><strong>Tableau de valeurs</strong></li>
+</ul>
+<p>$$\begin{array}{|c|c|c|c|c|c|c|}\hline
+\rule[-3mm]{0mm}{9mm}x &amp; -2 &amp; -1 &amp; 0 &amp; 1 &amp; 2 &amp; 3 \\ \hline
+\rule[-3mm]{0mm}{9mm}f(x) &amp; (-2)^3=-8 &amp; (-1)^3=-1 &amp; 0^3=0 &amp; (1)^3=1 &amp; 2^3=8 &amp; 3^3=27\\ \hline
+\end{array}$$</p>
+<ul>
+<li><strong>Représentation :</strong> La représentation graphique de la fonction cube est <strong>symétrique</strong> par rapport à <strong>l&rsquo;origine du repère</strong>.</li>
+</ul>
+<p><img alt="" src="../img/ref/16.png" width="50%" /></p>
+</div>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p><strong>Signe</strong></p>
+<p><img alt="" src="../img/ref/17.png" width="85%" /></p>
+</div>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p><strong>Sens de variations</strong></p>
+<p><img alt="" src="../img/ref/18.png" width="60%" /></p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Comparer des images</strong></p>
+<p>Soit $f(x)=x^3$.$\quad$ Comparons $f(0.5)$ et $f(2)$</p>
+<p>On a :</p>
+<ul>
+<li>$f$ est <strong>croissante</strong> sur $\R$</li>
+<li>$0.5\lt 2$</li>
+</ul>
+<p>Donc $\boxed{f(0.5)\lt f(2)}$</p>
+<p>En effet, $\quad 0.5^3=0.125\quad\lt \quad 2^3=8$</p>
+</div>
+<h2 id="position-relatives-de-yx-yx2-et-yx3">Position relatives de $y=x~$ , $~y=x^2~$ et $~y=x^3$</h2>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<ul>
+<li>Si $ x\ge 1$, on a $\tc{blue}x<sup>3\tc{black}\ge\tc{lightgreen}x</sup>2\tc{black}\ge\tc{red}x$</li>
+<li>Si $ x\le 1$, on a $\tc{blue}x<sup>3\tc{black}\le\tc{lightgreen}x</sup>2\tc{black}\le\tc{red}x$</li>
+</ul>
+<p><img alt="" src="../img/ref/19.png" width="90%" /></p>
+</div>
+<div class="admonition demo">
+<p class="admonition-title">Demo</p>
+<ul>
+<li><strong>Cas n°1 :</strong> $\quad \boxed{x\ge 1}\qquad$ Étudions le signe de $(x^2-x)$ et de $(x^3 -x^2)$<ul>
+<li>$(x^2 -x)=x(x-1)~$ donc $\begin{cases}x\gt 0\\x-1\ge 0\end{cases}\Rarr(x^2 -x)\ge 0\Lrarr\boxed{x^2\ge x}$</li>
+<li>$(x^3 -x^2 )=x^2 (x-1)~$ donc $\begin{cases}x^2 \gt 0\\x-1\ge0\end{cases}\Rarr(x^3 -x^2 )\ge 0\Lrarr \boxed{x^3 \ge x^2}$</li>
+</ul>
+</li>
+</ul>
+<p>Donc si $\quad\boxed{x\ge 1 \Rarr x^3 \ge x^2 \ge x}$</p>
+<hr />
+<ul>
+<li><strong>Cas n°2 :</strong> $\quad \boxed{0\le x\le 1}\qquad$ Étudions le signe de $(x^2 -x)$ et $(x^3 -x^2)$<ul>
+<li>$(x^2 -x)=x(x-1)~$ donc $\begin{cases}x\gt 0\\x-1\le 0\end{cases}\Rarr(x^2 -x)\le 0\Lrarr\boxed{x^2 \le x}$</li>
+<li>$(x^3 -x^2 )=x^2 (x-1)~$ donc $\begin{cases}x^2 \ge 0\\x-1\le 0\end{cases}\Rarr(x^3 -x^2 )\le 0\Lrarr\boxed{x^3 \le x^2 }$</li>
+</ul>
+</li>
+</ul>
+<p>Donc si $~\boxed{0\le x\le1 \Rarr x^3\le x^2\le x}$</p>
+</div>
+<h2 id="fonction-inverse">Fonction inverse</h2>
+<h3 id="definition-fonction-inverse">Définition : Fonction inverse</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>La fonction <strong>inverse</strong> est définie sur $\R-{0}$ par \boxed{f(x)=\cfrac{1}{x}}</p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<ul>
+<li>
+<p>$\R-{0}$ désigne l&rsquo;ensemble des nombres réels sauf $0$, c&rsquo;est-à-dire :</p>
+<p>$$\left]-\infty;0\right[\cup\left]0;+\infty\right[$$</p>
+</li>
+<li>
+<p>On peut aussi noter $\R-{0}=\R^{*}$.</p>
+</li>
+<li>
+<p>La fonction <strong>inverse</strong> n&rsquo;est pas définie en $0$.$\qquad$(division par $0$ impossible)</p>
+</li>
+</ul>
+</div>
+<h3 id="proprietes-fonction-inverse">Propriétés : Fonction inverse</h3>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p><strong>Tableau de valeurs et représentation</strong></p>
+<p>On a, par ex. : $f(-2)=\cfrac{1}{-2}=-0.5$</p>
+<p>$$
+    \begin{array}{|c|c|c|c|c|c|c|c|c|c|}\hline
+        \rule[-3mm]{0mm}{9mm}   x &amp; -3            &amp; -2            &amp; -1 &amp; -0.5 &amp; 0.25 &amp; 0.5 &amp; 1 &amp; 2                &amp; 3            \\ \hline
+        \rule[-3mm]{0mm}{9mm}f(x) &amp; \cfrac{-1}{3} &amp; \cfrac{-1}{2} &amp; -1 &amp; -2   &amp; 4    &amp; 2   &amp; 1 &amp; \cfrac{1}{2}=0.5 &amp; \cfrac{1}{3} \\ \hline
+    \end{array}
+$$</p>
+<p><img alt="" src="../img/ref/10.png" width="75%" /></p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>La représentation graphique de la fonction <strong>inverse</strong> est une <strong>hyperbole</strong> de centre $O$ et est <strong>symétrique</strong> par rapport à l&rsquo;<strong>origine</strong>.</p>
+</div>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p><strong>Signe</strong></p>
+<p><img alt="" src="../img/ref/11.png" width="75%" /></p>
+</div>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p><strong>Sens de variations</strong></p>
+<p><img alt="" src="../img/ref/12.png" width="75%" /></p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Comparer des images</strong></p>
+<p>Soit $f(x)=\cfrac{1}{x}$.$\quad$ Comparons $f(0.5)$ et $f(3)$</p>
+<p>On a :</p>
+<ul>
+<li>$f$ <strong>décroissante</strong> sur $\left]0;+\infty\right[$</li>
+<li>$0.5\in\left]0;+\infty\right[~$ et $~3\in\left]0;+\infty\right[$</li>
+<li>$0.5\lt 3$</li>
+</ul>
+<p>Donc $\boxed{f(0.5)\gt f(3)}$, en effet $\cfrac{1}{0.5}=2\gt \cfrac{1}{3}\approx 0.333\ldots$</p>
+<p><img alt="" src="../img/ref/10.1.png" width="75%" /></p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Résoudre des équations du type $\cfrac{1}{x}=k$</strong></p>
+<p>Résoudre $\cfrac{1}{x}=5$ c&rsquo;est trouver tous les $x$ dont l&rsquo;inverse est $5$.</p>
+<p>On a :</p>
+<p>$$\cfrac{1}{x}=5\quad\Lrarr\quad\cfrac{1}{x}=\cfrac{5}{1}\quad\Lrarr\quad 5\times x=1\times 1\quad\Lrarr\quad\boxed{x=\cfrac{1}{5}}$$</p>
+<p>De manière générale, $\cfrac{1}{x}=k$ (avec $x\neq 0$ et $k\neq 0$) possède 1 solution : $$\boxed{\cfrac{1}{x}=k\quad\Lrarr\quad x=\cfrac{1}{k}}$$</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>$$\cfrac{1}{x}=\cfrac{2}{3}\quad\Lrarr x=\cfrac{~1~}{\cfrac{2}{3}}\quad\Lrarr x=\cfrac{3}{2}$$</p>
+</div>
+<h2 id="fonction-racine-carree">Fonction racine carrée</h2>
+<h3 id="definition-fonction-racine-carree">Définition : Fonction racine carrée</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>La fonction <strong>racine carrée</strong> est définie sur $\left[0;+\infty\right[$ par \boxed{ f(x)=\sqrt{x} }</p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<ul>
+<li>La fonction <strong>racine carrée</strong> est définie pour des valeurs de $x$ <strong>positives</strong>. $\rarr\mathcal{D}_f=\R^{+}$</li>
+<li>La fonction <strong>racine carrée</strong> est <strong>positive</strong> sur $\mathcal{D}_f$. $\rarr\forall x\in\mathcal{D}_f,\sqrt{x}\ge 0$</li>
+</ul>
+</div>
+<h3 id="proprietes-fonction-racine-carree">Propriétés : Fonction racine carrée</h3>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p><strong>Tableau de valeurs</strong></p>
+<p>$$
+    \begin{array}{|c|c|c|c|c|c|c|c|}\hline
+        \rule[-3mm]{0mm}{9mm}x    &amp; 0          &amp; 1          &amp; 2                       &amp; 3                       &amp; 4          &amp; 5                       &amp; &hellip; \\ \hline
+        \rule[-3mm]{0mm}{9mm}f(x) &amp; \sqrt{0}=0 &amp; \sqrt{1}=1 &amp; \sqrt{2}\approx1.414&hellip; &amp; \sqrt{3}\approx1.732&hellip; &amp; \sqrt{4}=2 &amp; \sqrt{5}\approx 2.23&hellip; &amp; &hellip; \\ \hline
+    \end{array}
+$$</p>
+<p><strong>Représentation</strong></p>
+<p><img alt="" src="../img/ref/13.png" width="75%" /></p>
+</div>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p><strong>Signe</strong></p>
+<p><img alt="" src="../img/ref/14.png" width="50%" /></p>
+</div>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p><strong>Sens de variations</strong></p>
+<p><img alt="" src="../img/ref/15.png" width="50%" /></p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Comparer des images</strong></p>
+<p>Soit $f(x)=\sqrt{x}$.$\quad$ Comparons $f(0.5)$ et $f(3)</p>
+<p>On a :</p>
+<ul>
+<li>$f$ <strong>croissante</strong> sur $\R^{+}$</li>
+<li>$0.5\in\R^{+}~$ et $~3\in\R^{+}$</li>
+<li>$0.5\lt 3$</li>
+</ul>
+<p>Donc $\boxed{f(0.5)\lt f(3)}$.</p>
+<p>En effet, $\sqrt{0.5}\approx 0.707&hellip;\lt\sqrt{3}\approx 1.732&hellip;$</p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Résoudre des équations du type $\sqrt{x}=k$</strong></p>
+<p>Résoudre $\sqrt{x}=5$ revient à trouver tous les nombres dont la racine carrée est $5$.</p>
+<p>On a : $\sqrt{x}=5\quad\Lrarr\quad\left(\sqrt{x}\right)^2 =5^2 \quad\Lrarr\quad\boxed{x=25}$</p>
+<p>De manière générale, $\sqrt{x}=k~$ (avec $k\ge 0$ et $x\ge 0$) possède 1 solution :
+$$\boxed{\sqrt{x}=k\quad\Lrarr\quad x=k^2}$$</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>$$\sqrt{x+1}=2\quad\Lrarr\quad(x+1)=2^2=4\quad\Lrarr\quad x=3$$</p>
+</div>
+<h2 id="fonction-paireimpaire">Fonction paire/impaire</h2>
+<h3 id="definition-parite-dune-fonction">Définition : parité d&rsquo;une fonction</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+</div>
+<ul>
+<li>
+<p>Une fonction $f$ est <strong>paire</strong> lorsque pour tout réel $x\in\mathcal{D}_f$, on a : $\begin{cases}(-x)\in\mathcal{D}_f\\\\f(-x)=f(x)\end{cases}$</p>
+</li>
+<li>
+<p>Une fonction $f$ est <strong>impaire</strong> lorsque pour tout réel $x\in\mathcal{D}_f$, on a : $\begin{cases}(-x)\in\mathcal{D}_f\\\\f(-x)=-f(x)\end{cases}$</p>
+</li>
+</ul>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+</div>
+<p>La fonction $f(x)=x^2$ définie sur $\R$ est <strong>paire</strong> car, pour tout $x\in\R$, on a</p>
+<p>$$\begin{aligned}f(-x)=(-x)^2&amp;=(-1\times x)<sup>2\\&amp;=(-1)</sup>2\times x<sup>2\\&amp;=x</sup>2=f(x)\end{aligned}$$</p>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+</div>
+<p>La fonction $f(x)=\cfrac{1}{x}$ définie sur $\R^{<em>}$ est <strong>impaire</strong> car, pour tout $x\in\R^{</em>}$, on a :</p>
+<p>$$\begin{aligned}f(-x)=\cfrac{1}{-x}&amp;=-\cfrac{1}{x}\\&amp;=-\left(\cfrac{1}{x}\right)=-f(x)\end{aligned}$$</p>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+</div>
+<ul>
+<li>Une fonction peut être ni paire, ni impaire. Ex: $f(x)=\sqrt{x}$</li>
+<li>La représentation d&rsquo;une fonction <strong>paire</strong> est <strong>symétrique</strong> par rapport à <strong>l&rsquo;axe des ordonnées</strong>.</li>
+<li>La représentation d&rsquo;une fonction <strong>impaire</strong> est <strong>symétrique</strong> par rapport à <strong>l&rsquo;origine du repère</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Fonction <strong>paire</strong></th>
+<th style="text-align: center;">Fonction <strong>impaire</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="" src="../img/ref/20.png" width="5cm" /></td>
+<td style="text-align: center;"><img alt="" src="../img/ref/21.png" width="6cm" /></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+</div>
+<p>Étudier la parité d&rsquo;une fonction</p>
+<p><img alt="" src="../img/ref/22.png" /></p>
+<p>Soit $f(x)=2x^2-1$ définie sur $\R$</p>
+<p>Pour tout $x\in\R$, on a :</p>
+<p>$$\begin{aligned}f(-x)&amp;=2(-x)^2-1\\ &amp;=2\times (-1\times x)^2-1\\ &amp;=2\times (-1)^2\times x^2-1\\ &amp;=2x^2-1=f(x)\end{aligned}$$</p>
+<p>Donc $f$ est <strong>paire</strong>, sa représentation graphique est <strong>symétrique</strong> par rapport à <strong>l&rsquo;axe des ordonnées</strong>.</p>
+<h2 id="representation-des-fonctions-de-references">Représentation des fonctions de références</h2>
+<p><img alt="" src="../img/ref/image.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../Fonctions-affines/" class="btn btn-neutral float-left" title="Fonctions affines"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../Probabilite-echantillonnage/" class="btn btn-neutral float-right" title="Probabilité et échantillonnage">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Fonctions-affines/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../Probabilite-echantillonnage/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.8/mermaid.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-mermaid.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
