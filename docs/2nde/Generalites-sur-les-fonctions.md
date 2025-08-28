@@ -12,7 +12,7 @@
 
     $~$
 
-    - alculons l'aire du rectangle lorsque $x=3$
+    - Calculons l'aire du rectangle lorsque $x=3$
         - Longueur = $3$ donc Largeur = $2$ donc l'aire $A=3\times 2=6$
 
     - Exprimons l'aire du rectangle quelque soit $x$
@@ -24,7 +24,7 @@
 
     $~$
 
-    - aculons quelques valeurs de $A$ pour des valeurs de $x$ :
+    - Caculons quelques valeurs de $A$ pour des valeurs de $x$ :
         - Si $x=\cbox{lightblue}1$ alors $A=\cbox{lightblue}1\times (5-\cbox{lightblue}1)=4$
         - Si $x=\cbox{lightgreen}2$ alors $A=\cbox{lightgreen}2\times (5-\cbox{lightgreen}2)=6$
         - $...$
@@ -33,7 +33,7 @@
     | -------: | :-: | :-: | :----: | :-: | :----: | :-: | :----: | :-: | :----: | :-: |
     | $x(5-x)$ | $0$ | $4$ | $5.25$ | $6$ | $6.25$ | $6$ | $5.25$ | $4$ | $2.25$ | $0$ |
 
-    e tableau est appelé un **tableau de valeurs**.
+    Ce tableau est appelé un **tableau de valeurs**.
 
     Pour chaque nombre $x$, on associe un nombre égal à l'aire du rectangle.
 
@@ -42,11 +42,11 @@
 
     De façon générale, on note : $\quad A :x\mapsto x(5-x)$
 
-    ela se lit : $\qquad$**"à $x$, on associe $x(5-x)$"**
+    Cela se lit : $\qquad$**"à $x$, on associe $x(5-x)$"**
 
     $~$
 
-    $A$ est appelée une **fonction**. 'est un **programme de calcul** qui, à un nombre donné, fait correspondre un autre nombre.
+    $A$ est appelée une **fonction**. C'est un **programme de calcul** qui, à un nombre donné, fait correspondre un autre nombre.
 
     - $A$ est le **nom** de la fonction
     - $x$ est le nombre de départ : **l'antécédent**
@@ -62,17 +62,17 @@
 
 !!! def
 
-    Soit $\Df$ un intervalle de $\R$.
+    Soit $\mathcal{D}_f$ un intervalle de $\mathbb{R}$.
 
-    Une **fonction** $f$, définie sur $\Df$, associe à tout nombre $x$ de $\Df$, un unique nombre noté $f(x)$.
+    Une **fonction** $f$, définie sur $\mathcal{D}_f$, associe à tout nombre $x$ de $\mathcal{D}_f$, un unique nombre noté $f(x)$.
 
-    $\Df$ est l'**ensemble de définition** de $f$.
+    $\mathcal{D}_f$ est l'**ensemble de définition** de $f$.
 
     $~$
 
     ^^Notation :^^
 
-    $f:\begin{matrix}\Df&\mapsto&\R\\\\x&\mapsto&f(x)\end{matrix}\qquad$ou$\qquad$La fonction $f$ définie sur $\Df$ tel que $f(x)=...$
+    $f:\begin{matrix}\mathcal{D}_f&\mapsto&\mathbb{R}\\\\x&\mapsto&f(x)\end{matrix}\qquad$ou$\qquad$La fonction $f$ définie sur $\mathcal{D}_f$ tel que $f(x)=...$
 
 !!! exemple
 
@@ -80,7 +80,7 @@
 
     On note :
 
-    $$A:\begin{matrix}[0;5]&\mapsto&\R\\\\x&\mapsto&x(5-x)\end{matrix}$$
+    $$A:\begin{matrix}[0;5]&\mapsto&\mathbb{R}\\\\x&\mapsto&x(5-x)\end{matrix}$$
 
     ou $\quad$"Soit la fonction $A$ définie sur $[0;5]$ tel que $A(x)=x(5-x)$"
 
@@ -98,7 +98,7 @@
 !!! rem
 
     - Un nombre possède une **unique** image.
-    - ependant, un nombre peut posséder plusieurs antécédents.
+    - Cependant, un nombre peut posséder plusieurs antécédents.
         - Dans l'ex. du rectangle, des antécédents de $5.25$ sont $1.5$ et $3.5$
 
     |           $x$ | $\ldots$ | $1.5$  | $\ldots$ | $3.5$  | $\ldots$ |
@@ -107,7 +107,7 @@
 
 !!! methode
 
-    **alculer une image ou un antécédent**
+    **Calculer une image ou un antécédent**
 
     Soit la fonction $f$ définie sur $\left[0;+\infty\right[$ par $f(x)=\sqrt{x}+1$
 
@@ -153,7 +153,7 @@
 
     Dans un repère, on place les points $(x~;~f(x))$
 
-    En reliant les points, on obtient une courbe $\Cf$.
+    En reliant les points, on obtient une courbe $\mathcal{C}_f$.
 
     ![](img/fct/04.png){width=50%}
 
@@ -173,9 +173,9 @@
 
 !!! rem
 
-    On peut établir un tableau de signes de $f$ à l'aide de $\mathcal{}_f$ sur $[-1;6]$
+    On peut établir un tableau de signes de $f$ à l'aide de $\mathcal{C}_f$ sur $[-1;6]$
 
-    ![](img/fct/07.png){width=75%}
+    ![](img/fct/07.png){width=50%}
 
 ## Résolution graphique d'équations et d'inéquations
 
@@ -187,9 +187,9 @@
 
     Résoudre l'équation $f(x)=2$, c'est trouver les antécédents de $2$ par $f$.
 
-    ![](img/fct/08.png){width=75%}
+    ![](img/fct/08.png){width=50%}
 
-    On détermine les abscisses des points d'intersections de $\mathcal{}_f$ avec la droite parallèle à l'axe des abscisses passant par le point $(0;2)$.
+    On détermine les abscisses des points d'intersections de $\mathcal{C}_f$ avec la droite parallèle à l'axe des abscisses passant par le point $(0;2)$.
 
     On peut "lire" 2 solutions : $0.5$ et $4.5$
 
@@ -216,14 +216,14 @@
 
     **Résoudre graphiquement une équation du type $f(x)=g(x)$**
 
-    On considère les fonctions $f$ et $g$ définie sur $\R$ par :
+    On considère les fonctions $f$ et $g$ définie sur $\mathbb{R}$ par :
 
     - $f(x)=x^2+2$
     - $g(x)=-x^2+3x+2$
 
-    Pour déterminer les solutions de l'équation $f(x)=g(x)$, il suffit de lire l'abscisse des points d'intersection de $\f$ et $\Cg$.
+    ![](img/fct/10.png){width=50%}
 
-    ![](img/fct/10.png){width=75%}
+    Pour déterminer les solutions de l'équation $f(x)=g(x)$, il suffit de lire l'abscisse des points d'intersection de $\Cf$ et $\Cg$.
 
     Graphiquement l'équation $f(x)=g(x)$ admet pour solutions :
 
@@ -235,7 +235,6 @@
         - $f(0)=0^2+2=2$
         - $g(0)=-0^2+3\times 0+2=2$
         - $f(0)=g(0)\qquad$donc $0$ est solution
-
     - Pour $x=1.5$ :
         - $f(1.5)=1.5^2+2=4.25$
         - $g(1.5)=-1.5^2+3\times 1.5+2=4.25$
@@ -245,9 +244,9 @@
 
     **Résoudre graphiquement une équation du type $f(x)\le g(x)$**
 
-    - Pour résoudre de l'inéquation $f(x)\le g(x)$, il faut déterminer l'ensemble des valeurs de $x$ pour lesquelles $\f$ se trouve **au-dessous** de $\Cg$
+    - Pour résoudre de l'inéquation $f(x)\le g(x)$, il faut déterminer l'ensemble des valeurs de $x$ pour lesquelles $\mathcal{C}_f$ se trouve **au-dessous** de $\mathcal{C}_g$
 
-    ![](img/fct/11.png){width=75%}
+    ![](img/fct/11.png){width=50%}
 
     On lit **graphiquement** que l'inéquation $f(x)\le g(x)$ admet pour solution l'intervalle $[0;1,5]$
 
