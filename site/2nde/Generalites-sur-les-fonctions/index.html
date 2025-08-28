@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cedric-todaro.github.io/m/2nde/Generalites-sur-les-fonctions/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Généralités sur les fonctions - Math pour le lycée</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../extra.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-mermaid.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "G\u00e9n\u00e9ralit\u00e9s sur les fonctions";
+        var mkdocs_page_input_path = "2nde/Generalites-sur-les-fonctions.md";
+        var mkdocs_page_url = "/m/2nde/Generalites-sur-les-fonctions/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Math pour le lycée
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" aria-label="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Accueil</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2nde</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Arithmetique/">Arithmétique</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Calcul-algebrique/">Calcul algébrique</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Droites-du-plan/">Droites du plan</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Droites-et-systemes/">Droites et systèmes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ensembles-de-nombres/">Ensemble de nombres</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Fonctions-affines/">Fonctions affines</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Fonctions-de-reference/">Fonctions de références</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Généralités sur les fonctions</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#vocabulaire-et-notations">Vocabulaire et notations</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#definition-fonction">Définition : Fonction</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#image-antecedent">Image, antécédent</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#representation-graphique">Représentation graphique</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#resolution-graphique-dequations-et-dinequations">Résolution graphique d&rsquo;équations et d&rsquo;inéquations</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Probabilite-echantillonnage/">Probabilité et échantillonnage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Probabilite/">Probabilité</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Divers</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../divers/">Help</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../test/">Testouille</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Math pour le lycée</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Documents"></a></li>
+          <li class="breadcrumb-item">2nde</li>
+      <li class="breadcrumb-item active">Généralités sur les fonctions</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="generalites-sur-les-fonctions">Généralités sur les fonctions</h1>
+<h2 id="vocabulaire-et-notations">Vocabulaire et notations</h2>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>Avec une ficelle de $10$cm, on fabrique un rectangle.</p>
+<p>On désigne par $x$ la longueur d&rsquo;un côté de ce rectangle.</p>
+<p><img alt="" src="../img/fct/01.png" width="50%" /></p>
+<p>$~$</p>
+<ul>
+<li>
+<p>alculons l&rsquo;aire du rectangle lorsque $x=3$</p>
+<ul>
+<li>Longueur = $3$ donc Largeur = $2$ donc l&rsquo;aire $A=3\times 2=6$</li>
+</ul>
+</li>
+<li>
+<p>Exprimons l&rsquo;aire du rectangle quelque soit $x$</p>
+<ul>
+<li>Longueur = $x$ donc Largeur = $5-x$ donc l&rsquo;aire :</li>
+</ul>
+</li>
+</ul>
+<p>$$\begin{aligned}A~&amp;=\text{Long.}\times\text{Larg.}\\~&amp;=x(5-x)\\~&amp;=5x-x^2\end{aligned}$$</p>
+<p><img alt="" src="../img/fct/02.png" width="50%" /></p>
+<p>$~$</p>
+<ul>
+<li>aculons quelques valeurs de $A$ pour des valeurs de $x$ :<ul>
+<li>Si $x=\cbox{lightblue}1$ alors $A=\cbox{lightblue}1\times (5-\cbox{lightblue}1)=4$</li>
+<li>Si $x=\cbox{lightgreen}2$ alors $A=\cbox{lightgreen}2\times (5-\cbox{lightgreen}2)=6$</li>
+<li>$&hellip;$</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">$x$</th>
+<th style="text-align: center;">$0$</th>
+<th style="text-align: center;">$1$</th>
+<th style="text-align: center;">$1.5$</th>
+<th style="text-align: center;">$2$</th>
+<th style="text-align: center;">$2.5$</th>
+<th style="text-align: center;">$3$</th>
+<th style="text-align: center;">$3.5$</th>
+<th style="text-align: center;">$4$</th>
+<th style="text-align: center;">$4.5$</th>
+<th style="text-align: center;">$5$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">$x(5-x)$</td>
+<td style="text-align: center;">$0$</td>
+<td style="text-align: center;">$4$</td>
+<td style="text-align: center;">$5.25$</td>
+<td style="text-align: center;">$6$</td>
+<td style="text-align: center;">$6.25$</td>
+<td style="text-align: center;">$6$</td>
+<td style="text-align: center;">$5.25$</td>
+<td style="text-align: center;">$4$</td>
+<td style="text-align: center;">$2.25$</td>
+<td style="text-align: center;">$0$</td>
+</tr>
+</tbody>
+</table>
+<p>e tableau est appelé un <strong>tableau de valeurs</strong>.</p>
+<p>Pour chaque nombre $x$, on associe un nombre égal à l&rsquo;aire du rectangle.</p>
+<ul>
+<li>$1\mapsto 4\qquad$ Pour un côté de $1$ cm, on a une aire de $4$ cm$^2$</li>
+<li>$2\mapsto 6\qquad$ Pour un côté de $2$ cm, on a une aire de $6$ cm$^2$</li>
+</ul>
+<p>De façon générale, on note : $\quad A :x\mapsto x(5-x)$</p>
+<p>ela se lit : $\qquad$<strong>&ldquo;à $x$, on associe $x(5-x)$&rdquo;</strong></p>
+<p>$~$</p>
+<p>$A$ est appelée une <strong>fonction</strong>. &lsquo;est un <strong>programme de calcul</strong> qui, à un nombre donné, fait correspondre un autre nombre.</p>
+<ul>
+<li>$A$ est le <strong>nom</strong> de la fonction</li>
+<li>$x$ est le nombre de départ : <strong>l&rsquo;antécédent</strong></li>
+<li>$x(5-x)$ est le nombre d&rsquo;arrivée : <strong>l&rsquo;image</strong></li>
+</ul>
+<p>L&rsquo;expression de $A$ dépend de la valeur de $x$ donc on note : $\quad A(x)=x(5-x)$</p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>$A(x)~$se lit &ldquo;$A$ de $x$&rdquo;</p>
+</div>
+<h3 id="definition-fonction">Définition : Fonction</h3>
+<div class="admonition def">
+<p class="admonition-title">Def</p>
+<p>Soit $\Df$ un intervalle de $\R$.</p>
+<p>Une <strong>fonction</strong> $f$, définie sur $\Df$, associe à tout nombre $x$ de $\Df$, un unique nombre noté $f(x)$.</p>
+<p>$\Df$ est l&rsquo;<strong>ensemble de définition</strong> de $f$.</p>
+<p>$~$</p>
+<p><ins>Notation :</ins></p>
+<p>$f:\begin{matrix}\Df&amp;\mapsto&amp;\R\\x&amp;\mapsto&amp;f(x)\end{matrix}\qquad$ou$\qquad$La fonction $f$ définie sur $\Df$ tel que $f(x)=&hellip;$</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>Dans l&rsquo;ex. du rectangle, la longueur ne peut pas dépasser $5$cm donc $x\in [0;5]$</p>
+<p>On note :</p>
+<p>$$A:\begin{matrix}[0;5]&amp;\mapsto&amp;\R\\x&amp;\mapsto&amp;x(5-x)\end{matrix}$$</p>
+<p>ou $\quad$&rdquo;Soit la fonction $A$ définie sur $[0;5]$ tel que $A(x)=x(5-x)$&rdquo;</p>
+</div>
+<h3 id="image-antecedent">Image, antécédent</h3>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>Pour la fonction $~f(x)=x(5-x)~$, on a $\quad f(2.5)=6.25~$ et $~f(1)=4$</p>
+<p>On dit que :</p>
+<ul>
+<li>L&rsquo;<strong>image</strong> de $2.5$ par la fonction $f$ est $6.25$</li>
+<li>Un <strong>antécédent</strong> de $6.25$ par la fonction f est $2.5$</li>
+</ul>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<ul>
+<li>Un nombre possède une <strong>unique</strong> image.</li>
+<li>ependant, un nombre peut posséder plusieurs antécédents.<ul>
+<li>Dans l&rsquo;ex. du rectangle, des antécédents de $5.25$ sont $1.5$ et $3.5$</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">$x$</th>
+<th style="text-align: center;">$\ldots$</th>
+<th style="text-align: center;">$1.5$</th>
+<th style="text-align: center;">$\ldots$</th>
+<th style="text-align: center;">$3.5$</th>
+<th style="text-align: center;">$\ldots$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">$A(x)=x(5-x)$</td>
+<td style="text-align: center;">$\ldots$</td>
+<td style="text-align: center;">$5.25$</td>
+<td style="text-align: center;">$\ldots$</td>
+<td style="text-align: center;">$5.25$</td>
+<td style="text-align: center;">$\ldots$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>alculer une image ou un antécédent</strong></p>
+<p>Soit la fonction $f$ définie sur $\left[0;+\infty\right[$ par $f(x)=\sqrt{x}+1$</p>
+<ul>
+<li>$f(\cbox{pink}{4})=\sqrt{\cbox{pink}{4}}+1=3$</li>
+<li>$f(\cbox{lightgreen}{10.24})=\sqrt{\cbox{lightgreen}{10.24}}+1=4.2$</li>
+<li>$\ldots$</li>
+</ul>
+<p><strong>Tableau de valeurs :</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">$x$</th>
+<th style="text-align: center;">$0$</th>
+<th style="text-align: center;">$4$</th>
+<th style="text-align: center;">$10.24$</th>
+<th style="text-align: center;">$16$</th>
+<th style="text-align: center;">$20.25$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">$f(x)$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$3$</td>
+<td style="text-align: center;">$4.2$</td>
+<td style="text-align: center;">$5$</td>
+<td style="text-align: center;">$5.5$</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>L&rsquo;image de $4$ par $f$ est $&hellip;$</li>
+<li>un antécéent de $5$ par $f$ est $&hellip;$</li>
+<li>$f: &hellip;\mapsto 4.2$</li>
+<li>$f(20.25)=&hellip;$</li>
+</ul>
+<details>
+<summary>Réponses</summary>
+<ul>
+<li>L&rsquo;image de $4$ par $f$ est $\boxed{3}$</li>
+<li>un antécéent de $5$ par $f$ est $\boxed{16}$</li>
+<li>$f: \boxed{10.24} \mapsto 4.2$</li>
+<li>$f(20.25)=\boxed{5.5}$</li>
+</ul>
+</details>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Tableau de valeurs à l&rsquo;aide de la calculatrice</strong></p>
+<p><img alt="" src="../img/fct/03.png" width="90%" /></p>
+</div>
+<h2 id="representation-graphique">Représentation graphique</h2>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>Soit $f(x)=x(5-x)$ définie sur $[0;5]$</p>
+<p>On peut représenter $f$ à l&rsquo;aide du tableau de valeurs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">$x$</th>
+<th style="text-align: center;">$0$</th>
+<th style="text-align: center;">$0.5$</th>
+<th style="text-align: center;">$1$</th>
+<th style="text-align: center;">$\ldots$</th>
+<th style="text-align: center;">$2.5$</th>
+<th style="text-align: center;">$3$</th>
+<th style="text-align: center;">$\ldots$</th>
+<th style="text-align: center;">$5$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">$f(x)$</td>
+<td style="text-align: center;">$0$</td>
+<td style="text-align: center;">$2.25$</td>
+<td style="text-align: center;">$4$</td>
+<td style="text-align: center;">$\ldots$</td>
+<td style="text-align: center;">$6.25$</td>
+<td style="text-align: center;">$6$</td>
+<td style="text-align: center;">$\ldots$</td>
+<td style="text-align: center;">$0$</td>
+</tr>
+</tbody>
+</table>
+<p>Dans un repère, on place les points $(x~;~f(x))$</p>
+<p>En reliant les points, on obtient une courbe $\Cf$.</p>
+<p><img alt="" src="../img/fct/04.png" width="50%" /></p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>L&rsquo;ensemble des points de coordonnées $(x;y)$ avec $y=f(x)$ définissent la <strong>courbe représentative</strong> de la fonction $f$.</p>
+<p>On dira que $y=f(x)$ est l&rsquo;<strong>équation de la courbe</strong>.</p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Représentation graphique, à l&rsquo;aide de la calculatrice</strong></p>
+<p><img alt="" src="../img/fct/05.png" /></p>
+<p><img alt="" src="../img/fct/06.png" width="75%" /></p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>On peut établir un tableau de signes de $f$ à l&rsquo;aide de $\mathcal{}_f$ sur $[-1;6]$</p>
+<p><img alt="" src="../img/fct/07.png" width="75%" /></p>
+</div>
+<h2 id="resolution-graphique-dequations-et-dinequations">Résolution graphique d&rsquo;équations et d&rsquo;inéquations</h2>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Résoudre graphiquement une équation du type $f(x)=k$</strong></p>
+<p>Soit $f(x)=x(5-x)$</p>
+<p>Résoudre l&rsquo;équation $f(x)=2$, c&rsquo;est trouver les antécédents de $2$ par $f$.</p>
+<p><img alt="" src="../img/fct/08.png" width="75%" /></p>
+<p>On détermine les abscisses des points d&rsquo;intersections de $\mathcal{}_f$ avec la droite parallèle à l&rsquo;axe des abscisses passant par le point $(0;2)$.</p>
+<p>On peut &ldquo;lire&rdquo; 2 solutions : $0.5$ et $4.5$</p>
+<p>$$\begin{aligned}f(x)=2~&amp;\Leftrightarrow x(5-x)=2\\~&amp;\Leftrightarrow\begin{cases}x_1\approx 0.5\\x_2\approx 1.5\end{cases}\end{aligned}$$</p>
+<p><ins>Interprétation :</ins></p>
+<p>Le rectangle de dimensions $0.5$cm sur $4.5$cm possède une aire <strong>d&rsquo;environ</strong> $2$cm$^2$.</p>
+<ul>
+<li>Aire pour $x=0.5$ : $\qquad 0.5(5-0.5)=0.5\times 4.5=2.25\approx 2$</li>
+<li>Aire pour $x=4.5$ : $\qquad 4.5(5-4.5)=4.5\times 0.5=2.25\approx 2$</li>
+</ul>
+<p>Une lecture graphique est rarement exacte.</p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<ul>
+<li>Par lecture graphique, les solutions obtenues sont <strong>approchées</strong>. (sauf cas particulier)</li>
+<li>L&rsquo;équation $f(x)=7$ n&rsquo;a pas de solution car la droite ne coupe pas la courbe.</li>
+<li>Graphiquement, on <strong>ne peut pas être certain</strong> que les solutions qui apparaissent sont les seules. Il pourrait y en avoir d&rsquo;autres au-delà des limites de la représentation graphique tracée.</li>
+</ul>
+<p><img alt="" src="../img/fct/09.png" width="50%" /></p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Résoudre graphiquement une équation du type $f(x)=g(x)$</strong></p>
+<p>On considère les fonctions $f$ et $g$ définie sur $\R$ par :</p>
+<ul>
+<li>$f(x)=x^2+2$</li>
+<li>$g(x)=-x^2+3x+2$</li>
+</ul>
+<p>Pour déterminer les solutions de l&rsquo;équation $f(x)=g(x)$, il suffit de lire l&rsquo;abscisse des points d&rsquo;intersection de $\f$ et $\Cg$.</p>
+<p><img alt="" src="../img/fct/10.png" width="75%" /></p>
+<p>Graphiquement l&rsquo;équation $f(x)=g(x)$ admet pour solutions :</p>
+<p>$$x_1=0\quad\text{et}\quad x_2=1.5$$</p>
+<p><ins>Vérification :</ins></p>
+<ul>
+<li>
+<p>Pour $x=0$ :</p>
+<ul>
+<li>$f(0)=0^2+2=2$</li>
+<li>$g(0)=-0^2+3\times 0+2=2$</li>
+<li>$f(0)=g(0)\qquad$donc $0$ est solution</li>
+</ul>
+</li>
+<li>
+<p>Pour $x=1.5$ :</p>
+<ul>
+<li>$f(1.5)=1.5^2+2=4.25$</li>
+<li>$g(1.5)=-1.5^2+3\times 1.5+2=4.25$</li>
+<li>$f(1.5)=g(1.5)\qquad$donc $1.5$ est solution</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Résoudre graphiquement une équation du type $f(x)\le g(x)$</strong></p>
+<ul>
+<li>Pour résoudre de l&rsquo;inéquation $f(x)\le g(x)$, il faut déterminer l&rsquo;ensemble des valeurs de $x$ pour lesquelles $\f$ se trouve <strong>au-dessous</strong> de $\Cg$</li>
+</ul>
+<p><img alt="" src="../img/fct/11.png" width="75%" /></p>
+<p>On lit <strong>graphiquement</strong> que l&rsquo;inéquation $f(x)\le g(x)$ admet pour solution l&rsquo;intervalle $[0;1,5]$</p>
+<p>$$f(x)\le g(x)~\Leftrightarrow~x\in[0;1,5]$$</p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../Fonctions-de-reference/" class="btn btn-neutral float-left" title="Fonctions de références"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../Probabilite-echantillonnage/" class="btn btn-neutral float-right" title="Probabilité et échantillonnage">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Fonctions-de-reference/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../Probabilite-echantillonnage/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.8/mermaid.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-mermaid.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

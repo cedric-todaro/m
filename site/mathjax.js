@@ -50,6 +50,10 @@ MathJax = {
         \nc{\Q}{\mathbb{Q}}
         \nc{\R}{\mathbb{R}}
         \nc{\C}{\mathbb{C}}
+        \nc{\Cf}{\mathcal{C}_f}
+        \nc{\Cg}{\mathcal{C}_g}
+        \nc{\Df}{\mathcal{D}_f}
+        \nc{\Dg}{\mathcal{D}_g}
         \nc{\pa}[1]{\left(#1\right)}
         \nc{\brace}[1]{\left\{#1\right\}}
         \nc{\coord}[2]{\begin{pmatrix}#1\\#2\end{pmatrix}}
