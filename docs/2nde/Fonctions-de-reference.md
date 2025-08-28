@@ -429,46 +429,50 @@
 
 !!! definition
 
-- Une fonction $f$ est **paire** lorsque pour tout réel $x\in\mathcal{D}_f$, on a : $\begin{cases}(-x)\in\mathcal{D}_f\\\\\\\\f(-x)=f(x)\end{cases}$
+    - Une fonction $f$ est **paire** lorsque pour tout réel $x\in\mathcal{D}_f$, on a :
 
-- Une fonction $f$ est **impaire** lorsque pour tout réel $x\in\mathcal{D}_f$, on a : $\begin{cases}(-x)\in\mathcal{D}_f\\\\\\\\f(-x)=-f(x)\end{cases}$
+    $$f~\text{paire}~\iff~\begin{cases}(-x)\in\mathcal{D}_f\\\\f(-x)=f(x)\end{cases}$$
 
-!!! exemple
+    - Une fonction $f$ est **impaire** lorsque pour tout réel $x\in\mathcal{D}_f$, on a :
 
-La fonction $f(x)=x^2$ définie sur $\R$ est **paire** car, pour tout $x\in\R$, on a
-
-$$\begin{aligned}f(-x)=(-x)^2&=(-1\times x)^2\\\\&=(-1)^2\times x^2\\\\&=x^2=f(x)\end{aligned}$$
+    $$f~\text{impaire}~\iff~\begin{cases}(-x)\in\mathcal{D}_f\\\\f(-x)=-f(x)\end{cases}$$
 
 !!! exemple
 
-La fonction $f(x)=\cfrac{1}{x}$ définie sur $\R^{*}$ est **impaire** car, pour tout $x\in\R^{*}$, on a :
+    La fonction $f(x)=x^2$ définie sur $\R$ est **paire** car, pour tout $x\in\R$, on a :
 
-$$\begin{aligned}f(-x)=\cfrac{1}{-x}&=-\cfrac{1}{x}\\\\&=-\left(\cfrac{1}{x}\right)=-f(x)\end{aligned}$$
+    $$\begin{aligned}f(-x)=(-x)^2 &=(-1\times x)^2 \\\\&=(-1)^2 \times x^2 \\\\&=x^2 =f(x)\end{aligned}$$
+
+!!! exemple
+
+    La fonction $f(x)=\cfrac{1}{x}$ définie sur $\R^* $ est **impaire** car, pour tout $x\in\R^{*}$, on a :
+
+    $$\begin{aligned}f(-x)=\cfrac{1}{-x}&=-\cfrac{1}{x}\\\\&=-\left(\cfrac{1}{x}\right)=-f(x)\end{aligned}$$
 
 !!! rem
 
-- Une fonction peut être ni paire, ni impaire. Ex: $f(x)=\sqrt{x}$
-- La représentation d'une fonction **paire** est **symétrique** par rapport à **l'axe des ordonnées**.
-- La représentation d'une fonction **impaire** est **symétrique** par rapport à **l'origine du repère**
+    - Une fonction peut être ni paire, ni impaire. Ex: $f(x)=\sqrt{x}$
+    - La représentation d'une fonction **paire** est **symétrique** par rapport à **l'axe des ordonnées**.
+    - La représentation d'une fonction **impaire** est **symétrique** par rapport à **l'origine du repère**
 
-|       Fonction **paire**       |      Fonction **impaire**      |
-| :----------------------------: | :----------------------------: |
-| ![](img/ref/20.png){width=5cm} | ![](img/ref/21.png){width=6cm} |
+    |       Fonction **paire**       |      Fonction **impaire**      |
+    | :----------------------------: | :----------------------------: |
+    | ![](img/ref/20.png){width=75%} | ![](img/ref/21.png){width=75%} |
 
 !!! methode
 
-Étudier la parité d'une fonction
+    **Étudier la parité d'une fonction**
 
-![](img/ref/22.png)
+    Soit $f(x)=2x^2-1$ définie sur $\R$
 
-Soit $f(x)=2x^2-1$ définie sur $\R$
+    Pour tout $x\in\R$, on a :
 
-Pour tout $x\in\R$, on a :
+    $$\begin{aligned}f(-x)&=2(-x)^2-1\\\\ &=2\times (-1\times x)^2-1\\\\ &=2\times (-1)^2\times x^2-1\\\\ &=2x^2-1\qquad=f(x)\end{aligned}$$
 
-$$\begin{aligned}f(-x)&=2(-x)^2-1\\\\ &=2\times (-1\times x)^2-1\\\\ &=2\times (-1)^2\times x^2-1\\\\ &=2x^2-1=f(x)\end{aligned}$$
+    Donc $f$ est **paire**, sa représentation graphique est **symétrique** par rapport à **l'axe des ordonnées**.
 
-Donc $f$ est **paire**, sa représentation graphique est **symétrique** par rapport à **l'axe des ordonnées**.
+    ![](img/ref/22.png){width=50%}
 
 ## Représentation des fonctions de références
 
-![](img/ref/image.png)
+![](img/ref/image.png){width=100%}
