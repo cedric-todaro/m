@@ -63,6 +63,7 @@ MathJax = {
         \nc{\Rarr}{\Rightarrow}
         \nc{\rarr}{\rightarrow}
         \nc{\tc}{\textcolor}
+        \nc{\vec}[1]{\overrightarrow{#1}}
       `);
         },
     },
