@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cedric-todaro.github.io/m/2nde/Notion-de-vecteur/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Notion de vecteur - Math pour le lycée</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../extra.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-mermaid.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Notion de vecteur";
+        var mkdocs_page_input_path = "2nde/Notion-de-vecteur.md";
+        var mkdocs_page_url = "/m/2nde/Notion-de-vecteur/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Math pour le lycée
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" aria-label="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Accueil</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2nde</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Arithmetique/">Arithmétique</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Calcul-algebrique/">Calcul algébrique</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Droites-du-plan/">Droites du plan</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Droites-et-systemes/">Droites et systèmes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ensembles-de-nombres/">Ensemble de nombres</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Fonctions-affines/">Fonctions affines</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Fonctions-de-reference/">Fonctions de références</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Generalites-sur-les-fonctions/">Généralités sur les fonctions</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Notion de vecteur</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#rappel-translation">Rappel : Translation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#translation-definition">Translation : Définition</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#vecteurs-dans-le-plan">Vecteurs dans le plan</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#vecteur-definition">Vecteur : Définition</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#egalite-de-vecteurs">Égalité de vecteurs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#vecteur-nul">Vecteur nul</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#vecteurs-opposes">Vecteurs opposés</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#somme-de-vecteurs">Somme de vecteurs</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#relation-de-chasles">Relation de Chasles</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#difference-de-deux-vecteurs">Différence de deux vecteurs</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Probabilite-echantillonnage/">Probabilité et échantillonnage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Probabilite/">Probabilité</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Divers</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../divers/">Help</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../test/">Testouille</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Math pour le lycée</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Documents"></a></li>
+          <li class="breadcrumb-item">2nde</li>
+      <li class="breadcrumb-item active">Notion de vecteur</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="notion-de-vecteur">Notion de vecteur</h1>
+<h2 id="rappel-translation">Rappel : Translation</h2>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p><img alt="" src="../img/vec1/01.png" width="75%" /></p>
+<p>$~$</p>
+<p>Une translation est un glissement :</p>
+<ul>
+<li>avec une <strong>direction</strong> donnée $\Rarr$ câble du téléphérique, la droite $(AB)$,</li>
+<li>avec un <strong>sens</strong> donné $\Rarr$ le téléphérique monte de $A$ vers $B$,</li>
+<li>avec une <strong>longueur</strong> donnée $\Rarr$ 80m, longueur $AB$</li>
+</ul>
+<p>On dit que :</p>
+<ul>
+<li>Le téléphérique $T&rsquo;$ est l&rsquo;image du téléphérique $T$ par la translation qui transforme $A$ en $B$.</li>
+</ul>
+</div>
+<h3 id="translation-definition">Translation : Définition</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>Soit $A$ et $A&rsquo;$ deux points distincts du plan.</p>
+<p>On appelle <strong>translation</strong> qui envoie $A$ sur $A&rsquo;$ la transformation dont l&rsquo;image $F&rsquo;$ d&rsquo;une figure $F$ est obtenue en faisant glisser la figure $F$ :</p>
+<ul>
+<li>selon la <strong>direction</strong> de la droite $(AA&rsquo;)$,</li>
+<li>dans le <strong>sens</strong> de $A$ vers $A&rsquo;$,</li>
+<li>d&rsquo;une <strong>longueur</strong> égale à $AA&rsquo;$.</li>
+</ul>
+<p><img alt="" src="../img/vec1/02.png" width="50%" /></p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Construire l&rsquo;image d&rsquo;une figure par une translation</strong></p>
+<p>Soit <strong>t</strong> la translation qui transforme $A$ en $A&rsquo;$.</p>
+<p>Construction de l&rsquo;image $B&rsquo;C&rsquo;D&rsquo;E&rsquo;$ du polygone $BCDE$ par la translation <strong>t</strong>.</p>
+<p><img alt="" src="../img/vec1/03b.png" /></p>
+</div>
+<h2 id="vecteurs-dans-le-plan">Vecteurs dans le plan</h2>
+<h3 id="vecteur-definition">Vecteur : Définition</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>Soit <strong>t</strong> la translation qui envoie $A$ sur $A&rsquo;$, $B$ sur $B&rsquo;$ et $C$ sur $C&rsquo;$.</p>
+<p>Les couples de points $(A ; A&rsquo;)$, $(B ; B&rsquo;)$ et $(C ; C&rsquo;)$ définissent un <strong>vecteur</strong> caractérisé par :</p>
+<ul>
+<li><strong>une direction</strong> : celle de la droite $(AA&rsquo;)$</li>
+<li><strong>un sens</strong> : de $A$ vers $A&rsquo;$</li>
+<li><strong>une longueur</strong> : la longueur $AA&rsquo;$</li>
+</ul>
+<p><img alt="" src="../img/vec1/04.png" width="50%" /></p>
+<p>On note $\vec{u}$ ce vecteur et on écrit : $\quad\vec{u}=\vec{AA&rsquo;}$</p>
+<p>On dit que :</p>
+<ul>
+<li>$\vec{AA&rsquo;}$ est un <strong>représentant</strong> de $\vec{u}$</li>
+<li>$\vec{BB&rsquo;}$ et $\vec{CC&rsquo;}$ sont également des représentants de $\vec{u}$.</li>
+</ul>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>La longueur d&rsquo;un vecteur est aussi appelée la <strong>norme</strong> du vecteur.</p>
+<p>On note : $\qquad\norm{\vec{u}}=\norm{\vec{AA&rsquo;}}=AA&rsquo;$</p>
+</div>
+<h3 id="egalite-de-vecteurs">Égalité de vecteurs</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>Les vecteurs $\vec{AB}$ et $\vec{CD}$ sont <strong>égaux</strong> lorsqu&rsquo;ils ont :</p>
+<ul>
+<li>même <strong>direction</strong></li>
+<li>même <strong>sens</strong></li>
+<li>même <strong>longueur</strong>.</li>
+</ul>
+<p>On note $\quad\vec{AB} = \vec{CD}$.</p>
+<p><img alt="" src="../img/vec1/05.png" width="50%" /></p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>On peut poser : $\qquad\vec{u}=\vec{AB}=\vec{CD}$</p>
+<p>$\vec{AB}$ et $\vec{CD}$ sont des <strong>représentants</strong> de $\vec{u}$</p>
+</div>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p><strong>Vecteurs et parallélogramme</strong></p>
+<p><img alt="" src="../img/vec1/06.png" width="50%" /></p>
+<p>Dire que $\vec{AB}$ et $\vec{CD}$ sont égaux revient à dire que $ABDC$ est un <strong>parallélogramme</strong>.</p>
+<p>$$\vec{AB} = \vec{CD} \quad\Leftrightarrow\quad ABDC \text{ parallélogramme}$$</p>
+</div>
+<div class="admonition demo">
+<p class="admonition-title">Demo</p>
+<p>Si $\vec{AB} = \vec{CD}$, la translation de vecteur $\vec{AB}$ transforme $C$ en $D$.</p>
+<p>Les segments $\left[AB\right]$ et $\left[CD\right]$ ont donc même longueur et même direction.</p>
+<p>$$\vec{AB} = \vec{CD}\quad\Rightarrow\quad\begin{cases}AB=CD\(AB)\parallel(CD)\end{cases}$$</p>
+<p>Donc <strong>ABDC</strong> est donc un <strong>parallélogramme</strong>.</p>
+<p><strong>Réciproquement :</strong></p>
+<p>Les côtés opposés d&rsquo;un parallélogramme sont :</p>
+<ul>
+<li>parallèles</li>
+<li>de même longueur</li>
+</ul>
+<p>Donc $\vec{AB}$ et $\vec{CD}$, déﬁnis à l&rsquo;aide des segments $\left[AB\right]$ et $\left[AB\right]$ d&rsquo;un parallélogramme $ABDC$, sont égaux.</p>
+<p>$$\begin{cases}AB=CD\(AB)\parallel(CD)\end{cases}\quad\Rightarrow\quad\vec{AB} = \vec{CD}$$</p>
+</div>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p><strong>Vecteurs et milieu</strong></p>
+<p>Dire que $B$ est le milieu de $\left[AC\right]$ revient à dire que $\vec{AB} = \vec{BC}$.</p>
+<p>$$\vec{AB} = \vec{BC}\quad\Leftrightarrow\quad B \text{ mileu de }\left[AC\right]$$</p>
+<p><img alt="" src="../img/vec1/07.png" width="30%" /></p>
+</div>
+<h3 id="vecteur-nul">Vecteur nul</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>Un vecteur $\vec{AB}$ est <strong>nul</strong> lorsque $A$ et $B$ sont confondus.</p>
+<p>On note : $\vec{AB} = \vec{0}$</p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>Pour tout point $M$, on a : $\quad\vec{MM} = \vec{0}$</p>
+</div>
+<h3 id="vecteurs-opposes">Vecteurs opposés</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>Deux vecteurs sont <strong>opposés</strong> lorsqu&rsquo;ils ont :</p>
+<ul>
+<li>la <strong>même direction</strong></li>
+<li>la <strong>même longueur</strong></li>
+<li>et qu&rsquo;ils sont de <strong>sens contraire</strong></li>
+</ul>
+<p>On note : $\qquad\vec{AB} = -\vec{DC}$</p>
+<p><img alt="" src="../img/vec1/08.png" width="30%" /></p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>$\vec{AB}$ et $\vec{BA}$ sont des vecteurs opposés. $\quad\Rarr\quad\vec{AB}=-\vec{BA}$</p>
+</div>
+<h3 id="somme-de-vecteurs">Somme de vecteurs</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>$\vec{u}$ et $\vec{v}$ sont deux vecteurs quelconques.</p>
+<p>On appelle <strong>somme</strong> de $\vec{u}$ et $\vec{v}$, le vecteur $\vec{w}$ associé à la translation <strong>composée</strong> des translations de $\vec{u}$ et $\vec{v}$.</p>
+<p>$$\vec{u}+\vec{v}=\vec{w}$$</p>
+<p><img alt="" src="../img/vec1/09.png" width="75%" /></p>
+</div>
+<h4 id="relation-de-chasles">Relation de Chasles</h4>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p><strong>Relation de Chasles</strong></p>
+<p>Pour tous points $A$, $B$ et $C$ du plan, on a :</p>
+<p>$$\boxed{\vec{AC} = \vec{AB} +\vec{BC}}$$</p>
+<p><img alt="" src="../img/vec1/10.png" width="50%" /></p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>Dans un triangle $ABC$, on a :</p>
+<p>$\vec{AB} = \vec{AC} + \vec{CB}\quad$ et $\quad\vec{BC} = \vec{BA} + \vec{AC}$</p>
+<p><img alt="" src="../img/vec1/11.png" width="30%" /></p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p>Appliquer la relation de Chasles</p>
+<ul>
+<li>$\vec{AM}+\vec{MN}\quad=\vec{AN}$</li>
+<li>$\vec{MP}+\vec{AM}\quad=\vec{AM}+\vec{MP}\quad=\vec{AP}$</li>
+<li>$\vec{OP}+\vec{KO}+\vec{NK}\quad=\vec{NK}+\vec{KO}+\vec{OP}\quad=\vec{NP}$</li>
+<li>$\vec{KN}~-~\vec{ON}+\vec{OK}\quad=\vec{KN}+\vec{NO}+\vec{OK}\quad=\vec{KK}\quad=\vec{0}$</li>
+</ul>
+</div>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p>Dire que $ABDC$ est un parallélogramme revient à dire que $\quad\vec{AD}=\vec{AB} + \vec{AC}$</p>
+<p>$$ABDC\quad\text{parallélogramme}\quad\Leftrightarrow\quad\vec{AD}=\vec{AB} + \vec{AC}$$</p>
+<p><img alt="" src="../img/vec1/12.png" width="50%" /></p>
+</div>
+<h3 id="difference-de-deux-vecteurs">Différence de deux vecteurs</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>$\vec{u}$ et $\vec{v}$ sont deux vecteurs quelconques.</p>
+<p>On appelle <strong>différence</strong> de $\vec{u}$ et de $\vec{v}$, le vecteur noté $\vec{u}-\vec{v}$, tel que :</p>
+<p>$$\vec{u} - \vec{v} = \vec{u} + \left(-\vec{v}\right)$$</p>
+<p><img alt="" src="../img/vec1/13.png" width="75%" /></p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Construire un point défini à partir d&rsquo;une somme de vecteurs</strong></p>
+<p>Soit un triangle $ABC$. Construire le point $F$ tel que $\vec{AF} = \vec{BA} + \vec{BC}$</p>
+<p>On construit à partir de $A$ (origine de $\vec{AF}$) le vecteur $\vec{BA} + \vec{BC}$ en mettant &ldquo;bout à bout&rdquo; les vecteurs $\vec{BA}$ et $\vec{BC}$.</p>
+<p>On a ainsi construit un vecteur $\vec{AF}$ et donc le point $F$.</p>
+<p><img alt="" src="../img/vec1/14.png" width="85%" /></p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../Generalites-sur-les-fonctions/" class="btn btn-neutral float-left" title="Généralités sur les fonctions"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../Probabilite-echantillonnage/" class="btn btn-neutral float-right" title="Probabilité et échantillonnage">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Generalites-sur-les-fonctions/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../Probabilite-echantillonnage/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.8/mermaid.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-mermaid.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
