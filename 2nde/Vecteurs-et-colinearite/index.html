@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cedric-todaro.github.io/m/2nde/Vecteurs-et-colinearite/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Vecteurs et colinéarité - Math pour le lycée</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../extra.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-mermaid.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Vecteurs et colin\u00e9arit\u00e9";
+        var mkdocs_page_input_path = "2nde/Vecteurs-et-colinearite.md";
+        var mkdocs_page_url = "/m/2nde/Vecteurs-et-colinearite/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Math pour le lycée
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" aria-label="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Accueil</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2nde</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Arithmetique/">Arithmétique</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Calcul-algebrique/">Calcul algébrique</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Droites-du-plan/">Droites du plan</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Droites-et-systemes/">Droites et systèmes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ensembles-de-nombres/">Ensemble de nombres</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Fonctions-affines/">Fonctions affines</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Fonctions-de-reference/">Fonctions de références</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Generalites-sur-les-fonctions/">Généralités sur les fonctions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Notion-de-vecteur/">Notion de vecteur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Probabilite-echantillonnage/">Probabilité et échantillonnage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Probabilite/">Probabilité</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Proportion-evolution/">Proportion et évolution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Reperage-et-configuration-dans-le-plan/">Repérage dans le plan</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Statistiques-descriptives/">Statistiques descriptives</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Variations-de-fonctions/">Variation de fonctions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Divers</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../divers/">Help</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../test/">Testouille</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Math pour le lycée</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Documents"></a></li>
+      <li class="breadcrumb-item active">Vecteurs et colinéarité</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="vecteurs-et-colinearite">Vecteurs et colinéarité</h1>
+<h2 id="produit-dun-vecteur-par-un-reel">Produit d&rsquo;un vecteur par un réel</h2>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+</div>
+<p>Soit $\vec{u}$ un vecteur du plan.</p>
+<p>Appliquer $5$ fois la translation de vecteur $\vec{u}$ revient à appliquer la translation de vecteur :
+$$\vec{w} = \vec{u}+\vec{u}+\vec{u}+\vec{u}+\vec{u}=5\vec{u}$$</p>
+<p><img alt="" src="../img/vec3/16.png" width="50%" /></p>
+<h3 id="definition">Définition</h3>
+<p><img alt="" src="../img/vec3/15.png" width="50%" /></p>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+</div>
+<p>On appelle <strong>produit</strong> du vecteur $\vec{u}$ par le réel $k$, le vecteur noté $k\vec{u}$ :</p>
+<ul>
+<li>de <strong>même direction</strong> que $\vec{u}$</li>
+<li>de :<ul>
+<li><strong>même sens</strong> que $\vec{u}$ si $k&gt;0$</li>
+<li><strong>sens contraire</strong> que $\vec{u}$ si $k\lt 0$</li>
+</ul>
+</li>
+<li>de <strong>norme</strong> égale à :<ul>
+<li>$k$ fois la norme de $\vec{u}$ si $k&gt; 0$</li>
+<li>$(-k)$ fois norme de $\vec{u}$ si $k\lt 0$</li>
+</ul>
+</li>
+</ul>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+</div>
+<ul>
+<li>La norme de $2.5\vec{u}$ est égale à $2.5$ fois la norme de $\vec{u}$</li>
+<li>La norme de $-0.9\vec{u}$ est égale à $0.9$ fois la norme de $\vec{u}$</li>
+</ul>
+<p><img alt="" src="../img/vec3/17tt.png" width="50%" /></p>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+</div>
+<p>\ul{Représenter un vecteur défini comme produit et somme de vecteurs}</p>
+<p>Soit deux vecteurs $\vec{u}$ et $\vec{v}$.</p>
+<p>Représentons les vecteurs $2\vec{u}-\vec{v}$.</p>
+<ul>
+<li>Pour représenter $2\vec{u}$, on place bout à bout deux vecteurs $\vec{u}$.</li>
+<li>Pour représenter $-\vec{v}$, on représente un vecteur de même direction et même longueur que $\vec{v}$ mais de sens opposé.</li>
+<li>Pour représenter le vecteur $2\vec{u}-\vec{v}$ (ou $2\vec{u}+(-\vec{v})$, on place bout à bout les vecteurs $2\vec{u}$ et $-\vec{v}$.</li>
+</ul>
+<p><img alt="" src="../img/vec3/18.png" width="50%" /></p>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+</div>
+<p>Soit les points $A$, $B$ et $C$</p>
+<p>Construisons $M$ tel que : $\quad \vec{AM}=-\vec{AB}+3\vec{AC}$</p>
+<p>Pour représenter $\vec{AM}$, on place bout à bout à partir de $A$ :</p>
+<ul>
+<li>$\vec{-AB}$</li>
+<li>$3\vec{AC}$.</li>
+</ul>
+<p>Le point $M$ se trouve à l&rsquo;extrémité du vecteur $3\vec{AC}$.</p>
+<p>\begin{center}
+\includegraphics[width=9.5cm]{img/vec3/19a.png}$~$~$~$\includegraphics[width=9.5cm]{img/vec3/19b.png}
+\end{center}</p>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+</div>
+<p>\ul{Exprimer, par lecture graphique, un vecteur en fonction d&rsquo;autres vecteurs}</p>
+<p>Par lecture graphique, exprimons $\vec{u}$ en fonction de $\vec{a}$ et $\vec{b}$.</p>
+<p>On construisons <strong>&ldquo;un chemin&rdquo;</strong> de vecteurs $\vec{a}$ et $\vec{b}$ mis bout à bout reliant l&rsquo;origine et l&rsquo;extrémité du vecteur $\vec{u}$.</p>
+<p>On peut ainsi compter ainsi le nombre de $\vec{a}$ et $\vec{b}$ formant le <strong>&ldquo;chemin&rdquo;</strong>.</p>
+<p>On a : $\quad \vec{u}=3\vec{a}+3\vec{b}$</p>
+<p>\begin{center}
+\includegraphics[width=4.5cm]{img/vec3/20a.png}\qquad\includegraphics[width=4.5cm]{img/vec3/20b.png}
+\end{center}</p>
+<h2 id="notion-de-colinearite">Notion de colinéarité</h2>
+<h3 id="definition-colinearite">Définition : Colinéarité</h3>
+<p>$\vec{u}$ et $\vec{v}$ sont <strong>colinéaires</strong> signifie qu&rsquo;ils ont <strong>même direction</strong>.</p>
+<p>Dans ce cas, il existe un nombre réel $k\neq 0$ tel que : $\quad\vec{u}=k\vec{v}$</p>
+<p>$$\boxed{\vec{u}~\text{et}~\vec{v}~\text{colinéaires}~\Lrarr~\exists k\in\R^{*}~\text{tel que}~\vec{u}=k\times\vec{v}}$$</p>
+<p><img alt="" src="../img/vec3/21.png" width="50%" /></p>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+</div>
+<p>\ul{Démontrer que des vecteurs sont colinéaires}</p>
+<p>On donne $\vec{u}$ et $\vec{v}$ tel que $-4\vec{u}+3\vec{v}=\vec{0}$</p>
+<p>$\vec{u}$ et $\vec{v}$ sont-ils colinéaires ?</p>
+<p>$$
+\begin{aligned}
+-4\vec{u}+3\vec{v}=\vec{0}\quad &amp;\Lrarr\quad -4\vec{u}=-3\vec{v}\\
+                          \quad &amp;\Lrarr\quad\vec{u}=\cfrac{-3}{-4}\vec{v}\\
+                          \quad &amp;\Lrarr\quad\vec{u}=\cfrac{3}{4}\vec{v}\quad &amp;\Lrarr\quad\vec{u}~\text{et}~\vec{v}~\text{colinéaires}
+\end{aligned}
+$$</p>
+<h3 id="applications">Applications</h3>
+<p><img alt="" src="../img/vec3/22tt.png" width="50%" /></p>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+</div>
+<ul>
+<li>$\vec{AB}$ et $\vec{CD}$ colinéaires $\Lrarr (AB)\parallel(CD)$</li>
+<li>$\vec{AB}$ et $\vec{AC}$ colinéaires $\Lrarr A~$, $B$ et $C$ alignés</li>
+</ul>
+<h2 id="proprietes-colinearite-de-vecteurs">Propriétés : Colinéarité de vecteurs</h2>
+<h3 id="propriete-a-laide-des-coordonnees">Propriété : À l&rsquo;aide des coordonnées</h3>
+<p>Soient $\vec{u}\coord{x}{y}$ et $\vec{v}\coord{x&rsquo;}{y&rsquo;}$ deux vecteurs dans un repère $(O;\vec{i},\vec{j})$.</p>
+<p>$$\boxed{\vec{u}~\text{ et }~\vec{v}~\text{ colinéaires }\Lrarr (x\times y&rsquo;)-(y\times x&rsquo;)=0}$$</p>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+</div>
+<p>\ul{Vérifier si deux vecteurs sont colinéaires}</p>
+<ul>
+<li>Soient $\vec{u}\coord{4}{-7}$ et $\vec{v}\coord{-12}{21}$</li>
+</ul>
+<p>$$\begin{aligned}xy&rsquo;-yx&rsquo;~&amp;=\left(4\times 21\right)-\left((-7)\times (-12)\right)\\~&amp;=84-84=0\qquad\Rightarrow\vec{u}~\text{ et }~\vec{v}~\text{colinéaires}\end{aligned}$$</p>
+<div class="admonition demo">
+<p class="admonition-title">Demo</p>
+</div>
+<ul>
+<li>Dire que les vecteurs $\vec{u}\coord{x}{y}$ et $\vec{v}\coord{x&rsquo;}{y&rsquo;}$ sont colinéaires équivaut à dire qu&rsquo;il existe un nombre réel $k$ tel que $\vec{u}=k\times \vec{v}$.</li>
+</ul>
+<p>$$
+\begin{aligned}
+\vec{u}~\text{ et }~\vec{v}~\text{colinéaires}~&amp;~\Rightarrow~\vec{u}=k\times\vec{v}~\Rightarrow~\begin{cases}x=k\times x&rsquo;\\y=k\times y&rsquo;\end{cases}~\Rightarrow~\begin{cases}k=\tfrac{x}{x&rsquo;}\\k=\tfrac{y}{y&rsquo;}\end{cases}\\
+~&amp;~\Rightarrow~\cfrac{x}{x&rsquo;}=\cfrac{y}{y&rsquo;}\\
+~&amp;~\Rightarrow~(x\times y&rsquo;)=(y\times x&rsquo;)\\
+~&amp;~\Rightarrow~(x\times y&rsquo;)-(y\times x&rsquo;)=0
+\end{aligned}
+$$</p>
+<ul>
+<li>Réciproquement, si $xy&rsquo;-yx&rsquo;=0$.</li>
+</ul>
+<p>$\vec{v}$ étant non nul, l&rsquo;une de ses coordonnées est non nulle. Supposons que $x&rsquo;\neq 0$. Posons $k = \cfrac{x}{x&rsquo;}$.</p>
+<p>On a :</p>
+<p>$$\quad xy&rsquo;-yx&rsquo;=0~\Rightarrow~yx&rsquo;=xy&rsquo;~\Rightarrow~y=\cfrac{x}{x&rsquo;}y~\Rightarrow~y=ky&rsquo;$$</p>
+<p>Donc :</p>
+<p>$$\begin{aligned}xy&rsquo;-yx&rsquo;=0~&amp;~\Rightarrow~\begin{cases}x=kx&rsquo;\\y=ky&rsquo;\end{cases}\\~&amp;~\Rightarrow~ \vec{u}=k\vec{v} ~\Rightarrow~ \vec{u}~\text{ et }~\vec{v}~\text{colinéaires}\end{aligned}$$</p>
+<ul>
+<li>Soient $\vec{u}\coord{5}{-2}$ et $\vec{v}\coord{15}{-7}$</li>
+</ul>
+<p>$$\begin{aligned}xy&rsquo;-yx&rsquo;~&amp;=\left(5\times (-7)\right)-\left((-2)\times 15\right)\\~&amp;=-35+30=-5\qquad\Rightarrow\vec{u}~\text{ et }~\vec{v}~\text{non colinéaires}\end{aligned}$$</p>
+<h3 id="definition-determinant-de-vecu-et-vecv">Définition : Déterminant de $\vec{u}$ et $\vec{v}$</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+</div>
+<p>Soient $\vec{u}\coord{x}{y}$ et $\vec{v}\coord{x&rsquo;}{y&rsquo;}$ deux vecteurs dans un repère $(O;\vec{i},\vec{j})$.</p>
+<p>On note :</p>
+<p>$$\boxed{\qquad\det(\vec{u};\vec{v})=\begin{vmatrix}x&amp;x&rsquo;\\y&amp;y&rsquo;\end{vmatrix}=xy&rsquo;-yx&rsquo;}$$</p>
+<h3 id="propriete-colinearite-et-determinant">Propriété : Colinéarité et déterminant</h3>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+</div>
+<p>$$\boxed{\vec{u}~\text{ et }~\vec{v}~\text{ colinéaires }\quad\Lrarr\quad\det(\vec{u};\vec{v})=0}$$</p>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+</div>
+<p>\ul{Vérifier si deux vecteurs sont colinéaires à l&rsquo;aide du déterminant}</p>
+<p>Soient $~\vec{u}\coord{-6}{10}~$ et $~\vec{v}\coord{9}{-15}~$</p>
+<p>$$\begin{aligned}\det(\vec{u};\vec{v})=\begin{vmatrix}-6&amp;9\\10&amp;-15\end{vmatrix}~&amp;=\big((-6)\times (-15)\big)-\big(10\times 9\big)\\~&amp;=90-90=0~\Rightarrow\quad\vec{u}~\text{ et }~\vec{v}~\text{colinéaires}\end{aligned}$$</p>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+</div>
+<p>\ul{Utiliser la colinéarité pour démontrer que 2 droites sont parallèles}</p>
+<p>Soient $A(-1,1;)$, $~B(3;2)$, $~C(-2;-3)$, $~D(6;-1)$ et $~E(5;0)$.</p>
+<p>Démontrons que $(AB)\parallel(CD)$.</p>
+<p>On a :</p>
+<p>$$\vec{AB}=\begin{pmatrix}3-(-1)\\2-1\end{pmatrix}=\begin{pmatrix}4\\1\end{pmatrix}\quad\text{et}\quad\vec{CD}=\begin{pmatrix}6-(-2)\\-1-(-3)\end{pmatrix}=\begin{pmatrix}8\\2\end{pmatrix}$$</p>
+<p>Et donc :</p>
+<p>$$\det(\vec{AB};\vec{CD})=\begin{vmatrix}4&amp;8\\1&amp;2\end{vmatrix}=(4\times 2)-(8\times 1)=0$$</p>
+<p>Donc $~\vec{AB}~$ et $\vec{CD}$ sont colinéaires $\Lrarr(AB)\parallel(CD)$</p>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+</div>
+<p>\ul{Utiliser la colinéarité pour démointrer que 3 points sont alignés}</p>
+<p>Soient $A(-1,1;)$, $~B(3;2)$, $~C(-2;-3)$, $~D(6;-1)$ et $~E(5;0)$.</p>
+<p>Démontrons que $E$, $B$ et $D$ sont alignés</p>
+<p>On a :</p>
+<p>$$\vec{EB}=\begin{pmatrix}3-5\\2-0\end{pmatrix}=\begin{pmatrix}-2\\2\end{pmatrix}\quad\text{et}\quad\vec{ED}=\begin{pmatrix}6-5)\\-1-0)\end{pmatrix}=\begin{pmatrix}1\\-1\end{pmatrix}$$</p>
+<p>Et donc :</p>
+<p>$$\det(\vec{EB};\vec{ED})=\begin{vmatrix}-2&amp;1\\2&amp;-1\end{vmatrix}=\big((-2)\times (-1)\big)-(2\times 1)=0$$</p>
+<p>Donc $~\vec{EB}~$ et $\vec{ED}$ sont colinéaires $\Lrarr E$, $B$ et $D$ sont alignés</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.8/mermaid.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-mermaid.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

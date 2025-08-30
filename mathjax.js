@@ -56,6 +56,7 @@ MathJax = {
         \nc{\Dg}{\mathcal{D}_g}
         \nc{\pa}[1]{\left(#1\right)}
         \nc{\brace}[1]{\left\{#1\right\}}
+        \nc{\brack}[1]{\left[#1\right]}
         \nc{\coord}[2]{\begin{pmatrix}#1\\#2\end{pmatrix}}
         \nc{\coordl}[2]{\left(#1~;~#2\right)}
         \rnc{\iff}{\Leftrightarrow}
@@ -63,6 +64,7 @@ MathJax = {
         \nc{\Rarr}{\Rightarrow}
         \nc{\rarr}{\rightarrow}
         \nc{\tc}{\textcolor}
+        \let\ol\overline
         \nc{\vec}[1]{\overrightarrow{#1}}
         \nc{\OIJ}{\left(O;I,J\right)}
         \nc{\vOIJ}{\left(O;\vec{i},\vec{j}\right)}
