@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cedric-todaro.github.io/m/2nde/Reperage-et-configuration-dans-le-plan/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Repérage dans le plan - Math pour le lycée</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../extra.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-mermaid.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Rep\u00e9rage dans le plan";
+        var mkdocs_page_input_path = "2nde/Reperage-et-configuration-dans-le-plan.md";
+        var mkdocs_page_url = "/m/2nde/Reperage-et-configuration-dans-le-plan/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Math pour le lycée
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" aria-label="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Accueil</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2nde</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Arithmetique/">Arithmétique</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Calcul-algebrique/">Calcul algébrique</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Droites-du-plan/">Droites du plan</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Droites-et-systemes/">Droites et systèmes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ensembles-de-nombres/">Ensemble de nombres</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Fonctions-affines/">Fonctions affines</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Fonctions-de-reference/">Fonctions de références</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Generalites-sur-les-fonctions/">Généralités sur les fonctions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Notion-de-vecteur/">Notion de vecteur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Proportion-evolution/">Proportion et évolution</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Repérage dans le plan</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#coordonnees-dun-point-dans-un-repere">Coordonnées d&rsquo;un point dans un repère</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#repere-et-coordonnees">Repère et coordonnées</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#orthogonal-norme-et-orthonorme">Orthogonal, normé et orthonormé</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#coordonnees-du-milieu-dun-segment">Coordonnées du milieu d’un segment</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#propriete-coordonnees-dun-milieu">Propriété : coordonnées d&rsquo;un milieu</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#distance-entre-deux-points">Distance entre deux points</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#propriete-distance-entre-deux-points">Propriété : distance entre deux points</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#alignement-de-3-points">Alignement de 3 points</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Probabilite-echantillonnage/">Probabilité et échantillonnage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Probabilite/">Probabilité</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Divers</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../divers/">Help</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../test/">Testouille</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Math pour le lycée</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Documents"></a></li>
+          <li class="breadcrumb-item">2nde</li>
+      <li class="breadcrumb-item active">Repérage dans le plan</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="reperage-dans-le-plan">Repérage dans le plan</h1>
+<h2 id="coordonnees-dun-point-dans-un-repere">Coordonnées d&rsquo;un point dans un repère</h2>
+<h3 id="repere-et-coordonnees">Repère et coordonnées</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>Définir un repère, c&rsquo;est donner trois points $O$, $I$ et $J$ <strong>non alignés</strong> dans un ordre précis.</p>
+<p>On note $\OIJ$ ce repère.</p>
+<ul>
+<li>Le point $O$ est appelé l&rsquo;<strong>origine du repère</strong>.</li>
+<li>La droite $(OI)$ est l&rsquo;axe des <strong>abscisses</strong>.</li>
+<li>La droite $(OJ)$ est l&rsquo;axe des <strong>ordonnées</strong>.</li>
+</ul>
+<p><img alt="" src="../img/reperage/01.png" width="75%" /></p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>Dans le repère $\OIJ$, les coordonnées des points $O$,$I$ et $J$ sont : $$O(0;0)\qquad I(1;0)\qquad J(0;1)$$</p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>Les coordonnées d’un point sont toujours écrites dans le même ordre :</p>
+<p>$$(\text{abscisse};\text{ordonnée})\qquad\text{ou}\qquad\pa{x;y}$$</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<ul>
+<li>$A(1;2)$</li>
+<li>$B(-4;3)$</li>
+<li>$C(-3;-2)$</li>
+<li>$&hellip;$</li>
+<li>$F(5;3)$</li>
+</ul>
+<p><img alt="" src="../img/reperage/image.png" width="85%" /></p>
+</div>
+<h3 id="orthogonal-norme-et-orthonorme">Orthogonal, normé et orthonormé</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>Soit le repère $\OIJ$</p>
+<ul>
+<li>Si $(OI)\perp(OJ)$, on dit que le reprère est <strong>orthogonal</strong></li>
+<li>Si $OI=OJ$, on dit que le reprère est <strong>normé</strong></li>
+<li><strong>orthogonal</strong> et <strong>normé</strong> = <strong>orthonormé</strong></li>
+</ul>
+<p><img alt="" src="../img/reperage/02.png" /></p>
+</div>
+<h2 id="coordonnees-du-milieu-dun-segment">Coordonnées du milieu d’un segment</h2>
+<h3 id="propriete-coordonnees-dun-milieu">Propriété : coordonnées d&rsquo;un milieu</h3>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p>Soient les points $A(x_A;y_A)$ et $B(x_B;y_B)$.</p>
+<p>Les coordonnées du milieu $M$ du segment $[AB]$ sont données par :</p>
+<p>$$\boxed{x_M=\cfrac{(x_A+x_B)}{2}\qquad\text{et}\qquad y_M=\cfrac{(y_A+y_B)}{2}}$$</p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>Les coordonnées de $M$ sont la <strong>&ldquo;moyenne&rdquo;</strong> des coordonnées de $A$ et de $B$</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>Soient $A(\cbox{lightblue}{2};\cbox{palegreen}{1})$ et $B(\cbox{lightblue}{6};\cbox{palegreen}{3})$</p>
+<p>Les coordonnées de $M$ milieu de $[AB]$ sont :</p>
+<ul>
+<li>$x_M=\cfrac{(x_A+x_B)}{2}=\cfrac{(\cbox{lightblue}{2}+\cbox{lightblue}{6})}{2}=\cfrac{8}{2}=4$</li>
+<li>$y_M=\cfrac{(y_A+y_B)}{2}=\cfrac{(\cbox{palegreen}{1}+\cbox{palegreen}{3})}{2}=\cfrac{4}{2}=2$</li>
+</ul>
+<p>On a donc $M(4;2)$</p>
+<p><img alt="" src="../img/reperage/03.png" width="80%" /></p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p><strong>Rappel :</strong> Un quadrilatère dont les diagonales se coupent en leurs milieux est un parallélogramme.</p>
+<p>Soient $A(1;2)$, $B(3;2)$, $C(4;1)$ et $D(2;1)$.</p>
+<ul>
+<li>$K$ milieu de $[AC]$ : $\quad K\left(\cfrac{1+4}{2};\cfrac{2+1}{2}\right)\Rightarrow K\left(\cfrac{5}{2};\cfrac{3}{2}\right)$</li>
+<li>$L$ milieu de $[BD]$ : $\quad L\left(\cfrac{3+2}{2};\cfrac{2+1}{2}\right)\Rightarrow L\left(\cfrac{5}{2};\cfrac{3}{2}\right)$</li>
+</ul>
+<p>$K$ et $L$ ont même coordonnées <strong>donc</strong> $[AC]$ et $[BD]$ se coupent en leurs milieux <strong>donc</strong> $ABCD$ est un parallélogramme.</p>
+<p><img alt="" src="../img/reperage/04.png" width="75%" /></p>
+</div>
+<h2 id="distance-entre-deux-points">Distance entre deux points</h2>
+<h3 id="propriete-distance-entre-deux-points">Propriété : distance entre deux points</h3>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p>Soient les points $A(x_A; y_A)$ et $B(x_B; y_B)$.</p>
+<p>La distance entre $A$ et $B$ :</p>
+<p>$$\boxed{AB=\sqrt{(x_A-x_B)^2 +(y_A-y_B)^2 }}$$</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>Soient $A(\cbox{lightblue}{-1};\cbox{palegreen}{2})$ et $B(\cbox{lightblue}{4};\cbox{palegreen}{3})$. On a :</p>
+<p>$$
+    \begin{aligned}
+        AB &amp; =\sqrt{(x_A-x_B)^2 +(y_A-y_B)^2 }                                                                    \\
+        ~  &amp; =\sqrt{(\cbox{lightblue}{(-1)}-\cbox{lightblue}{4})^2 +(\cbox{palegreen}{2}-\cbox{palegreen}{3})^2 } \\
+        ~  &amp; =\sqrt{(-5)^2 +(-1)^2 }                                                                              \\
+        ~  &amp; =\sqrt{26}\approx 5.1                                                                                \\
+    \end{aligned}
+$$</p>
+<p><img alt="" src="../img/reperage/05.png" width="60%" /></p>
+</div>
+<div class="admonition demo">
+<p class="admonition-title">Demo</p>
+<p>Soient les points $A(x_A; y_A)$ et $B(x_B; y_B)$.</p>
+<p>Considérons le point $C$ tel que : $\quad C(x_B;y_A)$</p>
+<p><img alt="" src="../img/reperage/06.png" width="50%" /></p>
+<p>On a :</p>
+<ul>
+<li>$AC=(x_B-x_A)~\text{et}~BC=(y_B-y_A)$</li>
+</ul>
+<p>D&rsquo;après le théorème de Pythagore :</p>
+<ul>
+<li>$AB^2 =AC^2 +BC^2 $</li>
+</ul>
+<p>Donc</p>
+<p>$$
+    \begin{aligned}
+        ~     &amp; ~AB^2 =(x_B-x_A)^2 +(y_B-y_A)^2       \\
+        \iff~ &amp; ~AB=\sqrt{(x_B-x_A)^2 +(y_B-y_A)^2 }
+    \end{aligned}
+$$</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>Soient $A(6;5)$, $B(2;-3)$ et $C(-4;0)$</p>
+<p>$\begin{aligned}\tc{blue}{AB}&amp;=\sqrt{(6-2)^2 +(5-(-3))^2 }\\~&amp;=\sqrt{4^2 +8^2 }=\tc{blue}{\sqrt{80}}\end{aligned}$</p>
+<p>$\begin{aligned}\tc{green}{BC}&amp;=\sqrt{(2-(-4))^2 +((-3)-0)^2 }\\~&amp;=\sqrt{6^2 +(-3)^2 }=\tc{green}{\sqrt{45}}\end{aligned}$</p>
+<p>$\begin{aligned}\tc{red}{AC}&amp;=\sqrt{(6-(-4))^2 +(5-0)^2 }\\~&amp;=\sqrt{10^2 +5^2 }=\tc{red}{\sqrt{125}}\end{aligned}$</p>
+<p>On a : $\quad \tc{red}{AC}^2 =\tc{blue}{AB}^2 +\tc{green}{BC}^2 $ donc $ABC$ est un triangle rectangle</p>
+<p><img alt="" src="../img/reperage/07.png" width="50%" /></p>
+</div>
+<h3 id="alignement-de-3-points">Alignement de 3 points</h3>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p>Soient $A$, $B$ et $C$ trois points distincts du plan.</p>
+<p>Si $AC=AB+BC$ alors $A$, $B$ et $C$ sont alignés dans cet ordre.</p>
+<p><img alt="" src="../img/reperage/08.png" width="90%" /></p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>Soit $ABCD$ est un carré de coté $8$ et deux points $E(0;13)$ et $F(21;0)$.</p>
+<p>❓ $E$, $C$ et $F$ sont-ils alignés ?</p>
+<p><img alt="" src="../img/reperage/10.1.png" width="80%" /></p>
+<p>$~$</p>
+<p>On a $E(0;13)$, $F(21;0)$ et $C(8;8)$</p>
+<ul>
+<li>$\tc{blue}{EC}=\sqrt{(8-0)^2 +(8-13)^2 }= \tc{blue}{\sqrt{89}}$</li>
+<li>$\tc{green}{CF}=\sqrt{(21-8)^2 +(0-8)^2 }= \tc{green}{\sqrt{233}}$</li>
+<li>$\tc{red}{EF}=\sqrt{(21-0)^2 +(0-13)^2 }=\tc{red}{\sqrt{610}}$</li>
+</ul>
+<p>$\tc{red}{EF}\neq \tc{blue}{EC}+\tc{green}{CF}$ donc $E$, $F$ et $C$ ne sont pas alignés.</p>
+<p><img alt="" src="../img/reperage/10.2.png" width="50%" /></p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../Proportion-evolution/" class="btn btn-neutral float-left" title="Proportion et évolution"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../Probabilite-echantillonnage/" class="btn btn-neutral float-right" title="Probabilité et échantillonnage">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Proportion-evolution/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../Probabilite-echantillonnage/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.8/mermaid.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-mermaid.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
