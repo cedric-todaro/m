@@ -1,4 +1,5 @@
 :%s/\\dfrac/\\cfrac/g
+:%s/\\tfrac/\\cfrac/g
 :%s/\\frac/\\cfrac/g
 :%s/\\Leftrightarrow/\\iff/g
 :%s/colorbox/cbox/g

@@ -4,26 +4,30 @@ site_url: https://cedric-todaro.github.io/m
 nav:
   - Accueil: index.md
   - 2nde:
-    - 2nde/Arithmetique.md
-    - 2nde/Calcul-algebrique.md
-    - 2nde/Droites-du-plan.md
-    - 2nde/Droites-et-systemes.md
-    - 2nde/Ensembles-de-nombres.md
-    - 2nde/Fonctions-affines.md
-    - 2nde/Fonctions-de-reference.md  
-    - 2nde/Generalites-sur-les-fonctions.md
-    - 2nde/Notion-de-vecteur.md 
-    - 2nde/Probabilite-echantillonnage.md
-    - 2nde/Probabilite.md
-    - 2nde/Proportion-evolution.md
-    - 2nde/Reperage-et-configuration-dans-le-plan.md
-    - 2nde/Statistiques-descriptives.md
-    - 2nde/Variations-de-fonctions.md
-    # - 2nde/Vecteurs-et-coordonnees.md ### TODO
-    # - 2nde/Vecteurs-et-colinearite.md ### TODO
-  - Divers:
-    - Help: divers.md
-    - Testouille: test.md
+      - Fonctions:
+          - 2nde/Generalites-sur-les-fonctions.md
+          - 2nde/Variations-de-fonctions.md
+          - 2nde/Fonctions-affines.md
+          - 2nde/Fonctions-de-reference.md
+      - Géométrie:
+          - 2nde/Reperage-et-configuration-dans-le-plan.md
+          - 2nde/Notion-de-vecteur.md
+          - 2nde/Vecteurs-et-coordonnees.md
+          - 2nde/Vecteurs-et-colinearite.md
+          - 2nde/Droites-du-plan.md
+          - 2nde/Droites-et-systemes.md
+      - Algèbre:
+          - 2nde/Calcul-algebrique.md
+          - 2nde/Ensembles-de-nombres.md
+          - 2nde/Arithmetique.md
+          - 2nde/Proportion-evolution.md
+      - Statistiques/Probabilité:
+          - 2nde/Statistiques-descriptives.md
+          - 2nde/Probabilite.md
+          - 2nde/Probabilite-echantillonnage.md
+  # - Divers:
+  #     - Help: divers.md
+  #     - Testouille: test.md
 
 theme:
   name: readthedocs
