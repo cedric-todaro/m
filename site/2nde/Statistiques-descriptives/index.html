@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cedric-todaro.github.io/m/2nde/Statistiques-descriptives/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Statistiques descriptives - Math pour le lycée</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../extra.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-mermaid.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Statistiques descriptives";
+        var mkdocs_page_input_path = "2nde/Statistiques-descriptives.md";
+        var mkdocs_page_url = "/m/2nde/Statistiques-descriptives/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Math pour le lycée
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" aria-label="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Accueil</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2nde</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Arithmetique/">Arithmétique</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Calcul-algebrique/">Calcul algébrique</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Droites-du-plan/">Droites du plan</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Droites-et-systemes/">Droites et systèmes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ensembles-de-nombres/">Ensemble de nombres</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Fonctions-affines/">Fonctions affines</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Fonctions-de-reference/">Fonctions de références</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Generalites-sur-les-fonctions/">Généralités sur les fonctions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Notion-de-vecteur/">Notion de vecteur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Probabilite-echantillonnage/">Probabilité et échantillonnage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Probabilite/">Probabilité</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Proportion-evolution/">Proportion et évolution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Reperage-et-configuration-dans-le-plan/">Repérage dans le plan</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Statistiques descriptives</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#caracteristiques-dune-serie-statistique">Caractéristiques d&rsquo;une série statistique</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#moyenne">Moyenne</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mediane">Médiane</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#etendue">Étendue</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#quartiles-ecart-interquartile">Quartiles, écart interquartile</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#variance-ecart-type">Variance - Écart-type</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#calculatrice">Calculatrice</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#cas-de-ponderation-dune-serie-statistique">Cas de pondération d&rsquo;une série statistique</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#representation-sous-forme-dhistogramme">Représentation sous forme d&rsquo;histogramme</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#calcul-de-la-moyenne">Calcul de la moyenne</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Variations-de-fonctions/">Variation de fonctions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Divers</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../divers/">Help</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../test/">Testouille</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Math pour le lycée</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Documents"></a></li>
+          <li class="breadcrumb-item">2nde</li>
+      <li class="breadcrumb-item active">Statistiques descriptives</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="statistiques-descriptives">Statistiques descriptives</h1>
+<h2 id="caracteristiques-dune-serie-statistique">Caractéristiques d&rsquo;une série statistique</h2>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
+</div>
+<ul>
+<li><strong>Série statistique sous forme &ldquo;brute&rdquo;</strong></li>
+</ul>
+<p>Voici une série de notes obtenues par un élève :</p>
+<p>$$4 ; 6 ; 18 ; 7 ; 17 ; 12 ; 12 ; 18$$</p>
+<p>$~$</p>
+<ul>
+<li><strong>Série statistique sous forme de tableau</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Notes $x_i$ :</th>
+<th style="text-align: center;">$4$</th>
+<th style="text-align: center;">$6$</th>
+<th style="text-align: center;">$7$</th>
+<th style="text-align: center;">$12$</th>
+<th style="text-align: center;">$17$</th>
+<th style="text-align: center;">$18$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Effectif $n_i$ :</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+</tr>
+</tbody>
+</table>
+<p>$~$</p>
+<ul>
+<li><strong>Série statistique sous forme de tableau avec effectifs cumulés croissants</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Notes $x_i$ :</th>
+<th style="text-align: center;">$4$</th>
+<th style="text-align: center;">$6$</th>
+<th style="text-align: center;">$7$</th>
+<th style="text-align: center;">$12$</th>
+<th style="text-align: center;">$17$</th>
+<th style="text-align: center;">$18$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Effectif $n_i$ :</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">E.C.C. :</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+<td style="text-align: center;">$3$</td>
+<td style="text-align: center;">$5$</td>
+<td style="text-align: center;">$6$</td>
+<td style="text-align: center;">$8$</td>
+</tr>
+</tbody>
+</table>
+<p>$~$</p>
+<ul>
+<li><strong>Série statistique sous forme de tableau avec fréquence et fréquences cumulées croissantes</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Notes $x_i$ :</th>
+<th style="text-align: center;">$4$</th>
+<th style="text-align: center;">$6$</th>
+<th style="text-align: center;">$7$</th>
+<th style="text-align: center;">$12$</th>
+<th style="text-align: center;">$17$</th>
+<th style="text-align: center;">$18$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Effectif $n_i$ :</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">Fréq. $f_i$ :</td>
+<td style="text-align: center;">$1/8$</td>
+<td style="text-align: center;">$1/8$</td>
+<td style="text-align: center;">$1/8$</td>
+<td style="text-align: center;">$2/8$</td>
+<td style="text-align: center;">$1/8$</td>
+<td style="text-align: center;">$2/8$</td>
+</tr>
+<tr>
+<td style="text-align: right;">F.C.C. :</td>
+<td style="text-align: center;">$1/8$</td>
+<td style="text-align: center;">$2/8$</td>
+<td style="text-align: center;">$3/8$</td>
+<td style="text-align: center;">$5/8$</td>
+<td style="text-align: center;">$6/8$</td>
+<td style="text-align: center;">$8/8$</td>
+</tr>
+</tbody>
+</table>
+<h3 id="moyenne">Moyenne</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>La <strong>moyenne</strong> d&rsquo;une série dont les valeurs sont $x_1$, $x_2$ , $\dots$, $x_k$ et les effectifs correspondants sont $n_1$, $n_2$, $\ldots$, $n_k$ est notée $\ol{x}$ est égale à :</p>
+<p>$$\boxed{~\ol{x}=\cfrac{(n_1\times x_1)+(n_2\times x_2)+\ldots+(n_k\times x_k)}{N}=\cfrac{1}{N}\sum\limits_{i=1}^{i=k} (n_i\times x_i)~}$$</p>
+<p>&hellip; avec $\quad N=n_1+n_2+\ldots+n_k\qquad=\sum\limits_{i=1}^{i=k}n_i$</p>
+<p>La moyenne est une <strong>$\cbox{lightgreen}{caractéristique de position}$</strong>.</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Notes $x_i$ :</th>
+<th style="text-align: center;">$4$</th>
+<th style="text-align: center;">$6$</th>
+<th style="text-align: center;">$7$</th>
+<th style="text-align: center;">$12$</th>
+<th style="text-align: center;">$17$</th>
+<th style="text-align: center;">$18$</th>
+<th style="text-align: center;">Total $(=N)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Effectif $n_i$ :</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+<td style="text-align: center;">$8$</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Calcul de la moyenne :</strong></p>
+<p>$$\begin{aligned}\ol{x}~&amp;=\cfrac{(n_1\times x_1)+\ldots+(n_k\times x_k)}{N}\\~&amp;=\cfrac{(1\times 4)+(1\times 6)+\ldots+(1\times 17)+(2\times 18)}{8}=11.75\end{aligned}$$</p>
+</div>
+<h3 id="mediane">Médiane</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>La médiane $m$ est une valeur telle que :</p>
+<ul>
+<li>la moitié au moins de l&rsquo;effectif ait des valeurs inférieures ou égales à $m$,</li>
+<li>l&rsquo;autre moitié des valeurs supérieures ou égales à $m$.</li>
+</ul>
+<p>La médiane est une <strong>$\cbox{lightgreen}{caractéristique de position}$</strong>.</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Notes $x_i$ :</th>
+<th style="text-align: center;">$4$</th>
+<th style="text-align: center;">$6$</th>
+<th style="text-align: center;">$7$</th>
+<th style="text-align: center;">$12$</th>
+<th style="text-align: center;">$17$</th>
+<th style="text-align: center;">$18$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Effectif $n_i$ :</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+</tr>
+<tr>
+<td style="text-align: right;">E.C.C. :</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+<td style="text-align: center;">$3$</td>
+<td style="text-align: center;">$5$</td>
+<td style="text-align: center;">$6$</td>
+<td style="text-align: center;">$8$</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Calcul de la médiane :</strong></p>
+<p>$N=8~\iff~\cfrac{N}{2}=4$</p>
+<p>$N$ est pair donc la médiane se situe entre la $4^\text{ème}$ et la $5^\text{ème}$ valeur.</p>
+<p>On a : $\qquad m=\cfrac{12+12}{2}=12$</p>
+<p><strong>Vérification :</strong></p>
+<p>Série ordonnée séparée en 2 :</p>
+<p>$$\boxed{4;6;7;12}~~\lvert~~\boxed{12;17;18;18}$$</p>
+<p>On a bien : $\qquad m=12$</p>
+</div>
+<h3 id="etendue">Étendue</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>L&rsquo;étendue d&rsquo;une série statistique est la <strong>différence</strong> entre la plus <strong>grande valeur</strong> et la plus <strong>petite valeur</strong> de la série.</p>
+<p>L&rsquo;étendue est une <strong>$\cbox{lightblue}{caractéristique de dispersion}$</strong>.</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Notes $x_i$ :</th>
+<th style="text-align: center;">$4$</th>
+<th style="text-align: center;">$6$</th>
+<th style="text-align: center;">$7$</th>
+<th style="text-align: center;">$12$</th>
+<th style="text-align: center;">$17$</th>
+<th style="text-align: center;">$18$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Effectif $n_i$ :</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+</tr>
+</tbody>
+</table>
+<p>L&rsquo;étendue de la série est : $18-4=14$</p>
+</div>
+<h3 id="quartiles-ecart-interquartile">Quartiles, écart interquartile</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<ul>
+<li>Le 1er quartile $(Q_1)$ : Plus petite valeur de la série telle qu&rsquo;<strong>au moins $25\%$</strong> des autres valeurs de la série sont $\le$ à cette valeur.</li>
+</ul>
+<p><img alt="" src="../img/stat/02.png" width="50%" /></p>
+<ul>
+<li>Le 3ème quartile $(Q_3)$ : Plus petite valeur de la série telle qu&rsquo;<strong>au moins $75\%$</strong> des autres valeurs de la série sont $\le$ à cette valeur.</li>
+</ul>
+<p><img alt="" src="../img/stat/03.png" width="50%" /></p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Notes $x_i$ :</th>
+<th style="text-align: center;">$4$</th>
+<th style="text-align: center;">$6$</th>
+<th style="text-align: center;">$7$</th>
+<th style="text-align: center;">$12$</th>
+<th style="text-align: center;">$17$</th>
+<th style="text-align: center;">$18$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Effectif $n_i$ :</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+</tr>
+<tr>
+<td style="text-align: right;">E.C.C. :</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+<td style="text-align: center;">$3$</td>
+<td style="text-align: center;">$5$</td>
+<td style="text-align: center;">$6$</td>
+<td style="text-align: center;">$8$</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Calcul des quartiles :</strong></p>
+<p>$N=8~\iff~\cfrac{1}{4}\times N=2\quad\text{et}\quad\cfrac{3}{4}\times N=6$</p>
+<ul>
+<li>$Q_1$ se situe entre la $2^{\text{ème}} $ et la $3^{\text{ème}} $ valeur de la série. $Q_1=\cfrac{6+7}{2}=6.5$</li>
+<li>$Q_3$ se situe entre la $6^{\text{ème}} $ et la $7^{\text{ème}} $ valeur de la série. $Q_3=\cfrac{17+18}{2}=17.5$</li>
+</ul>
+</div>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>L&rsquo;<strong>écart interquartile</strong> d&rsquo;une série statistique est égal à $Q_3-Q_1$</p>
+<p><img alt="" src="../img/stat/04.png" width="40%" /></p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<ul>
+<li>L&rsquo;<strong>écart interquartile</strong> mesure la <strong>$\cbox{lightblue}{dispersion}$</strong> autour de la médiane.</li>
+<li>Il contient <strong>au moins 50%</strong> des valeurs de la série.</li>
+<li>L&rsquo;<strong>écart interquartile</strong> n&rsquo;est pas influencé par les valeurs extrêmes.</li>
+</ul>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Notes $x_i$ :</th>
+<th style="text-align: center;">$4$</th>
+<th style="text-align: center;">$6$</th>
+<th style="text-align: center;">$7$</th>
+<th style="text-align: center;">$12$</th>
+<th style="text-align: center;">$17$</th>
+<th style="text-align: center;">$18$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Effectif $n_i$ :</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>$Q_1=6.5\quad$ et $\quad Q_3=17.5$</li>
+<li>L&rsquo;écart interquartile est de : $17.5-6.5=11$</li>
+</ul>
+</div>
+<h3 id="variance-ecart-type">Variance - Écart-type</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<ul>
+<li>La <strong>variance</strong> $V$ est égale à :</li>
+</ul>
+<p>$$\boxed{V=\cfrac{1}{N}\times\pa{n_1\times\pa{x_1-\ol{x}}^2 +\ldots+n_k\times\pa{x_k-\ol{x}}^2 }}$$</p>
+<ul>
+<li>L&rsquo;<strong>écart-type</strong> est égal à : $\boxed{\sigma=\sqrt{V}}$</li>
+</ul>
+<p>L&rsquo;écart-type et la variance sont des <strong>$\cbox{lightblue}{caractéristiques de dispersion}$</strong>.</p>
+</div>
+<div class="admonition rem">
+<p class="admonition-title">Rem</p>
+<p>La variance est la <strong>moyenne pondérée</strong> du <strong>carré</strong> de la <strong>différence entre les valeurs et la moyenne</strong>.</p>
+</div>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Notes $x_i$ :</th>
+<th style="text-align: center;">$4$</th>
+<th style="text-align: center;">$6$</th>
+<th style="text-align: center;">$7$</th>
+<th style="text-align: center;">$12$</th>
+<th style="text-align: center;">$17$</th>
+<th style="text-align: center;">$18$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Effectif $n_i$ :</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>On a : $\ol{x}= 11.75$</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Notes $x_i$ :</th>
+<th style="text-align: center;">$4$</th>
+<th style="text-align: center;">$6$</th>
+<th style="text-align: center;">$\ldots$</th>
+<th style="text-align: center;">$18$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Effectif $n_i$ :</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$\ldots$</td>
+<td style="text-align: center;">$2$</td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: right;">$x_i-\ol{x}$ :</td>
+<td style="text-align: center;">$4-11.75$</td>
+<td style="text-align: center;">$6-11.75$</td>
+<td style="text-align: center;">$\ldots$</td>
+<td style="text-align: center;">$18-11.75$</td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">$=-7.75$</td>
+<td style="text-align: center;">$=-5.75$</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">$=6.25$</td>
+</tr>
+<tr>
+<td style="text-align: right;">$(x_i-\ol{x})^2$ :</td>
+<td style="text-align: center;">$60.0625$</td>
+<td style="text-align: center;">$33.0625$</td>
+<td style="text-align: center;">$\ldots$</td>
+<td style="text-align: center;">$39.0625$</td>
+</tr>
+</tbody>
+</table>
+<p>On a :</p>
+<p>$$
+    \def\arraystretch{2}\begin{array}{rlll}
+        V &amp; =\cfrac{1}{N}\times\big(n_1\times(x_1-\ol{x})^2 &amp; +\ldots &amp; +n_k\times(x_k-\ol{x})^2 \big)                \\
+        ~ &amp; =\cfrac{1}{8}\times\big(1\times(4-11.75)^2      &amp; +\ldots &amp; +2\times(18-11.75)^2 \big)                    \\
+        ~ &amp; =\cfrac{1}{8}\times\big(1\times 60.0625         &amp; +\ldots &amp; +2\times 39.0625\big)\qquad\qquad\approx 27.7
+    \end{array}
+$$</p>
+<p>Et donc :</p>
+<p>$$\sigma=\sqrt{V}=\sqrt{27.7}\approx 5.26$$</p>
+</div>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p>$$V=\cfrac{1}{N}\sum\limits_{i=1}^{i=N} n_i\times(x-\ol{x})^2 =\underbrace{\left(\cfrac{1}{N}\sum\limits_{i=1}^{i=N} n_i \times (x_i)^2\right)}_{\textstyle\text{Moyenne des } x^2 } - \underbrace{\left(\cfrac{1}{N}\sum\limits_{i=1}^{i=N} n_i\times x_i\right)^2 }_{\textstyle\text{Moyenne}^2}$$</p>
+</div>
+<h2 id="calculatrice">Calculatrice</h2>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
+<ul>
+<li>Utilisation de la calculatrice avec une série &ldquo;brute&rdquo;
+  $$4 ; 6 ; 18 ; 7 ; 17 ; 12 ; 12 ; 18$$</li>
+</ul>
+<p><img alt="" src="../img/stat/05.png" /></p>
+<p>$~$</p>
+<ul>
+<li>Utilisation de la calculatrice avec un &ldquo;tableau&rdquo;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Notes $x_i$ :</th>
+<th style="text-align: center;">$4$</th>
+<th style="text-align: center;">$6$</th>
+<th style="text-align: center;">$7$</th>
+<th style="text-align: center;">$12$</th>
+<th style="text-align: center;">$17$</th>
+<th style="text-align: center;">$18$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Effectif $n_i$ :</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$2$</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="../img/stat/06.png" /></p>
+</div>
+<h2 id="cas-de-ponderation-dune-serie-statistique">Cas de pondération d&rsquo;une série statistique</h2>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
+<ul>
+<li>Tailles des $27$ élèves des $4^\text{ème}$ B en cm : (série brute)</li>
+</ul>
+<p>174 - 160 - 161 - 166 - 177 - 172 - 157 - 175 - 162 - 169 - 160 165 - 170 - 152 - 168 - 156 - 163 - 167 - 169 - 158 - 164 - 151 - 162 - 166 - 156 - 165 - 179</p>
+<p>$~$</p>
+<ul>
+<li>Regroupement par classe : (sous forme de tableau)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Taille :</th>
+<th style="text-align: center;">$\big[150;155\big[$</th>
+<th style="text-align: center;">$[155;160[$</th>
+<th style="text-align: center;">$[160;165[$</th>
+<th style="text-align: center;">$[165;170[$</th>
+<th style="text-align: center;">$[170;175[$</th>
+<th style="text-align: center;">$[175;180[$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Effectif :</td>
+<td style="text-align: center;">$2$</td>
+<td style="text-align: center;">$4$</td>
+<td style="text-align: center;">$7$</td>
+<td style="text-align: center;">$8$</td>
+<td style="text-align: center;">$3$</td>
+<td style="text-align: center;">$3$</td>
+</tr>
+<tr>
+<td style="text-align: right;">Fréq. :</td>
+<td style="text-align: center;">$0.07$</td>
+<td style="text-align: center;">$0.15$</td>
+<td style="text-align: center;">$0.26$</td>
+<td style="text-align: center;">$0.3$</td>
+<td style="text-align: center;">$0.11$</td>
+<td style="text-align: center;">$0.11$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="representation-sous-forme-dhistogramme">Représentation sous forme d&rsquo;histogramme</h3>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Sans groupement de classes</th>
+<th style="text-align: center;">Avec regroupement de classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="" src="../img/stat/10.png" /></td>
+<td style="text-align: center;"><img alt="" src="../img/stat/09.png" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="calcul-de-la-moyenne">Calcul de la moyenne</h3>
+<div class="admonition ex">
+<p class="admonition-title">Ex</p>
+<p>Dans le cas où les valeurs sont regroupées en classes, on calcule le <strong>centre</strong> de chaque classe pour calculer la moyenne.</p>
+<ul>
+<li>Le centre de la classe $[150;155[~$ est $~\left(\cfrac{150+155}{2}\right)= 152.5$</li>
+<li>Le centre de la classe $[155;160[~$ est $~\left(\cfrac{155+160}{2}\right)= 157.5$</li>
+<li>$\ldots$</li>
+</ul>
+<p>$~$</p>
+<ul>
+<li>Tableau avec les <strong>classes centrées</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Classes centrées $x_i$ :</th>
+<th style="text-align: center;">$152.5$</th>
+<th style="text-align: center;">$157.5$</th>
+<th style="text-align: center;">$162.5$</th>
+<th style="text-align: center;">$167.5$</th>
+<th style="text-align: center;">$172.5$</th>
+<th style="text-align: center;">$177.5$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Effectif $n_i$ :</td>
+<td style="text-align: center;">$2$</td>
+<td style="text-align: center;">$4$</td>
+<td style="text-align: center;">$7$</td>
+<td style="text-align: center;">$8$</td>
+<td style="text-align: center;">$3$</td>
+<td style="text-align: center;">$3$</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Calcul de la moyenne :</li>
+</ul>
+<p>$$\ol{x}=\cfrac{1}{27}\times\big(\left(2\times 152.5\right)+\ldots+\left(3\times 177.5\right)\big)\approx 165.28\text{cm}$$</p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../Reperage-et-configuration-dans-le-plan/" class="btn btn-neutral float-left" title="Repérage dans le plan"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../Variations-de-fonctions/" class="btn btn-neutral float-right" title="Variation de fonctions">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Reperage-et-configuration-dans-le-plan/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../Variations-de-fonctions/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.8/mermaid.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-mermaid.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

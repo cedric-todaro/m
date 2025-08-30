@@ -273,7 +273,7 @@
 
 !!! definition
 
-    La fonction **inverse** est définie sur $\R-\{0\}$ par \boxed{f(x)=\cfrac{1}{x}}
+    La fonction **inverse** est définie sur $\R-\{0\}$ par $\boxed{f(x)=\cfrac{1}{x}}$
 
 !!! rem
 
@@ -378,7 +378,7 @@
 
     **Représentation**
 
-    ![](img/ref/13.png){width=75%}
+    ![](img/ref/13.png){width=85%}
 
 !!! prop
 
