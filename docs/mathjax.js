@@ -64,6 +64,8 @@ MathJax = {
         \nc{\rarr}{\rightarrow}
         \nc{\tc}{\textcolor}
         \nc{\vec}[1]{\overrightarrow{#1}}
+        \nc{\OIJ}{\left(O;I,J\right)}
+        \nc{\vOIJ}{\left(O;\vec{i},\vec{j}\right)}
       `);
         },
     },
