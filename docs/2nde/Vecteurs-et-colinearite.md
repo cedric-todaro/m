@@ -178,7 +178,7 @@
 
     On note :
 
-    $$\boxed{\qquad\det(\vec{u};\vec{v})=\begin{vmatrix}x&x'\\\\y&y'\end{vmatrix}=xy'-yx'}$$
+    $$\boxed{\det(\vec{u};\vec{v})=\begin{vmatrix}x&x'\\\\y&y'\end{vmatrix}=xy'-yx'}$$
 
 ### Propriété : Colinéarité et déterminant
 
