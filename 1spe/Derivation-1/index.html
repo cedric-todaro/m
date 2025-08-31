@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cedric-todaro.github.io/m/1spe/Derivation-1/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Dérivation (1) : Nombre dérivé - Math pour le lycée</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../extra.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-mermaid.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "D\u00e9rivation (1) : Nombre d\u00e9riv\u00e9";
+        var mkdocs_page_input_path = "1spe/Derivation-1.md";
+        var mkdocs_page_url = "/m/1spe/Derivation-1/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Math pour le lycée
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" aria-label="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Accueil</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2nde</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Fonctions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Generalites-sur-les-fonctions/">Généralités sur les fonctions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Variations-de-fonctions/">Variation de fonctions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Fonctions-affines/">Fonctions affines</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Fonctions-de-reference/">Fonctions de références</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Géométrie</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Reperage-et-configuration-dans-le-plan/">Repérage dans le plan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Notion-de-vecteur/">Notion de vecteur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Vecteurs-et-coordonnees/">Vecteurs et coordonnées</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Vecteurs-et-colinearite/">Vecteurs et colinéarité</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Droites-du-plan/">Droites du plan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Droites-et-systemes/">Droites et systèmes</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Algèbre</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Calcul-algebrique/">Calcul algébrique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Ensembles-de-nombres/">Ensemble de nombres</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Arithmetique/">Arithmétique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Proportion-evolution/">Proportion et évolution</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistiques/Probabilité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Statistiques-descriptives/">Statistiques descriptives</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Probabilite/">Probabilité</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Probabilite-echantillonnage/">Probabilité et échantillonnage</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">1spe</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Dérivation (1) : Nombre dérivé</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#limite-en-zero-dune-fonction">Limite en zéro d&rsquo;une fonction</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#cas-limlimits_xto-0fxk">Cas $\lim\limits_{x\to 0}~f(x)=k$</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cas-limlimits_xto-0fxpminfty">Cas $\lim\limits_{x\to 0}~f(x)=\pm\infty$</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#definition-approximative-de-la-limite-de-f-pour-xto-0">Définition (approximative) de la limite de $f$ pour $x\to 0$</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#nombre-derive">Nombre dérivé</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#rappel-pente-dune-droite">Rappel : Pente d&rsquo;une droite</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fonction-derivable">Fonction dérivable</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#definition-fonction-derivable-en-a">Définition : Fonction dérivable en $a$</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tangente-a-une-courbe">Tangente à une courbe</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Math pour le lycée</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Documents"></a></li>
+          <li class="breadcrumb-item">1spe</li>
+      <li class="breadcrumb-item active">Dérivation (1) : Nombre dérivé</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="derivation-1-nombre-derive">Dérivation (1) : Nombre dérivé</h1>
+<h2 id="limite-en-zero-dune-fonction">Limite en zéro d&rsquo;une fonction</h2>
+<h3 id="cas-limlimits_xto-0fxk">Cas $\lim\limits_{x\to 0}~f(x)=k$</h3>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>Soit $f$ définie sur $~\left]-\infty;0\right[\cup\left]0 ; +\infty\right[~$ par $~f(x)=\cfrac{((x+1)^2-1)}{x}~$</p>
+<p>L&rsquo;image de $0$ par $f$ n&rsquo;existe pas.</p>
+<p>On s&rsquo;intéresse cependant aux valeurs de $f(x)$ lorsque $x$ se <strong>rapproche</strong> de $0$.</p>
+<p>$$
+    \begin{array}{|c|c|c|c|c|c|c|c|c|c|}\hline
+        \rule[-4mm]{0cm}{1cm}x    &amp; -0.5 &amp; -0.1 &amp; -0.01 &amp; -0.001 &amp; \ldots &amp; 0.001 &amp; 0.01 &amp; 0.1 &amp; 0.5 \\ \hline
+        \rule[-4mm]{0cm}{1cm}f(x) &amp; 1.5  &amp; 1.9  &amp; 1.99  &amp; 1.999  &amp; ?      &amp; 2.001 &amp; 2.01 &amp; 2.1 &amp; 2.5 \\ \hline
+    \end{array}
+$$</p>
+<p>On constate que $f(x)$ se <strong>rapproche</strong> de $2$ lorsque $x$ se <strong>rapproche</strong> de $0$.</p>
+<p><img alt="" src="../img/deriv1/calc01tt.png" width="50%" /></p>
+<p>$~$</p>
+<p>On dit que la <strong>limite</strong> de $f$ lorsque $x$ <strong>tend vers</strong> $0$ est égale à $2$ et on note :</p>
+<p>$$\lim\limits_{x\to 0}~f(x)=2$$</p>
+</div>
+<h3 id="cas-limlimits_xto-0fxpminfty">Cas $\lim\limits_{x\to 0}~f(x)=\pm\infty$</h3>
+<div class="admonition exemple">
+<p class="admonition-title">Exemple</p>
+<p>Soit $g$ définie sur $\left]-\infty;0\right[\cup\left]0;+\infty\right[$ par $g(x)=\cfrac{1}{x^2}$</p>
+<p>A l&rsquo;aide de la calculatrice, on constate que $g(x)$ devient de plus en plus grand lorsque $x$ se <strong>rapproche</strong> de $0$.</p>
+<p><img alt="" src="../img/deriv1/f1.png" width="80%" /></p>
+<p>$~$</p>
+<p>On dit que la <strong>limite</strong> de $g$ lorsque $x$ tend vers $0$ est égale à $+\infty$ et on note :</p>
+<p>$$\lim\limits_{x\to 0}~g(x)=+\infty$$</p>
+</div>
+<h3 id="definition-approximative-de-la-limite-de-f-pour-xto-0">Définition (approximative) de la limite de $f$ pour $x\to 0$</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>On dit que $f(x)$ a pour limite $L$ lorsque $x$ <strong>tend vers</strong> $0$ si les valeurs de $f(x)$ peuvent être <strong>aussi proche de $L$ que l&rsquo;on veut</strong> pourvu que $x$ soit suffisamment proche de $0$.</p>
+<p>On note :</p>
+<p>$$\boxed{\lim\limits_{x\to 0}~f(x)=L}$$</p>
+<p>et on lit : $\quad$ &ldquo;La <strong>limite</strong> de $f(x)$ lorsque $x$ <strong>tend vers</strong> $0$ est égale à $L$&rdquo;.</p>
+</div>
+<h2 id="nombre-derive">Nombre dérivé</h2>
+<h3 id="rappel-pente-dune-droite">Rappel : Pente d&rsquo;une droite</h3>
+<div class="admonition def">
+<p class="admonition-title">Def</p>
+<p>Soit $f$ définie sur $I$. Soit deux réels $a$ et $b$ appartenant à $I$ tels que $a\lt b$.</p>
+<p>Soit $A$ et $B$ deux points de $\Cf$ d&rsquo;abscisses respectives $a$ et $b$.</p>
+<p>La <strong>pente</strong> (ou le <strong>coefficient directeur</strong>) de la droite $(AB)$ est égal à :</p>
+<p>$$\text{pente}=\cfrac{f(b)-f(a)}{b-a}$$</p>
+<p><img alt="" src="../img/deriv1/01.png" width="70%" /></p>
+</div>
+<h3 id="fonction-derivable">Fonction dérivable</h3>
+<div class="admonition def">
+<p class="admonition-title">Def</p>
+<p>Soit $f$ définie sur $I$. Soit un réel $a\in I$.</p>
+<p>Soit $A$ et $M$ deux points de $\Cf$ d&rsquo;abscisses respectives $(a)$ et $(a+h)$, avec $h\neq 0$.</p>
+<p>La pente de la droite $(AM)$ est égale à :</p>
+<p>$$\cfrac{f(a+h)-f(a)}{h}$$</p>
+<p><img alt="" src="../img/deriv1/02.png" width="80%" /></p>
+<p>$~$</p>
+<p>Lorsque $M$ se rapproche de $A$, la pente de $(AM)$ est égale à la <strong>limite</strong> de $~\cfrac{f(a+h)-f(a)}{h}~$ lorsque $h$ tend vers $0$.</p>
+<p>Cette <strong>pente</strong> s&rsquo;appelle le <strong>nombre dérivé</strong> de $f$ en $a$ et se note $f&rsquo;(a)$.</p>
+</div>
+<h3 id="definition-fonction-derivable-en-a">Définition : Fonction dérivable en $a$</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>On dit que la fonction $f$ est dérivable en $a$ s&rsquo;il existe un nombre réel $L$, tel que :</p>
+<p>$$\lim\limits_{h\to 0}~\left(\cfrac{f(a+h)-f(a)}{h}\right) = L$$</p>
+<p>$L$ est appelé <strong>le nombre dérivé</strong> de $f$ en $a$ et se note $f&rsquo;(a)$</p>
+<p>$$\boxed{f&rsquo;(a)=\lim\limits_{h\to 0}~\left(\cfrac{f(a+h)-f(a)}{h}\right)}$$</p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Démontrer qu&rsquo;une fonction est dérivable</strong></p>
+<p>Soit $f$ définie sur $\mathbb{R}$ par $f(x)=x^2+2x-3$.</p>
+<p>Pour démontrer que $f$ est dérivable en $x=2$, calculons $\left(\cfrac{f(2+h)-f(2)}{h}\right)$ pour $h\neq 0$ :</p>
+<p>$$
+    \begin{aligned}
+        \cfrac{f(2+h)-f(2)}{h} &amp; =\cfrac{\left((2+h)^2 +2(2+h)-3\right)-\left(2^2 +2\times 2-3\right)}{h} \\
+        ~                      &amp; =\cfrac{(4+4h+h^2 +4+2h-3)-(5)}{h}                                      \\
+        ~                      &amp; =\cfrac{6h+h^2 }{h}\qquad=\cfrac{h(6+h)}{h}\qquad=6+h
+    \end{aligned}
+$$</p>
+<p>Donc</p>
+<p>$$f&rsquo;(2)=\lim\limits_{h\to 0}~\left(\cfrac{f(2+h)-f(2)}{h}\right)  = \lim\limits_{h\to 0}~(6+h)=6$$</p>
+<p>On en déduit que $f$ est dérivable en $x=2$.</p>
+<p>Le <strong>nombre dérivé</strong> de $f$ en $2$ vaut $6$ et on note : $f&rsquo;(2)=6$</p>
+</div>
+<h3 id="tangente-a-une-courbe">Tangente à une courbe</h3>
+<div class="admonition definition">
+<p class="admonition-title">Definition</p>
+<p>Soit $f$ définie sur $I$ et dérivable en un nombre réel $a\in I$.</p>
+<p>Soit :</p>
+<ul>
+<li>$A$ est un point d&rsquo;abscisse $a$ appartenant à $\Cf$.</li>
+<li>$f&rsquo;(a)$ est le <strong>nombre dérivé</strong> de $f$ en $a$.</li>
+</ul>
+<p>La <strong>tangente</strong> à $\Cf$ au point $A$ est la droite passant par $A$ de pente le nombre dérivé $f&rsquo;(a)$.</p>
+<p><img alt="" src="../img/deriv1/03a.png" width="80%" /></p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Déterminer la pente d&rsquo;une tangente à une courbe</strong></p>
+<p>Soit $f$ définie sur $\mathbb{R}$ par $\ldots$</p>
+<p>$$f(x)=x^2 +2x-3$$</p>
+<p>$\ldots$ dérivable en $x=2$.</p>
+<p>On a vu que le nombre dérivé de $f$ en $2$ vaut $6$ : $\quad f&rsquo;(2)=6$.</p>
+<p>Ainsi la tangente à $\Cf$ au point $A$ d&rsquo;abscisse $2$ est la droite passant par $A$ et de <strong>pente</strong> $6$.</p>
+<p><img alt="" src="../img/deriv1/04.png" width="90%" /></p>
+</div>
+<div class="admonition prop">
+<p class="admonition-title">Prop</p>
+<p>Une équation de la tangente à $\Cf$ en $A\left(a~;~f(a)\right)$ est :</p>
+<p>$$\boxed{y=f&rsquo;(a)(x-a)+f(a)}$$</p>
+</div>
+<div class="admonition demo">
+<p class="admonition-title">Demo</p>
+<p>La tangente a pour pente $f&rsquo;(a)$ donc son équation est de la forme :</p>
+<p>$$y=f&rsquo;(a)\times x+b$$</p>
+<p>$\ldots$ où $b$ est l&rsquo;ordonnée à l&rsquo;origine.</p>
+<p>La tangente passe par le point $A\Big(a~;~f(a)\Big)$, donc :</p>
+<p>$$f(a)=f&rsquo;(a)\times a+b\quad\iff\quad \color{blue}b=\Big(f(a)-f&rsquo;(a)\times a\Big)\color{black}$$</p>
+<p>On en déduit que l&rsquo;équation de la tangente peut s&rsquo;écrire :</p>
+<p>$$
+    \def\arraystretch{1.8}\begin{array}{ccl}
+        y=f&rsquo;(a)\times x+\color{blue}\Big(f(a)-f&rsquo;(a)\times a\Big) &amp; \iff &amp; y=f&rsquo;(a)\times x-f&rsquo;(a)\times a + f(a) \\
+                                                                &amp; \iff &amp; y=f&rsquo;(a)(x-a)+f(a)                    \\
+    \end{array}
+$$</p>
+</div>
+<div class="admonition methode">
+<p class="admonition-title">Methode</p>
+<p><strong>Déterminer une équation d&rsquo;une tangente à une courbe</strong></p>
+<p>Soit $f$ définie sur $\mathbb{R}$ par $f(x)=x^2+2x-3$</p>
+<p>On a vu que $f&rsquo;(2)=6$.</p>
+<p>Donc son équation est de la forme :</p>
+<p>$$
+    \begin{array}{rll}
+            &amp; y=f&rsquo;(a)(x-a)  &amp; +f(a)              \\
+        \iff &amp; y=f&rsquo;(2)(x-2) &amp; +f(2)              \\
+        \iff &amp; y=6(x-2)     &amp; +(2^2+2\times 2-3) \\
+        \iff &amp; y=6x-12      &amp; +5                 \\
+        \iff &amp; y=6x         &amp; -7
+    \end{array}
+$$</p>
+<p>Une équation de tangente à $\Cf$ au point $A$ d&rsquo;abscisse $2$ est : $~y=6x-7$</p>
+<p><img alt="" src="../img/deriv1/f2.png" width="90%" /></p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../../2nde/Probabilite-echantillonnage/" class="btn btn-neutral float-left" title="Probabilité et échantillonnage"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../2nde/Probabilite-echantillonnage/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.8/mermaid.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-mermaid.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cedric-todaro.github.io/m/1spe/cours-Produit-scalaire/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Vecteurs et produit scalaire - Math pour le lycée</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../extra.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-mermaid.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Vecteurs et produit scalaire";
+        var mkdocs_page_input_path = "1spe/cours-Produit-scalaire.md";
+        var mkdocs_page_url = "/m/1spe/cours-Produit-scalaire/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Math pour le lycée
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" aria-label="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Accueil</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2nde</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Fonctions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Generalites-sur-les-fonctions/">Généralités sur les fonctions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Variations-de-fonctions/">Variation de fonctions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Fonctions-affines/">Fonctions affines</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Fonctions-de-reference/">Fonctions de références</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Géométrie</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Reperage-et-configuration-dans-le-plan/">Repérage dans le plan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Notion-de-vecteur/">Notion de vecteur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Vecteurs-et-coordonnees/">Vecteurs et coordonnées</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Vecteurs-et-colinearite/">Vecteurs et colinéarité</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Droites-du-plan/">Droites du plan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Droites-et-systemes/">Droites et systèmes</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Algèbre</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Calcul-algebrique/">Calcul algébrique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Ensembles-de-nombres/">Ensemble de nombres</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Arithmetique/">Arithmétique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Proportion-evolution/">Proportion et évolution</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistiques/Probabilité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Statistiques-descriptives/">Statistiques descriptives</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Probabilite/">Probabilité</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Probabilite-echantillonnage/">Probabilité et échantillonnage</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">1spe</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Derivation-1/">Dérivation (1) : Nombre dérivé</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Math pour le lycée</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Documents"></a></li>
+      <li class="breadcrumb-item active">Vecteurs et produit scalaire</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="rappels-sur-les-vecteurs">Rappels sur les vecteurs</h1>
+<h2 id="caracteristiques">Caractéristiques</h2>
+<p>\bw{r}{8cm}\vspace{-1cm}\cimg{8cm}{img/01-cours}\ew</p>
+<p>Un vecteur a pour caractéristiques :</p>
+<ul>
+<li>Une <strong>longueur (ou norme)</strong></li>
+<li>Une <strong>direction (une droite parallèle à ce vecteur)</strong></li>
+<li>Un <strong>sens</strong> (de $A$ vers $B$ ou l&rsquo;inverse)</li>
+</ul>
+<p>\definition \ul{Norme d&rsquo;un vecteur}</p>
+<p>\ms</p>
+<p>On note la norme (longueur) d&rsquo;un vecteur avec des $\norm{\ldots}$</p>
+<p>\ms</p>
+<p>\exemple</p>
+<p>Dans l&rsquo;exemple précédent, on a : $$\norm{\vec{AB}}=\norm{\vec{u}}=AB\quad=\sqrt{4<sup>2+1</sup>2}=\sqrt{17}$$</p>
+<p>\ms</p>
+<p>\prop \ul{Vecteurs égaux}</p>
+<p>\bw{r}{7cm}\vspace{-3cm}\cimg{5cm}{img/02.png}\vspace{-1cm}\ew</p>
+<ul>
+<li>même <strong>longueur (même norme)</strong></li>
+<li>même <strong>direction</strong></li>
+<li>même <strong>sens</strong></li>
+</ul>
+<p>\exemple</p>
+<p>$\vec{u}=\vec{v}\quad$ et $\quad\vec{t}=\vec{AB}$</p>
+<p>Mais $\quad\vec{t}\neq\vec{BA}\quad$ (sens contraires)</p>
+<p>\prop \ul{Multiplication par un nombre}</p>
+<p>Le produit du vecteur $\vec{u}\neq\vec{0}$ par le réel $k\neq0$ est un vecteur noté $~k\vec{u}~$ tel que :</p>
+<p>\ms</p>
+<ul>
+<li>si $k &gt; 0$, alors</li>
+<li>$\vec{u}$ et $k\vec{u}$ ont la même direction, le même sens.</li>
+<li>$\norm{ k\vec{u}}=k\times\norm{\vec{u}}$</li>
+</ul>
+<p>\ms</p>
+<ul>
+<li>si $k \less  0$, alors</li>
+<li>$\vec{u}$ et $k\vec{u}$ ont la même direction mais sens <strong>contraire</strong>.</li>
+<li>$\norm{ k\vec{u}}=-k\times\norm{\vec{u}}$</li>
+</ul>
+<p>\newpage</p>
+<p>\exemple</p>
+<p>\bw{r}{6cm}\vspace{-1cm}\cimg{6cm}{img/03-cours}\vspace{-2cm}\ew</p>
+<p>Dans le repère ci-contre, on a :</p>
+<p>$$\vec{b}=2\times \vec{a}\quad\text{ et }\quad\vec{c}=-3\times \vec{a}$$</p>
+<h2 id="somme-de-vecteurs">Somme de vecteurs</h2>
+<p>\prop L&rsquo;enchaînement d&rsquo;une <strong>translation de vecteur $\vec{u}$</strong> et d&rsquo;une <strong>translation de vecteur $\vec{v}$</strong> est une <strong>translation de vecteur $\vec{u}+\vec{v}$</strong>.</p>
+<p>Ce vecteur $\vec{u}+\vec{v}$ est appelé <strong>somme</strong> des vecteurs $\vec{u}$ et $\vec{v}$.</p>
+<p>$\qquad\qquad$<img alt="" src="img/04tt.png" width="7cm" /></p>
+<p>\exemple</p>
+<p>\bw{r}{7cm}\vspace{-4cm}\cimg{7cm}{img/05.png}\ew</p>
+<p>$\vec{BB^\prime}$ est un représentant de $\vec{CD}$ donc $\qquad\vec{BB^\prime}=\vec{CD}$</p>
+<p>On a donc $\qquad\color{blue}\vec{AB}\color{black}+\color{red}\vec{CD}\color{black}=\color{green!20!black!80}\vec{AB^\prime}\color{black}$</p>
+<h2 id="relation-de-chasles">Relation de Chasles</h2>
+<p>Quels que soient les points $A$, $B$ et $C$ du plan on a :</p>
+<p>$$\color{blue}\vec{AB}\color{black}+\color{red}\vec{BC}\color{black}=\color{green!20!black!80}\vec{AC}\color{black}$$</p>
+<p>\cimg{8cm}{img/06tt}</p>
+<p>\newpage</p>
+<h2 id="vecteurs-dans-un-repere-orthonorme">Vecteurs dans un repère orthonormé</h2>
+<p>Dans le plan muni du repère $\left(O,I,J\right)$, les coordonnées du vecteur $\vec{AB}$ sont :</p>
+<p>$$\boxed{\vec{AB}\begin{pmatrix}x_B-x_A\y_B-y_A\end{pmatrix}}$$</p>
+<p>\cimg{9cm}{img/07-cours.png}</p>
+<p>\exemple</p>
+<p>\bw{r}{6cm}\vspace{-1cm}\cimg{6cm}{img/09-cours}\vspace{-2cm}\ew</p>
+<p>Soit $\color{green!20!black!80}A(3,2)$ et $\color{red}B(-1,1)$, on a :</p>
+<p>$$\vec{AB}\begin{pmatrix}\color{red}(-1)\color{black}-\color{green!20!black!80}3\\color{red}1\color{black}-\color{green!20!black!80}2\end{pmatrix}~\rightarrow\vec{AB}\begin{pmatrix}-4\-1\end{pmatrix}$$</p>
+<p>\ms</p>
+<p>\prop \ul{Égalité, somme de vecteurs et produit par un réel}</p>
+<p>Soit $\vec{u}\begin{pmatrix}x_{\vec{u}}\y_{\vec{u}}\end{pmatrix}$ , $\vec{v}\begin{pmatrix}x_{\vec{v}}\y_{\vec{v}}\end{pmatrix}$ et un réel $k\neq0$.</p>
+<ul>
+<li>$\vec{u}=\vec{v}\Leftrightarrow\begin{cases}x_{\vec{u}}=x_{\vec{v}}\y_{\vec{u}}=y_{\vec{v}}\end{cases}\quad\rightarrow~$ 2 vecteurs de même coordonnées sont égaux</li>
+<li>$\vec{u}+\vec{v}\begin{pmatrix}x_{\vec{u}}+x_{\vec{v}}\y_{\vec{u}}+y_{\vec{v}}\end{pmatrix}\quad\rightarrow~$On peut additionner les coordonnées des vecteurs</li>
+<li>$k\vec{u}\begin{pmatrix}k\times x_{\vec{u}}\k\times y_{\vec{u}}\end{pmatrix}\quad\rightarrow~$On peut multiplier les coordonnées des vecteurs par $k$</li>
+</ul>
+<p>\ms</p>
+<p>\bw{r}{8cm}\vspace{-5mm}\cimg{8cm}{img/08tt}\vspace{-5cm}\ew</p>
+<p>\exemple</p>
+<p>Soit $\vec{u}\begin{pmatrix}3\-2\end{pmatrix}$ , $\vec{v}\begin{pmatrix}-1\2\end{pmatrix}$ et $k=2$.</p>
+<p>On a :</p>
+<ul>
+<li>$\vec{u}+\vec{v}\begin{pmatrix}3+(-1)\(-2)+2\end{pmatrix}\quad \rightarrow\vec{u}+\vec{v}\begin{pmatrix}2\0\end{pmatrix}$
+  $$~$$</li>
+<li>$2\vec{v}\begin{pmatrix}2\times (-1)\2\times 2\end{pmatrix}\quad \rightarrow2\vec{v}\begin{pmatrix}-2\4\end{pmatrix}$</li>
+</ul>
+<p>\newpage</p>
+<h1 id="produit-scalaire">Produit scalaire</h1>
+<p>Le <strong>produit scalaire</strong> de deux vecteurs est un <strong>nombre réel</strong>.</p>
+<p>Il se note :</p>
+<p>$$\boxed{\vec{u}\cdot\vec{v}}$$</p>
+<h2 id="produit-scalaire-dans-un-repere-orthonorme">Produit scalaire dans un repère orthonormé</h2>
+<p>\bw{r}{5cm}\vspace{-4cm}\cimg{5cm}{img/10-cours}\ew</p>
+<p>Soit $\vec{u}\begin{pmatrix}x_{\vec{u}}\y_{\vec{u}}\end{pmatrix}$ et $\vec{v}\begin{pmatrix}x_{\vec{v}}\y_{\vec{v}}\end{pmatrix}$.</p>
+<p>On a :</p>
+<p>$$\boxed{\vec{u}\cdot\vec{v} = \left(x_{\vec{u}}\times x_{\vec{v}}\right) + \left(y_{\vec{u}}\times y_{\vec{v}}\right)}$$</p>
+<p>\ms</p>
+<p>\exemple</p>
+<p>Soit $\vec{u}\begin{pmatrix}2\4\end{pmatrix}$ et $\vec{v}\begin{pmatrix}3\-2\end{pmatrix}$.</p>
+<p>On a :</p>
+<p>$$
+\begin{aligned}
+\vec{u}\cdot\vec{v} &amp; = \left(x_{\vec{u}}\times x_{\vec{v}}\right) + \left(y_{\vec{u}}\times y_{\vec{v}}\right)\
+                    &amp; =  \left(2\times 3\right) + \left(4\times -2\right)\
+                    &amp; =  6 + (-8) = -2
+\end{aligned}
+$$</p>
+<p>\ms</p>
+<h2 id="norme-dun-vecteur-dans-un-repere">Norme d&rsquo;un vecteur dans un repère</h2>
+<p>\bw{r}{5cm}\vspace{-1cm}\cimg{5cm}{img/14-cours}\ew</p>
+<p>Soit $\vec{u}\begin{pmatrix}x_{\vec{u}}\y_{\vec{u}}\end{pmatrix}$.</p>
+<p>On a : $\quad\boxed{\norm{\vec{u}}=\sqrt{\pa{x_{\vec{u}}}<sup>2+\pa{y_{\vec{u}}}</sup>2}}$</p>
+<p>\ms</p>
+<p>\exemple</p>
+<p>Soit $\vec{u}\begin{pmatrix}2\4\end{pmatrix}$ et $\vec{v}\begin{pmatrix}3\-2\end{pmatrix}$.</p>
+<p>On a :</p>
+<p>$\begin{aligned}
+ \color{blue}\norm{\vec{u}} &amp;\color{blue}=\sqrt{\left(x_{\vec{u}}\right)<sup>2+\left(y_{\vec{u}}\right)</sup>2}\
+ &amp; =\sqrt{2<sup>2+4</sup>2} = \sqrt{20}\
+ \end{aligned}$\qquad
+$\begin{aligned}
+ \color{green!20!black!80}\norm{\vec{v}} &amp;\color{green!20!black!80}=\sqrt{\left(x_{\vec{v}}\right)<sup>2+\left(y_{\vec{v}}\right)</sup>2}\
+ &amp; =\sqrt{3<sup>2+(-2)</sup>2} = \sqrt{13}\
+ \end{aligned}$</p>
+<p>\ms</p>
+<h2 id="produit-scalaire-2">Produit scalaire (2)</h2>
+<p>Soit $\vec{u}$ et $\vec{v}$, deux vecteurs du plan et $\alpha$ l&rsquo;angle $\left(\vec{u} ; \vec{v}\right)$.</p>
+<p>On a :</p>
+<p>$$\boxed{\vec{u}\cdot\vec{v} = \norm{\vec{u}}\times \norm{\vec{v}}\times \cos\alpha}$$</p>
+<p>\bw{r}{7cm}\vspace{-4cm}\cimg{7cm}{img/12-cours}\vspace{-3cm}\ew</p>
+<p>\ms</p>
+<p>\exemple</p>
+<p>$\begin{aligned}
+\vec{u}\cdot\vec{v} &amp; = \norm{\vec{u}}\times \norm{\vec{v}}\times \cos\alpha\
+                    &amp; = \sqrt{20} \times \sqrt{13}\times \cos(97,125\ldots)\
+                    &amp; = \sqrt{260}\times \cos(97,125\ldots)\
+                    &amp; = -2
+\end{aligned}$</p>
+<p>\newpage</p>
+<h2 id="theoreme-fondamental-fawarning">Théorème fondamental \faWarning</h2>
+<p>\bw{r}{7cm}\vspace{-1cm}\cimg{7cm}{img/13-cours.png}\vspace{1cm}\ew</p>
+<p>Soit $\vec{u}$ et $\vec{v}$, deux vecteurs du plan.</p>
+<p>On a :</p>
+<p>$$\boxed{\vec{u}\cdot\vec{v}=0\quad \Leftrightarrow\quad \vec{u}~\bot~\vec{v}}$$</p>
+<p><strong>\ul{Preuve :}</strong></p>
+<ul>
+<li>Soit $\vec{u}$ et $\vec{v}$ tel que $\vec{u}~\bot~\vec{v}$.</li>
+</ul>
+<p>$$\begin{aligned}\vec{u}\cdot\vec{v}~&amp;=\norm{\vec{u}}\times\norm{\vec{v}}\times\cos(90^\circ)\~&amp;=\norm{\vec{u}}\times\norm{\vec{v}}\times0\qquad=0\end{aligned}$$</p>
+<ul>
+<li>Soit $\vec{u}$ et $\vec{v}$ tel que $\vec{u}\cdot\vec{v} = 0$.</li>
+</ul>
+<p>$$
+\begin{aligned}
+&amp;\quad\vec{u}\cdot\vec{v}=\norm{\vec{u}}\times\norm{\vec{v}}\times\cos(\alpha)=0\
+\Leftrightarrow&amp;\quad\cos(\alpha)=0\
+\Leftrightarrow&amp;\quad\begin{cases}\alpha=90<sup>\circ\\alpha=-90</sup>\circ\end{cases}\Leftrightarrow\vec{u}~\bot~\vec{v}\
+\end{aligned}
+$$</p>
+<h2 id="proprietes-du-produit-scalaire">Propriétés du produit scalaire</h2>
+<ul>
+<li>\ul{Commutativité :} $~\vec{a}\cdot\vec{b}=\vec{b}\cdot\vec{a}$</li>
+</ul>
+<p>\ms</p>
+<ul>
+<li>\ul{Associativité :}</li>
+<li>$\vec{a}\cdot\vec{b}\cdot\vec{c}=\vec{a}\cdot\left(\vec{b}\cdot\vec{c}\right)=\left(\vec{a}\cdot\vec{b}\right)\cdot\vec{c}$</li>
+<li>$k\vec{a}\cdot\vec{b}=k\left(\vec{a}\cdot\vec{b}\right)=\vec{a}\cdot k\vec{b}$</li>
+</ul>
+<p>\ms</p>
+<ul>
+<li>\ul{Distributivité :}</li>
+<li>$k\left(\vec{a}+\vec{b}\right)=k\vec{a}+k\vec{b}$</li>
+<li>$\vec{a}\left(\vec{b}+\vec{c}\right)=\vec{a}\cdot\vec{b}+\vec{a}\cdot\vec{c}$</li>
+</ul>
+<p>\ms</p>
+<ul>
+<li>\ul{Vecteur &ldquo;au carré&rdquo; :}</li>
+<li>$\vec{a}<sup>2=\vec{a}\cdot\vec{a}=\norm{\vec{a}}</sup>2$</li>
+</ul>
+<p>\ms</p>
+<ul>
+<li>\ul{Identités remarquables :}</li>
+<li>$(\vec{a}+\vec{b})<sup>2=\vec{a}</sup>2+2\cdot\vec{a}\cdot\vec{b}+\vec{b}^2$</li>
+<li>$(\vec{a}-\vec{b})<sup>2=\vec{a}</sup>2-2\cdot\vec{a}\cdot\vec{b}+\vec{b}^2$</li>
+<li>$(\vec{a}-\vec{b})(\vec{a}+\vec{b})=\vec{a}<sup>2-\vec{b}</sup>2$</li>
+</ul>
+<h2 id="produit-scalaire-3">Produit scalaire (3)</h2>
+<p>\bw{r}{5cm}\vspace{-1cm}\cimg{5cm}{img/15-cours.png}\vspace{-2cm}\ew</p>
+<p>Soit $\vec{u}$ et $\vec{v}$, deux vecteurs du plan.</p>
+<p>On a :</p>
+<p>$$\boxed{\vec{u}\cdot\vec{v}=\dfrac{1}{2}\left(\norm{\vec{u}+\vec{v}}<sup>2-\norm{\vec{u}}</sup>2-\norm{\vec{v}}^2\right)}$$</p>
+<p>$$\boxed{\vec{u}\cdot\vec{v}=\dfrac{1}{2}\left(\norm{\vec{u}}<sup>2+\norm{\vec{v}}</sup>2-\norm{\vec{u}-\vec{v}}^2\right)}$$</p>
+<p><strong>\ul{Preuve :}</strong></p>
+<p>$\begin{array}{ccrl}
+                 &amp;\left(\vec{u}+\vec{v}\right)^2  &amp;=&amp;\vec{u}<sup>2+2\vec{u}\cdot\vec{v}+\vec{v}</sup>2\
+ \Leftrightarrow &amp;2\vec{u}\cdot\vec{v}            &amp;=&amp;\left(\vec{u}+\vec{v}\right)<sup>2-\vec{u}</sup>2-\vec{v}^2\
+ \Leftrightarrow &amp;\vec{u}\cdot\vec{v}             &amp;=&amp;\tfrac{1}{2}\left(\left(\vec{u}+\vec{v}\right)<sup>2-\vec{u}</sup>2-\vec{v}^2\right)\
+ \Leftrightarrow &amp;\vec{u}\cdot\vec{v}             &amp;=&amp;\tfrac{1}{2}\left(\norm{\vec{u}+\vec{v}}<sup>2-\norm{\vec{u}}</sup>2-\norm{\vec{v}}^2\right)
+ \end{array}$</p>
+<p>La seconde proposition se démontre de la même manière avec $\left(\vec{u}-\vec{v}\right)^2$</p>
+<p>\newpage</p>
+<h2 id="produit-scalaire-et-projete-orthogonal">Produit scalaire et projeté orthogonal</h2>
+<p>Soient $A$, $B$, $C$ trois points du plan et $H$ le projeté orthogonal de $C$ sur $(AB)$.</p>
+<p>On a :</p>
+<p>$$\boxed{\vec{AB}\cdot\vec{AC}=\vec{AB}\cdot\vec{AH}}$$</p>
+<p>Donc :</p>
+<ol>
+<li>Si $H\in\left[AB\right)\Rightarrow\vec{AB}\cdot\vec{AC}=AB\times AH$</li>
+<li>Si $H\notin\left[AB\right)\Rightarrow\vec{AB}\cdot\vec{AC}=-AB\times AH$</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Cas 1.</th>
+<th style="text-align: center;">Cas 2.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="" height="4cm" src="img/17-cours.png" /></td>
+<td style="text-align: center;"><img alt="" height="4cm" src="img/18-cours.png" /></td>
+</tr>
+</tbody>
+</table>
+<p><strong>\ul{Preuve :}</strong></p>
+<p>\ul{1. Cas où $H\in\left[AB\right)$}</p>
+<p>On a :</p>
+<ul>
+<li>$\vec{AB}\cdot\vec{AC}= AB\times AC\times \cos\alpha$</li>
+<li>$\cos\alpha=\dfrac{\text{Adjacent}}{\text{Hypothénuse}}=\dfrac{AH}{AC}$</li>
+</ul>
+<p>Donc</p>
+<p>$$\begin{aligned}\vec{AB}\cdot\vec{AC}&amp;= AB\times AC\times\frac{AH}{AC}\&amp;=AB\times AH\end{aligned}$$</p>
+<p>\ul{2. Cas où $H\notin\left[AB\right)$}</p>
+<p>On a $\quad\alpha=180^\circ-\beta\quad$ donc $\quad\cos\alpha=\cos(180^\circ-\beta)=-\cos(\beta)=\dfrac{-AH}{AC}$</p>
+<p>Donc</p>
+<p>$$\begin{aligned}\vec{AB}\cdot\vec{AC}&amp;= AB\times AC\times\frac{-AH}{AC}\&amp;=-AB\times AH\end{aligned}$$</p>
+<hr />
+<h2 id="recapitulatif">Récapitulatif</h2>
+<ul>
+<li>
+<p>\ul{Dans un repère :}
+  $$\boxed{\vec{u}\cdot\vec{v} = \left(x_{\vec{u}}\times x_{\vec{v}}\right) + \left(y_{\vec{u}}\times y_{\vec{v}}\right)}$$</p>
+</li>
+<li>
+<p>\ul{Avec l&rsquo;angle entre $\vec{u}$ et $\vec{v}$ :}
+  $$\boxed{\vec{u}\cdot\vec{v} = \norm{\vec{u}}\times \norm{\vec{v}}\times \cos\alpha}$$</p>
+</li>
+<li>
+<p>\ul{Avec les normes de $\vec{u}$ et $\vec{v}$ (&hellip;et de $\vec{u}+\vec{v}$ et de $\vec{u}-\vec{v}$) :}
+  $$\boxed{\vec{u}\cdot\vec{v}=\frac{1}{2}\left(\norm{\vec{u}+\vec{v}}<sup>2-\norm{\vec{u}}</sup>2-\norm{\vec{v}}<sup>2\right)}\quad\text{et}\quad\boxed{\vec{u}\cdot\vec{v}=\frac{1}{2}\left(\norm{\vec{u}}</sup>2+\norm{\vec{v}}<sup>2-\norm{\vec{u}-\vec{v}}</sup>2\right)}$$</p>
+</li>
+<li>
+<p>\ul{Théorème fondamentale :}
+  $$\boxed{\vec{u}\cdot\vec{v}=0~\Leftrightarrow~\vec{u}~\bot~\vec{v}}$$</p>
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.8/mermaid.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-mermaid.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

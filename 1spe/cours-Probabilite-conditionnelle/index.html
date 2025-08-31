@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cedric-todaro.github.io/m/1spe/cours-Probabilite-conditionnelle/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Probabilité conditionnelle - Math pour le lycée</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../extra.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-mermaid.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Probabilit\u00e9 conditionnelle";
+        var mkdocs_page_input_path = "1spe/cours-Probabilite-conditionnelle.md";
+        var mkdocs_page_url = "/m/1spe/cours-Probabilite-conditionnelle/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Math pour le lycée
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" aria-label="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Accueil</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2nde</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Fonctions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Generalites-sur-les-fonctions/">Généralités sur les fonctions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Variations-de-fonctions/">Variation de fonctions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Fonctions-affines/">Fonctions affines</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Fonctions-de-reference/">Fonctions de références</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Géométrie</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Reperage-et-configuration-dans-le-plan/">Repérage dans le plan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Notion-de-vecteur/">Notion de vecteur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Vecteurs-et-coordonnees/">Vecteurs et coordonnées</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Vecteurs-et-colinearite/">Vecteurs et colinéarité</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Droites-du-plan/">Droites du plan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Droites-et-systemes/">Droites et systèmes</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Algèbre</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Calcul-algebrique/">Calcul algébrique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Ensembles-de-nombres/">Ensemble de nombres</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Arithmetique/">Arithmétique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Proportion-evolution/">Proportion et évolution</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistiques/Probabilité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Statistiques-descriptives/">Statistiques descriptives</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Probabilite/">Probabilité</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Probabilite-echantillonnage/">Probabilité et échantillonnage</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">1spe</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Derivation-1/">Dérivation (1) : Nombre dérivé</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Math pour le lycée</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Documents"></a></li>
+      <li class="breadcrumb-item active">Probabilité conditionnelle</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="rappels-de-2textnde">Rappels de 2$^\text{nde}$</h1>
+<h2 id="vocabulaire">Vocabulaire</h2>
+<p>\bw{r}{5cm}\vspace{-2cm}\cimg{5cm}{img/01.png}\ew</p>
+<p>Quelques petits mots de vocabulaire</p>
+<ul>
+<li>\ul{Expérience aléatoire :} &ldquo;Lancer la roue et noter le gain&rdquo;</li>
+<li>\ul{Une issue :} $50$ ; $1000$ ou $\text{Jackpot}$ &hellip;</li>
+<li>\ul{Univers :} L&rsquo;ensemble des issues possibles
+  $$\Omega = \left{\text{Lose} ; 50 ; 100 ; 200 ; 300 ; 500 ; 700 ; 1000 ; \text{Jackpot}\right}$$</li>
+<li>\ul{Événement :} Un ensemble d&rsquo;issues
+  $$A :  \text{Obtenir - de 450}~\Lrarr~A = \left{\text{Lose} ; 50 ; 100 ; 200 ; 300 \right}$$</li>
+</ul>
+<h2 id="probabilite-de-dun-evenement">Probabilité de d&rsquo;un événement</h2>
+<ul>
+<li>\ul{Probabilité d&rsquo;un événement :} Somme de la probabilité des issues qui le composent.</li>
+</ul>
+<p>$$
+\begin{aligned}
+p(A)&amp;=p(\text{Lose}) +p(50) +p(100) +p(200) +p(300)\
+   ~&amp;=\frac{1}{12} +\frac{2}{12} +\frac{1}{12} +\frac{3}{12} +\frac{1}{12}\
+   ~&amp;=\frac{8}{12}=\frac{2}{3}\
+\end{aligned}
+$$</p>
+<ul>
+<li>
+<p>\ul{Équiprobabilité :}Égalité de la proba. de chaque issues</p>
+</li>
+<li>
+<p>Ce n&rsquo;est pas le cas ici $\rarr p(50)\neq p(1000)$</p>
+</li>
+<li>
+<p>\ul{La somme des proba. des issues $=1$}</p>
+</li>
+<li>La roue s&rsquo;arrêtera forcement sur un secteur
+    $$p(\text{Lose}) +p(50) +\dots +p(1000)+p(\text{Jackpot})=1$$</li>
+</ul>
+<h2 id="loi-de-probabilite">Loi de probabilité</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Issue</th>
+<th style="text-align: center;">Lose</th>
+<th style="text-align: center;">50</th>
+<th style="text-align: center;">100</th>
+<th style="text-align: center;">200</th>
+<th style="text-align: center;">$\ldots$</th>
+<th style="text-align: center;">1000</th>
+<th style="text-align: center;">Jackpot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Proba.</td>
+<td style="text-align: center;">$\frac{1}{12}$</td>
+<td style="text-align: center;">$\frac{2}{12}$</td>
+<td style="text-align: center;">$\frac{1}{12}$</td>
+<td style="text-align: center;">$\frac{3}{12}$</td>
+<td style="text-align: center;">$\ldots$</td>
+<td style="text-align: center;">$\frac{1}{12}$</td>
+<td style="text-align: center;">$\frac{1}{12}$</td>
+</tr>
+</tbody>
+</table>
+<p>\newpage</p>
+<h2 id="evenement-contraire-et-intersectionunion-devenements">Événement contraire et intersection/union d&rsquo;événements</h2>
+<ul>
+<li>
+<p>\ul{Événement contraire :} $\boxed{p\pa{\overline{A}}=1-p(A)}$</p>
+</li>
+<li>
+<p>Si $\quad p(A)=\frac{2}{3}\quad$ alors $\quad p\pa{\overline{A}}=\frac{1}{3}$</p>
+</li>
+<li>
+<p>\ul{Intersection :} $A \cap B$</p>
+</li>
+<li>
+<p>C&rsquo;est l&rsquo;événement $A$ <strong>et</strong> $B$</p>
+</li>
+<li>
+<p>i\ul{Union (ou réunion) :} $A \cup B$</p>
+</li>
+<li>C&rsquo;est l&rsquo;événement $A$ <strong>ou</strong> $B$</li>
+</ul>
+<p>$$\boxed{p(A \cup B)=p(A) + p(B) - p(A \cap B)}$$</p>
+<p>\ms</p>
+<p>\exemple On tire au hasard une carte dans une jeu de $32$ cartes.</p>
+<p>\bw{r}{6cm}\vspace{-1cm}\cimg{6cm}{img/02.png}\ew</p>
+<p>On considère les événements suivants :</p>
+<ul>
+<li>$A$ : &ldquo;La carte tirée est une figure&rdquo;</li>
+<li>$A:\left{J\spade;Q\spade;\dots;Q\heart;K\heart\right}$</li>
+<li>$B$ : &ldquo;La carte tirée est de couleur noire&rdquo;</li>
+<li>$B:\left{7\spade;8\spade;\dots;K\club;A\club\right}$</li>
+</ul>
+<p>On a :</p>
+<ul>
+<li>$p(A)=\frac{12}{32}=\frac{3}{8}\quad$ et $\quad p(B)=\frac{16}{32}=\frac{1}{2}$</li>
+</ul>
+<p>On a :</p>
+<ul>
+<li>$A\cap B$ : &ldquo;la carte est une figure <strong>et</strong> noire&rdquo;</li>
+<li>$A\cap B : \left{J\spade;Q\spade;K\spade;J\club;Q\club;K\club\right}$</li>
+<li>$p(A\cap B)=\frac{6}{32}$</li>
+<li>$A\cup B$ : &ldquo;la carte est une figure <strong>ou</strong> noire&rdquo;</li>
+<li>$A\cup B : \left{7\spade;8\spade;\dots;J\heart;\dots;A\club\right}$</li>
+</ul>
+<p>$$
+\def\arraystretch{2}
+\begin{array}{rlll}
+p(A\cup B)&amp;=p(A)&amp;+p(B)&amp;-p(A\cap B)\
+~&amp;=\dfrac{12}{32}&amp;+\dfrac{16}{32}&amp;-\dfrac{6}{32}\qquad\qquad=\dfrac{22}{32}
+\end{array}
+$$</p>
+<h1 id="probabilite-conditionnelle-definition-et-proprietes">Probabilité conditionnelle : définition et propriétés</h1>
+<h2 id="definition-probabilite-conditionnelle">Définition : Probabilité conditionnelle</h2>
+<p>\definition</p>
+<p>Soit $A$ et $B$ deux événements avec $p(A)\neq 0$.</p>
+<p>On appelle \fbox{&ldquo;\textbf{probabilité conditionnelle} de $B$ sachant $A$&rdquo;}, la probabilité que l&rsquo;événement $B$ se réalise sachant que l&rsquo;événement $A$ est réalisé.</p>
+<p>\ms</p>
+<p>Elle est notée $p_A(B)$ et est définie par :</p>
+<p>$$\boxed{p_A(B)=\dfrac{p(A\cap B)}{p(A)}}$$</p>
+<p>\exemple</p>
+<p>On tire une carte dans une jeu de $32$ cartes.</p>
+<p>On considère les événements suivants :</p>
+<ul>
+<li>$A$ : &ldquo;La carte tirée est un $\spade$&rdquo; $\quad\rarr p(A)=\frac{8}{32}$</li>
+<li>$B$ : &ldquo;La carte tirée est un $K$&rdquo; $\quad\rarr p(B)=\frac{4}{32}$</li>
+</ul>
+<p>On a $~A\cap B$ : &ldquo;La carte est le $K\spade$&rdquo;</p>
+<p>$$p(A\cap B)=\frac{1}{32}$$</p>
+<p>\newpage</p>
+<p>La probabilité que la carte soit un $K$ <strong>sachant que</strong> l&rsquo;on a tiré un $\spade$ est :</p>
+<p>$$p_A(B)=\dfrac{p(A\cap B)}{p(A)}\quad=\dfrac{~\frac{1}{32}~}{~\frac{8}{32}~}\quad=\dfrac{1}{8}$$</p>
+<p>On peut retrouver intuitivement ce résultat.</p>
+<p>En effet, <strong>sachant que</strong> le résultat est un $\spade$, on a $1$ chance sur $8$ d&rsquo;obtenir le $K$.</p>
+<p>\ms</p>
+<p>\exemple</p>
+<p>Un sac contient $50$ boules, dont $20$ boules <strong>rouges</strong> et $30$ boules <strong>noires</strong>, où il est marqué soit &ldquo;Gagné&rdquo; ou soit &ldquo;Perdu&rdquo;.</p>
+<ul>
+<li>Sur $15$ boules <strong>rouges</strong>, il est marqué Gagné.</li>
+<li>Sur $9$ boules <strong>noires</strong>, il est marqué Gagné.</li>
+</ul>
+<p>On tire au hasard une boule dans le sac.</p>
+<ul>
+<li>Soit $R$ l&rsquo;événement : &ldquo;On tire une boule rouge&rdquo;</li>
+<li>$p(R)=\dfrac{20}{50}=0.4$</li>
+<li>Soit $G$ l&rsquo;événement : &ldquo;On tire une boule marquée Gagné&rdquo;</li>
+<li>$p(G)=\dfrac{15+9}{50}=\dfrac{24}{50}=0.48$</li>
+</ul>
+<p>On a :</p>
+<ul>
+<li>$R\cap G$ : &ldquo;On tire une boule rouge <strong>et</strong> marquée Gagné&rdquo;</li>
+<li>$p(R\cap G)=\dfrac{15}{50}=0.3$</li>
+</ul>
+<p>Donc la probabilité qu&rsquo;on tire une boule marquée Gagné <strong>sachant qu</strong>&lsquo;elle est rouge est :</p>
+<p>$$p_R(G)=\dfrac{p(R\cap G)}{p(R)}\quad=\dfrac{0.3}{0.4}\quad=0.75\qquad\qquad\pa{=\dfrac{15}{20}}$$</p>
+<p><strong>Sachant que</strong> le résultat est une boule rouge, on a $15$ chances sur $20$ qu&rsquo;il soit marqué Gagné.</p>
+<h2 id="proprietes">Propriétés</h2>
+<p>\prop</p>
+<p>Soit $A$ et $B$, deux événements avec $p(A)\neq 0$</p>
+<ul>
+<li>$\boxed{0\le P_A(B)\le 1}$</li>
+<li>$\boxed{P_A\pa{\overline{B}}=1-P_A(B)}$</li>
+<li>$\boxed{P(A\cap B)=P_A(B)\times P(A)}$</li>
+</ul>
+<h1 id="arbre-pondere-et-tableau">Arbre pondéré et tableau</h1>
+<h2 id="utilisation-dun-arbre-pondere-pour-modeliser-une-situation">Utilisation d&rsquo;un arbre pondéré pour modéliser une situation</h2>
+<p>\exemple</p>
+<p>Un sac contient $50$ boules, dont $20$ boules <strong>rouges</strong> et $30$ boules <strong>noires</strong>, où il est marqué soit &ldquo;Gagné&rdquo; ou soit &ldquo;Perdu&rdquo;.</p>
+<ul>
+<li>Sur $15$ rouges, il est marqué Gagné.</li>
+<li>Sur $9$ noires, il est marqué Gagné.</li>
+</ul>
+<p>\ms</p>
+<p>Soit $\quad R$ : &ldquo;On tire une boule rouge&rdquo;$\quad G$ : &ldquo;On tire une boule marquée Gagné&rdquo;</p>
+<p>\newpage</p>
+<p>L&rsquo;expérience aléatoire peut être schématisée par un arbre pondéré (ou arbre de probabilité)</p>
+<p>\ms</p>
+<p>\cimg{14cm}{img/03.png}</p>
+<p>\ms</p>
+<p><strong>\ul{Règle n°1 :}</strong> La somme des probabilités des branches issues d&rsquo;un même noeud est égale à 1.</p>
+<p>$P(R)+P\pa{\overline{R}}=1~\rarr$ &ldquo;Soit on tire une boule rouge, soit une noire&rdquo;</p>
+<p>\cimg{2cm}{img/04.png}</p>
+<p>\ms</p>
+<p><strong>\ul{Règle n°2 :}</strong> La probabilité d&rsquo;une &ldquo;feuille&rdquo; (extrémité d&rsquo;un chemin) est égale au <strong>produit</strong> des probabilités du chemin aboutissant à cette feuille.</p>
+<p>On considère la feuille $R\cap G$.</p>
+<p>$$
+\def\arraystretch{1.2}\begin{array}{rllll}
+P(R\cap G)&amp;=&amp;P(R)&amp;\times&amp;P_R(G)\
+~&amp;=&amp;0.4&amp;\times&amp;0.75\quad=0.3
+\end{array}
+$$</p>
+<p>\cimg{7cm}{img/05.png}</p>
+<p>\newpage</p>
+<p><strong>\ul{Règle n°3 : Probabilités totales}</strong></p>
+<p>La probabilité d&rsquo;un événement associé à plusieurs &ldquo;feuilles&rdquo; est égale à la <strong>somme</strong> des probabilités de chacune de ces &ldquo;feuilles&rdquo;.</p>
+<p>$G$ : &ldquo;On tire une boule marquée Gagné&rdquo; est associé aux feuilles $R\cap G$ et $R\cap \overline{G}$</p>
+<p>$P(G)=P(G\cap R)+P\pa{G\cap \overline{R}} = 0.3+0.48 = 0.18$</p>
+<p>\ms</p>
+<p>\cimg{13cm}{img/06.png}</p>
+<p>\ms</p>
+<p>\methode \ul{Calculer la probabilité d&rsquo;un événement associé à plusieurs feuilles}</p>
+<p>\bw{r}{4cm}\cimg{35mm}{img/07.png}\ew</p>
+<p>\ms</p>
+<p>Dans une classe , il y a $65\%$ de filles et un tiers des filles portent les cheveux courts ainsi que $4$ garçons sur $5$.</p>
+<p>On choisit un élève au hasard dans cette classe. On note :</p>
+<ul>
+<li>$F$ : &ldquo;l&rsquo;élève choisi est une fille&rdquo;</li>
+<li>$L$ : &ldquo;l&rsquo;élève choisi a les cheveux longs&rdquo;</li>
+</ul>
+<p>\ms</p>
+<p>Calculons $P(L)$</p>
+<p>On a :</p>
+<ul>
+<li>$P(F\cap L) = P(F)\times P_F(L) = 0.65\times\frac{2}{3}$ &gt; $\rarr$ &ldquo;Filles aux cheveux longs&rdquo;</li>
+<li>$P\pa{\overline{F}\cap L} = P\pa{\overline{F}}\times P_{\overline{F}}(L) = 0.35\times\frac{1}{5}$ &gt; $\rarr$ &ldquo;Garçons aux cheveux longs&rdquo;</li>
+</ul>
+<p>Donc</p>
+<p>$$
+\def\arraystretch{1.7}
+\begin{array}{rllll}
+P(L)&amp;=&amp;P(F\cap L)&amp;+&amp;P\pa{\overline{F}\cap L}\
+~&amp;=&amp;0.65\times\frac{2}{3}&amp;+&amp;0.35\times\frac{1}{5}\
+\end{array}
+$$</p>
+<p>\ms</p>
+<p>\cimg{16cm}{img/08.png}</p>
+<p>\newpage</p>
+<h2 id="utilisation-dun-tableau-de-probabiliteeffectifs-pour-modeliser-une-situation">Utilisation d&rsquo;un tableau de probabilité/effectifs pour modéliser une situation</h2>
+<p>\exemple</p>
+<p>Dans une classe de $32$ élèves, il y a $15$ garçons et $28$ demi-pensionnaires. $12$ garçons sont demi-pensionnaires.</p>
+<p>\begin{center}
+\begin{tabular}{|c|c|c|c|}\hline
+\rule[-3mm]{0mm}{8mm}~ &amp; \quad $D$\quad &amp; \quad$\overline{D}$\quad &amp; TOTAL\ \hline
+\rule[-3mm]{0mm}{8mm}$G$ &amp; $12$ &amp; \textcolor{red}{$3$} &amp; $15$ \ \hline
+\rule[-3mm]{0mm}{8mm}$F$ &amp; \textcolor{red}{$16$} &amp; \textcolor{red}{$1$} &amp; \textcolor{red}{$17$} \ \hline
+\rule[-3mm]{0mm}{8mm}TOTAL &amp; $28$ &amp; \textcolor{red}{$4$} &amp; $32$ \ \hline
+\end{tabular}
+\end{center}</p>
+<ul>
+<li>\ul{Probabilités simples :}</li>
+</ul>
+<p>$$P(G\cap D)=\frac{12}{32}\qquad P\pa{F\cap\overline{D}}=\frac{1}{32}\qquad P(G)=\frac{15}{32}$$</p>
+<p>\ms</p>
+<ul>
+<li>\ul{Probabilités conditionnelles :}</li>
+</ul>
+<p>$$P_G(D)=\frac{12}{15}\qquad P_{\overline{D}}(F)=\frac{1}{4}\qquad P_G\pa{\overline{D}}=\frac{3}{15}$$</p>
+<p>\ms</p>
+<p>On peut établir un <strong>tableau de probabilités</strong></p>
+<p>\begin{center}
+\begin{tabular}{|c|c|c|c|}\hline
+\rule[-3mm]{0mm}{8mm}~ &amp; \quad $D$\quad &amp;\quad$\overline{D}$\quad&amp;TOTAL\ \hline
+\rule[-3mm]{0mm}{8mm}$G$ &amp; $\frac{12}{32}$ &amp; $\frac{3}{32}$ &amp; $\frac{15}{32}$ \ \hline
+\rule[-3mm]{0mm}{8mm}$F$ &amp; $\frac{16}{32}$ &amp; $\frac{1}{32}$ &amp; $\frac{17}{32}$ \ \hline
+\rule[-3mm]{0mm}{8mm}TOTAL &amp; $\frac{28}{32}$ &amp; $\frac{4}{32}$ &amp; $\frac{32}{32}=1$ \ \hline
+\end{tabular}
+\end{center}</p>
+<p>On a :</p>
+<p>$$P_G(D)=\frac{P(G\cap D)}{P(G)}\quad=\frac{~\frac{12}{32}~}{\frac{15}{32}}\quad=\frac{12}{15}$$</p>
+<h1 id="independance">Indépendance</h1>
+<h2 id="definition-independance-de-2-evenements">Définition : Indépendance de 2 événements</h2>
+<p>\definition</p>
+<p>On dit que deux évènements $A$ et $B$ (de probabilité non nulle) sont <strong>indépendants</strong> lorsque :</p>
+<p>\ms</p>
+<p>\begin{center}\fbox{$A$ et $B$ indépendants $\Lrarr~P(A\cap B)=P(A)\times P(B)$}\end{center}</p>
+<p>\ms</p>
+<p>\rem</p>
+<p>$P(A\cap B)=P(A)\times P(B)~$ est vrai <strong>UNIQUEMENT</strong> si $A$ et $B$ sont indépendants.</p>
+<p>\ms</p>
+<p>\rem</p>
+<p>\begin{center}\fbox{$A$ et $B$ indépendants $\Lrarr~P_A(B)=P(B)~\text{ ou }~P_B(A)=P(A)$}\end{center}</p>
+<p>\ms</p>
+<p><strong>\ul{Preuve :}</strong></p>
+<p>$A$ et $B$ indépendants $\Rarr~P(A\cap B)=P(A)\times P(B)$</p>
+<p>Donc</p>
+<p>$$
+\begin{aligned}
+ P_A(B)&amp;=\frac{P(A\cap B)}{P(A)}\
+ ~&amp;=\frac{P(A)\times P(B)}{P(A)}\quad=P(B)\
+ \end{aligned}
+$$</p>
+<p>\newpage</p>
+<p>\exemple</p>
+<p>On tire une carte dans une jeu de $32$ cartes.</p>
+<p>\bw{r}{7cm}\cimg{5cm}{img/02.png}\ew</p>
+<p>On considère les événements suivants :</p>
+<ul>
+<li>$A$ : &ldquo;La carte tirée est un $\spade$&rdquo;
+  $\quad\rarr P(A)=\dfrac{8}{32}=\dfrac{1}{4}$</li>
+<li>$B$ : &ldquo;La carte tirée est un $K$&rdquo;
+  $\quad\rarr P(B)=\dfrac{4}{32}=\dfrac{1}{8}$</li>
+<li>$~A\cap B$ : &ldquo;La carte est le $K\spade$&rdquo;
+  $\quad\rarr P(A\cap B)=\dfrac{1}{32}$</li>
+</ul>
+<p>On constate que :</p>
+<p>$$P(A)\times P(B)=\frac{1}{4}\times\frac{1}{8}=\frac{1}{32}=P(A\cap B)$$</p>
+<p>Donc $~A~$ et $~B~$ sont indépendants.</p>
+<h2 id="repetition-dexperience-aleatoires-et-independantes-a-laide-dun-arbre">Répétition d&rsquo;expérience aléatoires et indépendantes à l&rsquo;aide d&rsquo;un arbre</h2>
+<p>\methode \ul{Représenter la répétition d&rsquo;expériences identiques et indépendantes dans un arbre}</p>
+<p>\bw{r}{3cm}\cimg{3cm}{img/09.png}\ew</p>
+<p>\ms</p>
+<p>Une urne contient $3$ boules blanches et $2$ boules rouges. On tire au hasard une boule et <strong>on la remet dans l&rsquo;urne</strong> et on répète l&rsquo;expérience <strong>deux fois</strong> de suite.</p>
+<p>Soit</p>
+<ul>
+<li>$A$ : &ldquo;Tirer une boule blanche&rdquo; $\quad\rarr P(A)=\dfrac{3}{5}=0.6$</li>
+<li>$B$ : &ldquo;Tirer une boule rouge&rdquo; $\quad\rarr P(B)=\dfrac{2}{5}=0.4$</li>
+</ul>
+<p>\ms</p>
+<p>On peut représenter la situation par un arbre.</p>
+<p>\ms</p>
+<p>\cimg{9cm}{img/10.png}</p>
+<p>\ms</p>
+<p>Soit :</p>
+<ul>
+<li>$E_1$ : &ldquo;Obtenir 2 blanches&rdquo;</li>
+<li>$P(E_1)=P(A;A)=0.36$
+    \ms</li>
+<li>$E_2$ : &ldquo;Obtenir 1 blanche et 1 rouge&rdquo;</li>
+<li>$P(E_2)=P(A;B)+P(B;A)=0.24+0.24=0.48$
+    \ms</li>
+<li>$E_3$ : &ldquo;Obtenir <strong>au moins</strong> 1 blanche&rdquo;</li>
+<li>$P(E_3)=P(E_1)+P(E_2)=0.36+0.48=0.84$</li>
+<li>ou $P(E_3)=1-P(B;B)=1-0.16=0.84$</li>
+</ul>
+<p>\ms</p>
+<p>\rem Pour une expérience dont <strong>le nombre d&rsquo;issues ou le nombre de répétition est supérieur à 2</strong>, le principe reste le même.</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.8/mermaid.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-mermaid.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

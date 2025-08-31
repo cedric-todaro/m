@@ -1,9 +1,10 @@
+:%s/# /## /g
 :%s/\\dfrac/\\cfrac/g
 :%s/\\tfrac/\\cfrac/g
 :%s/\\frac/\\cfrac/g
+:%s/\\Lrarr/\\iff/g
 :%s/\\Leftrightarrow/\\iff/g
 :%s/colorbox/cbox/g
-:%s/# /## /g
 :g/cimg/norm fgfgyi}o![](jkpA){width=50%}
 :%s/less/lt/g
 :%s/\\\\/\\\\\\\\/g
