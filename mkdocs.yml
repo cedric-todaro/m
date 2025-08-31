@@ -25,6 +25,9 @@ nav:
           - 2nde/Statistiques-descriptives.md
           - 2nde/Probabilite.md
           - 2nde/Probabilite-echantillonnage.md
+  - 1spe:
+      - 1spe/Derivation-1.md
+
   # - Divers:
   #     - Help: divers.md
   #     - Testouille: test.md

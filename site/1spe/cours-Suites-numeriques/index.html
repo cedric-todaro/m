@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cedric-todaro.github.io/m/1spe/cours-Suites-numeriques/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Suites numériques - Math pour le lycée</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../extra.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-mermaid.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Suites num\u00e9riques";
+        var mkdocs_page_input_path = "1spe/cours-Suites-numeriques.md";
+        var mkdocs_page_url = "/m/1spe/cours-Suites-numeriques/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Math pour le lycée
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" aria-label="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Accueil</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2nde</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Fonctions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Generalites-sur-les-fonctions/">Généralités sur les fonctions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Variations-de-fonctions/">Variation de fonctions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Fonctions-affines/">Fonctions affines</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Fonctions-de-reference/">Fonctions de références</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Géométrie</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Reperage-et-configuration-dans-le-plan/">Repérage dans le plan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Notion-de-vecteur/">Notion de vecteur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Vecteurs-et-coordonnees/">Vecteurs et coordonnées</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Vecteurs-et-colinearite/">Vecteurs et colinéarité</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Droites-du-plan/">Droites du plan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Droites-et-systemes/">Droites et systèmes</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Algèbre</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Calcul-algebrique/">Calcul algébrique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Ensembles-de-nombres/">Ensemble de nombres</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Arithmetique/">Arithmétique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Proportion-evolution/">Proportion et évolution</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistiques/Probabilité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Statistiques-descriptives/">Statistiques descriptives</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Probabilite/">Probabilité</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Probabilite-echantillonnage/">Probabilité et échantillonnage</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">1spe</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Derivation-1/">Dérivation (1) : Nombre dérivé</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Math pour le lycée</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Documents"></a></li>
+      <li class="breadcrumb-item active">Suites numériques</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="definition">Définition</h1>
+<p>\exemple On considère une liste de nombres impairs : $1, 3, 5, 7, \dots$</p>
+<p>On note $u_{n}$ l&rsquo;ensemble des &ldquo;éléments&rdquo; de cette suite de nombres tel que :
+$$u_0=1\quad ;\quad u_1=3\quad ;\quad u_2=5\quad ;\quad u_3=7 , \ldots$$</p>
+<p>On a ainsi défini une <strong>suite numérique</strong>.
+On peut lui associer une fonction définie sur $\N$ par $u$ :</p>
+<p>$$
+\begin{array}{ccc}
+\N&amp;\mapsto&amp;\R\
+n&amp;\mapsto&amp;u(n)=u_{n}
+\end{array}
+$$</p>
+<h2 id="definition-suite-numerique">Définition : Suite numérique</h2>
+<p>\definition</p>
+<p>Une <strong>suite numérique</strong> $(u_{n})$ est une liste <strong>indexée</strong> de nombres réels telle qu&rsquo;à tout nombre entier $n$ on associe un nombre réel noté $u_{n}$.</p>
+<p>$u_{n}$ est appelé <strong>le terme de rang</strong> $n$ de cette suite (ou d&rsquo;indice $n$).</p>
+<p>\exemple</p>
+<p>$$
+\def\arraystretch{1.6}\begin{array}{|c|c|c|c|c|c|c|c|c|}\hline
+n   &amp; 0   &amp; 1   &amp; 2   &amp; 3   &amp; 4   &amp; 5   &amp; 6    &amp; \ldots\ \hline
+u_n &amp; 0.1 &amp; 0.1 &amp; 0.2 &amp; 0.3 &amp; 0.5 &amp; 0.8 &amp; -1.3 &amp; \ldots\ \hline
+\end{array}
+$$</p>
+<p>Le terme de <strong>rang</strong> $5$ est $u_5$ et il vaut $0.8$. $\quad$ on note $~u_5=0.8$</p>
+<p>\newpage</p>
+<h2 id="definition-suite-numerique-definie-explicitement">Définition : Suite numérique définie &ldquo;explicitement&rdquo;</h2>
+<p>\bw{r}{5cm}\cimg{5cm}{img/01a}\ew</p>
+<p>\definition</p>
+<p>Lorsque l&rsquo;on définie une suite &ldquo;explicite&rdquo;, chaque terme de la suite est exprimé en fonction de $n$ et <strong>indépendamment des termes précédents</strong>.</p>
+<p>\ms</p>
+<p>\exemple</p>
+<p>Pour tout $n$ de $\N$, on donne : $~u_{n}=2\times \mtc{red}{n}$</p>
+<p>$$
+\begin{array}{rclcl}
+u_{\mtc{red}{0}} &amp;=&amp; 2 \times \mtc{red}{0} &amp;=&amp; 0\
+u_{\mtc{red}{1}} &amp;=&amp; 2 \times \mtc{red}{1} &amp;=&amp; 2\
+u_{\mtc{red}{2}} &amp;=&amp; 2 \times \mtc{red}{2} &amp;=&amp; 4\
+u_{\mtc{red}{3}} &amp;=&amp; 2 \times \mtc{red}{3} &amp;=&amp; \ldots
+\end{array}
+$$</p>
+<p>\ms</p>
+<p>\exemple</p>
+<p>Pour tout $n$ de $\N$, on donne : $~v_n=3\mtc{red}{n}^2-1$</p>
+<p>Les premiers termes de cette suite sont donc :</p>
+<p>$$
+\begin{array}{rclcl}
+v_{\mtc{red}{0}} &amp;=&amp; 3 \times \mtc{red}{0}^2 - 1 &amp; = &amp; -1\
+v_{\mtc{red}{1}} &amp;=&amp; 3 \times \mtc{red}{1}^2 - 1 &amp; = &amp; 2\
+v_{\mtc{red}{2}} &amp;=&amp; 3 \times \mtc{red}{2}^2 - 1 &amp; = &amp; 11\
+v_{\mtc{red}{3}} &amp;=&amp; 3 \times \mtc{red}{3}^2 - 1 &amp; = &amp; \ldots
+\end{array}
+$$</p>
+<p>\ms</p>
+<p>\rem $\qquad\boxed{\text{Explicite}\quad\Rightarrow\quad\text{En fonction de }\mtc{red}{n}}$</p>
+<h2 id="definition-suite-numerique-recurrentes">Définition : Suite numérique &ldquo;récurrentes&rdquo;</h2>
+<p>\definition</p>
+<p>Lorsqu&rsquo;on génère une suite par une <strong>relation de récurrence</strong>, chaque terme de la suite s&rsquo;obtient à partir d&rsquo;un (ou plusieurs) terme(s) précédent(s).</p>
+<p>\ms</p>
+<p>\exemple</p>
+<p>On définit la suite $(u_{n})$ par :</p>
+<p>$u_0 = 5\quad$ et chaque terme est le <strong>triple</strong> de son précédent</p>
+<p>Les premiers termes de cette suite sont donc :</p>
+<p>$$
+\begin{array}{rclclcl}
+\mtc{red}{u_0} &amp;=&amp; \mtc{red}{5} &amp;~&amp;~&amp;~&amp;~\
+\mtc{blue}{u_1} &amp;=&amp; 3\times \mtc{red}{u_0} &amp;=&amp; 3\times \mtc{red}{5}  &amp;=&amp; \mtc{blue}{15}\
+\mtc{violet}{u_2} &amp;=&amp; 3\times \mtc{blue}{u_1} &amp;=&amp; 3\times \mtc{blue}{15} &amp;=&amp; \mtc{violet}{45}
+\end{array}
+$$</p>
+<p>De façon générale, on peut noter : $\quad\boxed{u_{n+1}=3\times u_{n}}$</p>
+<p>\ms</p>
+<p>\exemple</p>
+<p>On définit la suite $(v_n)$ par :</p>
+<p>$v_0 = 3\quad$ et pour tout $n$ de $\N$, $\quad v_{n+1}=4\times v_n-6$</p>
+<p>Les premiers termes de cette suite sont donc :</p>
+<p>$$
+\begin{array}{rclclcl}
+\mtc{red}{v_0} &amp;=&amp; \mtc{red}{3}\
+\mtc{blue}{v_1} &amp;=&amp; 4\times\mtc{red}{v_0}-6 &amp;=&amp; 4\times \mtc{red}{3}  - 6 &amp;=&amp; \mtc{blue}{6}\
+\mtc{violet}{v_2} &amp;=&amp; 4\times\mtc{blue}{v_1}-6 &amp;=&amp; 4\times \mtc{blue}{6}  - 6 &amp;=&amp; \mtc{violet}{18}\
+\mtc{ForestGreen}{v_3} &amp;=&amp; 4\times\mtc{violet}{v_2}-6 &amp;=&amp; 4\times \mtc{violet}{18} - 6 &amp;=&amp; \mtc{ForestGreen}{66}\
+\end{array}
+$$</p>
+<p>\ms</p>
+<p>\rem $\qquad\boxed{\text{Récurrente}\quad\Rightarrow\quad u_{n+1}~\text{ en fonction de }~u_{n}}$</p>
+<p>\newpage</p>
+<h2 id="representation-graphique-dune-suite">Représentation graphique d&rsquo;une suite</h2>
+<p>\prop</p>
+<p>Dans un repère du plan, on représente une suite par un <strong>nuage de points</strong> de coordonnées $(n ; u_{n})$.</p>
+<p>\ms</p>
+<p>\exemple</p>
+<p>\bw{r}{8cm}\cimg{8cm}{img/02tt.png}\vspace{-1cm}\ew</p>
+<p>Pour tout $\mtc{red}{n}$ de $\N$, on donne : $\quad u_{n}= \dfrac{\mtc{red}{n}^2}{2} - 3$</p>
+<ul>
+<li>Tableau de valeurs des termes de la suite :</li>
+</ul>
+<p>$$
+\def\arraystretch{1.6}\begin{array}{|c|c|c|c|c|c|c|c|c|c|c}\hline
+\mtc{red}{n}    &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8&amp;\ldots\ \hline
+u_{\mtc{red}{n}}  &amp; -3 &amp; -2.5 &amp; \mtc{blue}{-1} &amp; 1.5 &amp; \mtc{ForestGreen}{5} &amp; 9.5 &amp; 15 &amp; 21.5 &amp; 29&amp;\ldots\ \hline
+\end{array}
+$$</p>
+<p>On a, par exemple :</p>
+<p>$$u_{\mtc{red}{2}}=\frac{\mtc{red}{2}^2}{2}-3 =2-3 = \mtc{blue}{-1}\quad\text{ et }\quad u_{\mtc{red}{4}}=\frac{\mtc{red}{4}^2}{2}-3 = 8-3 = \mtc{ForestGreen}{5}$$</p>
+<p>$$
+\def\arraystretch{1.6}\begin{array}{|c|c|c|c|c|c|c|c|c|c|}\hline
+\text{Point} &amp; P_1 &amp; P_2 &amp; P_3 &amp; P_4 &amp; P_5 &amp; P_6 &amp; P_7 &amp; P_8&amp;P_9\ \hline
+x=\mtc{red}{n}    &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8\ \hline
+y=u_{\mtc{red}{n}}  &amp; -3 &amp; -2.5 &amp; -1 &amp; 1.5 &amp; 5 &amp; 9.5 &amp; 15 &amp; 21.5 &amp; 29\ \hline
+\end{array}
+$$</p>
+<h1 id="suites-arithmetiques-geometriques">Suites arithmétiques / géométriques</h1>
+<h2 id="definition-suites-arithmetiques">Définition : Suites arithmétiques</h2>
+<p>Une suite $u_{n}$ est une suite <strong>arithmétique</strong> s&rsquo;il existe un nombre $r$ tel que, pour tout entier $n$, on a :</p>
+<p>$$\boxed{u_{n+1}=u_{n}+\mtc{ForestGreen}{r}}$$</p>
+<p>Le nombre $\mtc{ForestGreen}{r}$ est appelé <strong>raison</strong> de la suite.</p>
+<p>\rem</p>
+<p>$$\quad\boxed{\text{Suite arithmétique}~\Rightarrow~\text{On \underline{\textbf{ajoute}} toujours la même quantité}}$$</p>
+<p>\ms</p>
+<p>\cimg{16cm}{img/03}</p>
+<p>\newpage</p>
+<p>\exemple</p>
+<p>$u_0=10$ et $r=3$</p>
+<p>Considérons une suite définie par : $\quad u_{n+1}=u_{n}-3\quad\text{et}\quad u_0=10$</p>
+<p>$(u_n)$ est une <strong>suite arithmétique</strong> de raison $(-3)$ et de terme initial $10$</p>
+<p>$$
+\begin{array}{rclclcl}
+\mtc{red}{u_0}&amp;=&amp; \mtc{red}{10}  &amp;~&amp;~\
+\mtc{ForestGreen}{u_1}&amp;=&amp; \mtc{red}{u_0}-3=&amp; \mtc{red}{10}-3&amp;=&amp;\mtc{ForestGreen}{7}\
+\mtc{blue}{u_2}&amp;=&amp; \mtc{ForestGreen}{u_1}-3 =&amp; \mtc{ForestGreen}{7}-3&amp;=&amp;\mtc{blue}{4}\
+\mtc{violet}{u_3}&amp;=&amp; \ldots&amp;~&amp;~
+\end{array}
+$$</p>
+<h2 id="propriete-variation-dune-suite-arithmetique">Propriété : Variation d&rsquo;une suite arithmétique</h2>
+<p>Soit $(u_{n})$ est une suite <strong>arithmétique</strong> de raison $\mtc{ForestGreen}{r}$</p>
+<ul>
+<li>si $~r&gt;0~$ alors la suite $~(u_{n})~$ est <strong>croissante</strong>.</li>
+<li>si $~r=0~$ alors la suite $~(u_{n})~$ est <strong>constante</strong>.</li>
+<li>si $~r\less 0~$ alors la suite $~(u_{n})~$ est <strong>décroissante</strong>.</li>
+</ul>
+<p>\ms</p>
+<p>\exemple</p>
+<p>Soit $(u_{n})$ définie sur $\N$ par $\quad u_{n+1}=u_{n}-4~$ et $~u_0=5$</p>
+<p>$(u_{n})$ est une <strong>suite arithmétique</strong> de raison $~r=(-4)\less 0~$ donc <strong>décroissante</strong></p>
+<h2 id="representation-graphique-dune-suite-arithmetique">Représentation graphique d&rsquo;une suite arithmétique</h2>
+<p>Les points de la représentation graphique d&rsquo;une <strong>suite arithmétique</strong> sont <strong>alignés</strong>.</p>
+<p>\ms</p>
+<p>\exemple</p>
+<p>On a représenté la suite <strong>arithmétique</strong> de raison $(-0.5)$ et de terme initial $4$.</p>
+<p>$$
+\def\arraystretch{1.6}
+\begin{array}{|c|c|c|c|c|c|c|c|c}\hline
+u_0 &amp; u_1 &amp; u_2 &amp; u_3 &amp; u_4 &amp; u_5 &amp; u_6 &amp; u_7 &amp; \ldots\ \hline
+  4 &amp; 3.5 &amp;  3  &amp; 2.5 &amp;  2  &amp; 1.5 &amp;  1  &amp; 0.5 &amp; \ldots\ \hline
+\end{array}
+$$</p>
+<p>\ms</p>
+<p>\cimg{12cm}{img/04.png}</p>
+<p>\newpage</p>
+<h2 id="propriete-terme-general-dune-suite-arithmetique">Propriété : Terme général d&rsquo;une suite arithmétique</h2>
+<p>\prop</p>
+<p>Soit $u_{n}$, une suite <strong>arithmétique</strong> de raison $r$. On a :</p>
+<p>$$\boxed{u_{n}=u_0+n\times r}$$</p>
+<p>\ms</p>
+<p>\cimg{14cm}{img/05.png}</p>
+<p>\ms</p>
+<p>\rem $\boxed{u_{n}=u_{\mtc{blue}{1}}+(n-\mtc{blue}{1})\times r}$</p>
+<p>\ms</p>
+<p>\exemple</p>
+<p>Considérons une suite définie par : $\quad u_{n+1}=u_{n}-3\quad\text{et}\quad u_0=10$</p>
+<p>$(u_n)$ est une <strong>suite arithmétique</strong> de raison $r=(-3)$</p>
+<p>$$
+\def\arraystretch{1.8}\begin{array}{|c|c|c|c|c|c|c|c|c|c}\hline
+n &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; \mtc{red}{7} &amp; \ldots\ \hline
+u_n &amp;10 &amp; 7 &amp; 4 &amp; 1 &amp; (-2) &amp; (-5) &amp; (-8) &amp; (-11) &amp; \ldots\ \hline
+\end{array}
+$$</p>
+<p>On a :</p>
+<p>$$u_n=u_0+n\times r\quad\Lrarr\quad \boxed{u_n=10-3n}$$</p>
+<p>Avec cette expression : $\quad u_{\mtc{red}{7}}=\quad 10-3\times \mtc{red}{7}\quad=10-21\quad=(-11)$</p>
+<hr />
+<p>\ms</p>
+<p>\cimg{18cm}{img/06.png}</p>
+<p>\newpage</p>
+<h2 id="definition-suites-geometriques">Définition : Suites géométriques</h2>
+<p>\definition</p>
+<p>Une suite $u_{n}$ est une suite <strong>géométrique</strong> s&rsquo;il existe un nombre $q$, <strong>strictement positif</strong>, tel que, pour tout entier $n$, on a :</p>
+<p>$$\boxed{u_{n+1}=u_{n}\times \mtc{blue}{q}}$$</p>
+<p>Le nombre $\mtc{blue}{q}$ est appelé <strong>raison</strong> de la suite.</p>
+<p>\ms</p>
+<p>\rem</p>
+<p>$$\quad\boxed{\text{Suite géométrique}~\Rightarrow~\text{On \underline{\textbf{multiple}} toujours par la même quantité positive}}$$</p>
+<p>\cimg{16cm}{img/07}</p>
+<p>\exemple</p>
+<p>$u_0=2$ et $q=7$</p>
+<p>Considérons une suite définie par : $\quad u_{n+1}=0.5\times u_{n}\quad\text{et}\quad u_0=100$</p>
+<p>$(u_n)$ est une <strong>suite géométrique</strong> de raison $r=0.5$</p>
+<p>$$
+\def\arraystretch{1.8}
+\begin{array}{|c|c|c|c|c|c|c|c}\hline
+n &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; \ldots\ \hline
+u_n &amp; 100 &amp; 50 &amp; 25 &amp; 12.5 &amp; 6.25 &amp; 3.125 &amp;  \ldots\ \hline
+\end{array}
+$$</p>
+<h2 id="propriete-variation-dune-suite-geometrique">Propriété : Variation d&rsquo;une suite géométrique</h2>
+<p>\prop</p>
+<p>Soit $(u_{n})$ est une suite <strong>géométrique</strong> de raison $\mtc{blue}{q}$. Le sens de variation de $u_n$ dépend de <strong>la valeur</strong> de $\mtc{blue}{q}$ et du <strong>signe</strong> de $u_0$.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Cas $u_0 &gt; 0$</strong></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"><strong>Cas $u_0\less 0$</strong></th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">$0\less q\less 1$</td>
+<td style="text-align: center;">$q&gt;1$</td>
+<td style="text-align: center;">$0\less q\less 1$</td>
+<td style="text-align: center;">$q&gt;1$</td>
+</tr>
+<tr>
+<td style="text-align: center;">$u_n$ décroissante</td>
+<td style="text-align: center;">$u_n$ croissante</td>
+<td style="text-align: center;">$u_n$ croissante</td>
+<td style="text-align: center;">$u_n$ décroissante</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img alt="" src="img/08a.png" width="3.5cm" /></td>
+<td style="text-align: center;"><img alt="" src="img/08b.png" width="3.5cm" /></td>
+<td style="text-align: center;"><img alt="" src="img/08c.png" width="3.5cm" /></td>
+<td style="text-align: center;"><img alt="" src="img/08d.png" width="3.5cm" /></td>
+</tr>
+</tbody>
+</table>
+<p>\newpage</p>
+<p>\exemple</p>
+<p>Soit $(u_{n})$ définie sur $\N$ par $\quad u_{n+1}=u_{n}\times 0.8~$ et $~u_0=1~500$</p>
+<p>$(u_{n})$ est une <strong>suite géométrique</strong> de raison $~q=0.8$</p>
+<p>Donc $(u_{n})$ est <strong>décroissante</strong> car $q=0.8\less 1$ et $u_0=1~500$ positif</p>
+<p>$$
+\def\arraystretch{1.8}
+\begin{array}{|c|c|c|c|c|c|c|c}\hline
+n &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; \ldots\ \hline
+u_n &amp; 1~500 &amp; 1~200 &amp; 960 &amp; 768 &amp; 614.4 &amp; 491.52 &amp;  \ldots\ \hline
+\end{array}
+$$</p>
+<h2 id="representation-graphique-dune-suite-geometrique">Représentation graphique d&rsquo;une suite géométrique</h2>
+<p>Les points de la représentation graphique d&rsquo;une <strong>suite géométrique</strong> ne sont pas <strong>alignés</strong>.</p>
+<p>\exemple On a représenté la suite <strong>géométrique</strong> de raison $0.5$ et de terme initial $5$.</p>
+<p>$$u_{n+1}=0.5\times u_{n}\quad\text{et}\quad u_0=5$$</p>
+<p>$$
+\def\arraystretch{1.8}\begin{array}{|c|c|c|c|c|c}\hline
+u_0 &amp; u_1 &amp; u_2  &amp; u_3   &amp; u_4    &amp; \ldots\ \hline
+5   &amp; 2.5 &amp; 1.25 &amp; 0.625 &amp; 0.3125 &amp; \ldots\ \hline
+\end{array}
+$$</p>
+<p>\cimg{8cm}{img/09}</p>
+<h2 id="propriete-terme-general-dune-suite-geometrique">Propriété : Terme général d&rsquo;une suite géométrique</h2>
+<p>\prop</p>
+<p>Soit $u_{n}$, une suite <strong>géométrique</strong> de raison $q$. On a :</p>
+<p>$$\boxed{u_{n}=u_0\times q^{n}}$$</p>
+<p>\ms</p>
+<p>\cimg{16cm}{img/10}</p>
+<p>\ms</p>
+<p>\rem $\boxed{u_{n}=u_{\mtc{blue}{1}}\times q^{(n-\mtc{blue}{1})}}$</p>
+<p>\newpage</p>
+<p>\exemple</p>
+<p>Considérons une suite définie par : $\quad u_{n+1}=u_{n}\times 0.25\quad\text{et}\quad u_0=100$</p>
+<p>$(u_n)$ est une <strong>suite géométrique</strong> de raison $q=0.25$</p>
+<p>$$
+\def\arraystretch{1.8}\begin{array}{|c|c|c|c|c|c|c|c|c|c}\hline
+n   &amp; 0   &amp; 1  &amp; 2    &amp; 3      &amp; 4        &amp; 5            &amp; 6            &amp; \mtc{red}{7} &amp; \ldots\ \hline
+u_n &amp; 100 &amp; 25 &amp; 6.25 &amp; 1.5625 &amp; 0.390625 &amp; 0.0976\ldots &amp; 0.0244\ldots &amp; 0.0061\ldots &amp; \ldots\ \hline
+\end{array}
+$$</p>
+<p>On a :</p>
+<p>$$\quad u_n=u_0\times q^{n}\quad\Lrarr\quad u_n=100\times 0.25^{n}$$</p>
+<p>Avec cette expression : $\quad u_{\mtc{red}{7}}=\quad 100\times 0.25^{\mtc{red}{7}}\quad\approx 0.0061$</p>
+<hr />
+<p>\ms</p>
+<p>\cimg{17cm}{img/10a.png}</p>
+<h1 id="sens-de-variation-dune-suite-numerique">Sens de variation d&rsquo;une suite numérique</h1>
+<h2 id="definition-sens-de-variation-dune-suite-numerique">Définition : Sens de variation d&rsquo;une suite numérique</h2>
+<p>Soit un entier $p$ et une suite numérique $(u_n)$</p>
+<ul>
+<li>
+<p>$(u_{n})$ est <strong>\fbox{croissante}</strong> à partir du rang $p$ signifie que pour $n\ge p$, on a :
+  $$\boxed{u_{n+1}\ge u_{n}}$$</p>
+</li>
+<li>
+<p>$(u_{n})$ est <strong>\fbox{décroissante}</strong> à partir du rang $p$ signifie que pour $n\ge p$, on a :
+  $$\boxed{u_{n+1}\le u_{n}}$$</p>
+</li>
+</ul>
+<p>\newpage</p>
+<p>\exemple Dans cet exemple, $~(u_n)~$ est croissante $\quad$ (à partir de $n=3$)</p>
+<p>\cimg{16cm}{img/11.png}</p>
+<p>\ms</p>
+<p>\methode \ul{Étudier les variations d&rsquo;une suite (1)}</p>
+<p>\ms</p>
+<p>On peut étudier le <strong>signe</strong> de $(u_{n+1}-u_{n})$</p>
+<ul>
+<li>Si $(u_{n+1} - u_{n}) &gt; 0$ alors $u_{n}$ est <strong>croissante</strong></li>
+<li>Si $(u_{n+1} - u_{n}) \less  0$ alors $u_{n}$ est <strong>décroissante</strong></li>
+</ul>
+<p>\exemple</p>
+<p>Pour tout $n\in\N$, on donne la suite $(u_{n})$ définie par : $u_{n}=n^2-4n+4$</p>
+<p>$u_{n+1}$ c&rsquo;est lorsque l&rsquo;on remplace $n$ par $n+1$ :</p>
+<p>$$
+\begin{aligned}
+u_{n+1}&amp;=(n+1)^2-4(n+1)+4\
+&amp;=(n^2+2n+1) -(4n+4)+4\
+&amp;=n^2-2n+1
+\end{aligned}
+$$</p>
+<p>Donc :</p>
+<p>$$
+\begin{aligned}
+u_{n+1} - u_{n} &amp;= (n^2-2n+1)\quad - \quad(n^2-4n+4)\
+&amp;= n<sup>2-n</sup>2-2n+4n+1-4\
+&amp;= 2n-3
+\end{aligned}
+$$</p>
+<p>\ms</p>
+<p>Signe de $~(u_{n+1} - u_{n})$</p>
+<p>$$
+\def\arraystretch{1.2}\begin{array}{rclc}
+(u_{n+1}-u_{n})\ge 0&amp;\Lrarr&amp;2n-3\ge 0\
+&amp;\Lrarr&amp;2n\ge 3\
+&amp;\Lrarr&amp;n\ge \frac{3}{2}\quad\Lrarr n\ge2
+\end{array}
+$$</p>
+<p>Ainsi pour $~n\ge 2~$ (n est entier), on a $~(u_{n+1}-u_{n})\ge 0$.</p>
+<p>\ms</p>
+<p>On en déduit qu&rsquo;à partir du rang $2$ la suite $(u_{n})$ est <strong>croissante</strong>.</p>
+<p>\methode \ul{Étudier les variations d&rsquo;une suite (2)}</p>
+<p>On peut étudier $\left(\frac{u_{n+1}}{u_{n}}\right)$</p>
+<ul>
+<li>Si $\left(\frac{u_{n+1}}{u_{n}}\right) &gt; 1$ alors $u_{n}$ est <strong>croissante</strong></li>
+<li>Si $\left(\frac{u_{n+1}}{u_{n}}\right) \less  1$ alors $u_{n}$ est <strong>décroissante</strong></li>
+</ul>
+<h2 id="propriete-sens-de-variation-de-u_nfn">Propriété : Sens de variation de $~u_{n}=f(n)$</h2>
+<p>Soit une fonction $f$ définie sur $\left[0 ; +\infty\right[$ et $(u_{n})$ définie sur $\N$ par $u_{n}=f(n)$.
+Soit un entier $p$.</p>
+<ul>
+<li>Si $f$ est <strong>croissante</strong> sur $\left[p ; +\infty\right[$, alors $(u_{n})$ est <strong>croissante</strong> à partir du rang $p$</li>
+<li>Si $f$ est <strong>décroissante</strong> sur $\left[p ; +\infty\right[$, alors $(u_{n})$ est <strong>décroissante</strong> à partir du rang $p$</li>
+</ul>
+<p>\rem La réciproque de cette propriété est \textbf{fausse}.</p>
+<p>\ms</p>
+<p>\methode \ul{Étudier les variations d&rsquo;une suite à l&rsquo;aide de la fonction associée}</p>
+<p>\ms</p>
+<p>Étudions le sens de variation de $u_{n}=n^2-n+1$</p>
+<p>On a $~u_{n}=f(n)\quad$ avec $\quad f(x)=x^2-x+1~$ (fonction du 2nd degré)</p>
+<p>Le minimum de $f$ est atteint pour $~x=\dfrac{(-b)}{2a}=\dfrac{-(-1)}{(2\times 1)}=\dfrac{1}{2}~$ et $~a=1&gt;0$</p>
+<p>\ms</p>
+<p>\cimg{12cm}{img/12}</p>
+<p>\ms</p>
+<p>Conclusion : $\quad u_{n}$ est <strong>croissante</strong> pour $n\ge 1$</p>
+<h1 id="somme-des-termes-consecutifs">Somme des termes consécutifs</h1>
+<h2 id="cas-dune-suite-arithmetique">Cas d&rsquo;une suite arithmétique</h2>
+<p>\prop \ul{Somme de $1$ à $n$}</p>
+<p>$n$ est un entier naturel non nul alors on a :</p>
+<p>$$\boxed{1+2+3+\ldots+n=\dfrac{n(n+1)}{2}}$$</p>
+<p>\bw{r}{4cm}\vspace{-4cm}
+\cimg{4cm}{img/14}
+\begin{center}Carl Friedrich Gauss (1777-1855)\end{center}
+\ew</p>
+<p>\exemple $\quad1+2+3+\ldots+100\quad=\frac{100\times 101}{2}\quad=5050$</p>
+<p>\ms</p>
+<p>\methode \ul{Calculer la somme des termes d&rsquo;une suite arithmétique}</p>
+<p>\ms</p>
+<p>Calculons $~S=33+36+39+\ldots+267\quad$ Suite arithmétique de raison $=3$</p>
+<p>$$
+\def\arraystretch{1.3}\begin{array}{rcl}
+S&amp;=&amp;33+36+39\ldots+267\
+ &amp;=&amp;3\times \mtc{blue}{(11+12+13\ldots+89)}\
+ &amp;=&amp;3\times \left(\mtc{ForestGreen}{(1+2+3+\ldots+89)}-\mtc{red}{(1+2+3+\ldots+10)}\right)\
+ &amp;=&amp;3\times \left(\mtc{ForestGreen}{\frac{89\times 90}{2}}-\mtc{red}{\frac{10\times 11}{2}}\right)\quad=11~850
+\end{array}
+$$</p>
+<p>$$
+\begin{array}{|c|}
+\begin{array}{lcr}\larr~\quad\qquad\qquad~\mtc{ForestGreen}{\text{somme de 1 à 89}}~\qquad\qquad\quad~\rarr\end{array}                                   \
+\begin{array}{l|r}\larr\mtc{red}{\text{somme de 1 à 10}}\rarr&amp;\larr\mtc{blue}{\text{somme de 11 à 89}}\rarr\end{array}\
+\begin{array}{lr}\begin{array}{ccccc}~1&amp;~2&amp;\ldots&amp;~9&amp;10\end{array}&amp;\begin{array}{ccccc}11&amp;12&amp;\ldots&amp;88&amp;89\end{array}\end{array}
+\end{array}
+$$</p>
+<p>\ms</p>
+<p>\demo</p>
+<p>$$
+\def\arraystretch{1.2}\begin{array}{rccccccccccccc}
+&amp;S&amp;=&amp;1&amp;+&amp;2&amp;+&amp;3&amp;+&amp;\ldots&amp;+&amp;(n-1)&amp;+&amp;n\
++&amp;S&amp;=&amp;n&amp;+&amp;(n-1)&amp;+&amp;(n-2)&amp;+&amp;\ldots&amp;+&amp;2&amp;+&amp;1\ \hline
+~&amp;2S&amp;=&amp;(n+1)&amp;+&amp;(n+1)&amp;+&amp;(n+1)&amp;+&amp;\ldots&amp;+&amp;(n+1)&amp;+&amp;(n+1)\
+\end{array}
+$$</p>
+<p>Donc :</p>
+<p>$$2S=n\times (n+1)\quad\Lrarr\quad S=\dfrac{n(n+1)}{2}$$</p>
+<p>\newpage</p>
+<h2 id="cas-dune-suite-geometrique">Cas d&rsquo;une suite géométrique</h2>
+<p>\prop \ul{Somme de $~1+q<sup>1+q</sup>2+\ldots+q^n$}</p>
+<p>\ms</p>
+<p>Soient $n$ est un entier naturel non nul et $q$ un réel différent de $1$ alors on a :</p>
+<p>$$\boxed{1+q+q<sup>2+q</sup>3+&hellip;+q^n= \frac{1-q^{n+1}}{1-q}}$$</p>
+<p>\rem C&rsquo;est la somme des $(n+1)$ premiers termes d&rsquo;une suite <strong>géométrique</strong> de raison $q$ et de premier terme $1$.</p>
+<p>\ms</p>
+<p>\methode Calculer la somme des termes d&rsquo;une suite géométrique</p>
+<p>\ms</p>
+<p>Calculons la somme S suivante :</p>
+<p>$$S=1+3+3<sup 13="13">2+\ldots+3</sup>$$</p>
+<p>Avec la propriété : $\quad q=3\quad\text{et}\quad n=13$</p>
+<p>$$S=\quad 1+3+3<sup 13="13">2+\ldots+3</sup>-1)\quad=2~391~484$$}\quad=\frac{1-3^{14}}{1-3}\quad=2\times (3^{14</p>
+<p>\demo</p>
+<p>$$
+\def\arraystretch{1.3}\begin{array}{ccccccccccccc}
+S&amp;=&amp;1&amp;+&amp;q&amp;+&amp;q<sup>2&amp;+&amp;&hellip;&amp;+&amp;q</sup>n&amp;~&amp;~\
+qS&amp;=&amp;~&amp;~&amp;q&amp;+&amp;q<sup>2&amp;+&amp;&hellip;&amp;+&amp;q</sup>n&amp;+&amp;q^{n+1}\ \hline
+S-qS&amp;=&amp;1&amp;+&amp;0&amp;+&amp;0&amp;+&amp;&hellip;&amp;+&amp;0&amp;-&amp;q^{n+1}\
+\end{array}
+$$</p>
+<p>On a donc :</p>
+<p>$$
+\def\arraystretch{2}\begin{array}{rcl}
+S-qS=1-q<sup n_1="n+1">{n+1}&amp;\Lrarr&amp;S(1-q)=1-q</sup>\
+            ~&amp;\Lrarr&amp;S=\dfrac{1-q^{n+1}}{1-q}
+\end{array}
+$$</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.8/mermaid.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-mermaid.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

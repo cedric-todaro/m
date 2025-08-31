@@ -12,4 +12,7 @@ push:
 	git commit -F /tmp/commit_msg --allow-empty
 	git push
 
+install:
+	sudo apt-get install mkdocs "mkdocs-*" -y
+
 .SILENT:

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cedric-todaro.github.io/m/1spe/cours-Geometrie-reperee/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Géométrie repérée - Math pour le lycée</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../extra.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-mermaid.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "G\u00e9om\u00e9trie rep\u00e9r\u00e9e";
+        var mkdocs_page_input_path = "1spe/cours-Geometrie-reperee.md";
+        var mkdocs_page_url = "/m/1spe/cours-Geometrie-reperee/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Math pour le lycée
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" aria-label="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Accueil</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2nde</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Fonctions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Generalites-sur-les-fonctions/">Généralités sur les fonctions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Variations-de-fonctions/">Variation de fonctions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Fonctions-affines/">Fonctions affines</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Fonctions-de-reference/">Fonctions de références</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Géométrie</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Reperage-et-configuration-dans-le-plan/">Repérage dans le plan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Notion-de-vecteur/">Notion de vecteur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Vecteurs-et-coordonnees/">Vecteurs et coordonnées</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Vecteurs-et-colinearite/">Vecteurs et colinéarité</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Droites-du-plan/">Droites du plan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Droites-et-systemes/">Droites et systèmes</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Algèbre</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Calcul-algebrique/">Calcul algébrique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Ensembles-de-nombres/">Ensemble de nombres</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Arithmetique/">Arithmétique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Proportion-evolution/">Proportion et évolution</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistiques/Probabilité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Statistiques-descriptives/">Statistiques descriptives</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Probabilite/">Probabilité</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Probabilite-echantillonnage/">Probabilité et échantillonnage</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">1spe</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Derivation-1/">Dérivation (1) : Nombre dérivé</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Math pour le lycée</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Documents"></a></li>
+      <li class="breadcrumb-item active">Géométrie repérée</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="rappel-equation-de-droite">Rappel : Équation de droite</h1>
+<h2 id="fonction-du-1texter-degre">Fonction du 1$^\text{er}$ degré</h2>
+<p>\definition</p>
+<p>Une fonction du 1$^\text{er}$ degré est une fonction de la forme : $\quad\boxed{f(x)=\mtc{red}{a}x+\mtc{blue}{b}}$</p>
+<p>Sa représentation graphique est une <strong>droite</strong>.</p>
+<ul>
+<li>$\mtc{red}{a}~$ est le <strong>coefficient directeur</strong> ou <strong>pente</strong> de la droite</li>
+<li>$\mtc{blue}{b}~$ est le <strong>l&rsquo;ordonnée à l&rsquo;origine</strong></li>
+</ul>
+<p>\exemple $~f(x)=\mtc{red}{\dfrac{-1}{2}}x+\mtc{blue}{1}$</p>
+<p>\cimg{12cm}{img/01}</p>
+<ul>
+<li>\ul{Résoudre $f(x)=0$}</li>
+</ul>
+<p>$$
+\def\arraystretch{1.5}\begin{array}{rcll}
+f(x)=0&amp;~\Lrarr~&amp; \mtc{red}{\frac{-1}{2}}x+\mtc{blue}{1}=0&amp;~\
+      &amp;~\Lrarr~&amp; \frac{-1}{2}x=-1\qquad\Lrarr~&amp; \boxed{x=2}
+\end{array}
+$$</p>
+<p>\ms</p>
+<ul>
+<li>\ul{Représentation graphique en fonction de $\mtc{red}{a}$}</li>
+</ul>
+<p>\cimg{12cm}{img/02}</p>
+<p>\newpage</p>
+<ul>
+<li>\ul{Signe de $f(x)$}</li>
+</ul>
+<p>$$
+\def\arraystretch{1.7}
+\begin{array}{ll}
+\boxed{a&gt;0}&amp;\boxed{a\less 0}\
+\begin{array}{|c|ccccccc|}\hline
+x &amp; -\infty &amp; ~ &amp; ~ &amp; \frac{-b}{a}=2 &amp; ~ &amp; ~ &amp; +\infty \ \hline
+f(x) &amp; ~ &amp; - &amp; ~ &amp; 0 &amp; ~ &amp; + &amp; ~ \ \hline
+\end{array}&amp;
+\begin{array}{|c|ccccccc|}\hline
+x &amp; -\infty &amp; ~ &amp; ~ &amp; \frac{-b}{a}=2 &amp; ~ &amp; ~ &amp; +\infty \ \hline
+f(x) &amp; ~ &amp; + &amp; ~ &amp; 0 &amp; ~ &amp; - &amp; ~ \ \hline
+\end{array}
+\end{array}
+$$</p>
+<h2 id="definition-equation-reduite-de-droite">Définition : Équation réduite de droite</h2>
+<p>\definition</p>
+<p>La droite $d$ est l&rsquo;ensemble des points $M(x;y)$ qui vérifient l&rsquo;équation :</p>
+<p>$$\boxed{y=\mtc{red}{a}x+\mtc{blue}{b}}$$</p>
+<p>Cette équation est <strong>l&rsquo;équation réduite</strong> de la droite $d$.</p>
+<p>\exemple</p>
+<p>Soit la droite $(d)$ d&rsquo;équation : $~y=2-x\quad=\mtc{red}{-1}x+\mtc{blue}{2}$</p>
+<p>On a :</p>
+<ul>
+<li>\mtc{red}{a=-1}</li>
+<li>\mtc{blue}{b=2}</li>
+</ul>
+<p>\ms</p>
+<p>\begin{center}\begin{tikzpicture}
+\begin{axis}[x=1.0cm,y=1.0cm,axis lines=middle,ymajorgrids=true,xmajorgrids=true,xmin=-2.5,xmax=3.5,ymin=-1.5,ymax=4.5,xtick={-8.0,-7.0,&hellip;,11.0},ytick={-5.0,-4.0,&hellip;,8.0},]
+\draw[line width=2.pt,color=ForestGreen,smooth,samples=10,domain=-8.0:11.202859696157287] plot(\x,{2-(\x)});
+\draw[color=black] (-1.5,3.5) node[anchor=north east] {$(d)$};
+\draw [fill=blue] (0.,2.) circle (2.5pt);
+\end{axis}\end{tikzpicture}\end{center}</p>
+<h2 id="definition-equation-cartesienne-de-droite">Définition : Équation cartésienne de droite</h2>
+<p>\definition</p>
+<p>La droite $d$ est l&rsquo;ensemble des points $M(x;y)$ qui vérifient l&rsquo;équation :</p>
+<p>$$\boxed{\mtc{red}{a&rsquo;}x+\mtc{blue}{b&rsquo;}y+\mtc{ForestGreen}{c}=0}$$</p>
+<p>Cette équation est <strong>l&rsquo;équation cartésienne</strong> de la droite $d$.</p>
+<p>\ms</p>
+<p>\rem</p>
+<p>Si $~\mtc{blue}{b&rsquo;}\neq 0$, on peut retrouver l&rsquo;équation réduite de $d$.</p>
+<p>$$
+\def\arraystretch{1.6}\begin{array}{rcl}
+\mtc{red}{a&rsquo;}x+\mtc{blue}{b&rsquo;}y+\mtc{ForestGreen}{c}=0&amp;~\Lrarr~&amp;\mtc{blue}{b&rsquo;}y=-\mtc{red}{a&rsquo;}x-\mtc{ForestGreen}{c}\
+&amp;~\Lrarr~&amp;y=\dfrac{-\mtc{red}{a&rsquo;}}{\mtc{blue}{b&rsquo;}}x+\dfrac{\mtc{ForestGreen}{-c}}{\mtc{blue}{b&rsquo;}}
+\end{array}
+$$</p>
+<p>\ms</p>
+<p>\rem \ul{Droite d&rsquo;équation $x=k$}</p>
+<p>\bw{r}{5cm}\vspace{-14mm}
+\begin{center}\begin{tikzpicture}
+\begin{axis}[x=8mm,y=8mm,axis lines=middle,ymajorgrids=true,xmajorgrids=true,xmin=-1.5,xmax=3.5,ymin=-1.5,ymax=2.5,xtick=\empty,ytick=\empty]
+\draw[color=black] (1.8,2) node[anchor=north west,fill=white] {$x=k$};
+\draw [line width=2.pt,color=blue] (1.7,-5) &ndash; (1.7,5);
+\draw [fill=blue] (1.7,0) circle (2pt);
+\end{axis}\end{tikzpicture}\end{center}
+\ew</p>
+<p>Si $~\mtc{blue}{b&rsquo;}=0$ alors $d$ est parallèle à l&rsquo;axe des ordonnées et son équation est de la forme $x=k$.</p>
+<p>$$
+\def\arraystretch{1.6}\begin{array}{rcl}
+\mtc{red}{a&rsquo;}x+\mtc{blue}{b&rsquo;}y+\mtc{ForestGreen}{c}=0&amp;~\Lrarr~&amp;\mtc{red}{a&rsquo;}x+\mtc{ForestGreen}{c}=0\
+ &amp;~\Lrarr~&amp;\mtc{red}{a&rsquo;}x=-\mtc{ForestGreen}{c}\quad\Lrarr~x=\dfrac{-\mtc{ForestGreen}{c}}{\mtc{red}{a&rsquo;}}\
+\end{array}
+$$</p>
+<p>\newpage</p>
+<h2 id="definition-vecteur-directeur-de-d">Définition : Vecteur directeur de $d$</h2>
+<p>\definition</p>
+<p>Soit la droite $d$ d&rsquo;équation cartésienne $\mtc{red}{a}x+\mtc{blue}{b}y+\mtc{ForestGreen}{c}=0$</p>
+<ul>
+<li>On appelle <strong>vecteur directeur</strong> de $d$, tout vecteur donnant la <strong>direction</strong> de $d$.</li>
+<li>Le vecteur de coordonnées $\boxed{\coord{-\mtc{blue}{b}}{\mtc{red}{a}}}$ est un <strong>vecteur directeur</strong> de la droite $d$.</li>
+</ul>
+<p>\ms</p>
+<p>\exemple</p>
+<p>Soit $d$ la droite d&rsquo;équation $\mtc{red}{2}x\mtc{blue}{-5}y+\mtc{ForestGreen}{10}=0$</p>
+<p>On a : $\quad\mtc{red}{a=2}\quad,\quad\mtc{blue}{b=-5}\quad\text{et}\quad\mtc{ForestGreen}{c=10}$</p>
+<p>Donc le vecteur $\coord{5}{2}$ est un <strong>vecteur directeur</strong> de $d$</p>
+<p>\ms</p>
+<p>\cimg{10cm}{img/04}</p>
+<p>\ms</p>
+<p>\methode \ul{Déterminer une équation de droite à partir d&rsquo;un point et d&rsquo;un vecteur directeur}</p>
+<p>\bw{r}{7.5cm}\cimg{7.5cm}{img/06}\ew</p>
+<p>\ms</p>
+<p>Déterminons une <strong>équation cartésienne</strong> de la droite $d$ passant par le point $A\left(3~;~1\right)$ et de vecteur directeur $\vec{u}\coord{-1}{5}$.</p>
+<ul>
+<li>
+<p>La droite $d$ a pour équation $\mtc{red}{a}x+\mtc{blue}{b}y+\mtc{ForestGreen}{c}=0~$et$~\vec{u}\coord{-1}{5}$ est vecteur directeur de $d$</p>
+</li>
+<li>
+<p>Donc $\quad \mtc{red}{a=5}\quad$et$\quad-\mtc{blue}{b}=-1~\Lrarr~\mtc{blue}{b}=1$</p>
+</li>
+<li>
+<p>Donc $~d~$ a pour équation $\quad\mtc{red}{5}x+\mtc{blue}{1}y+\mtc{ForestGreen}{c}=0$</p>
+</li>
+<li>
+<p>$A\left(3~;~1\right)\in d~\Lrarr~$Ses coordonnées vérifient l&rsquo;équation de droite :</p>
+</li>
+</ul>
+<p>$$
+\begin{array}{rcl}
+\mtc{red}{5}x_A+\mtc{blue}{1}y_A+\mtc{ForestGreen}{c}=0&amp;\Lrarr&amp;\mtc{red}{5}\times 3+\mtc{blue}{1}\times 1+\mtc{ForestGreen}{c}=0\
+&amp;\Lrarr&amp;16+\mtc{ForestGreen}{c}=0\
+&amp;\Lrarr&amp;\mtc{ForestGreen}{c}=(-16)\
+\end{array}
+$$</p>
+<p>L&rsquo;équation cartésienne de $d$ est : $\quad\mtc{red}{5}x+\mtc{blue}{1}y\mtc{ForestGreen}{-16}=0$</p>
+<h1 id="equation-de-droite-et-vecteur-normal">Équation de droite et vecteur normal</h1>
+<h2 id="definition-vecteur-normal-a-d">Définition : Vecteur normal à $d$</h2>
+<p>\definition</p>
+<p>Soit la droite $d$ d&rsquo;équation cartésienne $\mtc{red}{a}x+\mtc{blue}{b}y+\mtc{ForestGreen}{c}=0$</p>
+<ul>
+<li>On appelle <strong>vecteur normal</strong> à $d$, tout vecteur de <strong>direction orthogonale</strong> à celle de $d$.</li>
+<li>Le vecteur de coordonnées $\boxed{\coord{\mtc{red}{a}}{\mtc{blue}{b}}}$ est un <strong>vecteur normal</strong> à $d$.</li>
+</ul>
+<p>\newpage</p>
+<p>\exemple</p>
+<p>\ms</p>
+<p>\bw{r}{9cm}\vspace{-1cm}\cimg{9cm}{img/07}\vspace{-1cm}\ew</p>
+<p>Soit $d$ la droite d&rsquo;équation $\mtc{red}{2}x\mtc{blue}{-5}y+\mtc{ForestGreen}{10}=0$</p>
+<p>On a : $\quad\mtc{red}{a=2}\quad,\quad\mtc{blue}{b=-5}\quad\text{et}\quad\mtc{ForestGreen}{c=10}$</p>
+<p>Donc le vecteur $\coord{\mtc{red}{2}}{\mtc{blue}{-5}}$ est un <strong>vecteur normal</strong> à $d$</p>
+<hr />
+<p>\exemple Soit la droite $d$ d&rsquo;équation cartésienne :</p>
+<p>$$\mtc{red}{2}x\mtc{blue}{-3}y\mtc{ForestGreen}{-6}=0$$</p>
+<p>On a $\quad \mtc{red}{a=2}\quad\mtc{blue}{b=-3}\quad\mtc{ForestGreen}{c=-6}$</p>
+<p>Un <strong>vecteur directeur</strong> de $d$ est $\vec{u}\coord{3}{2}$</p>
+<p>Un vecteur $\vec{n}\coord{\mtc{red}{a}}{\mtc{blue}{b}}$ est un vecteur normal à $~d$.$\quad\vec{n}\coord{\mtc{red}{2}}{\mtc{blue}{-3}}~$ car $~\mtc{red}{a=2}~$ et $~\mtc{blue}{b=-3}$</p>
+<p>On peut vérifier que $\vec{u}$ et $\vec{n}$ sont orthognaux à l&rsquo;aide du produit scalaire $~\vec{u}\cdot\vec{n}$ :</p>
+<p>$$
+\def\arraystretch{1.6}\begin{array}{rcl}
+\vec{u}\cdot\vec{n}&amp;=&amp;\coord{3}{2}\cdot\coord{\mtc{red}{2}}{\mtc{blue}{-3}}\
+&amp;=&amp;\left(3\times \mtc{red}{2}\right)+\left(2\times \mtc{blue}{(-3)}\right)\quad=6-6=0\quad\Lrarr\quad\vec{n}\perp \vec{u}
+\end{array}
+$$</p>
+<p>\cimg{12cm}{img/09}</p>
+<h2 id="propriete-vecteur-normal-et-equation-de-droite">Propriété : Vecteur normal et équation de droite</h2>
+<p>\prop</p>
+<ul>
+<li>Une droite de vecteur normal $\vec{n}\coord{\mtc{red}{a}}{\mtc{blue}{b}}$ admet une équation cartésienne de la forme $~\mtc{red}{a}x+\mtc{blue}{b}y+\mtc{ForestGreen}{c}=0~$ où $~\mtc{ForestGreen}{c}~$ est un nombre réel à déterminer.</li>
+<li>La droite d&rsquo;équation cartésienne $~\mtc{red}{a}x+\mtc{blue}{b}y+\mtc{ForestGreen}{c}=0~$ admet le vecteur $~\vec{n}\coord{\mtc{red}{a}}{\mtc{blue}{b}}~$ pour <strong>vecteur normal</strong>.</li>
+</ul>
+<p>\cimg{8cm}{img/10}</p>
+<p>\newpage</p>
+<p>\methode \ul{Déterminer une équation de $d$ à l&rsquo;aide un point et un vecteur normal}</p>
+<p>\bw{r}{8.1cm}\vspace{-5mm}
+\begin{center}$\begin{tikzpicture}
+\begin{axis}[x=9mm,y=9mm,axis lines=middle,ymajorgrids=true,xmajorgrids=true,xmin=-7.5,xmax=1.5,ymin=-1.5,ymax=5.5,xtick={-8.0,-7.0,&hellip;,11.0},ytick={-1,0,&hellip;,50},]
+\draw[line width=2.pt,color=ForestGreen,smooth,samples=10,domain=-8.0:11.202859696157287] plot(\x,{3*(\x)+19});
+\draw[color=black] (-5.75,1.5) node[anchor=north west,fill=white] {$(d)~:~3x-y+19=0$};
+\draw[color=blue] (-5,3.9) node[anchor=north west,fill=white] {$A$};
+\draw[color=black] (-2.9,2.5) node[anchor=south west,fill=white] {$\vec{n}\coord{3}{-1}$};
+\draw [fill=blue] (-5,4) circle (2.5pt);
+\draw [-&gt;,line width=2pt,color=black] (-4,3) &ndash; (-1,2);
+\end{axis}\end{tikzpicture}$\end{center}
+\vspace{-1cm}\ew</p>
+<p>On considère la droite $d$ passant par le point $A(-5;4)$ et dont un vecteur normal est $\vec{n}\coord{3}{-1}$.</p>
+<p>Comme $\vec{n}\coord{\mtc{red}{3}}{\mtc{blue}{-1}}$ est un <strong>vecteur normal</strong> à $d$, l&rsquo;équation cartésienne de $d$ est de la forme :</p>
+<p>$$\mtc{red}{3}x\mtc{blue}{-1}y+\mtc{ForestGreen}{c}=0$$</p>
+<p>Le point $A(-5;4)$ appartient à $d$, donc :</p>
+<p>$\def\arraystretch{1.4}\begin{array}{rcl}
+\mtc{red}{3}\times x_A\mtc{blue}{-1}\times y_A+c=0~&amp;\Lrarr&amp;~\mtc{red}{3}\times (-5)\mtc{blue}{-1}\times 4+\mtc{ForestGreen}{c}=0\
+~&amp;\Lrarr&amp;~-19+\mtc{ForestGreen}{c}=0\quad\Lrarr~\mtc{ForestGreen}{c=19}\
+\end{array}$</p>
+<p>Une équation cartésienne de $d$ est $\quad\mtc{red}{3}x\mtc{blue}{-}y+\mtc{ForestGreen}{19}=0$</p>
+<p>\ms</p>
+<p>\prop</p>
+<p>Soient $A$ et $B$ deux points du plan et $M\coordl{x}{y}$.</p>
+<p>$$\boxed{M\in(AB)~\iff~\det\pa{\vec{AB}~,~\vec{AM}}=0}$$</p>
+<p>\prop</p>
+<p>Soit $(d)$ une droite du plan et $A$ un point tel que $A\in(d)$.</p>
+<p>Soit $\vec{n}$ un vecteur normal à $(d)$ et $M\coordl{x}{y}$.</p>
+<p>$$\boxed{M\in(d)~\iff~\vec{AM}\cdot\vec{n}=0}$$</p>
+<h1 id="equation-de-cercle">Équation de cercle</h1>
+<h2 id="propriete-equation-de-cercle">Propriété : Équation de cercle</h2>
+<p>\prop</p>
+<p>Une équation de <strong>cercle</strong> de centre $A\left(\mtc{red}{x_A}~;~\mtc{blue}{y_A}\right)$ et de rayon $\mtc{ForestGreen}{r}$ est :</p>
+<p>$$\boxed{\left(x-\mtc{red}{x_A}\right)<sup>2+\left(y-\mtc{blue}{y_A}\right)</sup>2=\mtc{ForestGreen}{r}^2}$$</p>
+<p>\cimg{8cm}{img/12}</p>
+<p>\rem</p>
+<p>Cela signifie que tous les points appartenant au cercle ont leurs coordonnées $(x;y)$ qui vérifient l&rsquo;équation.</p>
+<p>\newpage</p>
+<p>\demo</p>
+<p>\bw{r}{6cm}\cimg{6cm}{img/13}\vspace{1cm}\ew</p>
+<p>Soit l&rsquo;ensemble des points $M(x;y)$ appartenant au cercle $\mathcal{C}$ de centre $A(\mtc{red}{x_A};\mtc{blue}{y_A})$ et de rayon $\mtc{ForestGreen}{r}$</p>
+<p>$$M\in\mathcal{C}\Lrarr\mtc{ForestGreen}{AM}=\mtc{ForestGreen}{r}$$</p>
+<p>À l&rsquo;aide de Pythagore :</p>
+<p>$$\mtc{ForestGreen}{AM}<sup>2=(x-\mtc{red}{x_A})</sup>2+(y-\mtc{blue}{y_A})^2$$</p>
+<p>Donc, on a :</p>
+<p>$$\left(x-\mtc{red}{x_A}\right)<sup>2+\left(y-\mtc{blue}{y_A}\right)</sup>2=\mtc{ForestGreen}{r}^2$$</p>
+<p>\ms</p>
+<p>\prop</p>
+<p>Soient $M\coordl{x}{y}$ et un cercle $\mathcal{C}$ de diamètre $[AB]$.</p>
+<p>$$\boxed{M\in\mathcal{C}~\iff~\vec{MA}\cdot\vec{MB}=0}$$</p>
+<p>\ms</p>
+<p>\methode \ul{Déterminer une équation d&rsquo;un cercle}</p>
+<p>\bw{r}{7cm}\vspace{-5mm}\cimg{7cm}{img/14}\ew</p>
+<p>Déterminons l&rsquo;équation du cercle $\mathcal{C}$ de centre $A(\mtc{red}{4};\mtc{blue}{-1})$ et passant par le point $B(3;5)$</p>
+<p>Le rayon de $\mathcal{C}$ est :</p>
+<p>$$
+\begin{aligned}
+r<sup>2=AB</sup>2&amp;=(x_B-\mtc{red}{x_A})<sup>2+(y_B-\mtc{blue}{y_A})</sup>2\
+        &amp;=(3-\mtc{red}{4})<sup>2+\left(5-\mtc{blue}{(-1)}\right)</sup>2~=37
+\end{aligned}
+$$</p>
+<p>Donc l&rsquo;équation de $\mathcal{C}$ est donc :</p>
+<p>$$\left(x-\mtc{red}{4}\right)<sup>2+\left(y-\mtc{blue}{(-1)}\right)</sup>2=37$$</p>
+<p>$$\Lrarr\boxed{\left(x-4\right)<sup>2+\left(y+1\right)</sup>2=37}$$</p>
+<p>\vspace{1cm}</p>
+<p>\methode \ul{Déterminer les caractéristiques d&rsquo;un cercle}</p>
+<p>On considère l&rsquo;ensemble $E$ des points $M(x;y)$ qui vérifient l&rsquo;équation :</p>
+<p>$$x<sup>2+y</sup>2-2x-10y+17=0$$</p>
+<p>Démontrons que l&rsquo;ensemble $E$ est un cercle et déterminons ses caractéristiques (centre, rayon).</p>
+<p>$$
+\def\arraystretch{1.5}\begin{array}{rlllllll}
+~&amp;\mtc{red}{x<sup>2}+{y</sup>2}&amp;-&amp;\mtc{red}{2x}-\mtc{violet}{10y}&amp;+&amp;17&amp;=&amp;0\
+\Lrarr&amp;\mtc{red}{x<sup>2-2x}&amp;+&amp;\mtc{violet}{y</sup>2-10y}&amp;+&amp;17&amp;=&amp;0\
+\Lrarr&amp;\underbrace{x<sup>2-2x\mtc{blue}{+1}}_{\mtc{violet}{(x-1)</sup>2}}\mtc{blue}{-1}&amp;+&amp;\underbrace{y<sup>2-10y\mtc{blue}{+25}}_{\mtc{ForestGreen}{(y-5)</sup>2}}\mtc{blue}{-25}&amp;+&amp;17&amp;=&amp;0\
+\Lrarr&amp;\mtc{violet}{(x-1)<sup>2}-1&amp;+&amp;\mtc{ForestGreen}{(y-5)</sup>2}-25&amp;+&amp;17&amp;=&amp;0\
+\Lrarr&amp;(x-1)<sup>2&amp;+&amp;(y-5)</sup>2&amp;-&amp;9&amp;=&amp;0\
+\Lrarr&amp;(x-1)<sup>2&amp;+&amp;(y-5)</sup>2&amp;&amp;&amp;=&amp;9\
+\end{array}
+$$</p>
+<p>On a donc $~E:(x-1)<sup>2+(y-5)</sup>2=3^2$</p>
+<p>L&rsquo;ensemble $E$ est le cercle de centre $A(1 ; 5)$ et de rayon $3$.</p>
+<p>\newpage</p>
+<p><strong>\ul{Vérification graphique :}</strong></p>
+<p>\cimg{10cm}{img/15.png}</p>
+<p>\methode \ul{Déterminer les points d&rsquo;intersection d&rsquo;une droite et d&rsquo;un cercle}</p>
+<p>Déterminons les coordonnées des points d&rsquo;intersection du cercle $\mathcal{C}$ de centre $D(3;4)$ et de rayon $4$ et de la droite $d$ d&rsquo;équation $~x+y=3$</p>
+<ul>
+<li>$\mathcal{C}$ a pour équation :</li>
+</ul>
+<p>$$(x-x_D)<sup>2+(y-y_D)</sup>2=r<sup>2\qquad\Lrarr\qquad\mtc{red}{(x-3)</sup>2+(y-4)^2=16}$$</p>
+<ul>
+<li>$d$ a pour équation :</li>
+</ul>
+<p>$$\mtc{blue}{x+y=3}$$</p>
+<p>Les coordonnées des points d&rsquo;intersections vérifient les 2 équations</p>
+<p>Il faut donc résoudre le système $~S:\begin{cases}\mtc{red}{(x-3)<sup>2+(y-4)</sup>2=16}&amp;:L_1\\mtc{blue}{x+y=3}&amp;:L_2\end{cases}$</p>
+<p>On a $L_2:\mtc{blue}{x+y=3}~\Lrarr~y=(3-x)$</p>
+<p>Remplaçons $y$ dans $L_1$ par $(3-x)$ :</p>
+<p>$$
+\def\arraystretch{1.4}\begin{array}{rclllll}
+\mtc{red}{(x-3)<sup>2+(y-4)</sup>2=16}&amp;\Lrarr&amp;(x-3)<sup>2&amp;+&amp;((3-x)-4)</sup>2&amp;=&amp;16\
+&amp;\Lrarr&amp;(x-3)<sup>2&amp;+&amp;(-x-1)</sup>2&amp;=&amp;16\
+&amp;\Lrarr&amp;(x<sup>2-6x+9)&amp;+&amp;(x</sup>2+2x+1)&amp;=&amp;16\
+&amp;\Lrarr&amp;2x^2-4x+10&amp;&amp;&amp;=&amp;16\
+&amp;\Lrarr&amp;2x^2-4x-6&amp;&amp;&amp;=&amp;0\
+&amp;\Lrarr&amp;x^2-2x-3&amp;&amp;&amp;=&amp;0\
+\end{array}
+$$</p>
+<p>Il reste à résoudre : $~x^2-2x-3=0\qquad\Lrarr a=1\qquad b=-2\qquad c=-3$</p>
+<p>$$
+\def\arraystretch{3}\begin{array}{rcl}
+x<sup>2-2x-3=0&amp;\Lrarr&amp;\Delta=b</sup>2-4ac\enspace=(-2)^2-4\times (1)\times (-3)\enspace=16&gt;0\
+          &amp;\Lrarr&amp;x_1=\dfrac{-b-\sqrt{\Delta}}{2a}\quad\text{et}\quad    x_2=\dfrac{-b+\sqrt{\Delta}}{2a}\
+          &amp;\Lrarr&amp;x_1=\dfrac{-(-2)-\sqrt{16}}{2}=(-1)\quad\text{et}\quad x_2=\dfrac{-(-2)+\sqrt{16}}{2}=3\
+\end{array}
+$$</p>
+<p>Les $2$ points d&rsquo;intersection ont pour abscisses $(-1)$ et $3$.</p>
+<p>On calcule leurs ordonnées avec $~L_2:y=(3-x)$</p>
+<p>Au final : $\quad A(-1;4)\quad$ et $\quad B(3;0)$</p>
+<p>\newpage</p>
+<p><strong>\ul{Vérification graphique :}</strong></p>
+<p>\cimg{8cm}{img/16.png}</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.8/mermaid.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-mermaid.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

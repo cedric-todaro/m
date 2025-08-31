@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cedric-todaro.github.io/m/1spe/cours-Trigonometrie/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Trigonométrie - Math pour le lycée</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../extra.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-mermaid.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Trigonom\u00e9trie";
+        var mkdocs_page_input_path = "1spe/cours-Trigonometrie.md";
+        var mkdocs_page_url = "/m/1spe/cours-Trigonometrie/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Math pour le lycée
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" aria-label="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Accueil</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2nde</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Fonctions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Generalites-sur-les-fonctions/">Généralités sur les fonctions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Variations-de-fonctions/">Variation de fonctions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Fonctions-affines/">Fonctions affines</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Fonctions-de-reference/">Fonctions de références</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Géométrie</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Reperage-et-configuration-dans-le-plan/">Repérage dans le plan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Notion-de-vecteur/">Notion de vecteur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Vecteurs-et-coordonnees/">Vecteurs et coordonnées</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Vecteurs-et-colinearite/">Vecteurs et colinéarité</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Droites-du-plan/">Droites du plan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Droites-et-systemes/">Droites et systèmes</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Algèbre</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Calcul-algebrique/">Calcul algébrique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Ensembles-de-nombres/">Ensemble de nombres</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Arithmetique/">Arithmétique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Proportion-evolution/">Proportion et évolution</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Statistiques/Probabilité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Statistiques-descriptives/">Statistiques descriptives</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Probabilite/">Probabilité</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../2nde/Probabilite-echantillonnage/">Probabilité et échantillonnage</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">1spe</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Derivation-1/">Dérivation (1) : Nombre dérivé</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Math pour le lycée</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Documents"></a></li>
+      <li class="breadcrumb-item active">Trigonométrie</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="cercle-trigonometrique-et-radian">Cercle trigonométrique et radian</h1>
+<h2 id="definition-sens-direct">Définition : Sens direct</h2>
+<p>\definition</p>
+<p>Sur un cercle, on appelle <strong>sens direct</strong>, <strong>sens positif</strong> ou <strong>sens trigonométrique</strong>, le sens <strong><em>contraire</em></strong> des aiguilles d&rsquo;une montre.</p>
+<h2 id="definition-cercle-trigonometrique">Définition : Cercle trigonométrique</h2>
+<p>Dans le plan muni d&rsquo;un repère orthonormé $\vOIJ$ et orienté dans le sens direct, le <strong>cercle trigonométrique</strong> est le cercle de centre $O$ et de rayon $1$.</p>
+<p>\cimg{9cm}{img/01a}</p>
+<p>\newpage</p>
+<p>\bw{r}{6cm}\cimg{6cm}{img/01a}\ew</p>
+<p>\rem</p>
+<ul>
+<li>Le périmètre du cercle trigo. est de :</li>
+</ul>
+<p>$$\mathcal{C}=2\pi R=2\pi$$</p>
+<ul>
+<li>Le périmètre du demi-cercle est de :</li>
+</ul>
+<p>$$\frac{\mathcal{C}}{2}=\frac{2\pi}{2}=\pi$$</p>
+<ul>
+<li>L&rsquo;arc $\wideparen{AB}$ est le quart du cercle donc sa longueur est :</li>
+</ul>
+<p>$$\wideparen{AB}=\frac{1}{4}\times 2\pi=\frac{\pi}{2}$$</p>
+<p>\ms</p>
+<p>\rem</p>
+<p>L&rsquo;arc $\wideparen{AC}$ (en rose), c&rsquo;est $\frac{5}{8}$ du cercle donc sa longueur est :</p>
+<p>$$\wideparen{AC}=\frac{5}{8}\times 2\pi=\frac{5\pi}{4}$$</p>
+<p>\cimg{12cm}{img/03}</p>
+<p>La longueur du cercle trigonométrique est égale à $2\pi$.</p>
+<p>Ainsi, à un tour complet sur le cercle, on peut faire correspondre le nombre réel $2\pi$.</p>
+<p>On définit alors une nouvelle unité d&rsquo;angle : <strong>le radian</strong>, tel qu&rsquo;un tour mesure $360^\circ$ ou $2\pi$ radians.</p>
+<p>\ms</p>
+<p>\cimg{12cm}{img/04}</p>
+<p>\rem Pour faire correspondre l&rsquo;angle en degré avec l&rsquo;angle en radians on peut utiliser un tableau de proportionnalité.</p>
+<p>$$
+\def\arraystretch{2.5}\begin{array}{|c|c|c|c|c|c|c|c|c|}\hline
+\rule[-5mm]{0cm}{1cm}\text{Degré}  &amp; 360^\circ &amp; 180^\circ &amp; 90^\circ       &amp; 45^\circ      &amp; 10^\circ       &amp; 1^\circ         &amp; 150^\circ                         &amp; 67.5^\circ\ \hline
+\rule[-5mm]{0cm}{1cm}\text{Radian} &amp; 2\pi      &amp; \pi       &amp; \dfrac{\pi}{2}  &amp; \dfrac{\pi}{4} &amp; \dfrac{\pi}{18} &amp; \dfrac{\pi}{180} &amp; \dfrac{150\pi}{180}=\dfrac{5\pi}{6} &amp; \dfrac{3\pi}{8}\ \hline
+\end{array}
+$$</p>
+<ul>
+<li>Pour $10^\circ\rarr\quad \dfrac{10^\circ\times\pi}{180}=\dfrac{\pi}{18}$ radians</li>
+<li>Pour $\dfrac{3\pi}{8}$ rad.$~\rarr\quad \dfrac{\dfrac{3\pi}{8}\times 180}{\pi}=67.5^\circ$</li>
+<li>etc&hellip;</li>
+</ul>
+<p>\newpage</p>
+<h2 id="definition-le-radian">Définition : Le radian</h2>
+<p>\bw{r}{5cm}\vspace{-1cm}\cimg{5cm}{img/05}\vspace{-2cm}\ew</p>
+<p>\definition</p>
+<p>On appelle <strong>1 radian</strong>, noté <strong>1 rad</strong>, la mesure de l&rsquo;angle au centre qui intercepte un arc de longueur $1$ du cercle trigonométrique.</p>
+<p>\ms</p>
+<p><strong>\ul{Angles remaquables$^{\text{\faHeart}}$}</strong></p>
+<p>\ms</p>
+<p>\cimg{12cm}{img/06}</p>
+<h1 id="image-dun-nombre-sur-le-cercle-trigonometrique">Image d&rsquo;un nombre sur le cercle trigonométrique</h1>
+<h2 id="propriete-image-dun-nombre">Propriété : Image d&rsquo;un nombre</h2>
+<p>A tout nombre $x$, on peut aasocier un point $M$ du cercle trigonométrique :</p>
+<ul>
+<li>\ul{Si $x\ge 0$ :}</li>
+<li>On parcourt dans le <strong>sens direct</strong> un chemin de longueur $x$ en partant de $A$ et on place $M$.</li>
+</ul>
+<p>\ms</p>
+<ul>
+<li>\ul{si $x\le 0$ :}</li>
+<li>On parcourt dans le <strong>sens indirect</strong> un chemin de longueur $(-x)$ en partant de $A$ et on place $M$.</li>
+</ul>
+<p>\ms</p>
+<p>On dit que $M$ est l&rsquo;image de $x$ sur le cercle trigonométrique</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">$x\ge 0$</th>
+<th style="text-align: center;">$x\le 0$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="" src="img/07a.png" width="7cm" /></td>
+<td style="text-align: center;"><img alt="" src="img/07b.png" width="7cm" /></td>
+</tr>
+</tbody>
+</table>
+<p>\newpage</p>
+<p>\exemple $\quad\boxed{x=\dfrac{3\pi}{4}}$</p>
+<p>\bw{r}{8cm}\vspace{-1cm}\cimg{6cm}{img/08}\vspace{-2cm}\ew</p>
+<p>On a $\quad \dfrac{3\pi}{4}\text{ rad.}=135^\circ\quad$ donc la longueur de $\wideparen{AM}=\dfrac{3\pi}{4}$</p>
+<p>\exemple $\quad\boxed{x=\dfrac{-5\pi}{6}}$</p>
+<p>On a $\quad \dfrac{-5\pi}{6}\text{ rad.}=\dfrac{-5\pi}{6}\times\dfrac{180}{\pi}=-150^\circ$ donc la longueur de $\wideparen{AM}=\dfrac{5\pi}{6}$</p>
+<p>\cimg{6cm}{img/09}</p>
+<p>\ms</p>
+<p>\rem</p>
+<p>Plusieurs nombres peuvent avoir la même image sur le cercle trigo.</p>
+<p>Par ex :</p>
+<p>\bw{r}{6cm}\vspace{-4cm}\cimg{6cm}{img/10}\ew</p>
+<ul>
+<li>$\pi$ et $-\pi$</li>
+<li>$\dfrac{-\pi}{2}$ et $\dfrac{3\pi}{2}$</li>
+<li>$2\pi$ ; $4\pi$ ; $-8\pi$</li>
+</ul>
+<p>\rem</p>
+<p>Les nombres $(x)$ et $(x+2k\pi)$, avec $k\in\Z$, ont la même image sur le cercle trigo.</p>
+<p>Par ex :</p>
+<p>\ms</p>
+<ul>
+<li>$\dfrac{3\pi}{7}~$ et $~\dfrac{17\pi}{7}$ ont même image car $\dfrac{17\pi}{7}=\mtc{blue}{\dfrac{14\pi}{7}}+\dfrac{3\pi}{7}=\mtc{blue}{2\pi}+\dfrac{3\pi}{7}$</li>
+</ul>
+<p>\ms</p>
+<ul>
+<li>$\dfrac{3\pi}{4}~$ et $~\dfrac{19\pi}{4}$ ont même image car $\dfrac{19\pi}{4}=\mtc{blue}{\dfrac{16\pi}{4}}+\dfrac{3\pi}{4}=\mtc{blue}{4\pi}+\dfrac{3\pi}{4}$</li>
+</ul>
+<p>\ms</p>
+<ul>
+<li>$\dfrac{6\pi}{5}$ et $\dfrac{-4\pi}{5}$ ont même image car $\dfrac{-4\pi}{5}=\mtc{blue}{\dfrac{-10\pi}{5}}+\dfrac{6\pi}{5}=\mtc{blue}{-2\pi}+\dfrac{6\pi}{5}$</li>
+</ul>
+<p>\methode \ul{Placer un point sur le cercle trigonométrique}</p>
+<ul>
+<li>Plaçons sur le cercle trigonométrique, le point $M$ tel que l&rsquo;angle $\left(\vec{i}~;~\vec{OM}\right)$ mesure $\dfrac{9\pi}{4}$ rad.</li>
+</ul>
+<p>\bw{r}{5cm}\cimg{5cm}{img/11}\vspace{-2cm}\ew</p>
+<p>\ms</p>
+<p>On a :</p>
+<p>$$\frac{9\pi}{4}=\mtc{blue}{\frac{8\pi}{4}}+\frac{1\pi}{4}=\mtc{blue}{2\pi}+\frac{1\pi}{4}\qquad\left(\mtc{blue}{\text{1 tour}}~+\frac{1\pi}{4}\right)$$</p>
+<p>et</p>
+<p>$$\frac{1\pi}{4}~\text{rad.}=45^\circ$$</p>
+<p>\newpage</p>
+<ul>
+<li>Plaçons sur le cercle trigonométrique, le point $N$ tel que l&rsquo;angle $\left(\vec{i}~;~\vec{ON}\right)$ mesure $\frac{8\pi}{3}$ rad.</li>
+</ul>
+<p>\bw{r}{5cm}\vspace{-5mm}\cimg{5cm}{img/12}\ew</p>
+<p>\ms</p>
+<p>On a :</p>
+<p>$$\frac{8\pi}{3}=\mtc{blue}{\frac{6\pi}{3}}+\frac{2\pi}{3}=\mtc{blue}{2\pi}+\frac{2\pi}{3}\qquad\left(\mtc{blue}{\text{1 tour}}~+\frac{2\pi}{3}\right)$$</p>
+<p>et</p>
+<p>$$\frac{2\pi}{3}~\text{rad.}=120^\circ$$</p>
+<p>\ms</p>
+<p>\rem</p>
+<p>On a vu qu&rsquo;un angle possède plusieurs mesures.</p>
+<p>Si $\theta$ est une mesure de l&rsquo;angle $\left(\vec{i}~;~\vec{OM}\right)$ alors tout angle de la forme $(\theta+2k\pi)$, avec $k\in\Z$ , est une mesure de l&rsquo;angle $\left(\vec{i}~;~\vec{OM}\right)$.</p>
+<p>On dit que l&rsquo;angle $\left(\vec{i}~;~\vec{OM}\right)$ est égal à $\theta$ <strong>modulo</strong> $2\pi$.</p>
+<h2 id="definition-mesure-principale-dun-angle">Définition : Mesure principale d&rsquo;un angle</h2>
+<p>\definition</p>
+<p>La <strong>mesure principale d&rsquo;un angle</strong> orienté est la mesure, qui parmi toutes les autres, se situe dans l&rsquo;intervalle $\left]-\pi~;~\pi\right]$</p>
+<p>\ms</p>
+<p>\exemple</p>
+<p>\bw{r}{7cm}\vspace{-1cm}\cimg{7cm}{img/13}\vspace{-2cm}\ew</p>
+<p>Une mesure d&rsquo;un angle orienté est $\dfrac{7\pi}{4}$</p>
+<p>D&rsquo;autres mesures sont :</p>
+<ul>
+<li>$\dfrac{7\pi}{4}-2\pi\quad;\quad\dfrac{7\pi}{4}-4\pi\quad;\quad\dfrac{7\pi}{4}+2\pi\quad;\quad\ldots$</li>
+</ul>
+<p>Soit :</p>
+<ul>
+<li>$\dfrac{-\pi}{4}\quad;\quad\dfrac{-9\pi}{4}\quad;\quad\dfrac{15\pi}{4}\quad;\quad\ldots$</li>
+</ul>
+<p>Donc $\left(\dfrac{-\pi}{4}\right)$ est la <strong>mesure principale</strong> de cet <strong>angle orienté</strong> car c&rsquo;est la seule comprise dans $\left]-\pi~;~\pi\right]$.</p>
+<p>\ms</p>
+<p>\methode \ul{Donner la mesure principale d&rsquo;un angle}</p>
+<p>\bw{r}{7cm}\cimg{7cm}{img/14}\ew</p>
+<p>\ms</p>
+<p>Donnons la mesure principale de l&rsquo;angle $\dfrac{27\pi}{4}$</p>
+<ul>
+<li>On choisit un multiple de $4$ proche de $27$, soit $28$</li>
+</ul>
+<p>$$\dfrac{27\pi}{4}=\dfrac{28\pi}{4}-\dfrac{\pi}{4}=7\pi-\dfrac{\pi}{4}$$</p>
+<ul>
+<li>Dans $7\pi$, on fait apparaître un multiple de $2\pi$ soit $6\pi$ :</li>
+</ul>
+<p>$$
+\def\arraystretch{2.4}\begin{array}{rcl}
+\dfrac{27\pi}{4}&amp;=&amp;6\pi+\pi-\dfrac{\pi}{4}\
+&amp;=&amp;6\pi+\dfrac{4\pi}{4}-\dfrac{\pi}{4}\&amp;=&amp;6\pi+\dfrac{3\pi}{4}
+\end{array}
+$$</p>
+<p>$6\pi$ correspond à $3$ tours et on a $~\dfrac{3\pi}{4}\in\left]-\pi~;~\pi\right]~$ donc $~\dfrac{3\pi}{4}~$ est la mesure principale de $~\dfrac{27\pi}{4}~$</p>
+<p>\newpage</p>
+<h1 id="cosinus-et-sinus-dun-angle">Cosinus et sinus d&rsquo;un angle</h1>
+<p>\textbf{\ul{Rappel de 3\eme}}</p>
+<ul>
+<li>$\boxed{\cos(\mtc{gray}{\text{angle}})=\dfrac{\mtc{ForestGreen}{\text{Adjacent}}}{\mtc{red}{\text{Hypoténuse}}}}$</li>
+<li>$\boxed{\sin(\mtc{gray}{\text{angle}})=\dfrac{\mtc{blue}{\text{Opposé}}}{\mtc{red}{\text{Hypotenuse}}}}$</li>
+<li>$\boxed{\tan(\mtc{gray}{\text{angle}})=\dfrac{\mtc{blue}{\text{Opposé}}}{\mtc{ForestGreen}{\text{Adjacent}}}}$</li>
+</ul>
+<p>\bw{r}{8cm}\vspace{-4cm}\cimg{8cm}{img/15b}\vspace{-3cm}\ew</p>
+<p>\ms</p>
+<p>\exemple</p>
+<p>\bw{r}{5cm}\cimg{5cm}{img/16}\vspace{-2cm}\ew</p>
+<p>Pour déterminer l&rsquo;angle $\widehat{BAC}$, on peut déterminer son <strong>cosinus</strong> (ou <strong>sinus</strong>) :</p>
+<p>$$
+\def\arraystretch{1.9}\begin{array}{rcl}
+AC<sup>2&amp;=&amp;AB</sup>2+BC^2\
+&amp;=&amp;5<sup>2+3</sup>2\qquad=34\qquad AC=\sqrt{34}\
+\end{array}
+$$</p>
+<p>On a : $\quad\cos\left(\widehat{BAC}\right)=\dfrac{\mtc{ForestGreen}{AB}}{\mtc{red}{AC}}=\dfrac{\mtc{ForestGreen}{5}}{\mtc{red}{\sqrt{34}}}\approx 0.8575$</p>
+<p>Donc $\quad\widehat{BAC}=\cos^{-1}\left(\dfrac{5}{\sqrt{34}}\right)\approx 30,96^\circ$</p>
+<h2 id="definition-cosinus-et-sinus-dans-le-cercle-trigonometrique">Définition : Cosinus et sinus dans le cercle trigonométrique</h2>
+<p>Soit, dans le cercle trigonométrique, l&rsquo;angle $\left(\vec{i}~;~\vec{OM}\right)$ de <strong>mesure principale</strong> $x$.</p>
+<ul>
+<li>Le <strong>cosinus</strong> de $x$ est <strong>l&rsquo;abscisse</strong> de $M$ : $\quad\boxed{\cos(x)=x_M}$</li>
+<li>Le <strong>sinus</strong> de $x$ est <strong>l&rsquo;ordonnée</strong> de $M$ : $\quad\boxed{\sin(x)=y_M}$</li>
+</ul>
+<p>\ms</p>
+<p>\cimg{5cm}{img/17}</p>
+<p>\exemple</p>
+<ul>
+<li>
+<p>Si $x=\frac{\pi}{2}$ alors $M$ a pour coordonnées $(0;1)\quad$ donc $~\cos\left(\frac{\pi}{2}\right)=0~$ et $~\sin\left(\frac{\pi}{2}\right)=1$</p>
+</li>
+<li>
+<p>Si $x=\frac{3\pi}{4}$ alors $M$ a pour coordonnées $\approx(-0.7;0.7)\quad$ donc $~\cos\left(\frac{3\pi}{4}\right)\approx -0.7~$ et $~\sin\left(\frac{3\pi}{4}\right)\approx 0.7$</p>
+</li>
+</ul>
+<p>\ms</p>
+<p>\cimg{9cm}{img/18tt}</p>
+<p>\newpage</p>
+<p>\exemple</p>
+<p>Si $~x=\dfrac{5\pi}{12}~(\rarr 75^\circ)~$ alors $M$ à pour coordonnées $~\approx(0.26;0.97)$</p>
+<p>Donc $\quad\cos\left(\dfrac{5\pi}{12}\right)\approx 0.26\quad$ et $\quad\sin\left(\dfrac{5\pi}{12}\right)\approx 0.97$</p>
+<p>\ms</p>
+<p>\cimg{12cm}{img/19a.png}</p>
+<p>\ms</p>
+<h2 id="valeurs-remarquablestextfaheart">Valeurs remarquables$^{\text{\faHeart}}$</h2>
+<p>$$
+\def\arraystretch{2.0}\begin{array}{|c|c|c|c|c|c|c|}\hline
+x &amp; ~0~ &amp; \frac{\pi}{6} &amp; \frac{\pi}{4} &amp; \frac{\pi}{3} &amp; \frac{\pi}{2}  &amp; \pi \ \hline
+\cos(x) &amp; 1 &amp; \frac{\sqrt{3}}{2} &amp; \frac{\sqrt{2}}{2} &amp; \frac{1}{2}  &amp; 0 &amp; -1 \ \hline
+\sin(x) &amp; 0 &amp; \frac{1}{2} &amp; \frac{\sqrt{2}}{2} &amp; \frac{\sqrt{3}}{2}  &amp; 1 &amp; 0 \ \hline
+\end{array}
+$$</p>
+<p>\cimg{12cm}{img/20}</p>
+<p>\demo $\cos\pa{\dfrac{\pi}{4}}=\dfrac{\sqrt{2}}{2}$</p>
+<p>\bw{r}{5cm}\vspace{0cm}\cimg{5cm}{img/21}\vspace{-2cm}\ew</p>
+<p>$\left(\frac{\pi}{4}\right)~$ correspond à un angle de $45^\circ$</p>
+<p>On a $~\widehat{OMH}=180<sup>\circ-45</sup>\circ-90<sup>\circ=45</sup>\circ$ donc $OHM$ est un triangle rectangle et isocèle en $H$.</p>
+<p>On a :</p>
+<p>$$
+\def\arraystretch{1.5}\begin{array}{ll}
+~&amp;OH<sup>2+HM</sup>2=OM^2\
+\Lrarr&amp;OH<sup>2+OH</sup>2=1\qquad\text{car}\quad OM=1~\text{et}~OH=HM\
+\Lrarr&amp;2\times OH^2=1\
+\Lrarr&amp;OH=\sqrt{\dfrac{1}{2}}=\dfrac{\sqrt{2}}{2}\qquad\text{donc}\quad\boxed{\cos\left(\dfrac{\pi}{4}\right)=OH=\dfrac{\sqrt{2}}{2}}\
+\end{array}
+$$</p>
+<p>\newpage</p>
+<p>\demo $\cos\left(\dfrac{\pi}{3}\right)=\dfrac{1}{2}\quad$et$\quad\sin\left(\dfrac{\pi}{3}\right)=\dfrac{\sqrt{3}}{2}$</p>
+<p>\bw{r}{6cm}\vspace{-1cm}\cimg{6cm}{img/22}\ew</p>
+<p>$\pa{\dfrac{\pi}{3}}~$ correspond à un angle de $60^\circ$ donc $OMA$ est équilatéral.</p>
+<p>On a $H$ milieu de $[OA]$ donc $~\boxed{OH=\cos\left(\dfrac{\pi}{3}\right)=\dfrac{1}{2}}$</p>
+<p>Pour le sinus, on a :</p>
+<p>$$
+\def\arraystretch{1.5}\begin{array}{ll}
+HM<sup>2&amp;=OM</sup>2-OH^2\
+~&amp;=1-\pa{\dfrac{1}{2}}^2=\dfrac{3}{4}\qquad HM=\sqrt{\dfrac{3}{4}}=\dfrac{\sqrt{3}}{2} \end{array}
+$$</p>
+<p>Donc $\quad\boxed{HM=\sin\pa{\dfrac{\pi}{3}}=\dfrac{\sqrt{3}}{2}}$</p>
+<p>\ms</p>
+<p>\rem</p>
+<p>Dans le cercle trigonométrique (rayon=1), $OHM$ est un triangle rectangle et $HM=OK$ donc :</p>
+<p>$$OH<sup>2+OK</sup>2=OM^2\quad\Lrarr\quad OH<sup>2+OK</sup>2=1$$</p>
+<p>Or $~OH<sup>2=\pa{\cos(x)}</sup>2\quad$et$\quad OK<sup>2=\pa{\sin(x)}</sup>2$</p>
+<p>\bw{r}{4cm}\vspace{-3cm}\cimg{4cm}{img/17}\ew</p>
+<p>Donc, pour tout $x$ :</p>
+<p>$$\boxed{\pa{\cos(x)}<sup>2+\pa{\sin(x)}</sup>2=1}$$</p>
+<h2 id="propriete-cosinus-et-sinus">Propriété : Cosinus et sinus</h2>
+<ul>
+<li>$\boxed{(-1)\less \cos(x)\less (+1)}\quad$et$\quad\boxed{(-1)\less \sin(x)\less (+1)}$</li>
+<li>Cercle de rayon $1\Rarr$ abscisse et ordonnée de $M\in[-1;1]$</li>
+</ul>
+<p>\ms</p>
+<ul>
+<li>$\boxed{\cos<sup>2(x)+\sin</sup>2(x)=1}$</li>
+<li>Voir démonstration au-dessus</li>
+</ul>
+<p>\ms</p>
+<ul>
+<li>$\boxed{\cos(x+2k\pi)=\cos(x)}\quad$et$\quad\boxed{\sin(x+2k\pi)=\sin(x)}$</li>
+<li>$x$ et $x+2k\pi$ ont même image sur le cercle trigo. donc même cosinus/sinus</li>
+</ul>
+<h2 id="propriete-cos-x-et-sin-x">Propriété : $~\cos(-x)~$ et $~\sin(-x)$</h2>
+<p>Pour tout $x$, on a : $\qquad\boxed{\cos(-x)=\cos(x)}\quad\text{et}\quad\boxed{\sin(-x)=-\sin(x)}$</p>
+<p>\ms</p>
+<p>\cimg{8cm}{img/23}</p>
+<p>\newpage</p>
+<h2 id="propriete-cosxpi-et-sinxpi">Propriété : $~\cos(x+\pi)~$ et $~\sin(x+\pi)$</h2>
+<p>Pour tout $x$, on a : $\quad\boxed{\cos(x+\pi)=-\cos(x)}\quad\text{et}\quad\boxed{\sin(x+\pi)=-\sin(x)}$</p>
+<p>\ms</p>
+<p>\cimg{7cm}{img/24}</p>
+<h1 id="fonctions-cosinussinus">Fonctions cosinus/sinus</h1>
+<h2 id="representations-graphiques">Représentations graphiques</h2>
+<p>\cimg{12cm}{img/25.png}</p>
+<p>\vspace{1cm}</p>
+<p>\cimg{12cm}{img/26.png}</p>
+<p>\newpage</p>
+<h2 id="propriete-periodicite-de-cosx-et-sinx">Propriété : Périodicité de $\cos(x)$ et $\sin(x)$</h2>
+<p>\prop</p>
+<p>On a vu que : $\quad\cos(x+2k\pi)=\cos(x)\quad$et$\quad\sin(x+2k\pi)=\sin(x)$</p>
+<p>On dit que les fonctions $\cos(x)$ et $\sin(x)$ sont <strong>\fbox{périodiques}</strong> (et plus précisément $2\pi$-périodique)</p>
+<p>\ms</p>
+<p>\rem</p>
+<p>Pour tracer la courbe représentative de la fonction $\cos(x)$ ou de la fonction $\sin(x)$, il suffit de la tracer sur un intervalle de longueur $2\pi$ et de la compléter par translation.</p>
+<h2 id="propriete-parite-de-cosx-et-sinx">Propriété : Parité de $\cos(x)$ et $\sin(x)$</h2>
+<p>\prop</p>
+<p>On a vu que : $\quad\cos(-x)=\cos(x)\quad$et$\quad\sin(-x)=-\sin(x)$</p>
+<p>On dit que :</p>
+<ul>
+<li>La fonction $\cos(x)$ est <strong>paire</strong></li>
+<li>La fonction $\sin(x)$ est <strong>impaire</strong></li>
+</ul>
+<p>\rem</p>
+<ul>
+<li>La courbe représentative de $\cos(x)$ est symétrique par rapport à l&rsquo;<strong>axe des ordonnées</strong>.</li>
+<li>La courbe représentative de la $\sin(x)$ est symétrique par rapport à <strong>l’origine du repère</strong>.</li>
+</ul>
+<p>\ms</p>
+<p>\cimg{18cm}{img/27.png}</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.8/mermaid.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-mermaid.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
