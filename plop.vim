@@ -5,6 +5,7 @@
 :%s/\\Lrarr/\\iff/g
 :%s/\\Leftrightarrow/\\iff/g
 :%s/colorbox/cbox/g
+:%s/textcolor/tc/g
 :g/cimg/norm fgfgyi}o![](jkpA){width=50%}
 :%s/less/lt/g
 :%s/\\\\/\\\\\\\\/g
