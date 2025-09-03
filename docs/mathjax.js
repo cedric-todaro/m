@@ -53,6 +53,10 @@ MathJax = {
         \nc{\Cf}{\mathcal{C}_f}
         \nc{\Cg}{\mathcal{C}_g}
         \nc{\Df}{\mathcal{D}_f}
+	    \nc{\Dfp}{\mathcal{D}_{f'}}
+	    \nc{\Rp}{\R^{+}}
+	    \nc{\Ret}{\R-\{0\}}
+	    \nc{\Rpe}{\R^{+}-\{0\}}
         \nc{\Dg}{\mathcal{D}_g}
         \nc{\pa}[1]{\left(#1\right)}
         \nc{\brace}[1]{\left\{#1\right\}}
