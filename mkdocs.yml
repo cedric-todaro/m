@@ -28,6 +28,7 @@ nav:
   - 1spe:
       - 1spe/Derivation-1.md
       - 1spe/Derivation-2.md
+      - 1spe/Fonction-exponentielle.md # à finir
 
   # - Divers:
   #     - Help: divers.md

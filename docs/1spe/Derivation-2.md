@@ -55,18 +55,18 @@
 
     $$
         \begin{array}{|lcclc|}\hline
-    	    \rule[-2mm]{0cm}{8mm} f                       & \Df  & \quad\quad      & f'                          & \Dfp \\\\ \hline
-    	    \rule[-2mm]{0cm}{8mm} f(x)=a                  & \R   & \quad\rarr\quad & f'(x)=0                     & \R   \\\\
-    	    \rule[-2mm]{0cm}{8mm} \text{avec}\quad a\in\R &      &                 &                             &      \\\\ \hline
-    	    \rule[-2mm]{0cm}{8mm} f(x)=ax                 & \R   & \quad\rarr\quad & f'(x)=a                     & \R   \\\\
-    	    \rule[-2mm]{0cm}{8mm} \text{avec}\quad a\in\R &      &                 &                             &      \\\\ \hline
-    	    \rule[-2mm]{0cm}{8mm} f(x)=x^2                & \R   & \quad\rarr\quad & f'(x)=2x                    & \R   \\\\ \hline
-    	    \rule[-2mm]{0cm}{8mm} f(x)=x^n                & \R   & \quad\rarr\quad & f'(x)=nx^{(n-1)}            & \R   \\\\
-    	    \rule[-2mm]{0cm}{8mm} \text{avec}\quad n\ge 1 &      &                 &                             &      \\\\ \hline
-    	    \rule[-2mm]{0cm}{8mm} f(x)=\cfrac{1}{x}       & \Ret & \quad\rarr\quad & f'(x)=\cfrac{-1}{x^2}       & \Ret \\\\ \hline
-    	    \rule[-2mm]{0cm}{8mm} f(x)=\cfrac{1}{x^n}     & \Ret & \quad\rarr\quad & f'(x)=\cfrac{-n}{x^{(n+1)}} & \Ret \\\\
-    	    \rule[-2mm]{0cm}{8mm} \text{avec}\quad n\ge 1 &      &                 &                             &      \\\\ \hline
-    	    \rule[-2mm]{0cm}{8mm} f(x)=\sqrt{x}           & \Rp  & \quad\rarr\quad & f'(x)=\cfrac{1}{2\sqrt{x}}  & \Rpe \\\\ \hline
+        \rule[-2mm]{0cm}{8mm} f                       & \Df  & \quad\quad      & f'                          & \Dfp \\\\ \hline
+        \rule[-2mm]{0cm}{8mm} f(x)=a                  & \R   & \quad\rarr\quad & f'(x)=0                     & \R   \\\\
+        \rule[-2mm]{0cm}{8mm} \text{avec}\quad a\in\R &      &                 &                             &      \\\\ \hline
+        \rule[-2mm]{0cm}{8mm} f(x)=ax                 & \R   & \quad\rarr\quad & f'(x)=a                     & \R   \\\\
+        \rule[-2mm]{0cm}{8mm} \text{avec}\quad a\in\R &      &                 &                             &      \\\\ \hline
+        \rule[-2mm]{0cm}{8mm} f(x)=x^2                & \R   & \quad\rarr\quad & f'(x)=2x                    & \R   \\\\ \hline
+        \rule[-2mm]{0cm}{8mm} f(x)=x^n                & \R   & \quad\rarr\quad & f'(x)=nx^{(n-1)}            & \R   \\\\
+        \rule[-2mm]{0cm}{8mm} \text{avec}\quad n\ge 1 &      &                 &                             &      \\\\ \hline
+        \rule[-2mm]{0cm}{8mm} f(x)=\cfrac{1}{x}       & \Ret & \quad\rarr\quad & f'(x)=\cfrac{-1}{x^2}       & \Ret \\\\ \hline
+        \rule[-2mm]{0cm}{8mm} f(x)=\cfrac{1}{x^n}     & \Ret & \quad\rarr\quad & f'(x)=\cfrac{-n}{x^{(n+1)}} & \Ret \\\\
+        \rule[-2mm]{0cm}{8mm} \text{avec}\quad n\ge 1 &      &                 &                             &      \\\\ \hline
+        \rule[-2mm]{0cm}{8mm} f(x)=\sqrt{x}           & \Rp  & \quad\rarr\quad & f'(x)=\cfrac{1}{2\sqrt{x}}  & \Rpe \\\\ \hline
         \end{array}
     $$
 
